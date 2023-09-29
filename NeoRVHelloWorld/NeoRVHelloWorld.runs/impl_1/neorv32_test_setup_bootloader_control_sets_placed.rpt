@@ -1,0 +1,122 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Thu Sep 21 01:21:01 2023
+| Host         : Jasmeet running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file neorv32_test_setup_bootloader_control_sets_placed.rpt
+| Design       : neorv32_test_setup_bootloader
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    44 |
+|    Minimum number of control sets                        |    44 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   118 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    44 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     4 |
+| >= 6 to < 8        |     3 |
+| >= 8 to < 10       |     5 |
+| >= 10 to < 12      |     3 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    29 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              82 |           45 |
+| No           | No                    | Yes                    |             346 |          109 |
+| No           | Yes                   | No                     |              71 |           31 |
+| Yes          | No                    | No                     |             185 |           67 |
+| Yes          | No                    | Yes                    |             598 |          259 |
+| Yes          | Yes                   | No                     |              72 |           20 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|   Clock Signal   |                                                                                Enable Signal                                                                                |                                          Set/Reset Signal                                          | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|  clk_i_IBUF_BUFG | neorv32_top_inst/io_system.neorv32_uart0_inst_true.neorv32_uart0_inst/tx_engine[bitcnt][3]_i_2_n_0                                                                          | neorv32_top_inst/io_system.neorv32_uart0_inst_true.neorv32_uart0_inst/tx_engine[bitcnt]            |                1 |              4 |         4.00 |
+|  clk_i_IBUF_BUFG | neorv32_top_inst/io_system.neorv32_uart0_inst_true.neorv32_uart0_inst/rx_engine[sreg][9]_i_1_n_0                                                                            | neorv32_top_inst/io_system.neorv32_uart0_inst_true.neorv32_uart0_inst/rx_engine[bitcnt]            |                1 |              4 |         4.00 |
+| ~clk_i_IBUF_BUFG |                                                                                                                                                                             | neorv32_top_inst/generators.rstn_int_sreg[3]_i_1_n_0                                               |                2 |              5 |         2.50 |
+|  clk_i_IBUF_BUFG | neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_muldiv_inst_true.neorv32_cpu_cp_muldiv_inst/ctrl[cnt]                                    | neorv32_top_inst/rstn_int                                                                          |                2 |              5 |         2.50 |
+|  clk_i_IBUF_BUFG |                                                                                                                                                                             | neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_lsu_inst/mar_reg[8]_3[0]                |                5 |              6 |         1.20 |
+|  clk_i_IBUF_BUFG | neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/csr_reg[mcause]0                                                                                    | neorv32_top_inst/rstn_int                                                                          |                3 |              6 |         2.00 |
+|  clk_i_IBUF_BUFG |                                                                                                                                                                             | neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/imm_o[10]_i_1_n_0          |                3 |              6 |         2.00 |
+|  clk_i_IBUF_BUFG | neorv32_top_inst/io_system.neorv32_uart0_inst_true.neorv32_uart0_inst/rx_engine_fifo_inst/fifo[we]                                                                          |                                                                                                    |                2 |              8 |         4.00 |
+|  clk_i_IBUF_BUFG |                                                                                                                                                                             | neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_lsu_inst/mar_reg[11]_1[0]               |                3 |              8 |         2.67 |
+|  clk_i_IBUF_BUFG | neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_lsu_inst/fetch_engine_reg[pc][11]_1[0]                                                                           |                                                                                                    |                2 |              8 |         4.00 |
+|  clk_i_IBUF_BUFG | neorv32_top_inst/io_system.neorv32_uart0_inst_true.neorv32_uart0_inst/tx_engine[sreg][7]_i_1_n_0                                                                            |                                                                                                    |                2 |              8 |         4.00 |
+|  clk_i_IBUF_BUFG | neorv32_top_inst/io_system.neorv32_uart0_inst_true.neorv32_uart0_inst/rx_engine[sreg][9]_i_1_n_0                                                                            |                                                                                                    |                2 |              9 |         4.50 |
+|  clk_i_IBUF_BUFG | neorv32_top_inst/io_system.neorv32_uart0_inst_true.neorv32_uart0_inst/tx_engine[baudcnt][9]_i_1_n_0                                                                         |                                                                                                    |                4 |             10 |         2.50 |
+|  clk_i_IBUF_BUFG | neorv32_top_inst/io_system.neorv32_uart0_inst_true.neorv32_uart0_inst/rx_engine[baudcnt][9]_i_1_n_0                                                                         |                                                                                                    |                4 |             10 |         2.50 |
+|  clk_i_IBUF_BUFG | neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/prefetch_buffer[1].prefetch_buffer_inst/E[0]                                                        | neorv32_top_inst/rstn_int                                                                          |                6 |             11 |         1.83 |
+|  clk_i_IBUF_BUFG | neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_lsu_inst/mar_reg[8]_0[0]                                                                                         | neorv32_top_inst/rstn_int                                                                          |                4 |             16 |         4.00 |
+|  clk_i_IBUF_BUFG | neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/prefetch_buffer[0].prefetch_buffer_inst/fifo[data][1]_7                                             |                                                                                                    |                3 |             17 |         5.67 |
+|  clk_i_IBUF_BUFG | neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/prefetch_buffer[1].prefetch_buffer_inst/fifo[data][1]_8                                             |                                                                                                    |                6 |             17 |         2.83 |
+|  clk_i_IBUF_BUFG | neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/prefetch_buffer[1].prefetch_buffer_inst/fifo[data][0]_9                                             |                                                                                                    |                6 |             17 |         2.83 |
+|  clk_i_IBUF_BUFG | neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/prefetch_buffer[0].prefetch_buffer_inst/fifo[data][0]_6                                             |                                                                                                    |                7 |             17 |         2.43 |
+|  clk_i_IBUF_BUFG |                                                                                                                                                                             | neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_lsu_inst/fetch_engine_reg[pc][11]       |                6 |             19 |         3.17 |
+|  clk_i_IBUF_BUFG | neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/csr[mie_firq]                                                                                       | neorv32_top_inst/rstn_int                                                                          |               13 |             19 |         1.46 |
+|  clk_i_IBUF_BUFG | neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_lsu_inst/mar_reg[2]_1[0]                                                                                         | neorv32_top_inst/rstn_int                                                                          |                7 |             21 |         3.00 |
+|  clk_i_IBUF_BUFG | neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/csr[mtvec][31]_i_1_n_0                                                                              | neorv32_top_inst/rstn_int                                                                          |               13 |             30 |         2.31 |
+|  clk_i_IBUF_BUFG | neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/prefetch_buffer[1].prefetch_buffer_inst/execute_engine_reg[branched][0]                             | neorv32_top_inst/rstn_int                                                                          |               13 |             31 |         2.38 |
+|  clk_i_IBUF_BUFG | neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/csr_reg[mepc]0                                                                                      | neorv32_top_inst/rstn_int                                                                          |               18 |             31 |         1.72 |
+|  clk_i_IBUF_BUFG | neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/execute_engine[next_pc]                                                                             | neorv32_top_inst/rstn_int                                                                          |               18 |             31 |         1.72 |
+|  clk_i_IBUF_BUFG | neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/fetch_engine[pc][31]_i_1_n_0                                                                        | neorv32_top_inst/rstn_int                                                                          |               12 |             31 |         2.58 |
+|  clk_i_IBUF_BUFG |                                                                                                                                                                             | neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_lsu_inst/SR[0]                          |               14 |             32 |         2.29 |
+|  clk_i_IBUF_BUFG | neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_lsu_inst/arbiter_reg[pend_rd]_0[0]                                                                               | neorv32_top_inst/rstn_int                                                                          |                9 |             32 |         3.56 |
+|  clk_i_IBUF_BUFG | neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_lsu_inst/fetch_engine_reg[pc][3]_0[0]                                                                            | neorv32_top_inst/rstn_int                                                                          |                9 |             32 |         3.56 |
+|  clk_i_IBUF_BUFG | neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_lsu_inst/fetch_engine_reg[pc][3][0]                                                                              | neorv32_top_inst/rstn_int                                                                          |               13 |             32 |         2.46 |
+|  clk_i_IBUF_BUFG | neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_muldiv_inst_true.neorv32_cpu_cp_muldiv_inst/multiplier_core_serial.mul[prod][31]_i_1_n_0 |                                                                                                    |               17 |             32 |         1.88 |
+|  clk_i_IBUF_BUFG | neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_muldiv_inst_true.neorv32_cpu_cp_muldiv_inst/multiplier_core_serial.mul[prod][31]_i_1_n_0 | neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/ctrl_reg[alu_cp_trig][1]_1 |                9 |             32 |         3.56 |
+|  clk_i_IBUF_BUFG | neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_muldiv_inst_true.neorv32_cpu_cp_muldiv_inst/mul[prod]0                                   | neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/SR[0]                      |                9 |             32 |         3.56 |
+|  clk_i_IBUF_BUFG | neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/csr[mscratch][31]_i_1_n_0                                                                           | neorv32_top_inst/rstn_int                                                                          |               20 |             32 |         1.60 |
+|  clk_i_IBUF_BUFG | neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/E[0]                                                                                                |                                                                                                    |               12 |             32 |         2.67 |
+|  clk_i_IBUF_BUFG | neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_muldiv_inst_true.neorv32_cpu_cp_muldiv_inst/div[sign_mod]                                | neorv32_top_inst/rstn_int                                                                          |                9 |             33 |         3.67 |
+|  clk_i_IBUF_BUFG | neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/prefetch_buffer[1].prefetch_buffer_inst/execute_engine[ir_nxt]                                      | neorv32_top_inst/rstn_int                                                                          |               24 |             35 |         1.46 |
+|  clk_i_IBUF_BUFG | neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_shifter_inst/shifter[sreg]                                                               | neorv32_top_inst/rstn_int                                                                          |               18 |             37 |         2.06 |
+|  clk_i_IBUF_BUFG | neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/csr[mtval]                                                                                          | neorv32_top_inst/rstn_int                                                                          |               30 |             64 |         2.13 |
+|  clk_i_IBUF_BUFG | neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/FSM_onehot_execute_engine_reg[state][11]_0[0]                                                       | neorv32_top_inst/rstn_int                                                                          |               18 |             69 |         3.83 |
+|  clk_i_IBUF_BUFG |                                                                                                                                                                             |                                                                                                    |               45 |             82 |         1.82 |
+|  clk_i_IBUF_BUFG |                                                                                                                                                                             | neorv32_top_inst/rstn_int                                                                          |              107 |            341 |         3.19 |
++------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+
+

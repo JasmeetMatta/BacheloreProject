@@ -1,0 +1,162 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date             : Thu Sep 21 01:21:52 2023
+| Host             : Jasmeet running 64-bit major release  (build 9200)
+| Command          : report_power -file neorv32_test_setup_bootloader_power_routed.rpt -pb neorv32_test_setup_bootloader_power_summary_routed.pb -rpx neorv32_test_setup_bootloader_power_routed.rpx
+| Design           : neorv32_test_setup_bootloader
+| Device           : xc7a100tcsg324-1
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+----------------------------------+
+| Total On-Chip Power (W)  | 21.468 (Junction temp exceeded!) |
+| Design Power Budget (W)  | Unspecified*                     |
+| Power Budget Margin (W)  | NA                               |
+| Dynamic (W)              | 20.714                           |
+| Device Static (W)        | 0.755                            |
+| Effective TJA (C/W)      | 4.6                              |
+| Max Ambient (C)          | 0.0                              |
+| Junction Temperature (C) | 123.0                            |
+| Confidence Level         | Low                              |
+| Setting File             | ---                              |
+| Simulation Activity File | ---                              |
+| Design Nets Matched      | NA                               |
++--------------------------+----------------------------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++----------------+-----------+----------+-----------+-----------------+
+| On-Chip        | Power (W) | Used     | Available | Utilization (%) |
++----------------+-----------+----------+-----------+-----------------+
+| Slice Logic    |     9.297 |     3892 |       --- |             --- |
+|   LUT as Logic |     8.489 |     1998 |     63400 |            3.15 |
+|   CARRY4       |     0.488 |      153 |     15850 |            0.97 |
+|   Register     |     0.312 |     1354 |    126800 |            1.07 |
+|   BUFG         |     0.006 |        1 |        32 |            3.13 |
+|   F7/F8 Muxes  |     0.003 |       13 |     63400 |            0.02 |
+|   Others       |     0.000 |       36 |       --- |             --- |
+| Signals        |    10.183 |     3007 |       --- |             --- |
+| Block RAM      |     1.226 |        8 |       135 |            5.93 |
+| I/O            |     0.008 |       12 |       210 |            5.71 |
+| Static Power   |     0.755 |          |           |                 |
+| Total          |    21.468 |          |           |                 |
++----------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Vccint    |       1.000 |    21.152 |      20.624 |      0.529 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.088 |       0.000 |      0.088 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |       NA    | Unspecified | NA         |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.109 |       0.090 |      0.019 |       NA    | Unspecified | NA         |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |       NA    | Unspecified | NA         |
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                             |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                           |                                                                                                                    |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 4.6                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 4.6                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------+--------+-----------------+
+| Clock | Domain | Constraint (ns) |
++-------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++--------------------------------------------------------------------+-----------+
+| Name                                                               | Power (W) |
++--------------------------------------------------------------------+-----------+
+| neorv32_test_setup_bootloader                                      |    20.714 |
+|   neorv32_top_inst                                                 |    20.598 |
+|     core_complex.neorv32_core_bus_switch_inst                      |     0.042 |
+|     core_complex.neorv32_cpu_inst                                  |    16.833 |
+|       neorv32_cpu_alu_inst                                         |     3.681 |
+|       neorv32_cpu_control_inst                                     |     8.079 |
+|       neorv32_cpu_lsu_inst                                         |     0.834 |
+|       neorv32_cpu_regfile_inst                                     |     4.239 |
+|     io_system.neorv32_gpio_inst_true.neorv32_gpio_inst             |     0.031 |
+|     io_system.neorv32_mtime_inst_true.neorv32_mtime_inst           |     1.093 |
+|     io_system.neorv32_sysinfo_inst                                 |     0.027 |
+|     io_system.neorv32_uart0_inst_true.neorv32_uart0_inst           |     0.440 |
+|       tx_engine_fifo_inst                                          |     0.019 |
+|     memory_system.neorv32_boot_rom_inst_true.neorv32_boot_rom_inst |     0.358 |
+|     memory_system.neorv32_int_dmem_inst_true.neorv32_int_dmem_inst |     0.768 |
+|     memory_system.neorv32_int_imem_inst_true.neorv32_int_imem_inst |     0.864 |
+|     neorv32_bus_gateway_inst                                       |     0.085 |
++--------------------------------------------------------------------+-----------+
+
+
