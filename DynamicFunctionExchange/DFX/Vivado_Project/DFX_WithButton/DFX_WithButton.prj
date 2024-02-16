@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="DFX_WithButton" location="C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_WithButton" platform="C:/Users/jasme/Desktop/DFX/Vivado_Project/Hello_World/export/Hello_World/Hello_World.xpfm" platformUID="xilinx:nexys-a7-100t::0.0(custom)" systemProject="DFX_WithButton_system" sysConfig="Hello_World" runtime="C/C++" cpu="standalone_domain" cpuInstance="microblaze_0" os="standalone" mssSignature="1db53906e9532b4b06e7ddc1f9b3755c">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.1066085851" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.462471273" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>
