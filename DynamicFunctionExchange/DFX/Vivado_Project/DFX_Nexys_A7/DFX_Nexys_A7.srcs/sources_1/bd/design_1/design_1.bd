@@ -1113,8 +1113,8 @@
       },
       "Led_Control_0": {
         "vlnv": "xilinx.com:user:Led_Control:1.0",
-        "xci_name": "design_1_Led_Control_0_0",
-        "xci_path": "ip\\design_1_Led_Control_0_0\\design_1_Led_Control_0_0.xci",
+        "xci_name": "design_1_Led_Control_0_1",
+        "xci_path": "ip\\design_1_Led_Control_0_1\\design_1_Led_Control_0_1.xci",
         "inst_hier_path": "Led_Control_0",
         "interface_ports": {
           "m_axi": {
@@ -1254,8 +1254,8 @@
           "microblaze_0_axi_periph/M02_ACLK",
           "axi_gpio_1/s_axi_aclk",
           "microblaze_0_axi_periph/M03_ACLK",
-          "Led_Control_0/m_axi_aclk",
-          "microblaze_0_axi_periph/S01_ACLK"
+          "microblaze_0_axi_periph/S01_ACLK",
+          "Led_Control_0/m_axi_aclk"
         ]
       },
       "microblaze_0_intr": {
@@ -1297,8 +1297,8 @@
           "microblaze_0_axi_periph/M02_ARESETN",
           "axi_gpio_1/s_axi_aresetn",
           "microblaze_0_axi_periph/M03_ARESETN",
-          "Led_Control_0/m_axi_aresetn",
-          "microblaze_0_axi_periph/S01_ARESETN"
+          "microblaze_0_axi_periph/S01_ARESETN",
+          "Led_Control_0/m_axi_aresetn"
         ]
       },
       "sys_clock_1": {

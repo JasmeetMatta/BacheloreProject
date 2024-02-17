@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Feb 16 01:27:46 2024" VIVADOVERSION="2023.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Feb 17 00:29:55 2024" VIVADOVERSION="2023.1">
 
   <SYSTEMINFO ARCH="artix7" BOARD="digilentinc.com:nexys-a7-100t:part0:1.2" DEVICE="7a100t" NAME="design_1" PACKAGE="csg324" SPEEDGRADE="-1"/>
 
@@ -57,10 +57,10 @@
   </EXTERNALINTERFACES>
 
   <MODULES>
-    <MODULE COREREVISION="2" FULLNAME="/Led_Control_0" HWVERSION="1.0" INSTANCE="Led_Control_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Led_Control" VLNV="xilinx.com:user:Led_Control:1.0">
+    <MODULE COREREVISION="3" FULLNAME="/Led_Control_0" HWVERSION="1.0" INSTANCE="Led_Control_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Led_Control" VLNV="xilinx.com:user:Led_Control:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="Component_Name" VALUE="design_1_Led_Control_0_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_Led_Control_0_1"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
@@ -2421,8 +2421,8 @@
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M02_ACLK"/>
             <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M03_ACLK"/>
-            <CONNECTION INSTANCE="Led_Control_0" PORT="m_axi_aclk"/>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="S01_ACLK"/>
+            <CONNECTION INSTANCE="Led_Control_0" PORT="m_axi_aclk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="locked" SIGIS="undef" SIGNAME="clk_wiz_1_locked">
@@ -8655,8 +8655,8 @@
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M02_ARESETN"/>
             <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M03_ARESETN"/>
-            <CONNECTION INSTANCE="Led_Control_0" PORT="m_axi_aresetn"/>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="S01_ARESETN"/>
+            <CONNECTION INSTANCE="Led_Control_0" PORT="m_axi_aresetn"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
