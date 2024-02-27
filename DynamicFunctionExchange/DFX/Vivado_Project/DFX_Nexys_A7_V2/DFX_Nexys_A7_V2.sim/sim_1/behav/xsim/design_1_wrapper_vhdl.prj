@@ -10,7 +10,7 @@ vhdl xil_defaultlib  \
 "../../../../DFX_Nexys_A7_V2.ip_user_files/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/sim/design_1_rst_clk_wiz_1_100M_0.vhd" \
 "../../../../DFX_Nexys_A7_V2.ip_user_files/bd/design_1/ip/design_1_axi_gpio_0_0/sim/design_1_axi_gpio_0_0.vhd" \
 "../../../../DFX_Nexys_A7_V2.ip_user_files/bd/design_1/ip/design_1_axi_gpio_1_0/sim/design_1_axi_gpio_1_0.vhd" \
-"../../../../DFX_Nexys_A7_V2.ip_user_files/bd/design_1/ipshared/4295/src/Led_Control.vhd" \
+"../../../../DFX_Nexys_A7_V2.ip_user_files/bd/design_1/ipshared/319a/src/Led_Control.vhd" \
 "../../../../DFX_Nexys_A7_V2.ip_user_files/bd/design_1/ip/design_1_Led_Control_0_0/sim/design_1_Led_Control_0_0.vhd" \
 
 # Do not sort compile order

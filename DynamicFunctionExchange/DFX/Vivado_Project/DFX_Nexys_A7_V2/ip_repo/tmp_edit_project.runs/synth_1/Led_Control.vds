@@ -1,0 +1,295 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Feb 27 21:34:38 2024
+# Process ID: 15648
+# Current directory: C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7_V2/ip_repo/tmp_edit_project.runs/synth_1
+# Command line: vivado.exe -log Led_Control.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Led_Control.tcl
+# Log file: C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7_V2/ip_repo/tmp_edit_project.runs/synth_1/Led_Control.vds
+# Journal file: C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7_V2/ip_repo/tmp_edit_project.runs/synth_1\vivado.jou
+# Running On: Jasmeet, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 16990 MB
+#-----------------------------------------------------------
+source Led_Control.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 442.098 ; gain = 163.648
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7_V2/ip_repo'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7_V2/ip_repo' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7_V2/ip_repo/tmp_edit_project.runs/synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2023.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7_V2/ip_repo/tmp_edit_project.cache/ip 
+Command: synth_design -top Led_Control -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24260
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 889.125 ; gain = 416.734
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Led_Control' [C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7_V2/ip_repo/src/Led_Control.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'Led_Control' (0#1) [C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7_V2/ip_repo/src/Led_Control.vhd:70]
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[31] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[30] driven by constant 1
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[29] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[28] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[27] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[26] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[25] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[24] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[23] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[22] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[21] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[20] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[19] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[18] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[17] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[16] driven by constant 1
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[15] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[14] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[13] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[12] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[11] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[10] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[9] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[8] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[7] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[6] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[5] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[4] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[3] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[2] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[1] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[0] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awprot[2] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awprot[1] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awprot[0] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_arprot[2] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_arprot[1] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_arprot[0] driven by constant 0
+WARNING: [Synth 8-7129] Port m_axi_rdata[3] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rdata[2] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rdata[1] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rdata[0] in module Led_Control is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 980.277 ; gain = 507.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 980.277 ; gain = 507.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 980.277 ; gain = 507.887
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Led_Control'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+          readbuttonaddr |                             0001 |                              001
+          readbuttondata |                             0010 |                              010
+                writeled |                             0100 |                              011
+                    idle |                             1000 |                              000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Led_Control'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 980.277 ; gain = 507.887
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 6     
+	   4 Input    1 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[31] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[30] driven by constant 1
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[29] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[28] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[27] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[26] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[25] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[24] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[23] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[22] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[21] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[20] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[19] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[18] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[17] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[16] driven by constant 1
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[15] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[14] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[13] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[12] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[11] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[10] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[9] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[8] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[7] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[6] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[5] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[4] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[3] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[2] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[1] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awaddr[0] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awprot[2] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awprot[1] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_awprot[0] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_arprot[2] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_arprot[1] driven by constant 0
+WARNING: [Synth 8-3917] design Led_Control has port m_axi_arprot[0] driven by constant 0
+WARNING: [Synth 8-7129] Port m_axi_rdata[3] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rdata[2] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rdata[1] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rdata[0] in module Led_Control is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 1190.258 ; gain = 717.867
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 1190.258 ; gain = 717.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 1190.258 ; gain = 717.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 1190.258 ; gain = 717.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 1190.258 ; gain = 717.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 1190.258 ; gain = 717.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 1190.258 ; gain = 717.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 1190.258 ; gain = 717.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 1190.258 ; gain = 717.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     2|
+|3     |LUT2 |     3|
+|4     |LUT3 |     3|
+|5     |LUT4 |    10|
+|6     |LUT5 |     6|
+|7     |LUT6 |     2|
+|8     |FDRE |    49|
+|9     |FDSE |     1|
+|10    |IBUF |    35|
+|11    |OBUF |   107|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   219|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 1190.258 ; gain = 717.867
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 85 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 1190.258 ; gain = 717.867
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 1190.258 ; gain = 717.867
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1200.039 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1296.188 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 7cfcffe
+INFO: [Common 17-83] Releasing license: Synthesis
+17 Infos, 87 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 1296.188 ; gain = 825.766
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7_V2/ip_repo/tmp_edit_project.runs/synth_1/Led_Control.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Led_Control_utilization_synth.rpt -pb Led_Control_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 27 21:35:17 2024...

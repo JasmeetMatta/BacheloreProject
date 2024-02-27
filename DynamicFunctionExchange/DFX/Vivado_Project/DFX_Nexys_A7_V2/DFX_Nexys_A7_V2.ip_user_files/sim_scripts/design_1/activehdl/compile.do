@@ -129,7 +129,7 @@ vcom -work axi_gpio_v2_0_30 -93  \
 vcom -work xil_defaultlib -93  \
 "../../../bd/design_1/ip/design_1_axi_gpio_0_0/sim/design_1_axi_gpio_0_0.vhd" \
 "../../../bd/design_1/ip/design_1_axi_gpio_1_0/sim/design_1_axi_gpio_1_0.vhd" \
-"../../../bd/design_1/ipshared/9c39/src/Led_Control.vhd" \
+"../../../bd/design_1/ipshared/319a/src/Led_Control.vhd" \
 "../../../bd/design_1/ip/design_1_Led_Control_0_0/sim/design_1_Led_Control_0_0.vhd" \
 
 vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../DFX_Nexys_A7_V2.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../DFX_Nexys_A7_V2.gen/sources_1/bd/design_1/ipshared/30ef" -l xpm -l microblaze_v11_0_11 -l xil_defaultlib -l lmb_v10_v3_0_12 -l lmb_bram_if_cntlr_v4_0_22 -l blk_mem_gen_v8_4_6 -l generic_baseblocks_v2_1_0 -l axi_infrastructure_v1_1_0 -l axi_register_slice_v2_1_28 -l fifo_generator_v13_2_8 -l axi_data_fifo_v2_1_27 -l axi_crossbar_v2_1_29 -l axi_lite_ipif_v3_0_4 -l axi_intc_v4_1_17 -l xlconcat_v2_1_4 -l mdm_v3_2_24 -l lib_cdc_v1_0_2 -l proc_sys_reset_v5_0_13 -l interrupt_control_v3_1_4 -l axi_gpio_v2_0_30 \
