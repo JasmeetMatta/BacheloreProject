@@ -2,7 +2,7 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-// Date        : Tue Feb 27 23:51:08 2024
+// Date        : Wed Feb 28 22:03:44 2024
 // Host        : Jasmeet running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7_V2/DFX_Nexys_A7_V2.gen/sources_1/bd/design_1/ip/design_1_Led_Control_0_0/design_1_Led_Control_0_0_sim_netlist.v
@@ -226,15 +226,23 @@ module design_1_Led_Control_0_0_Led_Control
   wire \FSM_onehot_state[1]_i_1_n_0 ;
   wire \FSM_onehot_state[1]_i_2_n_0 ;
   wire \FSM_onehot_state[2]_i_1_n_0 ;
+  wire \FSM_onehot_state[2]_i_2_n_0 ;
   wire \FSM_onehot_state[3]_i_1_n_0 ;
   wire \FSM_onehot_state_reg_n_0_[0] ;
   wire \FSM_onehot_state_reg_n_0_[1] ;
   wire \FSM_onehot_state_reg_n_0_[2] ;
   wire \FSM_onehot_state_reg_n_0_[3] ;
   wire LedCounter;
+  wire \LedCounter[3]_i_10_n_0 ;
+  wire \LedCounter[3]_i_11_n_0 ;
   wire \LedCounter[3]_i_4_n_0 ;
+  wire \LedCounter[3]_i_5_n_0 ;
+  wire \LedCounter[3]_i_6_n_0 ;
+  wire \LedCounter[3]_i_7_n_0 ;
+  wire \LedCounter[3]_i_8_n_0 ;
+  wire \LedCounter[3]_i_9_n_0 ;
+  wire ack28_out;
   wire arcomplete_i_1_n_0;
-  wire arcomplete_i_2_n_0;
   wire arcomplete_reg_n_0;
   wire arvalid;
   wire awcomplete_i_1_n_0;
@@ -246,6 +254,8 @@ module design_1_Led_Control_0_0_Led_Control
   wire bcomplete_reg_n_0;
   wire bready;
   wire complete;
+  wire countBool;
+  wire countBool_i_1_n_0;
   wire m_axi_aclk;
   wire m_axi_aresetn;
   wire m_axi_arready;
@@ -265,57 +275,120 @@ module design_1_Led_Control_0_0_Led_Control
   wire rcomplete_i_1_n_0;
   wire rcomplete_reg_n_0;
   wire rready;
+  wire secDealy;
+  wire \secDealy[0]_i_3_n_0 ;
+  wire [25:0]secDealy_reg;
+  wire \secDealy_reg[0]_i_2_n_0 ;
+  wire \secDealy_reg[0]_i_2_n_1 ;
+  wire \secDealy_reg[0]_i_2_n_2 ;
+  wire \secDealy_reg[0]_i_2_n_3 ;
+  wire \secDealy_reg[0]_i_2_n_4 ;
+  wire \secDealy_reg[0]_i_2_n_5 ;
+  wire \secDealy_reg[0]_i_2_n_6 ;
+  wire \secDealy_reg[0]_i_2_n_7 ;
+  wire \secDealy_reg[12]_i_1_n_0 ;
+  wire \secDealy_reg[12]_i_1_n_1 ;
+  wire \secDealy_reg[12]_i_1_n_2 ;
+  wire \secDealy_reg[12]_i_1_n_3 ;
+  wire \secDealy_reg[12]_i_1_n_4 ;
+  wire \secDealy_reg[12]_i_1_n_5 ;
+  wire \secDealy_reg[12]_i_1_n_6 ;
+  wire \secDealy_reg[12]_i_1_n_7 ;
+  wire \secDealy_reg[16]_i_1_n_0 ;
+  wire \secDealy_reg[16]_i_1_n_1 ;
+  wire \secDealy_reg[16]_i_1_n_2 ;
+  wire \secDealy_reg[16]_i_1_n_3 ;
+  wire \secDealy_reg[16]_i_1_n_4 ;
+  wire \secDealy_reg[16]_i_1_n_5 ;
+  wire \secDealy_reg[16]_i_1_n_6 ;
+  wire \secDealy_reg[16]_i_1_n_7 ;
+  wire \secDealy_reg[20]_i_1_n_0 ;
+  wire \secDealy_reg[20]_i_1_n_1 ;
+  wire \secDealy_reg[20]_i_1_n_2 ;
+  wire \secDealy_reg[20]_i_1_n_3 ;
+  wire \secDealy_reg[20]_i_1_n_4 ;
+  wire \secDealy_reg[20]_i_1_n_5 ;
+  wire \secDealy_reg[20]_i_1_n_6 ;
+  wire \secDealy_reg[20]_i_1_n_7 ;
+  wire \secDealy_reg[24]_i_1_n_3 ;
+  wire \secDealy_reg[24]_i_1_n_6 ;
+  wire \secDealy_reg[24]_i_1_n_7 ;
+  wire \secDealy_reg[4]_i_1_n_0 ;
+  wire \secDealy_reg[4]_i_1_n_1 ;
+  wire \secDealy_reg[4]_i_1_n_2 ;
+  wire \secDealy_reg[4]_i_1_n_3 ;
+  wire \secDealy_reg[4]_i_1_n_4 ;
+  wire \secDealy_reg[4]_i_1_n_5 ;
+  wire \secDealy_reg[4]_i_1_n_6 ;
+  wire \secDealy_reg[4]_i_1_n_7 ;
+  wire \secDealy_reg[8]_i_1_n_0 ;
+  wire \secDealy_reg[8]_i_1_n_1 ;
+  wire \secDealy_reg[8]_i_1_n_2 ;
+  wire \secDealy_reg[8]_i_1_n_3 ;
+  wire \secDealy_reg[8]_i_1_n_4 ;
+  wire \secDealy_reg[8]_i_1_n_5 ;
+  wire \secDealy_reg[8]_i_1_n_6 ;
+  wire \secDealy_reg[8]_i_1_n_7 ;
   wire wcomplete_i_1_n_0;
   wire wcomplete_reg_n_0;
   wire wvalid;
+  wire [3:1]\NLW_secDealy_reg[24]_i_1_CO_UNCONNECTED ;
+  wire [3:2]\NLW_secDealy_reg[24]_i_1_O_UNCONNECTED ;
 
   (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT5 #(
-    .INIT(32'hFFFFAA2A)) 
+    .INIT(32'hFFFFBF00)) 
     \FSM_onehot_state[0]_i_1 
-       (.I0(\FSM_onehot_state_reg_n_0_[0] ),
+       (.I0(arcomplete_reg_n_0),
         .I1(m_axi_arready),
         .I2(m_axi_arvalid),
-        .I3(arcomplete_reg_n_0),
+        .I3(\FSM_onehot_state_reg_n_0_[0] ),
         .I4(\FSM_onehot_state_reg_n_0_[3] ),
         .O(\FSM_onehot_state[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
-  LUT5 #(
-    .INIT(32'hFFAABFAA)) 
+  LUT6 #(
+    .INIT(64'hBF00FFFFBF00BF00)) 
     \FSM_onehot_state[1]_i_1 
-       (.I0(\FSM_onehot_state[1]_i_2_n_0 ),
+       (.I0(rcomplete_reg_n_0),
         .I1(m_axi_rready),
         .I2(m_axi_rvalid),
         .I3(\FSM_onehot_state_reg_n_0_[1] ),
-        .I4(rcomplete_reg_n_0),
+        .I4(\FSM_onehot_state[1]_i_2_n_0 ),
+        .I5(\FSM_onehot_state_reg_n_0_[0] ),
         .O(\FSM_onehot_state[1]_i_1_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair0" *) 
-  LUT4 #(
-    .INIT(16'h2000)) 
+  LUT3 #(
+    .INIT(8'hBF)) 
     \FSM_onehot_state[1]_i_2 
-       (.I0(\FSM_onehot_state_reg_n_0_[0] ),
-        .I1(arcomplete_reg_n_0),
+       (.I0(arcomplete_reg_n_0),
+        .I1(m_axi_arready),
         .I2(m_axi_arvalid),
-        .I3(m_axi_arready),
         .O(\FSM_onehot_state[1]_i_2_n_0 ));
   LUT6 #(
-    .INIT(64'hAA2AFFFFAA2AAA2A)) 
+    .INIT(64'h8AAAFFFF8AAA8AAA)) 
     \FSM_onehot_state[2]_i_1 
        (.I0(\FSM_onehot_state_reg_n_0_[2] ),
-        .I1(m_axi_bready),
-        .I2(m_axi_bvalid),
-        .I3(bcomplete_reg_n_0),
-        .I4(rcomplete_reg_n_0),
-        .I5(rcomplete),
+        .I1(bcomplete_reg_n_0),
+        .I2(m_axi_bready),
+        .I3(m_axi_bvalid),
+        .I4(\FSM_onehot_state[2]_i_2_n_0 ),
+        .I5(\FSM_onehot_state_reg_n_0_[1] ),
         .O(\FSM_onehot_state[2]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  LUT3 #(
+    .INIT(8'hBF)) 
+    \FSM_onehot_state[2]_i_2 
+       (.I0(rcomplete_reg_n_0),
+        .I1(m_axi_rready),
+        .I2(m_axi_rvalid),
+        .O(\FSM_onehot_state[2]_i_2_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT4 #(
-    .INIT(16'h2000)) 
+    .INIT(16'h0080)) 
     \FSM_onehot_state[3]_i_1 
        (.I0(\FSM_onehot_state_reg_n_0_[2] ),
-        .I1(bcomplete_reg_n_0),
-        .I2(m_axi_bvalid),
-        .I3(m_axi_bready),
+        .I1(m_axi_bvalid),
+        .I2(m_axi_bready),
+        .I3(bcomplete_reg_n_0),
         .O(\FSM_onehot_state[3]_i_1_n_0 ));
   (* FSM_ENCODED_STATES = "noop:100,readbuttonaddr:0001,readbuttondata:0010,writeled:0100,idle:1000" *) 
   FDSE #(
@@ -362,34 +435,52 @@ module design_1_Led_Control_0_0_Led_Control
   LUT2 #(
     .INIT(4'h6)) 
     \LedCounter[1]_i_1 
-       (.I0(m_axi_wdata[0]),
-        .I1(m_axi_wdata[1]),
-        .O(p_0_in[1]));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
-  LUT3 #(
-    .INIT(8'h78)) 
-    \LedCounter[2]_i_1 
        (.I0(m_axi_wdata[1]),
         .I1(m_axi_wdata[0]),
-        .I2(m_axi_wdata[2]),
+        .O(p_0_in[1]));
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  LUT3 #(
+    .INIT(8'h6A)) 
+    \LedCounter[2]_i_1 
+       (.I0(m_axi_wdata[2]),
+        .I1(m_axi_wdata[1]),
+        .I2(m_axi_wdata[0]),
         .O(p_0_in[2]));
   LUT6 #(
-    .INIT(64'h20202020F0202020)) 
+    .INIT(64'h2A222A222A222222)) 
     \LedCounter[3]_i_1 
-       (.I0(m_axi_rdata[0]),
-        .I1(m_axi_rdata[1]),
-        .I2(rcomplete),
-        .I3(m_axi_wdata[3]),
-        .I4(m_axi_wdata[2]),
-        .I5(\LedCounter[3]_i_4_n_0 ),
+       (.I0(rcomplete),
+        .I1(\LedCounter[3]_i_4_n_0 ),
+        .I2(m_axi_rdata[1]),
+        .I3(m_axi_rdata[0]),
+        .I4(countBool),
+        .I5(\LedCounter[3]_i_5_n_0 ),
         .O(LedCounter));
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    \LedCounter[3]_i_10 
+       (.I0(secDealy_reg[18]),
+        .I1(secDealy_reg[4]),
+        .I2(secDealy_reg[3]),
+        .I3(secDealy_reg[2]),
+        .O(\LedCounter[3]_i_10_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFFFFFFFFFFFFFE)) 
+    \LedCounter[3]_i_11 
+       (.I0(secDealy_reg[24]),
+        .I1(secDealy_reg[11]),
+        .I2(secDealy_reg[0]),
+        .I3(secDealy_reg[1]),
+        .I4(secDealy_reg[16]),
+        .I5(secDealy_reg[5]),
+        .O(\LedCounter[3]_i_11_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair4" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \LedCounter[3]_i_2 
        (.I0(m_axi_wdata[2]),
-        .I1(m_axi_wdata[0]),
-        .I2(m_axi_wdata[1]),
+        .I1(m_axi_wdata[1]),
+        .I2(m_axi_wdata[0]),
         .I3(m_axi_wdata[3]),
         .O(p_0_in[3]));
   (* SOFT_HLUTNM = "soft_lutpair5" *) 
@@ -400,13 +491,57 @@ module design_1_Led_Control_0_0_Led_Control
         .I1(m_axi_rready),
         .I2(m_axi_rvalid),
         .O(rcomplete));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
-  LUT2 #(
-    .INIT(4'h7)) 
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  LUT4 #(
+    .INIT(16'h7FFF)) 
     \LedCounter[3]_i_4 
-       (.I0(m_axi_wdata[0]),
-        .I1(m_axi_wdata[1]),
+       (.I0(m_axi_wdata[2]),
+        .I1(m_axi_wdata[3]),
+        .I2(m_axi_wdata[1]),
+        .I3(m_axi_wdata[0]),
         .O(\LedCounter[3]_i_4_n_0 ));
+  LUT6 #(
+    .INIT(64'h0000000000008000)) 
+    \LedCounter[3]_i_5 
+       (.I0(\LedCounter[3]_i_6_n_0 ),
+        .I1(\LedCounter[3]_i_7_n_0 ),
+        .I2(\LedCounter[3]_i_8_n_0 ),
+        .I3(\LedCounter[3]_i_9_n_0 ),
+        .I4(\LedCounter[3]_i_10_n_0 ),
+        .I5(\LedCounter[3]_i_11_n_0 ),
+        .O(\LedCounter[3]_i_5_n_0 ));
+  LUT4 #(
+    .INIT(16'h8000)) 
+    \LedCounter[3]_i_6 
+       (.I0(secDealy_reg[25]),
+        .I1(secDealy_reg[23]),
+        .I2(secDealy_reg[22]),
+        .I3(secDealy_reg[21]),
+        .O(\LedCounter[3]_i_6_n_0 ));
+  LUT4 #(
+    .INIT(16'h8000)) 
+    \LedCounter[3]_i_7 
+       (.I0(secDealy_reg[20]),
+        .I1(secDealy_reg[19]),
+        .I2(secDealy_reg[17]),
+        .I3(secDealy_reg[15]),
+        .O(\LedCounter[3]_i_7_n_0 ));
+  LUT4 #(
+    .INIT(16'h0004)) 
+    \LedCounter[3]_i_8 
+       (.I0(secDealy_reg[6]),
+        .I1(secDealy_reg[7]),
+        .I2(secDealy_reg[9]),
+        .I3(secDealy_reg[8]),
+        .O(\LedCounter[3]_i_8_n_0 ));
+  LUT4 #(
+    .INIT(16'h0800)) 
+    \LedCounter[3]_i_9 
+       (.I0(secDealy_reg[14]),
+        .I1(secDealy_reg[13]),
+        .I2(secDealy_reg[10]),
+        .I3(secDealy_reg[12]),
+        .O(\LedCounter[3]_i_9_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \LedCounter_reg[0] 
@@ -440,22 +575,22 @@ module design_1_Led_Control_0_0_Led_Control
         .Q(m_axi_wdata[3]),
         .R(1'b0));
   LUT6 #(
-    .INIT(64'h01FF00FF01010000)) 
+    .INIT(64'hFF010101FF000000)) 
     arcomplete_i_1
-       (.I0(\FSM_onehot_state_reg_n_0_[1] ),
-        .I1(\FSM_onehot_state_reg_n_0_[3] ),
-        .I2(\FSM_onehot_state_reg_n_0_[2] ),
-        .I3(arcomplete_i_2_n_0),
-        .I4(arcomplete_reg_n_0),
-        .I5(\FSM_onehot_state_reg_n_0_[0] ),
+       (.I0(\FSM_onehot_state_reg_n_0_[3] ),
+        .I1(\FSM_onehot_state_reg_n_0_[2] ),
+        .I2(\FSM_onehot_state_reg_n_0_[1] ),
+        .I3(ack28_out),
+        .I4(\FSM_onehot_state_reg_n_0_[0] ),
+        .I5(arcomplete_reg_n_0),
         .O(arcomplete_i_1_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT2 #(
-    .INIT(4'h7)) 
+    .INIT(4'h8)) 
     arcomplete_i_2
        (.I0(m_axi_arvalid),
         .I1(m_axi_arready),
-        .O(arcomplete_i_2_n_0));
+        .O(ack28_out));
   FDRE #(
     .INIT(1'b0)) 
     arcomplete_reg
@@ -464,7 +599,7 @@ module design_1_Led_Control_0_0_Led_Control
         .D(arcomplete_i_1_n_0),
         .Q(arcomplete_reg_n_0),
         .R(awvalid_i_1_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT4 #(
     .INIT(16'h0444)) 
     arvalid_i_1
@@ -493,8 +628,8 @@ module design_1_Led_Control_0_0_Led_Control
     .INIT(8'hFE)) 
     awcomplete_i_2
        (.I0(\FSM_onehot_state_reg_n_0_[3] ),
-        .I1(\FSM_onehot_state_reg_n_0_[1] ),
-        .I2(\FSM_onehot_state_reg_n_0_[0] ),
+        .I1(\FSM_onehot_state_reg_n_0_[0] ),
+        .I2(\FSM_onehot_state_reg_n_0_[1] ),
         .O(awcomplete_i_2_n_0));
   FDRE #(
     .INIT(1'b0)) 
@@ -512,10 +647,10 @@ module design_1_Led_Control_0_0_Led_Control
   LUT4 #(
     .INIT(16'hFFFE)) 
     awvalid_i_2
-       (.I0(\FSM_onehot_state_reg_n_0_[0] ),
-        .I1(\FSM_onehot_state_reg_n_0_[1] ),
-        .I2(\FSM_onehot_state_reg_n_0_[3] ),
-        .I3(\FSM_onehot_state_reg_n_0_[2] ),
+       (.I0(\FSM_onehot_state_reg_n_0_[3] ),
+        .I1(\FSM_onehot_state_reg_n_0_[2] ),
+        .I2(\FSM_onehot_state_reg_n_0_[0] ),
+        .I3(\FSM_onehot_state_reg_n_0_[1] ),
         .O(awvalid_i_2_n_0));
   LUT4 #(
     .INIT(16'h0444)) 
@@ -532,11 +667,11 @@ module design_1_Led_Control_0_0_Led_Control
         .Q(m_axi_awvalid),
         .R(awvalid_i_1_n_0));
   LUT5 #(
-    .INIT(32'h8800F8F0)) 
+    .INIT(32'hC000EAAA)) 
     bcomplete_i_1
-       (.I0(m_axi_bready),
-        .I1(m_axi_bvalid),
-        .I2(bcomplete_reg_n_0),
+       (.I0(bcomplete_reg_n_0),
+        .I1(m_axi_bready),
+        .I2(m_axi_bvalid),
         .I3(\FSM_onehot_state_reg_n_0_[2] ),
         .I4(awcomplete_i_2_n_0),
         .O(bcomplete_i_1_n_0));
@@ -548,7 +683,7 @@ module design_1_Led_Control_0_0_Led_Control
         .D(bcomplete_i_1_n_0),
         .Q(bcomplete_reg_n_0),
         .R(awvalid_i_1_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT4 #(
     .INIT(16'h0444)) 
     bready_i_1
@@ -564,11 +699,28 @@ module design_1_Led_Control_0_0_Led_Control
         .Q(m_axi_bready),
         .R(awvalid_i_1_n_0));
   LUT5 #(
+    .INIT(32'hBBB0FFF0)) 
+    countBool_i_1
+       (.I0(m_axi_rdata[1]),
+        .I1(m_axi_rdata[0]),
+        .I2(countBool),
+        .I3(\LedCounter[3]_i_5_n_0 ),
+        .I4(rcomplete),
+        .O(countBool_i_1_n_0));
+  FDRE #(
+    .INIT(1'b0)) 
+    countBool_reg
+       (.C(m_axi_aclk),
+        .CE(1'b1),
+        .D(countBool_i_1_n_0),
+        .Q(countBool),
+        .R(1'b0));
+  LUT5 #(
     .INIT(32'hFFFF0100)) 
     rcomplete_i_1
-       (.I0(\FSM_onehot_state_reg_n_0_[0] ),
+       (.I0(\FSM_onehot_state_reg_n_0_[3] ),
         .I1(\FSM_onehot_state_reg_n_0_[2] ),
-        .I2(\FSM_onehot_state_reg_n_0_[3] ),
+        .I2(\FSM_onehot_state_reg_n_0_[0] ),
         .I3(rcomplete_reg_n_0),
         .I4(rcomplete),
         .O(rcomplete_i_1_n_0));
@@ -580,7 +732,7 @@ module design_1_Led_Control_0_0_Led_Control
         .D(rcomplete_i_1_n_0),
         .Q(rcomplete_reg_n_0),
         .R(awvalid_i_1_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT4 #(
     .INIT(16'h0444)) 
     rready_i_1
@@ -595,6 +747,284 @@ module design_1_Led_Control_0_0_Led_Control
         .D(rready),
         .Q(m_axi_rready),
         .R(awvalid_i_1_n_0));
+  LUT5 #(
+    .INIT(32'h0000A800)) 
+    \secDealy[0]_i_1 
+       (.I0(rcomplete),
+        .I1(\LedCounter[3]_i_5_n_0 ),
+        .I2(countBool),
+        .I3(m_axi_rdata[0]),
+        .I4(m_axi_rdata[1]),
+        .O(secDealy));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \secDealy[0]_i_3 
+       (.I0(secDealy_reg[0]),
+        .O(\secDealy[0]_i_3_n_0 ));
+  FDRE #(
+    .INIT(1'b0)) 
+    \secDealy_reg[0] 
+       (.C(m_axi_aclk),
+        .CE(1'b1),
+        .D(\secDealy_reg[0]_i_2_n_7 ),
+        .Q(secDealy_reg[0]),
+        .R(secDealy));
+  (* ADDER_THRESHOLD = "11" *) 
+  CARRY4 \secDealy_reg[0]_i_2 
+       (.CI(1'b0),
+        .CO({\secDealy_reg[0]_i_2_n_0 ,\secDealy_reg[0]_i_2_n_1 ,\secDealy_reg[0]_i_2_n_2 ,\secDealy_reg[0]_i_2_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b1}),
+        .O({\secDealy_reg[0]_i_2_n_4 ,\secDealy_reg[0]_i_2_n_5 ,\secDealy_reg[0]_i_2_n_6 ,\secDealy_reg[0]_i_2_n_7 }),
+        .S({secDealy_reg[3:1],\secDealy[0]_i_3_n_0 }));
+  FDRE #(
+    .INIT(1'b0)) 
+    \secDealy_reg[10] 
+       (.C(m_axi_aclk),
+        .CE(1'b1),
+        .D(\secDealy_reg[8]_i_1_n_5 ),
+        .Q(secDealy_reg[10]),
+        .R(secDealy));
+  FDRE #(
+    .INIT(1'b0)) 
+    \secDealy_reg[11] 
+       (.C(m_axi_aclk),
+        .CE(1'b1),
+        .D(\secDealy_reg[8]_i_1_n_4 ),
+        .Q(secDealy_reg[11]),
+        .R(secDealy));
+  FDRE #(
+    .INIT(1'b0)) 
+    \secDealy_reg[12] 
+       (.C(m_axi_aclk),
+        .CE(1'b1),
+        .D(\secDealy_reg[12]_i_1_n_7 ),
+        .Q(secDealy_reg[12]),
+        .R(secDealy));
+  (* ADDER_THRESHOLD = "11" *) 
+  CARRY4 \secDealy_reg[12]_i_1 
+       (.CI(\secDealy_reg[8]_i_1_n_0 ),
+        .CO({\secDealy_reg[12]_i_1_n_0 ,\secDealy_reg[12]_i_1_n_1 ,\secDealy_reg[12]_i_1_n_2 ,\secDealy_reg[12]_i_1_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\secDealy_reg[12]_i_1_n_4 ,\secDealy_reg[12]_i_1_n_5 ,\secDealy_reg[12]_i_1_n_6 ,\secDealy_reg[12]_i_1_n_7 }),
+        .S(secDealy_reg[15:12]));
+  FDRE #(
+    .INIT(1'b0)) 
+    \secDealy_reg[13] 
+       (.C(m_axi_aclk),
+        .CE(1'b1),
+        .D(\secDealy_reg[12]_i_1_n_6 ),
+        .Q(secDealy_reg[13]),
+        .R(secDealy));
+  FDRE #(
+    .INIT(1'b0)) 
+    \secDealy_reg[14] 
+       (.C(m_axi_aclk),
+        .CE(1'b1),
+        .D(\secDealy_reg[12]_i_1_n_5 ),
+        .Q(secDealy_reg[14]),
+        .R(secDealy));
+  FDRE #(
+    .INIT(1'b0)) 
+    \secDealy_reg[15] 
+       (.C(m_axi_aclk),
+        .CE(1'b1),
+        .D(\secDealy_reg[12]_i_1_n_4 ),
+        .Q(secDealy_reg[15]),
+        .R(secDealy));
+  FDRE #(
+    .INIT(1'b0)) 
+    \secDealy_reg[16] 
+       (.C(m_axi_aclk),
+        .CE(1'b1),
+        .D(\secDealy_reg[16]_i_1_n_7 ),
+        .Q(secDealy_reg[16]),
+        .R(secDealy));
+  (* ADDER_THRESHOLD = "11" *) 
+  CARRY4 \secDealy_reg[16]_i_1 
+       (.CI(\secDealy_reg[12]_i_1_n_0 ),
+        .CO({\secDealy_reg[16]_i_1_n_0 ,\secDealy_reg[16]_i_1_n_1 ,\secDealy_reg[16]_i_1_n_2 ,\secDealy_reg[16]_i_1_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\secDealy_reg[16]_i_1_n_4 ,\secDealy_reg[16]_i_1_n_5 ,\secDealy_reg[16]_i_1_n_6 ,\secDealy_reg[16]_i_1_n_7 }),
+        .S(secDealy_reg[19:16]));
+  FDRE #(
+    .INIT(1'b0)) 
+    \secDealy_reg[17] 
+       (.C(m_axi_aclk),
+        .CE(1'b1),
+        .D(\secDealy_reg[16]_i_1_n_6 ),
+        .Q(secDealy_reg[17]),
+        .R(secDealy));
+  FDRE #(
+    .INIT(1'b0)) 
+    \secDealy_reg[18] 
+       (.C(m_axi_aclk),
+        .CE(1'b1),
+        .D(\secDealy_reg[16]_i_1_n_5 ),
+        .Q(secDealy_reg[18]),
+        .R(secDealy));
+  FDRE #(
+    .INIT(1'b0)) 
+    \secDealy_reg[19] 
+       (.C(m_axi_aclk),
+        .CE(1'b1),
+        .D(\secDealy_reg[16]_i_1_n_4 ),
+        .Q(secDealy_reg[19]),
+        .R(secDealy));
+  FDRE #(
+    .INIT(1'b0)) 
+    \secDealy_reg[1] 
+       (.C(m_axi_aclk),
+        .CE(1'b1),
+        .D(\secDealy_reg[0]_i_2_n_6 ),
+        .Q(secDealy_reg[1]),
+        .R(secDealy));
+  FDRE #(
+    .INIT(1'b0)) 
+    \secDealy_reg[20] 
+       (.C(m_axi_aclk),
+        .CE(1'b1),
+        .D(\secDealy_reg[20]_i_1_n_7 ),
+        .Q(secDealy_reg[20]),
+        .R(secDealy));
+  (* ADDER_THRESHOLD = "11" *) 
+  CARRY4 \secDealy_reg[20]_i_1 
+       (.CI(\secDealy_reg[16]_i_1_n_0 ),
+        .CO({\secDealy_reg[20]_i_1_n_0 ,\secDealy_reg[20]_i_1_n_1 ,\secDealy_reg[20]_i_1_n_2 ,\secDealy_reg[20]_i_1_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\secDealy_reg[20]_i_1_n_4 ,\secDealy_reg[20]_i_1_n_5 ,\secDealy_reg[20]_i_1_n_6 ,\secDealy_reg[20]_i_1_n_7 }),
+        .S(secDealy_reg[23:20]));
+  FDRE #(
+    .INIT(1'b0)) 
+    \secDealy_reg[21] 
+       (.C(m_axi_aclk),
+        .CE(1'b1),
+        .D(\secDealy_reg[20]_i_1_n_6 ),
+        .Q(secDealy_reg[21]),
+        .R(secDealy));
+  FDRE #(
+    .INIT(1'b0)) 
+    \secDealy_reg[22] 
+       (.C(m_axi_aclk),
+        .CE(1'b1),
+        .D(\secDealy_reg[20]_i_1_n_5 ),
+        .Q(secDealy_reg[22]),
+        .R(secDealy));
+  FDRE #(
+    .INIT(1'b0)) 
+    \secDealy_reg[23] 
+       (.C(m_axi_aclk),
+        .CE(1'b1),
+        .D(\secDealy_reg[20]_i_1_n_4 ),
+        .Q(secDealy_reg[23]),
+        .R(secDealy));
+  FDRE #(
+    .INIT(1'b0)) 
+    \secDealy_reg[24] 
+       (.C(m_axi_aclk),
+        .CE(1'b1),
+        .D(\secDealy_reg[24]_i_1_n_7 ),
+        .Q(secDealy_reg[24]),
+        .R(secDealy));
+  (* ADDER_THRESHOLD = "11" *) 
+  CARRY4 \secDealy_reg[24]_i_1 
+       (.CI(\secDealy_reg[20]_i_1_n_0 ),
+        .CO({\NLW_secDealy_reg[24]_i_1_CO_UNCONNECTED [3:1],\secDealy_reg[24]_i_1_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\NLW_secDealy_reg[24]_i_1_O_UNCONNECTED [3:2],\secDealy_reg[24]_i_1_n_6 ,\secDealy_reg[24]_i_1_n_7 }),
+        .S({1'b0,1'b0,secDealy_reg[25:24]}));
+  FDRE #(
+    .INIT(1'b0)) 
+    \secDealy_reg[25] 
+       (.C(m_axi_aclk),
+        .CE(1'b1),
+        .D(\secDealy_reg[24]_i_1_n_6 ),
+        .Q(secDealy_reg[25]),
+        .R(secDealy));
+  FDRE #(
+    .INIT(1'b0)) 
+    \secDealy_reg[2] 
+       (.C(m_axi_aclk),
+        .CE(1'b1),
+        .D(\secDealy_reg[0]_i_2_n_5 ),
+        .Q(secDealy_reg[2]),
+        .R(secDealy));
+  FDRE #(
+    .INIT(1'b0)) 
+    \secDealy_reg[3] 
+       (.C(m_axi_aclk),
+        .CE(1'b1),
+        .D(\secDealy_reg[0]_i_2_n_4 ),
+        .Q(secDealy_reg[3]),
+        .R(secDealy));
+  FDRE #(
+    .INIT(1'b0)) 
+    \secDealy_reg[4] 
+       (.C(m_axi_aclk),
+        .CE(1'b1),
+        .D(\secDealy_reg[4]_i_1_n_7 ),
+        .Q(secDealy_reg[4]),
+        .R(secDealy));
+  (* ADDER_THRESHOLD = "11" *) 
+  CARRY4 \secDealy_reg[4]_i_1 
+       (.CI(\secDealy_reg[0]_i_2_n_0 ),
+        .CO({\secDealy_reg[4]_i_1_n_0 ,\secDealy_reg[4]_i_1_n_1 ,\secDealy_reg[4]_i_1_n_2 ,\secDealy_reg[4]_i_1_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\secDealy_reg[4]_i_1_n_4 ,\secDealy_reg[4]_i_1_n_5 ,\secDealy_reg[4]_i_1_n_6 ,\secDealy_reg[4]_i_1_n_7 }),
+        .S(secDealy_reg[7:4]));
+  FDRE #(
+    .INIT(1'b0)) 
+    \secDealy_reg[5] 
+       (.C(m_axi_aclk),
+        .CE(1'b1),
+        .D(\secDealy_reg[4]_i_1_n_6 ),
+        .Q(secDealy_reg[5]),
+        .R(secDealy));
+  FDRE #(
+    .INIT(1'b0)) 
+    \secDealy_reg[6] 
+       (.C(m_axi_aclk),
+        .CE(1'b1),
+        .D(\secDealy_reg[4]_i_1_n_5 ),
+        .Q(secDealy_reg[6]),
+        .R(secDealy));
+  FDRE #(
+    .INIT(1'b0)) 
+    \secDealy_reg[7] 
+       (.C(m_axi_aclk),
+        .CE(1'b1),
+        .D(\secDealy_reg[4]_i_1_n_4 ),
+        .Q(secDealy_reg[7]),
+        .R(secDealy));
+  FDRE #(
+    .INIT(1'b0)) 
+    \secDealy_reg[8] 
+       (.C(m_axi_aclk),
+        .CE(1'b1),
+        .D(\secDealy_reg[8]_i_1_n_7 ),
+        .Q(secDealy_reg[8]),
+        .R(secDealy));
+  (* ADDER_THRESHOLD = "11" *) 
+  CARRY4 \secDealy_reg[8]_i_1 
+       (.CI(\secDealy_reg[4]_i_1_n_0 ),
+        .CO({\secDealy_reg[8]_i_1_n_0 ,\secDealy_reg[8]_i_1_n_1 ,\secDealy_reg[8]_i_1_n_2 ,\secDealy_reg[8]_i_1_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\secDealy_reg[8]_i_1_n_4 ,\secDealy_reg[8]_i_1_n_5 ,\secDealy_reg[8]_i_1_n_6 ,\secDealy_reg[8]_i_1_n_7 }),
+        .S(secDealy_reg[11:8]));
+  FDRE #(
+    .INIT(1'b0)) 
+    \secDealy_reg[9] 
+       (.C(m_axi_aclk),
+        .CE(1'b1),
+        .D(\secDealy_reg[8]_i_1_n_6 ),
+        .Q(secDealy_reg[9]),
+        .R(secDealy));
   LUT5 #(
     .INIT(32'h8080FF80)) 
     wcomplete_i_1

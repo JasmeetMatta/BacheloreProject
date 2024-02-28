@@ -2,7 +2,7 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
--- Date        : Tue Feb 27 23:51:08 2024
+-- Date        : Wed Feb 28 22:03:44 2024
 -- Host        : Jasmeet running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7_V2/DFX_Nexys_A7_V2.gen/sources_1/bd/design_1/ip/design_1_Led_Control_0_0/design_1_Led_Control_0_0_sim_netlist.vhdl
@@ -41,15 +41,23 @@ architecture STRUCTURE of design_1_Led_Control_0_0_Led_Control is
   signal \FSM_onehot_state[1]_i_1_n_0\ : STD_LOGIC;
   signal \FSM_onehot_state[1]_i_2_n_0\ : STD_LOGIC;
   signal \FSM_onehot_state[2]_i_1_n_0\ : STD_LOGIC;
+  signal \FSM_onehot_state[2]_i_2_n_0\ : STD_LOGIC;
   signal \FSM_onehot_state[3]_i_1_n_0\ : STD_LOGIC;
   signal \FSM_onehot_state_reg_n_0_[0]\ : STD_LOGIC;
   signal \FSM_onehot_state_reg_n_0_[1]\ : STD_LOGIC;
   signal \FSM_onehot_state_reg_n_0_[2]\ : STD_LOGIC;
   signal \FSM_onehot_state_reg_n_0_[3]\ : STD_LOGIC;
   signal LedCounter : STD_LOGIC;
+  signal \LedCounter[3]_i_10_n_0\ : STD_LOGIC;
+  signal \LedCounter[3]_i_11_n_0\ : STD_LOGIC;
   signal \LedCounter[3]_i_4_n_0\ : STD_LOGIC;
+  signal \LedCounter[3]_i_5_n_0\ : STD_LOGIC;
+  signal \LedCounter[3]_i_6_n_0\ : STD_LOGIC;
+  signal \LedCounter[3]_i_7_n_0\ : STD_LOGIC;
+  signal \LedCounter[3]_i_8_n_0\ : STD_LOGIC;
+  signal \LedCounter[3]_i_9_n_0\ : STD_LOGIC;
+  signal ack28_out : STD_LOGIC;
   signal arcomplete_i_1_n_0 : STD_LOGIC;
-  signal arcomplete_i_2_n_0 : STD_LOGIC;
   signal arcomplete_reg_n_0 : STD_LOGIC;
   signal arvalid : STD_LOGIC;
   signal awcomplete_i_1_n_0 : STD_LOGIC;
@@ -61,6 +69,8 @@ architecture STRUCTURE of design_1_Led_Control_0_0_Led_Control is
   signal bcomplete_reg_n_0 : STD_LOGIC;
   signal bready : STD_LOGIC;
   signal complete : STD_LOGIC;
+  signal countBool : STD_LOGIC;
+  signal countBool_i_1_n_0 : STD_LOGIC;
   signal \^m_axi_arvalid\ : STD_LOGIC;
   signal \^m_axi_awvalid\ : STD_LOGIC;
   signal \^m_axi_bready\ : STD_LOGIC;
@@ -72,29 +82,93 @@ architecture STRUCTURE of design_1_Led_Control_0_0_Led_Control is
   signal rcomplete_i_1_n_0 : STD_LOGIC;
   signal rcomplete_reg_n_0 : STD_LOGIC;
   signal rready : STD_LOGIC;
+  signal secDealy : STD_LOGIC;
+  signal \secDealy[0]_i_3_n_0\ : STD_LOGIC;
+  signal secDealy_reg : STD_LOGIC_VECTOR ( 25 downto 0 );
+  signal \secDealy_reg[0]_i_2_n_0\ : STD_LOGIC;
+  signal \secDealy_reg[0]_i_2_n_1\ : STD_LOGIC;
+  signal \secDealy_reg[0]_i_2_n_2\ : STD_LOGIC;
+  signal \secDealy_reg[0]_i_2_n_3\ : STD_LOGIC;
+  signal \secDealy_reg[0]_i_2_n_4\ : STD_LOGIC;
+  signal \secDealy_reg[0]_i_2_n_5\ : STD_LOGIC;
+  signal \secDealy_reg[0]_i_2_n_6\ : STD_LOGIC;
+  signal \secDealy_reg[0]_i_2_n_7\ : STD_LOGIC;
+  signal \secDealy_reg[12]_i_1_n_0\ : STD_LOGIC;
+  signal \secDealy_reg[12]_i_1_n_1\ : STD_LOGIC;
+  signal \secDealy_reg[12]_i_1_n_2\ : STD_LOGIC;
+  signal \secDealy_reg[12]_i_1_n_3\ : STD_LOGIC;
+  signal \secDealy_reg[12]_i_1_n_4\ : STD_LOGIC;
+  signal \secDealy_reg[12]_i_1_n_5\ : STD_LOGIC;
+  signal \secDealy_reg[12]_i_1_n_6\ : STD_LOGIC;
+  signal \secDealy_reg[12]_i_1_n_7\ : STD_LOGIC;
+  signal \secDealy_reg[16]_i_1_n_0\ : STD_LOGIC;
+  signal \secDealy_reg[16]_i_1_n_1\ : STD_LOGIC;
+  signal \secDealy_reg[16]_i_1_n_2\ : STD_LOGIC;
+  signal \secDealy_reg[16]_i_1_n_3\ : STD_LOGIC;
+  signal \secDealy_reg[16]_i_1_n_4\ : STD_LOGIC;
+  signal \secDealy_reg[16]_i_1_n_5\ : STD_LOGIC;
+  signal \secDealy_reg[16]_i_1_n_6\ : STD_LOGIC;
+  signal \secDealy_reg[16]_i_1_n_7\ : STD_LOGIC;
+  signal \secDealy_reg[20]_i_1_n_0\ : STD_LOGIC;
+  signal \secDealy_reg[20]_i_1_n_1\ : STD_LOGIC;
+  signal \secDealy_reg[20]_i_1_n_2\ : STD_LOGIC;
+  signal \secDealy_reg[20]_i_1_n_3\ : STD_LOGIC;
+  signal \secDealy_reg[20]_i_1_n_4\ : STD_LOGIC;
+  signal \secDealy_reg[20]_i_1_n_5\ : STD_LOGIC;
+  signal \secDealy_reg[20]_i_1_n_6\ : STD_LOGIC;
+  signal \secDealy_reg[20]_i_1_n_7\ : STD_LOGIC;
+  signal \secDealy_reg[24]_i_1_n_3\ : STD_LOGIC;
+  signal \secDealy_reg[24]_i_1_n_6\ : STD_LOGIC;
+  signal \secDealy_reg[24]_i_1_n_7\ : STD_LOGIC;
+  signal \secDealy_reg[4]_i_1_n_0\ : STD_LOGIC;
+  signal \secDealy_reg[4]_i_1_n_1\ : STD_LOGIC;
+  signal \secDealy_reg[4]_i_1_n_2\ : STD_LOGIC;
+  signal \secDealy_reg[4]_i_1_n_3\ : STD_LOGIC;
+  signal \secDealy_reg[4]_i_1_n_4\ : STD_LOGIC;
+  signal \secDealy_reg[4]_i_1_n_5\ : STD_LOGIC;
+  signal \secDealy_reg[4]_i_1_n_6\ : STD_LOGIC;
+  signal \secDealy_reg[4]_i_1_n_7\ : STD_LOGIC;
+  signal \secDealy_reg[8]_i_1_n_0\ : STD_LOGIC;
+  signal \secDealy_reg[8]_i_1_n_1\ : STD_LOGIC;
+  signal \secDealy_reg[8]_i_1_n_2\ : STD_LOGIC;
+  signal \secDealy_reg[8]_i_1_n_3\ : STD_LOGIC;
+  signal \secDealy_reg[8]_i_1_n_4\ : STD_LOGIC;
+  signal \secDealy_reg[8]_i_1_n_5\ : STD_LOGIC;
+  signal \secDealy_reg[8]_i_1_n_6\ : STD_LOGIC;
+  signal \secDealy_reg[8]_i_1_n_7\ : STD_LOGIC;
   signal wcomplete_i_1_n_0 : STD_LOGIC;
   signal wcomplete_reg_n_0 : STD_LOGIC;
   signal wvalid : STD_LOGIC;
+  signal \NLW_secDealy_reg[24]_i_1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 1 );
+  signal \NLW_secDealy_reg[24]_i_1_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 2 );
   attribute SOFT_HLUTNM : string;
   attribute SOFT_HLUTNM of \FSM_onehot_state[0]_i_1\ : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of \FSM_onehot_state[1]_i_1\ : label is "soft_lutpair1";
   attribute SOFT_HLUTNM of \FSM_onehot_state[1]_i_2\ : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of \FSM_onehot_state[3]_i_1\ : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of \FSM_onehot_state[2]_i_2\ : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \FSM_onehot_state[3]_i_1\ : label is "soft_lutpair1";
   attribute FSM_ENCODED_STATES : string;
   attribute FSM_ENCODED_STATES of \FSM_onehot_state_reg[0]\ : label is "noop:100,readbuttonaddr:0001,readbuttondata:0010,writeled:0100,idle:1000";
   attribute FSM_ENCODED_STATES of \FSM_onehot_state_reg[1]\ : label is "noop:100,readbuttonaddr:0001,readbuttondata:0010,writeled:0100,idle:1000";
   attribute FSM_ENCODED_STATES of \FSM_onehot_state_reg[2]\ : label is "noop:100,readbuttonaddr:0001,readbuttondata:0010,writeled:0100,idle:1000";
   attribute FSM_ENCODED_STATES of \FSM_onehot_state_reg[3]\ : label is "noop:100,readbuttonaddr:0001,readbuttondata:0010,writeled:0100,idle:1000";
   attribute SOFT_HLUTNM of \LedCounter[1]_i_1\ : label is "soft_lutpair6";
-  attribute SOFT_HLUTNM of \LedCounter[2]_i_1\ : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of \LedCounter[2]_i_1\ : label is "soft_lutpair6";
   attribute SOFT_HLUTNM of \LedCounter[3]_i_2\ : label is "soft_lutpair4";
   attribute SOFT_HLUTNM of \LedCounter[3]_i_3\ : label is "soft_lutpair5";
-  attribute SOFT_HLUTNM of \LedCounter[3]_i_4\ : label is "soft_lutpair6";
-  attribute SOFT_HLUTNM of arcomplete_i_2 : label is "soft_lutpair3";
-  attribute SOFT_HLUTNM of arvalid_i_1 : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \LedCounter[3]_i_4\ : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of arcomplete_i_2 : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of arvalid_i_1 : label is "soft_lutpair2";
   attribute SOFT_HLUTNM of awcomplete_i_2 : label is "soft_lutpair5";
-  attribute SOFT_HLUTNM of bready_i_1 : label is "soft_lutpair2";
-  attribute SOFT_HLUTNM of rready_i_1 : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of bready_i_1 : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of rready_i_1 : label is "soft_lutpair3";
+  attribute ADDER_THRESHOLD : integer;
+  attribute ADDER_THRESHOLD of \secDealy_reg[0]_i_2\ : label is 11;
+  attribute ADDER_THRESHOLD of \secDealy_reg[12]_i_1\ : label is 11;
+  attribute ADDER_THRESHOLD of \secDealy_reg[16]_i_1\ : label is 11;
+  attribute ADDER_THRESHOLD of \secDealy_reg[20]_i_1\ : label is 11;
+  attribute ADDER_THRESHOLD of \secDealy_reg[24]_i_1\ : label is 11;
+  attribute ADDER_THRESHOLD of \secDealy_reg[4]_i_1\ : label is 11;
+  attribute ADDER_THRESHOLD of \secDealy_reg[8]_i_1\ : label is 11;
 begin
   m_axi_arvalid <= \^m_axi_arvalid\;
   m_axi_awvalid <= \^m_axi_awvalid\;
@@ -104,61 +178,71 @@ begin
   m_axi_wvalid <= \^m_axi_wvalid\;
 \FSM_onehot_state[0]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"FFFFAA2A"
+      INIT => X"FFFFBF00"
     )
         port map (
-      I0 => \FSM_onehot_state_reg_n_0_[0]\,
+      I0 => arcomplete_reg_n_0,
       I1 => m_axi_arready,
       I2 => \^m_axi_arvalid\,
-      I3 => arcomplete_reg_n_0,
+      I3 => \FSM_onehot_state_reg_n_0_[0]\,
       I4 => \FSM_onehot_state_reg_n_0_[3]\,
       O => \FSM_onehot_state[0]_i_1_n_0\
     );
-\FSM_onehot_state[1]_i_1\: unisim.vcomponents.LUT5
+\FSM_onehot_state[1]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"FFAABFAA"
+      INIT => X"BF00FFFFBF00BF00"
     )
         port map (
-      I0 => \FSM_onehot_state[1]_i_2_n_0\,
+      I0 => rcomplete_reg_n_0,
       I1 => \^m_axi_rready\,
       I2 => m_axi_rvalid,
       I3 => \FSM_onehot_state_reg_n_0_[1]\,
-      I4 => rcomplete_reg_n_0,
+      I4 => \FSM_onehot_state[1]_i_2_n_0\,
+      I5 => \FSM_onehot_state_reg_n_0_[0]\,
       O => \FSM_onehot_state[1]_i_1_n_0\
     );
-\FSM_onehot_state[1]_i_2\: unisim.vcomponents.LUT4
+\FSM_onehot_state[1]_i_2\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"2000"
+      INIT => X"BF"
     )
         port map (
-      I0 => \FSM_onehot_state_reg_n_0_[0]\,
-      I1 => arcomplete_reg_n_0,
+      I0 => arcomplete_reg_n_0,
+      I1 => m_axi_arready,
       I2 => \^m_axi_arvalid\,
-      I3 => m_axi_arready,
       O => \FSM_onehot_state[1]_i_2_n_0\
     );
 \FSM_onehot_state[2]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"AA2AFFFFAA2AAA2A"
-    )
-        port map (
-      I0 => \FSM_onehot_state_reg_n_0_[2]\,
-      I1 => \^m_axi_bready\,
-      I2 => m_axi_bvalid,
-      I3 => bcomplete_reg_n_0,
-      I4 => rcomplete_reg_n_0,
-      I5 => rcomplete,
-      O => \FSM_onehot_state[2]_i_1_n_0\
-    );
-\FSM_onehot_state[3]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"2000"
+      INIT => X"8AAAFFFF8AAA8AAA"
     )
         port map (
       I0 => \FSM_onehot_state_reg_n_0_[2]\,
       I1 => bcomplete_reg_n_0,
-      I2 => m_axi_bvalid,
-      I3 => \^m_axi_bready\,
+      I2 => \^m_axi_bready\,
+      I3 => m_axi_bvalid,
+      I4 => \FSM_onehot_state[2]_i_2_n_0\,
+      I5 => \FSM_onehot_state_reg_n_0_[1]\,
+      O => \FSM_onehot_state[2]_i_1_n_0\
+    );
+\FSM_onehot_state[2]_i_2\: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"BF"
+    )
+        port map (
+      I0 => rcomplete_reg_n_0,
+      I1 => \^m_axi_rready\,
+      I2 => m_axi_rvalid,
+      O => \FSM_onehot_state[2]_i_2_n_0\
+    );
+\FSM_onehot_state[3]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0080"
+    )
+        port map (
+      I0 => \FSM_onehot_state_reg_n_0_[2]\,
+      I1 => m_axi_bvalid,
+      I2 => \^m_axi_bready\,
+      I3 => bcomplete_reg_n_0,
       O => \FSM_onehot_state[3]_i_1_n_0\
     );
 \FSM_onehot_state_reg[0]\: unisim.vcomponents.FDSE
@@ -218,32 +302,56 @@ begin
       INIT => X"6"
     )
         port map (
-      I0 => \^m_axi_wdata\(0),
-      I1 => \^m_axi_wdata\(1),
+      I0 => \^m_axi_wdata\(1),
+      I1 => \^m_axi_wdata\(0),
       O => p_0_in(1)
     );
 \LedCounter[2]_i_1\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"78"
+      INIT => X"6A"
     )
         port map (
-      I0 => \^m_axi_wdata\(1),
-      I1 => \^m_axi_wdata\(0),
-      I2 => \^m_axi_wdata\(2),
+      I0 => \^m_axi_wdata\(2),
+      I1 => \^m_axi_wdata\(1),
+      I2 => \^m_axi_wdata\(0),
       O => p_0_in(2)
     );
 \LedCounter[3]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"20202020F0202020"
+      INIT => X"2A222A222A222222"
     )
         port map (
-      I0 => m_axi_rdata(0),
-      I1 => m_axi_rdata(1),
-      I2 => rcomplete,
-      I3 => \^m_axi_wdata\(3),
-      I4 => \^m_axi_wdata\(2),
-      I5 => \LedCounter[3]_i_4_n_0\,
+      I0 => rcomplete,
+      I1 => \LedCounter[3]_i_4_n_0\,
+      I2 => m_axi_rdata(1),
+      I3 => m_axi_rdata(0),
+      I4 => countBool,
+      I5 => \LedCounter[3]_i_5_n_0\,
       O => LedCounter
+    );
+\LedCounter[3]_i_10\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"FFFE"
+    )
+        port map (
+      I0 => secDealy_reg(18),
+      I1 => secDealy_reg(4),
+      I2 => secDealy_reg(3),
+      I3 => secDealy_reg(2),
+      O => \LedCounter[3]_i_10_n_0\
+    );
+\LedCounter[3]_i_11\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"FFFFFFFFFFFFFFFE"
+    )
+        port map (
+      I0 => secDealy_reg(24),
+      I1 => secDealy_reg(11),
+      I2 => secDealy_reg(0),
+      I3 => secDealy_reg(1),
+      I4 => secDealy_reg(16),
+      I5 => secDealy_reg(5),
+      O => \LedCounter[3]_i_11_n_0\
     );
 \LedCounter[3]_i_2\: unisim.vcomponents.LUT4
     generic map(
@@ -251,8 +359,8 @@ begin
     )
         port map (
       I0 => \^m_axi_wdata\(2),
-      I1 => \^m_axi_wdata\(0),
-      I2 => \^m_axi_wdata\(1),
+      I1 => \^m_axi_wdata\(1),
+      I2 => \^m_axi_wdata\(0),
       I3 => \^m_axi_wdata\(3),
       O => p_0_in(3)
     );
@@ -266,14 +374,73 @@ begin
       I2 => m_axi_rvalid,
       O => rcomplete
     );
-\LedCounter[3]_i_4\: unisim.vcomponents.LUT2
+\LedCounter[3]_i_4\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"7"
+      INIT => X"7FFF"
     )
         port map (
-      I0 => \^m_axi_wdata\(0),
-      I1 => \^m_axi_wdata\(1),
+      I0 => \^m_axi_wdata\(2),
+      I1 => \^m_axi_wdata\(3),
+      I2 => \^m_axi_wdata\(1),
+      I3 => \^m_axi_wdata\(0),
       O => \LedCounter[3]_i_4_n_0\
+    );
+\LedCounter[3]_i_5\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"0000000000008000"
+    )
+        port map (
+      I0 => \LedCounter[3]_i_6_n_0\,
+      I1 => \LedCounter[3]_i_7_n_0\,
+      I2 => \LedCounter[3]_i_8_n_0\,
+      I3 => \LedCounter[3]_i_9_n_0\,
+      I4 => \LedCounter[3]_i_10_n_0\,
+      I5 => \LedCounter[3]_i_11_n_0\,
+      O => \LedCounter[3]_i_5_n_0\
+    );
+\LedCounter[3]_i_6\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"8000"
+    )
+        port map (
+      I0 => secDealy_reg(25),
+      I1 => secDealy_reg(23),
+      I2 => secDealy_reg(22),
+      I3 => secDealy_reg(21),
+      O => \LedCounter[3]_i_6_n_0\
+    );
+\LedCounter[3]_i_7\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"8000"
+    )
+        port map (
+      I0 => secDealy_reg(20),
+      I1 => secDealy_reg(19),
+      I2 => secDealy_reg(17),
+      I3 => secDealy_reg(15),
+      O => \LedCounter[3]_i_7_n_0\
+    );
+\LedCounter[3]_i_8\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0004"
+    )
+        port map (
+      I0 => secDealy_reg(6),
+      I1 => secDealy_reg(7),
+      I2 => secDealy_reg(9),
+      I3 => secDealy_reg(8),
+      O => \LedCounter[3]_i_8_n_0\
+    );
+\LedCounter[3]_i_9\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0800"
+    )
+        port map (
+      I0 => secDealy_reg(14),
+      I1 => secDealy_reg(13),
+      I2 => secDealy_reg(10),
+      I3 => secDealy_reg(12),
+      O => \LedCounter[3]_i_9_n_0\
     );
 \LedCounter_reg[0]\: unisim.vcomponents.FDRE
     generic map(
@@ -321,25 +488,25 @@ begin
     );
 arcomplete_i_1: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"01FF00FF01010000"
+      INIT => X"FF010101FF000000"
     )
         port map (
-      I0 => \FSM_onehot_state_reg_n_0_[1]\,
-      I1 => \FSM_onehot_state_reg_n_0_[3]\,
-      I2 => \FSM_onehot_state_reg_n_0_[2]\,
-      I3 => arcomplete_i_2_n_0,
-      I4 => arcomplete_reg_n_0,
-      I5 => \FSM_onehot_state_reg_n_0_[0]\,
+      I0 => \FSM_onehot_state_reg_n_0_[3]\,
+      I1 => \FSM_onehot_state_reg_n_0_[2]\,
+      I2 => \FSM_onehot_state_reg_n_0_[1]\,
+      I3 => ack28_out,
+      I4 => \FSM_onehot_state_reg_n_0_[0]\,
+      I5 => arcomplete_reg_n_0,
       O => arcomplete_i_1_n_0
     );
 arcomplete_i_2: unisim.vcomponents.LUT2
     generic map(
-      INIT => X"7"
+      INIT => X"8"
     )
         port map (
       I0 => \^m_axi_arvalid\,
       I1 => m_axi_arready,
-      O => arcomplete_i_2_n_0
+      O => ack28_out
     );
 arcomplete_reg: unisim.vcomponents.FDRE
     generic map(
@@ -389,8 +556,8 @@ awcomplete_i_2: unisim.vcomponents.LUT3
     )
         port map (
       I0 => \FSM_onehot_state_reg_n_0_[3]\,
-      I1 => \FSM_onehot_state_reg_n_0_[1]\,
-      I2 => \FSM_onehot_state_reg_n_0_[0]\,
+      I1 => \FSM_onehot_state_reg_n_0_[0]\,
+      I2 => \FSM_onehot_state_reg_n_0_[1]\,
       O => awcomplete_i_2_n_0
     );
 awcomplete_reg: unisim.vcomponents.FDRE
@@ -417,10 +584,10 @@ awvalid_i_2: unisim.vcomponents.LUT4
       INIT => X"FFFE"
     )
         port map (
-      I0 => \FSM_onehot_state_reg_n_0_[0]\,
-      I1 => \FSM_onehot_state_reg_n_0_[1]\,
-      I2 => \FSM_onehot_state_reg_n_0_[3]\,
-      I3 => \FSM_onehot_state_reg_n_0_[2]\,
+      I0 => \FSM_onehot_state_reg_n_0_[3]\,
+      I1 => \FSM_onehot_state_reg_n_0_[2]\,
+      I2 => \FSM_onehot_state_reg_n_0_[0]\,
+      I3 => \FSM_onehot_state_reg_n_0_[1]\,
       O => awvalid_i_2_n_0
     );
 awvalid_i_3: unisim.vcomponents.LUT4
@@ -444,12 +611,12 @@ awvalid_reg: unisim.vcomponents.FDRE
     );
 bcomplete_i_1: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"8800F8F0"
+      INIT => X"C000EAAA"
     )
         port map (
-      I0 => \^m_axi_bready\,
-      I1 => m_axi_bvalid,
-      I2 => bcomplete_reg_n_0,
+      I0 => bcomplete_reg_n_0,
+      I1 => \^m_axi_bready\,
+      I2 => m_axi_bvalid,
       I3 => \FSM_onehot_state_reg_n_0_[2]\,
       I4 => awcomplete_i_2_n_0,
       O => bcomplete_i_1_n_0
@@ -484,14 +651,37 @@ bready_reg: unisim.vcomponents.FDRE
       Q => \^m_axi_bready\,
       R => awvalid_i_1_n_0
     );
+countBool_i_1: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"BBB0FFF0"
+    )
+        port map (
+      I0 => m_axi_rdata(1),
+      I1 => m_axi_rdata(0),
+      I2 => countBool,
+      I3 => \LedCounter[3]_i_5_n_0\,
+      I4 => rcomplete,
+      O => countBool_i_1_n_0
+    );
+countBool_reg: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => m_axi_aclk,
+      CE => '1',
+      D => countBool_i_1_n_0,
+      Q => countBool,
+      R => '0'
+    );
 rcomplete_i_1: unisim.vcomponents.LUT5
     generic map(
       INIT => X"FFFF0100"
     )
         port map (
-      I0 => \FSM_onehot_state_reg_n_0_[0]\,
+      I0 => \FSM_onehot_state_reg_n_0_[3]\,
       I1 => \FSM_onehot_state_reg_n_0_[2]\,
-      I2 => \FSM_onehot_state_reg_n_0_[3]\,
+      I2 => \FSM_onehot_state_reg_n_0_[0]\,
       I3 => rcomplete_reg_n_0,
       I4 => rcomplete,
       O => rcomplete_i_1_n_0
@@ -525,6 +715,416 @@ rready_reg: unisim.vcomponents.FDRE
       D => rready,
       Q => \^m_axi_rready\,
       R => awvalid_i_1_n_0
+    );
+\secDealy[0]_i_1\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"0000A800"
+    )
+        port map (
+      I0 => rcomplete,
+      I1 => \LedCounter[3]_i_5_n_0\,
+      I2 => countBool,
+      I3 => m_axi_rdata(0),
+      I4 => m_axi_rdata(1),
+      O => secDealy
+    );
+\secDealy[0]_i_3\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => secDealy_reg(0),
+      O => \secDealy[0]_i_3_n_0\
+    );
+\secDealy_reg[0]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => m_axi_aclk,
+      CE => '1',
+      D => \secDealy_reg[0]_i_2_n_7\,
+      Q => secDealy_reg(0),
+      R => secDealy
+    );
+\secDealy_reg[0]_i_2\: unisim.vcomponents.CARRY4
+     port map (
+      CI => '0',
+      CO(3) => \secDealy_reg[0]_i_2_n_0\,
+      CO(2) => \secDealy_reg[0]_i_2_n_1\,
+      CO(1) => \secDealy_reg[0]_i_2_n_2\,
+      CO(0) => \secDealy_reg[0]_i_2_n_3\,
+      CYINIT => '0',
+      DI(3 downto 0) => B"0001",
+      O(3) => \secDealy_reg[0]_i_2_n_4\,
+      O(2) => \secDealy_reg[0]_i_2_n_5\,
+      O(1) => \secDealy_reg[0]_i_2_n_6\,
+      O(0) => \secDealy_reg[0]_i_2_n_7\,
+      S(3 downto 1) => secDealy_reg(3 downto 1),
+      S(0) => \secDealy[0]_i_3_n_0\
+    );
+\secDealy_reg[10]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => m_axi_aclk,
+      CE => '1',
+      D => \secDealy_reg[8]_i_1_n_5\,
+      Q => secDealy_reg(10),
+      R => secDealy
+    );
+\secDealy_reg[11]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => m_axi_aclk,
+      CE => '1',
+      D => \secDealy_reg[8]_i_1_n_4\,
+      Q => secDealy_reg(11),
+      R => secDealy
+    );
+\secDealy_reg[12]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => m_axi_aclk,
+      CE => '1',
+      D => \secDealy_reg[12]_i_1_n_7\,
+      Q => secDealy_reg(12),
+      R => secDealy
+    );
+\secDealy_reg[12]_i_1\: unisim.vcomponents.CARRY4
+     port map (
+      CI => \secDealy_reg[8]_i_1_n_0\,
+      CO(3) => \secDealy_reg[12]_i_1_n_0\,
+      CO(2) => \secDealy_reg[12]_i_1_n_1\,
+      CO(1) => \secDealy_reg[12]_i_1_n_2\,
+      CO(0) => \secDealy_reg[12]_i_1_n_3\,
+      CYINIT => '0',
+      DI(3 downto 0) => B"0000",
+      O(3) => \secDealy_reg[12]_i_1_n_4\,
+      O(2) => \secDealy_reg[12]_i_1_n_5\,
+      O(1) => \secDealy_reg[12]_i_1_n_6\,
+      O(0) => \secDealy_reg[12]_i_1_n_7\,
+      S(3 downto 0) => secDealy_reg(15 downto 12)
+    );
+\secDealy_reg[13]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => m_axi_aclk,
+      CE => '1',
+      D => \secDealy_reg[12]_i_1_n_6\,
+      Q => secDealy_reg(13),
+      R => secDealy
+    );
+\secDealy_reg[14]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => m_axi_aclk,
+      CE => '1',
+      D => \secDealy_reg[12]_i_1_n_5\,
+      Q => secDealy_reg(14),
+      R => secDealy
+    );
+\secDealy_reg[15]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => m_axi_aclk,
+      CE => '1',
+      D => \secDealy_reg[12]_i_1_n_4\,
+      Q => secDealy_reg(15),
+      R => secDealy
+    );
+\secDealy_reg[16]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => m_axi_aclk,
+      CE => '1',
+      D => \secDealy_reg[16]_i_1_n_7\,
+      Q => secDealy_reg(16),
+      R => secDealy
+    );
+\secDealy_reg[16]_i_1\: unisim.vcomponents.CARRY4
+     port map (
+      CI => \secDealy_reg[12]_i_1_n_0\,
+      CO(3) => \secDealy_reg[16]_i_1_n_0\,
+      CO(2) => \secDealy_reg[16]_i_1_n_1\,
+      CO(1) => \secDealy_reg[16]_i_1_n_2\,
+      CO(0) => \secDealy_reg[16]_i_1_n_3\,
+      CYINIT => '0',
+      DI(3 downto 0) => B"0000",
+      O(3) => \secDealy_reg[16]_i_1_n_4\,
+      O(2) => \secDealy_reg[16]_i_1_n_5\,
+      O(1) => \secDealy_reg[16]_i_1_n_6\,
+      O(0) => \secDealy_reg[16]_i_1_n_7\,
+      S(3 downto 0) => secDealy_reg(19 downto 16)
+    );
+\secDealy_reg[17]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => m_axi_aclk,
+      CE => '1',
+      D => \secDealy_reg[16]_i_1_n_6\,
+      Q => secDealy_reg(17),
+      R => secDealy
+    );
+\secDealy_reg[18]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => m_axi_aclk,
+      CE => '1',
+      D => \secDealy_reg[16]_i_1_n_5\,
+      Q => secDealy_reg(18),
+      R => secDealy
+    );
+\secDealy_reg[19]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => m_axi_aclk,
+      CE => '1',
+      D => \secDealy_reg[16]_i_1_n_4\,
+      Q => secDealy_reg(19),
+      R => secDealy
+    );
+\secDealy_reg[1]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => m_axi_aclk,
+      CE => '1',
+      D => \secDealy_reg[0]_i_2_n_6\,
+      Q => secDealy_reg(1),
+      R => secDealy
+    );
+\secDealy_reg[20]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => m_axi_aclk,
+      CE => '1',
+      D => \secDealy_reg[20]_i_1_n_7\,
+      Q => secDealy_reg(20),
+      R => secDealy
+    );
+\secDealy_reg[20]_i_1\: unisim.vcomponents.CARRY4
+     port map (
+      CI => \secDealy_reg[16]_i_1_n_0\,
+      CO(3) => \secDealy_reg[20]_i_1_n_0\,
+      CO(2) => \secDealy_reg[20]_i_1_n_1\,
+      CO(1) => \secDealy_reg[20]_i_1_n_2\,
+      CO(0) => \secDealy_reg[20]_i_1_n_3\,
+      CYINIT => '0',
+      DI(3 downto 0) => B"0000",
+      O(3) => \secDealy_reg[20]_i_1_n_4\,
+      O(2) => \secDealy_reg[20]_i_1_n_5\,
+      O(1) => \secDealy_reg[20]_i_1_n_6\,
+      O(0) => \secDealy_reg[20]_i_1_n_7\,
+      S(3 downto 0) => secDealy_reg(23 downto 20)
+    );
+\secDealy_reg[21]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => m_axi_aclk,
+      CE => '1',
+      D => \secDealy_reg[20]_i_1_n_6\,
+      Q => secDealy_reg(21),
+      R => secDealy
+    );
+\secDealy_reg[22]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => m_axi_aclk,
+      CE => '1',
+      D => \secDealy_reg[20]_i_1_n_5\,
+      Q => secDealy_reg(22),
+      R => secDealy
+    );
+\secDealy_reg[23]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => m_axi_aclk,
+      CE => '1',
+      D => \secDealy_reg[20]_i_1_n_4\,
+      Q => secDealy_reg(23),
+      R => secDealy
+    );
+\secDealy_reg[24]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => m_axi_aclk,
+      CE => '1',
+      D => \secDealy_reg[24]_i_1_n_7\,
+      Q => secDealy_reg(24),
+      R => secDealy
+    );
+\secDealy_reg[24]_i_1\: unisim.vcomponents.CARRY4
+     port map (
+      CI => \secDealy_reg[20]_i_1_n_0\,
+      CO(3 downto 1) => \NLW_secDealy_reg[24]_i_1_CO_UNCONNECTED\(3 downto 1),
+      CO(0) => \secDealy_reg[24]_i_1_n_3\,
+      CYINIT => '0',
+      DI(3 downto 0) => B"0000",
+      O(3 downto 2) => \NLW_secDealy_reg[24]_i_1_O_UNCONNECTED\(3 downto 2),
+      O(1) => \secDealy_reg[24]_i_1_n_6\,
+      O(0) => \secDealy_reg[24]_i_1_n_7\,
+      S(3 downto 2) => B"00",
+      S(1 downto 0) => secDealy_reg(25 downto 24)
+    );
+\secDealy_reg[25]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => m_axi_aclk,
+      CE => '1',
+      D => \secDealy_reg[24]_i_1_n_6\,
+      Q => secDealy_reg(25),
+      R => secDealy
+    );
+\secDealy_reg[2]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => m_axi_aclk,
+      CE => '1',
+      D => \secDealy_reg[0]_i_2_n_5\,
+      Q => secDealy_reg(2),
+      R => secDealy
+    );
+\secDealy_reg[3]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => m_axi_aclk,
+      CE => '1',
+      D => \secDealy_reg[0]_i_2_n_4\,
+      Q => secDealy_reg(3),
+      R => secDealy
+    );
+\secDealy_reg[4]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => m_axi_aclk,
+      CE => '1',
+      D => \secDealy_reg[4]_i_1_n_7\,
+      Q => secDealy_reg(4),
+      R => secDealy
+    );
+\secDealy_reg[4]_i_1\: unisim.vcomponents.CARRY4
+     port map (
+      CI => \secDealy_reg[0]_i_2_n_0\,
+      CO(3) => \secDealy_reg[4]_i_1_n_0\,
+      CO(2) => \secDealy_reg[4]_i_1_n_1\,
+      CO(1) => \secDealy_reg[4]_i_1_n_2\,
+      CO(0) => \secDealy_reg[4]_i_1_n_3\,
+      CYINIT => '0',
+      DI(3 downto 0) => B"0000",
+      O(3) => \secDealy_reg[4]_i_1_n_4\,
+      O(2) => \secDealy_reg[4]_i_1_n_5\,
+      O(1) => \secDealy_reg[4]_i_1_n_6\,
+      O(0) => \secDealy_reg[4]_i_1_n_7\,
+      S(3 downto 0) => secDealy_reg(7 downto 4)
+    );
+\secDealy_reg[5]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => m_axi_aclk,
+      CE => '1',
+      D => \secDealy_reg[4]_i_1_n_6\,
+      Q => secDealy_reg(5),
+      R => secDealy
+    );
+\secDealy_reg[6]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => m_axi_aclk,
+      CE => '1',
+      D => \secDealy_reg[4]_i_1_n_5\,
+      Q => secDealy_reg(6),
+      R => secDealy
+    );
+\secDealy_reg[7]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => m_axi_aclk,
+      CE => '1',
+      D => \secDealy_reg[4]_i_1_n_4\,
+      Q => secDealy_reg(7),
+      R => secDealy
+    );
+\secDealy_reg[8]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => m_axi_aclk,
+      CE => '1',
+      D => \secDealy_reg[8]_i_1_n_7\,
+      Q => secDealy_reg(8),
+      R => secDealy
+    );
+\secDealy_reg[8]_i_1\: unisim.vcomponents.CARRY4
+     port map (
+      CI => \secDealy_reg[4]_i_1_n_0\,
+      CO(3) => \secDealy_reg[8]_i_1_n_0\,
+      CO(2) => \secDealy_reg[8]_i_1_n_1\,
+      CO(1) => \secDealy_reg[8]_i_1_n_2\,
+      CO(0) => \secDealy_reg[8]_i_1_n_3\,
+      CYINIT => '0',
+      DI(3 downto 0) => B"0000",
+      O(3) => \secDealy_reg[8]_i_1_n_4\,
+      O(2) => \secDealy_reg[8]_i_1_n_5\,
+      O(1) => \secDealy_reg[8]_i_1_n_6\,
+      O(0) => \secDealy_reg[8]_i_1_n_7\,
+      S(3 downto 0) => secDealy_reg(11 downto 8)
+    );
+\secDealy_reg[9]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => m_axi_aclk,
+      CE => '1',
+      D => \secDealy_reg[8]_i_1_n_6\,
+      Q => secDealy_reg(9),
+      R => secDealy
     );
 wcomplete_i_1: unisim.vcomponents.LUT5
     generic map(

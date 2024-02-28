@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:Led_Control:1.0
--- IP Revision: 18
+-- IP Revision: 49
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -106,7 +106,7 @@ ARCHITECTURE design_1_Led_Control_0_0_arch OF design_1_Led_Control_0_0 IS
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF design_1_Led_Control_0_0_arch : ARCHITECTURE IS "design_1_Led_Control_0_0,Led_Control,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF design_1_Led_Control_0_0_arch: ARCHITECTURE IS "design_1_Led_Control_0_0,Led_Control,{x_ipProduct=Vivado 2023.1,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=Led_Control,x_ipVersion=1.0,x_ipCoreRevision=18,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}";
+  ATTRIBUTE CORE_GENERATION_INFO OF design_1_Led_Control_0_0_arch: ARCHITECTURE IS "design_1_Led_Control_0_0,Led_Control,{x_ipProduct=Vivado 2023.1,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=Led_Control,x_ipVersion=1.0,x_ipCoreRevision=49,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}";
   ATTRIBUTE IP_DEFINITION_SOURCE : STRING;
   ATTRIBUTE IP_DEFINITION_SOURCE OF design_1_Led_Control_0_0_arch: ARCHITECTURE IS "package_project";
   ATTRIBUTE X_INTERFACE_INFO : STRING;

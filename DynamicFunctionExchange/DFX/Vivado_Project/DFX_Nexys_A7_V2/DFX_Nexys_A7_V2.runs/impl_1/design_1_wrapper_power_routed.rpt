@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date             : Tue Feb 27 23:55:19 2024
+| Date             : Wed Feb 28 22:06:42 2024
 | Host             : Jasmeet running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.010 |        7 |       --- |             --- |
-| Slice Logic              |     0.003 |     4410 |       --- |             --- |
-|   LUT as Logic           |     0.002 |     1473 |     63400 |            2.32 |
+| Slice Logic              |     0.003 |     4455 |       --- |             --- |
+|   LUT as Logic           |     0.002 |     1485 |     63400 |            2.34 |
 |   LUT as Distributed RAM |    <0.001 |       96 |     19000 |            0.51 |
-|   Register               |    <0.001 |     1657 |    126800 |            1.31 |
-|   CARRY4                 |    <0.001 |       38 |     15850 |            0.24 |
+|   Register               |    <0.001 |     1684 |    126800 |            1.33 |
+|   CARRY4                 |    <0.001 |       45 |     15850 |            0.28 |
 |   F7/F8 Muxes            |    <0.001 |      108 |     63400 |            0.17 |
 |   LUT as Shift Register  |    <0.001 |       64 |     19000 |            0.34 |
 |   Others                 |     0.000 |      485 |       --- |             --- |
-| Signals                  |     0.005 |     2995 |       --- |             --- |
+| Signals                  |     0.005 |     3032 |       --- |             --- |
 | Block RAM                |     0.001 |       16 |       135 |           11.85 |
 | MMCM                     |     0.106 |        1 |         6 |           16.67 |
 | I/O                      |    <0.001 |       23 |       210 |           10.95 |
@@ -76,7 +76,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.035 |       0.019 |      0.016 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.035 |       0.020 |      0.016 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.077 |       0.059 |      0.018 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
