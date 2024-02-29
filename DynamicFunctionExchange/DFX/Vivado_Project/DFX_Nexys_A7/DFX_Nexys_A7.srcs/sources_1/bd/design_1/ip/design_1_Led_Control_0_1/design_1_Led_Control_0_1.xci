@@ -4,7 +4,7 @@
     "xci_name": "design_1_Led_Control_0_1",
     "cell_name": "Led_Control_0",
     "component_reference": "xilinx.com:user:Led_Control:1.0",
-    "ip_revision": "3",
+    "ip_revision": "5",
     "gen_directory": "../../../../../../DFX_Nexys_A7.gen/sources_1/bd/design_1/ip/design_1_Led_Control_0_1",
     "parameters": {
       "component_parameters": {
@@ -25,7 +25,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "3" } ],
+        "IPREVISION": [ { "value": "5" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../DFX_Nexys_A7.gen/sources_1/bd/design_1/ip/design_1_Led_Control_0_1" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],

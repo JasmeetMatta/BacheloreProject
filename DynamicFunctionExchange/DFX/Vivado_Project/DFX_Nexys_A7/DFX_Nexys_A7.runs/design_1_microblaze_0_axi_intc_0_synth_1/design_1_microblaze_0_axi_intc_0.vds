@@ -3,8 +3,8 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Mon Feb 12 17:27:02 2024
-# Process ID: 6828
+# Start of session at: Thu Feb 29 19:10:13 2024
+# Process ID: 22560
 # Current directory: C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.runs/design_1_microblaze_0_axi_intc_0_synth_1
 # Command line: vivado.exe -log design_1_microblaze_0_axi_intc_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_microblaze_0_axi_intc_0.tcl
 # Log file: C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.runs/design_1_microblaze_0_axi_intc_0_synth_1/design_1_microblaze_0_axi_intc_0.vds
@@ -12,7 +12,10 @@
 # Running On: Jasmeet, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 16990 MB
 #-----------------------------------------------------------
 source design_1_microblaze_0_axi_intc_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 442.375 ; gain = 163.703
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 442.391 ; gain = 164.613
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jasme/Desktop/DFX/Vivado_Project/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2023.1/data/ip'.
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_microblaze_0_axi_intc_0
 Command: synth_design -top design_1_microblaze_0_axi_intc_0 -part xc7a100tcsg324-1 -incremental_mode off -mode out_of_context
 Starting synth_design
@@ -21,9 +24,10 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 16960
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [Synth 8-7075] Helper process launched with PID 25904
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 1285.402 ; gain = 409.832
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1285.387 ; gain = 410.020
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_axi_intc_0' [c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/synth/design_1_microblaze_0_axi_intc_0.vhd:89]
 	Parameter C_FAMILY bound to: artix7 - type: string 
@@ -190,54 +194,45 @@ WARNING: [Synth 8-7129] Port Interrupt_address_in[1] in module intc_core is eith
 WARNING: [Synth 8-7129] Port Interrupt_address_in[0] in module intc_core is either unconnected or has no load
 WARNING: [Synth 8-7129] Port irq_in in module axi_intc is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 1387.812 ; gain = 512.242
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 1387.688 ; gain = 512.320
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 1387.812 ; gain = 512.242
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 1387.688 ; gain = 512.320
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 1387.812 ; gain = 512.242
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 1387.688 ; gain = 512.320
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1387.812 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1387.688 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_ooc.xdc] for cell 'U0'
-Parsing XDC File [c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0.xdc] for cell 'U0'
-Parsing XDC File [C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.runs/design_1_microblaze_0_axi_intc_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.runs/design_1_microblaze_0_axi_intc_0_synth_1/dont_touch.xdc]
-Parsing XDC File [c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_clocks.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_clocks.xdc] for cell 'U0'
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1438.398 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1484.637 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.304 . Memory (MB): peak = 1440.375 ; gain = 1.977
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.164 . Memory (MB): peak = 1484.652 ; gain = 0.016
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:36 . Memory (MB): peak = 1440.375 ; gain = 564.805
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:30 . Memory (MB): peak = 1484.652 ; gain = 609.285
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:36 . Memory (MB): peak = 1440.375 ; gain = 564.805
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:30 . Memory (MB): peak = 1484.652 ; gain = 609.285
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.runs/design_1_microblaze_0_axi_intc_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:37 . Memory (MB): peak = 1440.375 ; gain = 564.805
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:30 . Memory (MB): peak = 1484.652 ; gain = 609.285
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'IRQ_LEVEL_GEN.IRQ_LEVEL_FAST_ON_AXI_CLK_GEN.current_state_reg' in module 'intc_core'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
@@ -259,7 +254,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'IRQ_LEVEL_GEN.IRQ_LEVEL_FA
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:37 . Memory (MB): peak = 1440.375 ; gain = 564.805
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:30 . Memory (MB): peak = 1484.652 ; gain = 609.285
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -299,41 +294,21 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-7129] Port processor_clk in module axi_intc is either unconnected or has no load
-WARNING: [Synth 8-7129] Port processor_rst in module axi_intc is either unconnected or has no load
-WARNING: [Synth 8-7129] Port irq_in in module axi_intc is either unconnected or has no load
-WARNING: [Synth 8-7129] Port interrupt_address_in[31] in module axi_intc is either unconnected or has no load
-WARNING: [Synth 8-7129] Port interrupt_address_in[30] in module axi_intc is either unconnected or has no load
-WARNING: [Synth 8-7129] Port interrupt_address_in[29] in module axi_intc is either unconnected or has no load
-WARNING: [Synth 8-7129] Port interrupt_address_in[28] in module axi_intc is either unconnected or has no load
-WARNING: [Synth 8-7129] Port interrupt_address_in[27] in module axi_intc is either unconnected or has no load
-WARNING: [Synth 8-7129] Port interrupt_address_in[26] in module axi_intc is either unconnected or has no load
-WARNING: [Synth 8-7129] Port interrupt_address_in[25] in module axi_intc is either unconnected or has no load
-WARNING: [Synth 8-7129] Port interrupt_address_in[24] in module axi_intc is either unconnected or has no load
-WARNING: [Synth 8-7129] Port interrupt_address_in[23] in module axi_intc is either unconnected or has no load
-WARNING: [Synth 8-7129] Port interrupt_address_in[22] in module axi_intc is either unconnected or has no load
-WARNING: [Synth 8-7129] Port interrupt_address_in[21] in module axi_intc is either unconnected or has no load
-WARNING: [Synth 8-7129] Port interrupt_address_in[20] in module axi_intc is either unconnected or has no load
-WARNING: [Synth 8-7129] Port interrupt_address_in[19] in module axi_intc is either unconnected or has no load
-WARNING: [Synth 8-7129] Port interrupt_address_in[18] in module axi_intc is either unconnected or has no load
-WARNING: [Synth 8-7129] Port interrupt_address_in[17] in module axi_intc is either unconnected or has no load
-WARNING: [Synth 8-7129] Port interrupt_address_in[16] in module axi_intc is either unconnected or has no load
-WARNING: [Synth 8-7129] Port interrupt_address_in[15] in module axi_intc is either unconnected or has no load
-WARNING: [Synth 8-7129] Port interrupt_address_in[14] in module axi_intc is either unconnected or has no load
-INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7129] Port processor_clk in module design_1_microblaze_0_axi_intc_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port processor_rst in module design_1_microblaze_0_axi_intc_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:41 . Memory (MB): peak = 1440.375 ; gain = 564.805
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:34 . Memory (MB): peak = 1484.652 ; gain = 609.285
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 
 Distributed RAM: Preliminary Mapping Report (see note below)
-+------------+-----------------------------------------------------------------------------------------+----------------+----------------------+----------------+
-|Module Name | RTL Object                                                                              | Inference      | Size (Depth x Width) | Primitives     | 
-+------------+-----------------------------------------------------------------------------------------+----------------+----------------------+----------------+
-|U0          | INTC_CORE_I/IVAR_FAST_MODE_GEN.IVAR_REG_MEM_AXI_CLK_GEN.IVAR_REG_MEM_I/ram_i[0].ram_reg | User Attribute | 16 x 32              | RAM16X1D x 32  | 
-+------------+-----------------------------------------------------------------------------------------+----------------+----------------------+----------------+
++---------------------------------+--------------------------------------------------------------------------------------------+----------------+----------------------+----------------+
+|Module Name                      | RTL Object                                                                                 | Inference      | Size (Depth x Width) | Primitives     | 
++---------------------------------+--------------------------------------------------------------------------------------------+----------------+----------------------+----------------+
+|design_1_microblaze_0_axi_intc_0 | U0/INTC_CORE_I/IVAR_FAST_MODE_GEN.IVAR_REG_MEM_AXI_CLK_GEN.IVAR_REG_MEM_I/ram_i[0].ram_reg | User Attribute | 16 x 32              | RAM16X1D x 32  | 
++---------------------------------+--------------------------------------------------------------------------------------------+----------------+----------------------+----------------+
 
 Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
 ---------------------------------------------------------------------------------
@@ -343,24 +318,24 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:49 . Memory (MB): peak = 1440.375 ; gain = 564.805
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:43 . Memory (MB): peak = 1484.652 ; gain = 609.285
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:50 . Memory (MB): peak = 1440.375 ; gain = 564.805
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:43 . Memory (MB): peak = 1484.652 ; gain = 609.285
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 
 Distributed RAM: Final Mapping Report
-+------------+-----------------------------------------------------------------------------------------+----------------+----------------------+----------------+
-|Module Name | RTL Object                                                                              | Inference      | Size (Depth x Width) | Primitives     | 
-+------------+-----------------------------------------------------------------------------------------+----------------+----------------------+----------------+
-|U0          | INTC_CORE_I/IVAR_FAST_MODE_GEN.IVAR_REG_MEM_AXI_CLK_GEN.IVAR_REG_MEM_I/ram_i[0].ram_reg | User Attribute | 16 x 32              | RAM16X1D x 32  | 
-+------------+-----------------------------------------------------------------------------------------+----------------+----------------------+----------------+
++---------------------------------+--------------------------------------------------------------------------------------------+----------------+----------------------+----------------+
+|Module Name                      | RTL Object                                                                                 | Inference      | Size (Depth x Width) | Primitives     | 
++---------------------------------+--------------------------------------------------------------------------------------------+----------------+----------------------+----------------+
+|design_1_microblaze_0_axi_intc_0 | U0/INTC_CORE_I/IVAR_FAST_MODE_GEN.IVAR_REG_MEM_AXI_CLK_GEN.IVAR_REG_MEM_I/ram_i[0].ram_reg | User Attribute | 16 x 32              | RAM16X1D x 32  | 
++---------------------------------+--------------------------------------------------------------------------------------------+----------------+----------------------+----------------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -369,7 +344,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:50 . Memory (MB): peak = 1440.375 ; gain = 564.805
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:43 . Memory (MB): peak = 1484.652 ; gain = 609.285
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -386,38 +361,39 @@ Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-5397] Deprecated attribute BUFFER_TYPE found on pin intr[0]. Please use IO_BUFFER_TYPE or CLOCK_BUFFER_TYPE. BUFFER_TYPE will not be supported in future releases. [c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/synth/design_1_microblaze_0_axi_intc_0.vhd:59]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:57 . Memory (MB): peak = 1440.375 ; gain = 564.805
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:50 . Memory (MB): peak = 1484.652 ; gain = 609.285
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:57 . Memory (MB): peak = 1440.375 ; gain = 564.805
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:50 . Memory (MB): peak = 1484.652 ; gain = 609.285
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:57 . Memory (MB): peak = 1440.375 ; gain = 564.805
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:50 . Memory (MB): peak = 1484.652 ; gain = 609.285
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:57 . Memory (MB): peak = 1440.375 ; gain = 564.805
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:50 . Memory (MB): peak = 1484.652 ; gain = 609.285
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:57 . Memory (MB): peak = 1440.375 ; gain = 564.805
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:50 . Memory (MB): peak = 1484.652 ; gain = 609.285
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:57 . Memory (MB): peak = 1440.375 ; gain = 564.805
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:50 . Memory (MB): peak = 1484.652 ; gain = 609.285
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -444,30 +420,29 @@ Report Cell Usage:
 |9     |FDSE     |     2|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:57 . Memory (MB): peak = 1440.375 ; gain = 564.805
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:50 . Memory (MB): peak = 1484.652 ; gain = 609.285
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 36 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:49 . Memory (MB): peak = 1440.375 ; gain = 512.242
-Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:57 . Memory (MB): peak = 1440.375 ; gain = 564.805
+Synthesis finished with 0 errors, 1 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:47 . Memory (MB): peak = 1484.652 ; gain = 512.320
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:50 . Memory (MB): peak = 1484.652 ; gain = 609.285
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1440.375 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1484.652 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1440.375 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1484.652 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 32 instances were transformed.
   RAM16X1D => RAM32X1D (RAMD32(x2)): 32 instances
 
-Synth Design complete | Checksum: 602461b8
+Synth Design complete | Checksum: 178842a7
 INFO: [Common 17-83] Releasing license: Synthesis
-79 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+80 Infos, 84 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:01:06 . Memory (MB): peak = 1440.375 ; gain = 962.594
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:59 . Memory (MB): peak = 1484.652 ; gain = 1006.430
 INFO: [Common 17-1381] The checkpoint 'C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.runs/design_1_microblaze_0_axi_intc_0_synth_1/design_1_microblaze_0_axi_intc_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_microblaze_0_axi_intc_0, cache-ID = fe46c200c060fb0b
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Coretcl 2-1174] Renamed 6 cell refs.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.runs/design_1_microblaze_0_axi_intc_0_synth_1/design_1_microblaze_0_axi_intc_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_microblaze_0_axi_intc_0_utilization_synth.rpt -pb design_1_microblaze_0_axi_intc_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Feb 12 17:28:25 2024...
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 29 19:11:33 2024...

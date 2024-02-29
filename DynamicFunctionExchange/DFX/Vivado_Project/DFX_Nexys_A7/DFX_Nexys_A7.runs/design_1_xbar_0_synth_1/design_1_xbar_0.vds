@@ -3,8 +3,8 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Fri Feb 16 01:27:51 2024
-# Process ID: 10584
+# Start of session at: Thu Feb 29 19:11:39 2024
+# Process ID: 14964
 # Current directory: C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.runs/design_1_xbar_0_synth_1
 # Command line: vivado.exe -log design_1_xbar_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_xbar_0.tcl
 # Log file: C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.runs/design_1_xbar_0_synth_1/design_1_xbar_0.vds
@@ -12,9 +12,9 @@
 # Running On: Jasmeet, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 16990 MB
 #-----------------------------------------------------------
 source design_1_xbar_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 442.734 ; gain = 164.223
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 442.926 ; gain = 163.203
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/VivadoCustomIP/NexysA7_IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jasme/Desktop/DFX/Vivado_Project/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2023.1/data/ip'.
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_xbar_0
 Command: synth_design -top design_1_xbar_0 -part xc7a100tcsg324-1 -incremental_mode off -mode out_of_context
@@ -24,9 +24,10 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 14692
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [Synth 8-7075] Helper process launched with PID 25092
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1295.715 ; gain = 410.426
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1294.938 ; gain = 409.918
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_29_axi_crossbar' [c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4883]
@@ -174,53 +175,48 @@ WARNING: [Synth 8-7129] Port s_axi_arlen[0] in module axi_crossbar_v2_1_29_axi_c
 WARNING: [Synth 8-7129] Port s_axi_arsize[5] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 1521.730 ; gain = 636.441
+Finished RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 1521.203 ; gain = 636.184
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 1521.730 ; gain = 636.441
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 1521.203 ; gain = 636.184
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 1521.730 ; gain = 636.441
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 1521.203 ; gain = 636.184
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1521.730 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 1521.203 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc] for cell 'inst'
-Finished Parsing XDC File [c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc] for cell 'inst'
-Parsing XDC File [C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.runs/design_1_xbar_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.runs/design_1_xbar_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1615.957 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1617.863 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 1616.023 ; gain = 0.066
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 1618.035 ; gain = 0.172
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 1616.023 ; gain = 730.734
+Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1618.035 ; gain = 733.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 1616.023 ; gain = 730.734
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1618.035 ; gain = 733.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.runs/design_1_xbar_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 1616.023 ; gain = 730.734
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1618.035 ; gain = 733.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1616.023 ; gain = 730.734
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:39 . Memory (MB): peak = 1618.035 ; gain = 733.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -257,27 +253,27 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-INFO: [Synth 8-3936] Found unconnected internal register 'gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg' and it is trimmed from '36' to '35' bits. [c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:1731]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg' and it is trimmed from '36' to '35' bits. [c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:1731]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 1616.023 ; gain = 730.734
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:44 . Memory (MB): peak = 1618.035 ; gain = 733.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:41 . Memory (MB): peak = 1616.023 ; gain = 730.734
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:53 . Memory (MB): peak = 1618.035 ; gain = 733.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 1616.023 ; gain = 730.734
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:53 . Memory (MB): peak = 1618.035 ; gain = 733.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 1616.023 ; gain = 730.734
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:53 . Memory (MB): peak = 1618.035 ; gain = 733.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -295,37 +291,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:47 . Memory (MB): peak = 1616.023 ; gain = 730.734
+Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:01:01 . Memory (MB): peak = 1618.035 ; gain = 733.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:47 . Memory (MB): peak = 1616.023 ; gain = 730.734
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:01:01 . Memory (MB): peak = 1618.035 ; gain = 733.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:47 . Memory (MB): peak = 1616.023 ; gain = 730.734
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:01:01 . Memory (MB): peak = 1618.035 ; gain = 733.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:47 . Memory (MB): peak = 1616.023 ; gain = 730.734
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:01:01 . Memory (MB): peak = 1618.035 ; gain = 733.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:47 . Memory (MB): peak = 1616.023 ; gain = 730.734
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:01:02 . Memory (MB): peak = 1618.035 ; gain = 733.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:47 . Memory (MB): peak = 1616.023 ; gain = 730.734
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:01:02 . Memory (MB): peak = 1618.035 ; gain = 733.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -351,27 +347,26 @@ Report Cell Usage:
 |8     |FDSE |     1|
 +------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:47 . Memory (MB): peak = 1616.023 ; gain = 730.734
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:01:02 . Memory (MB): peak = 1618.035 ; gain = 733.016
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 123 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:45 . Memory (MB): peak = 1616.023 ; gain = 636.441
-Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:47 . Memory (MB): peak = 1616.023 ; gain = 730.734
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:59 . Memory (MB): peak = 1618.035 ; gain = 636.184
+Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:01:02 . Memory (MB): peak = 1618.035 ; gain = 733.016
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1616.023 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1618.035 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1616.023 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1618.035 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: da8d582
+Synth Design complete | Checksum: 5fc4c5c5
 INFO: [Common 17-83] Releasing license: Synthesis
-59 Infos, 105 Warnings, 0 Critical Warnings and 0 Errors encountered.
+58 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 1616.023 ; gain = 1128.648
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:01:09 . Memory (MB): peak = 1618.035 ; gain = 1130.094
 INFO: [Common 17-1381] The checkpoint 'C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.runs/design_1_xbar_0_synth_1/design_1_xbar_0.dcp' has been generated.
 INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_xbar_0, cache-ID = 2b96528e08910423
 INFO: [Coretcl 2-1174] Renamed 7 cell refs.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.runs/design_1_xbar_0_synth_1/design_1_xbar_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_xbar_0_utilization_synth.rpt -pb design_1_xbar_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Feb 16 01:28:57 2024...
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 29 19:13:09 2024...

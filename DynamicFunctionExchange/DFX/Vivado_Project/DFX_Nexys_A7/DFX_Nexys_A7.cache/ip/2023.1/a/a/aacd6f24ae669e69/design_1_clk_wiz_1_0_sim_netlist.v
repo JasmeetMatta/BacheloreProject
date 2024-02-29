@@ -2,7 +2,7 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-// Date        : Mon Feb 12 17:28:23 2024
+// Date        : Thu Feb 29 19:11:31 2024
 // Host        : Jasmeet running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 //               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_clk_wiz_1_0_sim_netlist.v
@@ -24,10 +24,10 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
   output locked;
   input clk_in1;
 
-  (* IBUF_LOW_PWR *) (* RTL_KEEP = "yes" *) wire clk_in1;
+  (* IBUF_LOW_PWR *) wire clk_in1;
   wire clk_out1;
   wire locked;
-  (* RTL_KEEP = "yes" *) wire resetn;
+  wire resetn;
 
   decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_design_1_clk_wiz_1_0_clk_wiz inst
        (.clk_in1(clk_in1),
@@ -37,14 +37,14 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
 endmodule
 
 module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_design_1_clk_wiz_1_0_clk_wiz
-   (clk_out1,
-    resetn,
-    locked,
-    clk_in1);
-  output clk_out1;
-  input resetn;
+   (locked,
+    clk_out1,
+    clk_in1,
+    resetn);
   output locked;
+  output clk_out1;
   input clk_in1;
+  input resetn;
 
   wire clk_in1;
   wire clk_in1_design_1_clk_wiz_1_0;

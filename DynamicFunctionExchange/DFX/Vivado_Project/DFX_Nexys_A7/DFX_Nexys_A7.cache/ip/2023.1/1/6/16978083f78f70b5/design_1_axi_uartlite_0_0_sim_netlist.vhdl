@@ -2,7 +2,7 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
--- Date        : Mon Feb 12 17:28:23 2024
+-- Date        : Thu Feb 29 19:11:32 2024
 -- Host        : Jasmeet running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 --               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_axi_uartlite_0_0_sim_netlist.vhdl
@@ -343,20 +343,20 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cdc_sync is
   port (
-    \status_reg_reg[1]\ : out STD_LOGIC;
+    stop_Bit_Position_reg : out STD_LOGIC;
     scndry_out : out STD_LOGIC;
+    \status_reg_reg[1]\ : out STD_LOGIC;
     fifo_Write0 : out STD_LOGIC;
     EN_16x_Baud_reg : out STD_LOGIC;
-    stop_Bit_Position_reg : out STD_LOGIC;
-    status_reg : in STD_LOGIC_VECTOR ( 0 to 0 );
-    s_axi_aresetn : in STD_LOGIC;
-    clr_Status : in STD_LOGIC;
     frame_err_ocrd_reg : in STD_LOGIC;
     sample_Point : in STD_LOGIC;
     en_16x_Baud : in STD_LOGIC;
-    frame_err_ocrd : in STD_LOGIC;
     start_Edge_Detected : in STD_LOGIC;
     \in\ : in STD_LOGIC_VECTOR ( 0 to 0 );
+    status_reg : in STD_LOGIC_VECTOR ( 0 to 0 );
+    s_axi_aresetn : in STD_LOGIC;
+    clr_Status : in STD_LOGIC;
+    frame_err_ocrd : in STD_LOGIC;
     rx : in STD_LOGIC;
     s_axi_aclk : in STD_LOGIC
   );
@@ -502,13 +502,18 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f is
   port (
-    fifo_full_p1 : out STD_LOGIC;
-    Q : out STD_LOGIC_VECTOR ( 4 downto 0 );
-    Interrupt0 : out STD_LOGIC;
     tx_Data_Enable_reg : out STD_LOGIC;
+    Q : out STD_LOGIC_VECTOR ( 4 downto 0 );
     SS : out STD_LOGIC_VECTOR ( 0 to 0 );
-    fifo_Read : in STD_LOGIC;
+    fifo_full_p1 : out STD_LOGIC;
+    Interrupt0 : out STD_LOGIC;
+    tx_Start_reg : in STD_LOGIC;
+    tx_Start : in STD_LOGIC;
+    tx_DataBits : in STD_LOGIC;
     \INFERRED_GEN.cnt_i_reg[0]_0\ : in STD_LOGIC;
+    s_axi_aresetn : in STD_LOGIC;
+    fifo_Read : in STD_LOGIC;
+    \INFERRED_GEN.cnt_i_reg[0]_1\ : in STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[1].ce_out_i_reg\ : in STD_LOGIC;
     Bus_RNW_reg : in STD_LOGIC;
     fifo_wr : in STD_LOGIC;
@@ -516,11 +521,6 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f is
     tx_Buffer_Empty_Pre : in STD_LOGIC;
     Interrupt_reg : in STD_LOGIC_VECTOR ( 0 to 0 );
     rx_Data_Present_Pre : in STD_LOGIC;
-    tx_Start_reg : in STD_LOGIC;
-    tx_Start : in STD_LOGIC;
-    tx_DataBits : in STD_LOGIC;
-    \INFERRED_GEN.cnt_i_reg[0]_1\ : in STD_LOGIC;
-    s_axi_aresetn : in STD_LOGIC;
     s_axi_aclk : in STD_LOGIC
   );
 end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f;
@@ -559,7 +559,7 @@ FIFO_Full_i_2: unisim.vcomponents.LUT6
         port map (
       I0 => \^q\(1),
       I1 => \^q\(0),
-      I2 => \INFERRED_GEN.cnt_i_reg[0]_0\,
+      I2 => \INFERRED_GEN.cnt_i_reg[0]_1\,
       I3 => \GEN_BKEND_CE_REGISTERS[1].ce_out_i_reg\,
       I4 => Bus_RNW_reg,
       I5 => \INFERRED_GEN.cnt_i[3]_i_2__0_n_0\,
@@ -575,7 +575,7 @@ FIFO_Full_i_3: unisim.vcomponents.LUT6
       I2 => \^q\(0),
       I3 => Bus_RNW_reg,
       I4 => \GEN_BKEND_CE_REGISTERS[1].ce_out_i_reg\,
-      I5 => \INFERRED_GEN.cnt_i_reg[0]_0\,
+      I5 => \INFERRED_GEN.cnt_i_reg[0]_1\,
       O => FIFO_Full_i_3_n_0
     );
 \INFERRED_GEN.cnt_i[0]_i_1\: unisim.vcomponents.LUT6
@@ -587,7 +587,7 @@ FIFO_Full_i_3: unisim.vcomponents.LUT6
       I1 => fifo_Read,
       I2 => Bus_RNW_reg,
       I3 => \GEN_BKEND_CE_REGISTERS[1].ce_out_i_reg\,
-      I4 => \INFERRED_GEN.cnt_i_reg[0]_0\,
+      I4 => \INFERRED_GEN.cnt_i_reg[0]_1\,
       I5 => \^q\(0),
       O => addr_i_p1(0)
     );
@@ -599,7 +599,7 @@ FIFO_Full_i_3: unisim.vcomponents.LUT6
       I0 => \^q\(0),
       I1 => Bus_RNW_reg,
       I2 => \GEN_BKEND_CE_REGISTERS[1].ce_out_i_reg\,
-      I3 => \INFERRED_GEN.cnt_i_reg[0]_0\,
+      I3 => \INFERRED_GEN.cnt_i_reg[0]_1\,
       I4 => \INFERRED_GEN.cnt_i[3]_i_2__0_n_0\,
       I5 => \^q\(1),
       O => addr_i_p1(1)
@@ -644,7 +644,7 @@ FIFO_Full_i_3: unisim.vcomponents.LUT6
       INIT => X"B"
     )
         port map (
-      I0 => \INFERRED_GEN.cnt_i_reg[0]_1\,
+      I0 => \INFERRED_GEN.cnt_i_reg[0]_0\,
       I1 => s_axi_aresetn,
       O => \^ss\(0)
     );
@@ -666,7 +666,7 @@ FIFO_Full_i_3: unisim.vcomponents.LUT6
       INIT => X"0400FF0404000400"
     )
         port map (
-      I0 => \INFERRED_GEN.cnt_i_reg[0]_0\,
+      I0 => \INFERRED_GEN.cnt_i_reg[0]_1\,
       I1 => \GEN_BKEND_CE_REGISTERS[1].ce_out_i_reg\,
       I2 => Bus_RNW_reg,
       I3 => \^q\(0),
@@ -744,18 +744,18 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f_2 is
   port (
+    SS : out STD_LOGIC_VECTOR ( 0 to 0 );
     fifo_full_p1 : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 4 downto 0 );
-    SS : out STD_LOGIC_VECTOR ( 0 to 0 );
-    FIFO_Full_reg : in STD_LOGIC;
     \INFERRED_GEN.cnt_i_reg[0]_0\ : in STD_LOGIC;
+    s_axi_aresetn : in STD_LOGIC;
+    FIFO_Full_reg : in STD_LOGIC;
+    \INFERRED_GEN.cnt_i_reg[0]_1\ : in STD_LOGIC;
     fifo_Write : in STD_LOGIC;
     valid_rx : in STD_LOGIC;
     Bus_RNW_reg : in STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg\ : in STD_LOGIC;
     fifo_wr : in STD_LOGIC;
-    \INFERRED_GEN.cnt_i_reg[0]_1\ : in STD_LOGIC;
-    s_axi_aresetn : in STD_LOGIC;
     s_axi_aclk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
@@ -791,7 +791,7 @@ begin
         port map (
       I0 => \^q\(1),
       I1 => \^q\(0),
-      I2 => \INFERRED_GEN.cnt_i_reg[0]_0\,
+      I2 => \INFERRED_GEN.cnt_i_reg[0]_1\,
       I3 => fifo_Write,
       I4 => valid_rx,
       I5 => FIFO_Full_reg,
@@ -805,7 +805,7 @@ begin
       I0 => FIFO_Full_reg,
       I1 => valid_rx,
       I2 => fifo_Write,
-      I3 => \INFERRED_GEN.cnt_i_reg[0]_0\,
+      I3 => \INFERRED_GEN.cnt_i_reg[0]_1\,
       I4 => \^q\(0),
       O => addr_i_p1(0)
     );
@@ -817,7 +817,7 @@ begin
       I0 => \^q\(0),
       I1 => valid_rx,
       I2 => fifo_Write,
-      I3 => \INFERRED_GEN.cnt_i_reg[0]_0\,
+      I3 => \INFERRED_GEN.cnt_i_reg[0]_1\,
       I4 => FIFO_Full_reg,
       I5 => \^q\(1),
       O => addr_i_p1(1)
@@ -852,7 +852,7 @@ begin
       INIT => X"B"
     )
         port map (
-      I0 => \INFERRED_GEN.cnt_i_reg[0]_1\,
+      I0 => \INFERRED_GEN.cnt_i_reg[0]_0\,
       I1 => s_axi_aresetn,
       O => \^ss\(0)
     );
@@ -879,7 +879,7 @@ begin
       I2 => \^q\(0),
       I3 => valid_rx,
       I4 => fifo_Write,
-      I5 => \INFERRED_GEN.cnt_i_reg[0]_0\,
+      I5 => \INFERRED_GEN.cnt_i_reg[0]_1\,
       O => \INFERRED_GEN.cnt_i[4]_i_3__0_n_0\
     );
 \INFERRED_GEN.cnt_i_reg[0]\: unisim.vcomponents.FDSE
@@ -945,23 +945,23 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f i
   signal mux_0123 : STD_LOGIC;
   signal mux_4567 : STD_LOGIC;
   attribute srl_bus_name : string;
-  attribute srl_bus_name of \INFERRED_GEN.data_reg[15][0]_srl16\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15] ";
+  attribute srl_bus_name of \INFERRED_GEN.data_reg[15][0]_srl16\ : label is "\U0/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15] ";
   attribute srl_name : string;
-  attribute srl_name of \INFERRED_GEN.data_reg[15][0]_srl16\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][0]_srl16 ";
-  attribute srl_bus_name of \INFERRED_GEN.data_reg[15][1]_srl16\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15] ";
-  attribute srl_name of \INFERRED_GEN.data_reg[15][1]_srl16\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][1]_srl16 ";
-  attribute srl_bus_name of \INFERRED_GEN.data_reg[15][2]_srl16\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15] ";
-  attribute srl_name of \INFERRED_GEN.data_reg[15][2]_srl16\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][2]_srl16 ";
-  attribute srl_bus_name of \INFERRED_GEN.data_reg[15][3]_srl16\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15] ";
-  attribute srl_name of \INFERRED_GEN.data_reg[15][3]_srl16\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][3]_srl16 ";
-  attribute srl_bus_name of \INFERRED_GEN.data_reg[15][4]_srl16\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15] ";
-  attribute srl_name of \INFERRED_GEN.data_reg[15][4]_srl16\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][4]_srl16 ";
-  attribute srl_bus_name of \INFERRED_GEN.data_reg[15][5]_srl16\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15] ";
-  attribute srl_name of \INFERRED_GEN.data_reg[15][5]_srl16\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][5]_srl16 ";
-  attribute srl_bus_name of \INFERRED_GEN.data_reg[15][6]_srl16\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15] ";
-  attribute srl_name of \INFERRED_GEN.data_reg[15][6]_srl16\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][6]_srl16 ";
-  attribute srl_bus_name of \INFERRED_GEN.data_reg[15][7]_srl16\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15] ";
-  attribute srl_name of \INFERRED_GEN.data_reg[15][7]_srl16\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][7]_srl16 ";
+  attribute srl_name of \INFERRED_GEN.data_reg[15][0]_srl16\ : label is "\U0/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][0]_srl16 ";
+  attribute srl_bus_name of \INFERRED_GEN.data_reg[15][1]_srl16\ : label is "\U0/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15] ";
+  attribute srl_name of \INFERRED_GEN.data_reg[15][1]_srl16\ : label is "\U0/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][1]_srl16 ";
+  attribute srl_bus_name of \INFERRED_GEN.data_reg[15][2]_srl16\ : label is "\U0/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15] ";
+  attribute srl_name of \INFERRED_GEN.data_reg[15][2]_srl16\ : label is "\U0/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][2]_srl16 ";
+  attribute srl_bus_name of \INFERRED_GEN.data_reg[15][3]_srl16\ : label is "\U0/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15] ";
+  attribute srl_name of \INFERRED_GEN.data_reg[15][3]_srl16\ : label is "\U0/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][3]_srl16 ";
+  attribute srl_bus_name of \INFERRED_GEN.data_reg[15][4]_srl16\ : label is "\U0/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15] ";
+  attribute srl_name of \INFERRED_GEN.data_reg[15][4]_srl16\ : label is "\U0/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][4]_srl16 ";
+  attribute srl_bus_name of \INFERRED_GEN.data_reg[15][5]_srl16\ : label is "\U0/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15] ";
+  attribute srl_name of \INFERRED_GEN.data_reg[15][5]_srl16\ : label is "\U0/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][5]_srl16 ";
+  attribute srl_bus_name of \INFERRED_GEN.data_reg[15][6]_srl16\ : label is "\U0/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15] ";
+  attribute srl_name of \INFERRED_GEN.data_reg[15][6]_srl16\ : label is "\U0/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][6]_srl16 ";
+  attribute srl_bus_name of \INFERRED_GEN.data_reg[15][7]_srl16\ : label is "\U0/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15] ";
+  attribute srl_name of \INFERRED_GEN.data_reg[15][7]_srl16\ : label is "\U0/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][7]_srl16 ";
 begin
 \INFERRED_GEN.data_reg[15][0]_srl16\: unisim.vcomponents.SRL16E
     generic map(
@@ -1131,23 +1131,23 @@ end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f_3;
 architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f_3 is
   signal \^fifo_wr\ : STD_LOGIC;
   attribute srl_bus_name : string;
-  attribute srl_bus_name of \INFERRED_GEN.data_reg[15][0]_srl16\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15] ";
+  attribute srl_bus_name of \INFERRED_GEN.data_reg[15][0]_srl16\ : label is "\U0/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15] ";
   attribute srl_name : string;
-  attribute srl_name of \INFERRED_GEN.data_reg[15][0]_srl16\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][0]_srl16 ";
-  attribute srl_bus_name of \INFERRED_GEN.data_reg[15][1]_srl16\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15] ";
-  attribute srl_name of \INFERRED_GEN.data_reg[15][1]_srl16\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][1]_srl16 ";
-  attribute srl_bus_name of \INFERRED_GEN.data_reg[15][2]_srl16\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15] ";
-  attribute srl_name of \INFERRED_GEN.data_reg[15][2]_srl16\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][2]_srl16 ";
-  attribute srl_bus_name of \INFERRED_GEN.data_reg[15][3]_srl16\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15] ";
-  attribute srl_name of \INFERRED_GEN.data_reg[15][3]_srl16\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][3]_srl16 ";
-  attribute srl_bus_name of \INFERRED_GEN.data_reg[15][4]_srl16\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15] ";
-  attribute srl_name of \INFERRED_GEN.data_reg[15][4]_srl16\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][4]_srl16 ";
-  attribute srl_bus_name of \INFERRED_GEN.data_reg[15][5]_srl16\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15] ";
-  attribute srl_name of \INFERRED_GEN.data_reg[15][5]_srl16\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][5]_srl16 ";
-  attribute srl_bus_name of \INFERRED_GEN.data_reg[15][6]_srl16\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15] ";
-  attribute srl_name of \INFERRED_GEN.data_reg[15][6]_srl16\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][6]_srl16 ";
-  attribute srl_bus_name of \INFERRED_GEN.data_reg[15][7]_srl16\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15] ";
-  attribute srl_name of \INFERRED_GEN.data_reg[15][7]_srl16\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][7]_srl16 ";
+  attribute srl_name of \INFERRED_GEN.data_reg[15][0]_srl16\ : label is "\U0/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][0]_srl16 ";
+  attribute srl_bus_name of \INFERRED_GEN.data_reg[15][1]_srl16\ : label is "\U0/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15] ";
+  attribute srl_name of \INFERRED_GEN.data_reg[15][1]_srl16\ : label is "\U0/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][1]_srl16 ";
+  attribute srl_bus_name of \INFERRED_GEN.data_reg[15][2]_srl16\ : label is "\U0/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15] ";
+  attribute srl_name of \INFERRED_GEN.data_reg[15][2]_srl16\ : label is "\U0/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][2]_srl16 ";
+  attribute srl_bus_name of \INFERRED_GEN.data_reg[15][3]_srl16\ : label is "\U0/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15] ";
+  attribute srl_name of \INFERRED_GEN.data_reg[15][3]_srl16\ : label is "\U0/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][3]_srl16 ";
+  attribute srl_bus_name of \INFERRED_GEN.data_reg[15][4]_srl16\ : label is "\U0/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15] ";
+  attribute srl_name of \INFERRED_GEN.data_reg[15][4]_srl16\ : label is "\U0/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][4]_srl16 ";
+  attribute srl_bus_name of \INFERRED_GEN.data_reg[15][5]_srl16\ : label is "\U0/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15] ";
+  attribute srl_name of \INFERRED_GEN.data_reg[15][5]_srl16\ : label is "\U0/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][5]_srl16 ";
+  attribute srl_bus_name of \INFERRED_GEN.data_reg[15][6]_srl16\ : label is "\U0/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15] ";
+  attribute srl_name of \INFERRED_GEN.data_reg[15][6]_srl16\ : label is "\U0/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][6]_srl16 ";
+  attribute srl_bus_name of \INFERRED_GEN.data_reg[15][7]_srl16\ : label is "\U0/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15] ";
+  attribute srl_name of \INFERRED_GEN.data_reg[15][7]_srl16\ : label is "\U0/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[15][7]_srl16 ";
 begin
   fifo_wr <= \^fifo_wr\;
 \INFERRED_GEN.data_reg[15][0]_srl16\: unisim.vcomponents.SRL16E
@@ -1332,6 +1332,8 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_address_decoder is
     \GEN_BKEND_CE_REGISTERS[1].ce_out_i_reg[1]_0\ : out STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg[0]_0\ : out STD_LOGIC;
     Bus_RNW_reg_reg_0 : out STD_LOGIC;
+    s_axi_aresetn_0 : out STD_LOGIC;
+    Bus_RNW_reg_reg_1 : out STD_LOGIC;
     fifo_wr : out STD_LOGIC;
     reset_TX_FIFO : out STD_LOGIC;
     reset_RX_FIFO : out STD_LOGIC;
@@ -1341,16 +1343,15 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_address_decoder is
     \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg[0]_1\ : out STD_LOGIC_VECTOR ( 7 downto 0 );
     \INFERRED_GEN.cnt_i_reg[4]\ : out STD_LOGIC;
     ip2bus_error : out STD_LOGIC;
-    \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_1\ : out STD_LOGIC_VECTOR ( 0 to 0 );
     bus2ip_rdce : out STD_LOGIC_VECTOR ( 0 to 0 );
     \s_axi_wdata[4]\ : out STD_LOGIC;
     \FSM_onehot_state_reg[3]\ : out STD_LOGIC;
     \FSM_onehot_state_reg[2]\ : out STD_LOGIC;
-    s_axi_aresetn_0 : out STD_LOGIC;
-    Bus_RNW_reg_reg_1 : out STD_LOGIC;
-    \GEN_BKEND_CE_REGISTERS[1].ce_out_i_reg[1]_1\ : out STD_LOGIC;
+    \INFERRED_GEN.cnt_i_reg[4]_0\ : out STD_LOGIC;
     Q : in STD_LOGIC;
     s_axi_aclk : in STD_LOGIC;
+    s_axi_aresetn : in STD_LOGIC;
+    \s_axi_bresp_i_reg[1]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     tx_Buffer_Full : in STD_LOGIC;
     s_axi_wdata : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s_axi_rvalid_i_reg : in STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -1358,10 +1359,8 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_address_decoder is
     s_axi_wvalid : in STD_LOGIC;
     s_axi_awvalid : in STD_LOGIC;
     s_axi_arvalid : in STD_LOGIC;
-    \s_axi_rdata_i_reg[0]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \out\ : in STD_LOGIC_VECTOR ( 7 downto 0 );
     tx_Buffer_Empty_Pre_reg : in STD_LOGIC_VECTOR ( 0 to 0 );
-    s_axi_aresetn : in STD_LOGIC;
     rx_Buffer_Full : in STD_LOGIC;
     enable_interrupts : in STD_LOGIC;
     status_reg : in STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -1369,9 +1368,10 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_address_decoder is
     s_axi_rvalid : in STD_LOGIC;
     s_axi_bready : in STD_LOGIC;
     s_axi_bvalid : in STD_LOGIC;
+    s_axi_bresp : in STD_LOGIC_VECTOR ( 0 to 0 );
     bus2ip_rnw_i : in STD_LOGIC;
-    \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_2\ : in STD_LOGIC;
-    \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_3\ : in STD_LOGIC
+    \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_1\ : in STD_LOGIC;
+    \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_2\ : in STD_LOGIC
   );
 end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_address_decoder;
 
@@ -1384,30 +1384,32 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_address_deco
   signal \^gen_bkend_ce_registers[2].ce_out_i_reg[2]_0\ : STD_LOGIC;
   signal \GEN_BKEND_CE_REGISTERS[3].ce_out_i_reg\ : STD_LOGIC;
   signal \^gen_bkend_ce_registers[3].ce_out_i_reg[3]_0\ : STD_LOGIC;
+  signal \bus2ip_rdce__0\ : STD_LOGIC_VECTOR ( 3 to 3 );
   signal ce_expnd_i_0 : STD_LOGIC;
   signal ce_expnd_i_1 : STD_LOGIC;
   signal ce_expnd_i_2 : STD_LOGIC;
   signal ce_expnd_i_3 : STD_LOGIC;
   signal cs_ce_clr : STD_LOGIC;
+  signal \s_axi_bresp_i[1]_i_3_n_0\ : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
   attribute SOFT_HLUTNM of Bus_RNW_reg_i_1 : label is "soft_lutpair7";
   attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[1].ce_out_i[1]_i_1\ : label is "soft_lutpair8";
   attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[3].ce_out_i[3]_i_2\ : label is "soft_lutpair8";
   attribute SOFT_HLUTNM of \INFERRED_GEN.cnt_i[3]_i_2\ : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of \INFERRED_GEN.data_reg[15][7]_srl16_i_1\ : label is "soft_lutpair4";
-  attribute SOFT_HLUTNM of clr_Status_i_1 : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of \INFERRED_GEN.data_reg[15][7]_srl16_i_1\ : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of clr_Status_i_1 : label is "soft_lutpair3";
   attribute SOFT_HLUTNM of enable_interrupts_i_1 : label is "soft_lutpair6";
   attribute SOFT_HLUTNM of reset_RX_FIFO_i_1 : label is "soft_lutpair7";
   attribute SOFT_HLUTNM of reset_TX_FIFO_i_1 : label is "soft_lutpair6";
-  attribute SOFT_HLUTNM of s_axi_arready_INST_0 : label is "soft_lutpair3";
-  attribute SOFT_HLUTNM of \s_axi_bresp_i[1]_i_2\ : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of rx_Data_Present_Pre_i_1 : label is "soft_lutpair5";
+  attribute SOFT_HLUTNM of s_axi_arready_INST_0 : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of \s_axi_bresp_i[1]_i_2\ : label is "soft_lutpair4";
   attribute SOFT_HLUTNM of \s_axi_bresp_i[1]_i_3\ : label is "soft_lutpair5";
   attribute SOFT_HLUTNM of \s_axi_rdata_i[0]_i_1\ : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of \s_axi_rdata_i[1]_i_1\ : label is "soft_lutpair1";
-  attribute SOFT_HLUTNM of \s_axi_rdata_i[2]_i_1\ : label is "soft_lutpair2";
-  attribute SOFT_HLUTNM of \s_axi_rdata_i[7]_i_1\ : label is "soft_lutpair5";
-  attribute SOFT_HLUTNM of \s_axi_rresp_i[1]_i_1\ : label is "soft_lutpair4";
-  attribute SOFT_HLUTNM of s_axi_wready_INST_0 : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \s_axi_rdata_i[1]_i_1\ : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \s_axi_rdata_i[2]_i_1\ : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of \s_axi_rresp_i[1]_i_1\ : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of s_axi_wready_INST_0 : label is "soft_lutpair1";
 begin
   Bus_RNW_reg_reg_0 <= \^bus_rnw_reg_reg_0\;
   \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg[0]_0\ <= \^gen_bkend_ce_registers[0].ce_out_i_reg[0]_0\;
@@ -1482,8 +1484,8 @@ Bus_RNW_reg_reg: unisim.vcomponents.FDRE
       INIT => X"2"
     )
         port map (
-      I0 => \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_3\,
-      I1 => \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_2\,
+      I0 => \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_2\,
+      I1 => \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_1\,
       O => ce_expnd_i_2
     );
 \GEN_BKEND_CE_REGISTERS[1].ce_out_i_reg[1]\: unisim.vcomponents.FDRE
@@ -1519,8 +1521,8 @@ Bus_RNW_reg_reg: unisim.vcomponents.FDRE
       INIT => X"8"
     )
         port map (
-      I0 => \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_2\,
-      I1 => \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_3\,
+      I0 => \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_1\,
+      I1 => \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_2\,
       O => ce_expnd_i_0
     );
 \GEN_BKEND_CE_REGISTERS[3].ce_out_i_reg[3]\: unisim.vcomponents.FDRE
@@ -1538,7 +1540,7 @@ Bus_RNW_reg_reg: unisim.vcomponents.FDRE
         port map (
       I0 => \^bus_rnw_reg_reg_0\,
       I1 => \^gen_bkend_ce_registers[0].ce_out_i_reg[0]_0\,
-      I2 => \s_axi_rdata_i_reg[0]\(0),
+      I2 => \s_axi_bresp_i_reg[1]\(0),
       O => Bus_RNW_reg_reg_1
     );
 \INFERRED_GEN.data_reg[15][7]_srl16_i_1\: unisim.vcomponents.LUT3
@@ -1553,14 +1555,14 @@ Bus_RNW_reg_reg: unisim.vcomponents.FDRE
     );
 \MEM_DECODE_GEN[0].PER_CE_GEN[0].MULTIPLE_CES_THIS_CS_GEN.CE_I\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_pselect_f
      port map (
-      \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg[0]\ => \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_3\,
-      \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg[0]_0\ => \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_2\,
+      \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg[0]\ => \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_2\,
+      \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg[0]_0\ => \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_1\,
       ce_expnd_i_3 => ce_expnd_i_3
     );
 \MEM_DECODE_GEN[0].PER_CE_GEN[2].MULTIPLE_CES_THIS_CS_GEN.CE_I\: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_pselect_f__parameterized1\
      port map (
-      \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]\ => \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_2\,
-      \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_0\ => \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_3\,
+      \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]\ => \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_1\,
+      \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_0\ => \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_2\,
       ce_expnd_i_1 => ce_expnd_i_1
     );
 clr_Status_i_1: unisim.vcomponents.LUT2
@@ -1570,7 +1572,7 @@ clr_Status_i_1: unisim.vcomponents.LUT2
         port map (
       I0 => \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg\,
       I1 => \^bus_rnw_reg_reg_0\,
-      O => \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_1\(0)
+      O => bus2ip_rdce(0)
     );
 enable_interrupts_i_1: unisim.vcomponents.LUT4
     generic map(
@@ -1611,7 +1613,7 @@ rx_Data_Present_Pre_i_1: unisim.vcomponents.LUT4
       I0 => s_axi_aresetn,
       I1 => \^gen_bkend_ce_registers[0].ce_out_i_reg[0]_0\,
       I2 => \^bus_rnw_reg_reg_0\,
-      I3 => \s_axi_rdata_i_reg[0]\(0),
+      I3 => \s_axi_bresp_i_reg[1]\(0),
       O => s_axi_aresetn_0
     );
 s_axi_arready_INST_0: unisim.vcomponents.LUT5
@@ -1626,6 +1628,19 @@ s_axi_arready_INST_0: unisim.vcomponents.LUT5
       I4 => \^gen_bkend_ce_registers[1].ce_out_i_reg[1]_0\,
       O => \^gen_bkend_ce_registers[3].ce_out_i_reg[3]_0\
     );
+\s_axi_bresp_i[1]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"F888FFFFF8880000"
+    )
+        port map (
+      I0 => \s_axi_bresp_i_reg[1]\(0),
+      I1 => \bus2ip_rdce__0\(3),
+      I2 => tx_Buffer_Full,
+      I3 => \s_axi_bresp_i[1]_i_3_n_0\,
+      I4 => s_axi_rvalid_i_reg(2),
+      I5 => s_axi_bresp(0),
+      O => \INFERRED_GEN.cnt_i_reg[4]_0\
+    );
 \s_axi_bresp_i[1]_i_2\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"8"
@@ -1633,7 +1648,7 @@ s_axi_arready_INST_0: unisim.vcomponents.LUT5
         port map (
       I0 => \^gen_bkend_ce_registers[0].ce_out_i_reg[0]_0\,
       I1 => \^bus_rnw_reg_reg_0\,
-      O => bus2ip_rdce(0)
+      O => \bus2ip_rdce__0\(3)
     );
 \s_axi_bresp_i[1]_i_3\: unisim.vcomponents.LUT2
     generic map(
@@ -1642,7 +1657,7 @@ s_axi_arready_INST_0: unisim.vcomponents.LUT5
         port map (
       I0 => \^gen_bkend_ce_registers[1].ce_out_i_reg[1]_0\,
       I1 => \^bus_rnw_reg_reg_0\,
-      O => \GEN_BKEND_CE_REGISTERS[1].ce_out_i_reg[1]_1\
+      O => \s_axi_bresp_i[1]_i_3_n_0\
     );
 s_axi_bvalid_i_i_1: unisim.vcomponents.LUT4
     generic map(
@@ -1660,7 +1675,7 @@ s_axi_bvalid_i_i_1: unisim.vcomponents.LUT4
       INIT => X"70404040"
     )
         port map (
-      I0 => \s_axi_rdata_i_reg[0]\(0),
+      I0 => \s_axi_bresp_i_reg[1]\(0),
       I1 => \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg\,
       I2 => \^bus_rnw_reg_reg_0\,
       I3 => \^gen_bkend_ce_registers[0].ce_out_i_reg[0]_0\,
@@ -1755,7 +1770,7 @@ s_axi_bvalid_i_i_1: unisim.vcomponents.LUT4
       INIT => X"8888F000"
     )
         port map (
-      I0 => \s_axi_rdata_i_reg[0]\(0),
+      I0 => \s_axi_bresp_i_reg[1]\(0),
       I1 => \^gen_bkend_ce_registers[0].ce_out_i_reg[0]_0\,
       I2 => tx_Buffer_Full,
       I3 => \^gen_bkend_ce_registers[1].ce_out_i_reg[1]_0\,
@@ -1804,11 +1819,16 @@ use UNISIM.VCOMPONENTS.ALL;
 entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f is
   port (
     FIFO_Full_reg_0 : out STD_LOGIC;
+    tx_Data_Enable_reg : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 0 to 0 );
     Interrupt0 : out STD_LOGIC;
     mux_Out : out STD_LOGIC;
-    tx_Data_Enable_reg : out STD_LOGIC;
     s_axi_aclk : in STD_LOGIC;
+    tx_Start_reg : in STD_LOGIC;
+    tx_Start : in STD_LOGIC;
+    tx_DataBits : in STD_LOGIC;
+    \INFERRED_GEN.cnt_i_reg[0]\ : in STD_LOGIC;
+    s_axi_aresetn : in STD_LOGIC;
     fifo_Read : in STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[1].ce_out_i_reg\ : in STD_LOGIC;
     Bus_RNW_reg : in STD_LOGIC;
@@ -1820,11 +1840,6 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f is
     serial_Data_reg : in STD_LOGIC;
     p_5_in : in STD_LOGIC;
     serial_Data_reg_0 : in STD_LOGIC;
-    tx_Start_reg : in STD_LOGIC;
-    tx_Start : in STD_LOGIC;
-    tx_DataBits : in STD_LOGIC;
-    \INFERRED_GEN.cnt_i_reg[0]\ : in STD_LOGIC;
-    s_axi_aresetn : in STD_LOGIC;
     s_axi_wdata : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
 end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f;
@@ -1834,7 +1849,7 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu
   signal CNTR_INCR_DECR_ADDN_F_I_n_3 : STD_LOGIC;
   signal CNTR_INCR_DECR_ADDN_F_I_n_4 : STD_LOGIC;
   signal CNTR_INCR_DECR_ADDN_F_I_n_5 : STD_LOGIC;
-  signal CNTR_INCR_DECR_ADDN_F_I_n_8 : STD_LOGIC;
+  signal CNTR_INCR_DECR_ADDN_F_I_n_6 : STD_LOGIC;
   signal \^fifo_full_reg_0\ : STD_LOGIC;
   signal fifo_full_p1 : STD_LOGIC;
 begin
@@ -1843,8 +1858,8 @@ CNTR_INCR_DECR_ADDN_F_I: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_c
      port map (
       Bus_RNW_reg => Bus_RNW_reg,
       \GEN_BKEND_CE_REGISTERS[1].ce_out_i_reg\ => \GEN_BKEND_CE_REGISTERS[1].ce_out_i_reg\,
-      \INFERRED_GEN.cnt_i_reg[0]_0\ => \^fifo_full_reg_0\,
-      \INFERRED_GEN.cnt_i_reg[0]_1\ => \INFERRED_GEN.cnt_i_reg[0]\,
+      \INFERRED_GEN.cnt_i_reg[0]_0\ => \INFERRED_GEN.cnt_i_reg[0]\,
+      \INFERRED_GEN.cnt_i_reg[0]_1\ => \^fifo_full_reg_0\,
       Interrupt0 => Interrupt0,
       Interrupt_reg(0) => Interrupt_reg(0),
       Q(4) => Q(0),
@@ -1852,7 +1867,7 @@ CNTR_INCR_DECR_ADDN_F_I: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_c
       Q(2) => CNTR_INCR_DECR_ADDN_F_I_n_3,
       Q(1) => CNTR_INCR_DECR_ADDN_F_I_n_4,
       Q(0) => CNTR_INCR_DECR_ADDN_F_I_n_5,
-      SS(0) => CNTR_INCR_DECR_ADDN_F_I_n_8,
+      SS(0) => CNTR_INCR_DECR_ADDN_F_I_n_6,
       enable_interrupts => enable_interrupts,
       fifo_Read => fifo_Read,
       fifo_full_p1 => fifo_full_p1,
@@ -1886,7 +1901,7 @@ FIFO_Full_reg: unisim.vcomponents.FDRE
       CE => '1',
       D => fifo_full_p1,
       Q => \^fifo_full_reg_0\,
-      R => CNTR_INCR_DECR_ADDN_F_I_n_8
+      R => CNTR_INCR_DECR_ADDN_F_I_n_6
     );
 end STRUCTURE;
 library IEEE;
@@ -1900,15 +1915,15 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f_1 is
     Q : out STD_LOGIC_VECTOR ( 0 to 0 );
     \out\ : out STD_LOGIC_VECTOR ( 7 downto 0 );
     s_axi_aclk : in STD_LOGIC;
+    \INFERRED_GEN.cnt_i_reg[0]\ : in STD_LOGIC;
+    s_axi_aresetn : in STD_LOGIC;
     status_reg : in STD_LOGIC_VECTOR ( 0 to 0 );
     fifo_Write : in STD_LOGIC;
-    s_axi_aresetn : in STD_LOGIC;
     clr_Status : in STD_LOGIC;
     FIFO_Full_reg_1 : in STD_LOGIC;
     valid_rx : in STD_LOGIC;
     Bus_RNW_reg : in STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg\ : in STD_LOGIC;
-    \INFERRED_GEN.cnt_i_reg[0]\ : in STD_LOGIC;
     \in\ : in STD_LOGIC_VECTOR ( 0 to 7 )
   );
   attribute ORIG_REF_NAME : string;
@@ -1916,7 +1931,7 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f_1 is
 end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f_1;
 
 architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f_1 is
-  signal CNTR_INCR_DECR_ADDN_F_I_n_2 : STD_LOGIC;
+  signal CNTR_INCR_DECR_ADDN_F_I_n_0 : STD_LOGIC;
   signal CNTR_INCR_DECR_ADDN_F_I_n_3 : STD_LOGIC;
   signal CNTR_INCR_DECR_ADDN_F_I_n_4 : STD_LOGIC;
   signal CNTR_INCR_DECR_ADDN_F_I_n_5 : STD_LOGIC;
@@ -1931,14 +1946,14 @@ CNTR_INCR_DECR_ADDN_F_I: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_c
       Bus_RNW_reg => Bus_RNW_reg,
       FIFO_Full_reg => FIFO_Full_reg_1,
       \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg\ => \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg\,
-      \INFERRED_GEN.cnt_i_reg[0]_0\ => \^fifo_full_reg_0\,
-      \INFERRED_GEN.cnt_i_reg[0]_1\ => \INFERRED_GEN.cnt_i_reg[0]\,
+      \INFERRED_GEN.cnt_i_reg[0]_0\ => \INFERRED_GEN.cnt_i_reg[0]\,
+      \INFERRED_GEN.cnt_i_reg[0]_1\ => \^fifo_full_reg_0\,
       Q(4) => Q(0),
-      Q(3) => CNTR_INCR_DECR_ADDN_F_I_n_2,
-      Q(2) => CNTR_INCR_DECR_ADDN_F_I_n_3,
-      Q(1) => CNTR_INCR_DECR_ADDN_F_I_n_4,
-      Q(0) => CNTR_INCR_DECR_ADDN_F_I_n_5,
-      SS(0) => CNTR_INCR_DECR_ADDN_F_I_n_6,
+      Q(3) => CNTR_INCR_DECR_ADDN_F_I_n_3,
+      Q(2) => CNTR_INCR_DECR_ADDN_F_I_n_4,
+      Q(1) => CNTR_INCR_DECR_ADDN_F_I_n_5,
+      Q(0) => CNTR_INCR_DECR_ADDN_F_I_n_6,
+      SS(0) => CNTR_INCR_DECR_ADDN_F_I_n_0,
       fifo_Write => fifo_Write,
       fifo_full_p1 => fifo_full_p1,
       fifo_wr => fifo_wr,
@@ -1949,10 +1964,10 @@ CNTR_INCR_DECR_ADDN_F_I: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_c
 DYNSHREG_F_I: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f_3
      port map (
       \INFERRED_GEN.cnt_i_reg[3]\ => \^fifo_full_reg_0\,
-      Q(3) => CNTR_INCR_DECR_ADDN_F_I_n_2,
-      Q(2) => CNTR_INCR_DECR_ADDN_F_I_n_3,
-      Q(1) => CNTR_INCR_DECR_ADDN_F_I_n_4,
-      Q(0) => CNTR_INCR_DECR_ADDN_F_I_n_5,
+      Q(3) => CNTR_INCR_DECR_ADDN_F_I_n_3,
+      Q(2) => CNTR_INCR_DECR_ADDN_F_I_n_4,
+      Q(1) => CNTR_INCR_DECR_ADDN_F_I_n_5,
+      Q(0) => CNTR_INCR_DECR_ADDN_F_I_n_6,
       fifo_Write => fifo_Write,
       fifo_wr => fifo_wr,
       \in\(0 to 7) => \in\(0 to 7),
@@ -1966,7 +1981,7 @@ FIFO_Full_reg: unisim.vcomponents.FDRE
       CE => '1',
       D => fifo_full_p1,
       Q => \^fifo_full_reg_0\,
-      R => CNTR_INCR_DECR_ADDN_F_I_n_6
+      R => CNTR_INCR_DECR_ADDN_F_I_n_0
     );
 \status_reg[2]_i_1\: unisim.vcomponents.LUT5
     generic map(
@@ -1993,29 +2008,29 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_slave_attachment is
     Bus_RNW_reg_reg : out STD_LOGIC;
     s_axi_rvalid : out STD_LOGIC;
     s_axi_bvalid : out STD_LOGIC;
+    s_axi_bresp : out STD_LOGIC_VECTOR ( 0 to 0 );
+    s_axi_aresetn_0 : out STD_LOGIC;
+    Bus_RNW_reg_reg_0 : out STD_LOGIC;
     fifo_wr : out STD_LOGIC;
     reset_TX_FIFO : out STD_LOGIC;
     reset_RX_FIFO : out STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]\ : out STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[3].ce_out_i_reg[3]\ : out STD_LOGIC;
     \INFERRED_GEN.cnt_i_reg[4]\ : out STD_LOGIC;
-    \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_0\ : out STD_LOGIC_VECTOR ( 0 to 0 );
+    bus2ip_rdce : out STD_LOGIC_VECTOR ( 0 to 0 );
     \s_axi_wdata[4]\ : out STD_LOGIC;
-    s_axi_aresetn_0 : out STD_LOGIC;
-    Bus_RNW_reg_reg_0 : out STD_LOGIC;
-    s_axi_bresp : out STD_LOGIC_VECTOR ( 0 to 0 );
     s_axi_rdata : out STD_LOGIC_VECTOR ( 7 downto 0 );
     bus2ip_reset : in STD_LOGIC;
     s_axi_aclk : in STD_LOGIC;
+    s_axi_aresetn : in STD_LOGIC;
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     tx_Buffer_Full : in STD_LOGIC;
     s_axi_wdata : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s_axi_arvalid : in STD_LOGIC;
     s_axi_awvalid : in STD_LOGIC;
     s_axi_wvalid : in STD_LOGIC;
-    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     \out\ : in STD_LOGIC_VECTOR ( 7 downto 0 );
     tx_Buffer_Empty_Pre_reg : in STD_LOGIC_VECTOR ( 0 to 0 );
-    s_axi_aresetn : in STD_LOGIC;
     rx_Buffer_Full : in STD_LOGIC;
     enable_interrupts : in STD_LOGIC;
     status_reg : in STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -2030,26 +2045,24 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_slave_attach
   signal \FSM_onehot_state[1]_i_1_n_0\ : STD_LOGIC;
   signal \FSM_onehot_state_reg_n_0_[0]\ : STD_LOGIC;
   signal \FSM_onehot_state_reg_n_0_[1]\ : STD_LOGIC;
-  signal I_DECODER_n_24 : STD_LOGIC;
+  signal I_DECODER_n_10 : STD_LOGIC;
   signal I_DECODER_n_25 : STD_LOGIC;
-  signal I_DECODER_n_28 : STD_LOGIC;
-  signal I_DECODER_n_6 : STD_LOGIC;
-  signal I_DECODER_n_7 : STD_LOGIC;
+  signal I_DECODER_n_26 : STD_LOGIC;
+  signal I_DECODER_n_27 : STD_LOGIC;
   signal I_DECODER_n_8 : STD_LOGIC;
+  signal I_DECODER_n_9 : STD_LOGIC;
   signal SIn_DBus : STD_LOGIC_VECTOR ( 0 to 7 );
   signal \bus2ip_addr_i[2]_i_1_n_0\ : STD_LOGIC;
   signal \bus2ip_addr_i[3]_i_1_n_0\ : STD_LOGIC;
   signal \bus2ip_addr_i[3]_i_2_n_0\ : STD_LOGIC;
   signal \bus2ip_addr_i_reg_n_0_[2]\ : STD_LOGIC;
   signal \bus2ip_addr_i_reg_n_0_[3]\ : STD_LOGIC;
-  signal bus2ip_rdce : STD_LOGIC_VECTOR ( 3 to 3 );
   signal bus2ip_rnw_i : STD_LOGIC;
   signal bus2ip_rnw_i_i_1_n_0 : STD_LOGIC;
   signal ip2bus_error : STD_LOGIC;
   signal rst : STD_LOGIC;
   signal \^s_axi_bresp\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal s_axi_bresp_i : STD_LOGIC;
-  signal \s_axi_bresp_i[1]_i_1_n_0\ : STD_LOGIC;
   signal \^s_axi_bvalid\ : STD_LOGIC;
   signal s_axi_rresp_i : STD_LOGIC;
   signal \^s_axi_rvalid\ : STD_LOGIC;
@@ -2099,7 +2112,7 @@ begin
         port map (
       C => s_axi_aclk,
       CE => '1',
-      D => I_DECODER_n_8,
+      D => I_DECODER_n_10,
       Q => \FSM_onehot_state_reg_n_0_[0]\,
       R => rst
     );
@@ -2121,7 +2134,7 @@ begin
         port map (
       C => s_axi_aclk,
       CE => '1',
-      D => I_DECODER_n_7,
+      D => I_DECODER_n_9,
       Q => s_axi_bresp_i,
       R => rst
     );
@@ -2132,7 +2145,7 @@ begin
         port map (
       C => s_axi_aclk,
       CE => '1',
-      D => I_DECODER_n_6,
+      D => I_DECODER_n_8,
       Q => s_axi_rresp_i,
       R => rst
     );
@@ -2140,11 +2153,11 @@ I_DECODER: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_address_decoder
      port map (
       Bus_RNW_reg_reg_0 => Bus_RNW_reg_reg,
       Bus_RNW_reg_reg_1 => Bus_RNW_reg_reg_0,
-      D(2) => I_DECODER_n_6,
-      D(1) => I_DECODER_n_7,
-      D(0) => I_DECODER_n_8,
-      \FSM_onehot_state_reg[2]\ => I_DECODER_n_25,
-      \FSM_onehot_state_reg[3]\ => I_DECODER_n_24,
+      D(2) => I_DECODER_n_8,
+      D(1) => I_DECODER_n_9,
+      D(0) => I_DECODER_n_10,
+      \FSM_onehot_state_reg[2]\ => I_DECODER_n_26,
+      \FSM_onehot_state_reg[3]\ => I_DECODER_n_25,
       \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg[0]_0\ => \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg[0]\,
       \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg[0]_1\(7) => SIn_DBus(0),
       \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg[0]_1\(6) => SIn_DBus(1),
@@ -2155,15 +2168,14 @@ I_DECODER: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_address_decoder
       \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg[0]_1\(1) => SIn_DBus(6),
       \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg[0]_1\(0) => SIn_DBus(7),
       \GEN_BKEND_CE_REGISTERS[1].ce_out_i_reg[1]_0\ => \GEN_BKEND_CE_REGISTERS[1].ce_out_i_reg[1]\,
-      \GEN_BKEND_CE_REGISTERS[1].ce_out_i_reg[1]_1\ => I_DECODER_n_28,
       \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_0\ => \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]\,
-      \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_1\(0) => \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_0\(0),
-      \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_2\ => \bus2ip_addr_i_reg_n_0_[3]\,
-      \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_3\ => \bus2ip_addr_i_reg_n_0_[2]\,
+      \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_1\ => \bus2ip_addr_i_reg_n_0_[3]\,
+      \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_2\ => \bus2ip_addr_i_reg_n_0_[2]\,
       \GEN_BKEND_CE_REGISTERS[3].ce_out_i_reg[3]_0\ => \GEN_BKEND_CE_REGISTERS[3].ce_out_i_reg[3]\,
       \INFERRED_GEN.cnt_i_reg[4]\ => \INFERRED_GEN.cnt_i_reg[4]\,
+      \INFERRED_GEN.cnt_i_reg[4]_0\ => I_DECODER_n_27,
       Q => start2,
-      bus2ip_rdce(0) => bus2ip_rdce(3),
+      bus2ip_rdce(0) => bus2ip_rdce(0),
       bus2ip_rnw_i => bus2ip_rnw_i,
       enable_interrupts => enable_interrupts,
       fifo_wr => fifo_wr,
@@ -2178,8 +2190,9 @@ I_DECODER: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_address_decoder
       s_axi_arvalid => s_axi_arvalid,
       s_axi_awvalid => s_axi_awvalid,
       s_axi_bready => s_axi_bready,
+      s_axi_bresp(0) => \^s_axi_bresp\(0),
+      \s_axi_bresp_i_reg[1]\(0) => Q(0),
       s_axi_bvalid => \^s_axi_bvalid\,
-      \s_axi_rdata_i_reg[0]\(0) => Q(0),
       s_axi_rready => s_axi_rready,
       s_axi_rvalid => \^s_axi_rvalid\,
       s_axi_rvalid_i_reg(3) => s_axi_rresp_i,
@@ -2275,19 +2288,6 @@ rst_reg: unisim.vcomponents.FDRE
       Q => rst,
       R => '0'
     );
-\s_axi_bresp_i[1]_i_1\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"F888FFFFF8880000"
-    )
-        port map (
-      I0 => Q(0),
-      I1 => bus2ip_rdce(3),
-      I2 => tx_Buffer_Full,
-      I3 => I_DECODER_n_28,
-      I4 => s_axi_bresp_i,
-      I5 => \^s_axi_bresp\(0),
-      O => \s_axi_bresp_i[1]_i_1_n_0\
-    );
 \s_axi_bresp_i_reg[1]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
@@ -2295,7 +2295,7 @@ rst_reg: unisim.vcomponents.FDRE
         port map (
       C => s_axi_aclk,
       CE => '1',
-      D => \s_axi_bresp_i[1]_i_1_n_0\,
+      D => I_DECODER_n_27,
       Q => \^s_axi_bresp\(0),
       R => rst
     );
@@ -2306,7 +2306,7 @@ s_axi_bvalid_i_reg: unisim.vcomponents.FDRE
         port map (
       C => s_axi_aclk,
       CE => '1',
-      D => I_DECODER_n_25,
+      D => I_DECODER_n_26,
       Q => \^s_axi_bvalid\,
       R => rst
     );
@@ -2416,7 +2416,7 @@ s_axi_rvalid_i_reg: unisim.vcomponents.FDRE
         port map (
       C => s_axi_aclk,
       CE => '1',
-      D => I_DECODER_n_24,
+      D => I_DECODER_n_25,
       Q => \^s_axi_rvalid\,
       R => rst
     );
@@ -2447,11 +2447,16 @@ use UNISIM.VCOMPONENTS.ALL;
 entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f is
   port (
     FIFO_Full_reg : out STD_LOGIC;
+    tx_Data_Enable_reg : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 0 to 0 );
     Interrupt0 : out STD_LOGIC;
     mux_Out : out STD_LOGIC;
-    tx_Data_Enable_reg : out STD_LOGIC;
     s_axi_aclk : in STD_LOGIC;
+    tx_Start_reg : in STD_LOGIC;
+    tx_Start : in STD_LOGIC;
+    tx_DataBits : in STD_LOGIC;
+    \INFERRED_GEN.cnt_i_reg[0]\ : in STD_LOGIC;
+    s_axi_aresetn : in STD_LOGIC;
     fifo_Read : in STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[1].ce_out_i_reg\ : in STD_LOGIC;
     Bus_RNW_reg : in STD_LOGIC;
@@ -2463,11 +2468,6 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f is
     serial_Data_reg : in STD_LOGIC;
     p_5_in : in STD_LOGIC;
     serial_Data_reg_0 : in STD_LOGIC;
-    tx_Start_reg : in STD_LOGIC;
-    tx_Start : in STD_LOGIC;
-    tx_DataBits : in STD_LOGIC;
-    \INFERRED_GEN.cnt_i_reg[0]\ : in STD_LOGIC;
-    s_axi_aresetn : in STD_LOGIC;
     s_axi_wdata : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
 end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f;
@@ -2512,15 +2512,15 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f_0 is
     Q : out STD_LOGIC_VECTOR ( 0 to 0 );
     \out\ : out STD_LOGIC_VECTOR ( 7 downto 0 );
     s_axi_aclk : in STD_LOGIC;
+    \INFERRED_GEN.cnt_i_reg[0]\ : in STD_LOGIC;
+    s_axi_aresetn : in STD_LOGIC;
     status_reg : in STD_LOGIC_VECTOR ( 0 to 0 );
     fifo_Write : in STD_LOGIC;
-    s_axi_aresetn : in STD_LOGIC;
     clr_Status : in STD_LOGIC;
     FIFO_Full_reg_0 : in STD_LOGIC;
     valid_rx : in STD_LOGIC;
     Bus_RNW_reg : in STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg\ : in STD_LOGIC;
-    \INFERRED_GEN.cnt_i_reg[0]\ : in STD_LOGIC;
     \in\ : in STD_LOGIC_VECTOR ( 0 to 7 )
   );
   attribute ORIG_REF_NAME : string;
@@ -2560,29 +2560,29 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_lite_ipif is
     Bus_RNW_reg : out STD_LOGIC;
     s_axi_rvalid : out STD_LOGIC;
     s_axi_bvalid : out STD_LOGIC;
+    s_axi_bresp : out STD_LOGIC_VECTOR ( 0 to 0 );
+    s_axi_aresetn_0 : out STD_LOGIC;
+    Bus_RNW_reg_reg : out STD_LOGIC;
     fifo_wr : out STD_LOGIC;
     reset_TX_FIFO : out STD_LOGIC;
     reset_RX_FIFO : out STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]\ : out STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[3].ce_out_i_reg[3]\ : out STD_LOGIC;
     \INFERRED_GEN.cnt_i_reg[4]\ : out STD_LOGIC;
-    \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_0\ : out STD_LOGIC_VECTOR ( 0 to 0 );
+    bus2ip_rdce : out STD_LOGIC_VECTOR ( 0 to 0 );
     \s_axi_wdata[4]\ : out STD_LOGIC;
-    s_axi_aresetn_0 : out STD_LOGIC;
-    Bus_RNW_reg_reg : out STD_LOGIC;
-    s_axi_bresp : out STD_LOGIC_VECTOR ( 0 to 0 );
     s_axi_rdata : out STD_LOGIC_VECTOR ( 7 downto 0 );
     bus2ip_reset : in STD_LOGIC;
     s_axi_aclk : in STD_LOGIC;
+    s_axi_aresetn : in STD_LOGIC;
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     tx_Buffer_Full : in STD_LOGIC;
     s_axi_wdata : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s_axi_arvalid : in STD_LOGIC;
     s_axi_awvalid : in STD_LOGIC;
     s_axi_wvalid : in STD_LOGIC;
-    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     \out\ : in STD_LOGIC_VECTOR ( 7 downto 0 );
     tx_Buffer_Empty_Pre_reg : in STD_LOGIC_VECTOR ( 0 to 0 );
-    s_axi_aresetn : in STD_LOGIC;
     rx_Buffer_Full : in STD_LOGIC;
     enable_interrupts : in STD_LOGIC;
     status_reg : in STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -2602,10 +2602,10 @@ I_SLAVE_ATTACHMENT: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_slave_
       \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg[0]\ => \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg\,
       \GEN_BKEND_CE_REGISTERS[1].ce_out_i_reg[1]\ => \GEN_BKEND_CE_REGISTERS[1].ce_out_i_reg\,
       \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]\ => \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]\,
-      \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_0\(0) => \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_0\(0),
       \GEN_BKEND_CE_REGISTERS[3].ce_out_i_reg[3]\ => \GEN_BKEND_CE_REGISTERS[3].ce_out_i_reg[3]\,
       \INFERRED_GEN.cnt_i_reg[4]\ => \INFERRED_GEN.cnt_i_reg[4]\,
       Q(0) => Q(0),
+      bus2ip_rdce(0) => bus2ip_rdce(0),
       bus2ip_reset => bus2ip_reset,
       enable_interrupts => enable_interrupts,
       fifo_wr => fifo_wr,
@@ -2642,32 +2642,32 @@ use UNISIM.VCOMPONENTS.ALL;
 entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_uartlite_rx is
   port (
     s_axi_aresetn_0 : out STD_LOGIC;
-    FIFO_Full_reg : out STD_LOGIC;
     data_shift_reg_r_12_0 : out STD_LOGIC;
+    FIFO_Full_reg : out STD_LOGIC;
     \status_reg_reg[1]\ : out STD_LOGIC;
     \status_reg_reg[2]\ : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 0 to 0 );
     \out\ : out STD_LOGIC_VECTOR ( 7 downto 0 );
     en_16x_Baud : in STD_LOGIC;
     s_axi_aclk : in STD_LOGIC;
-    status_reg : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    \INFERRED_GEN.cnt_i_reg[0]\ : in STD_LOGIC;
     s_axi_aresetn : in STD_LOGIC;
+    status_reg : in STD_LOGIC_VECTOR ( 1 downto 0 );
     clr_Status : in STD_LOGIC;
     FIFO_Full_reg_0 : in STD_LOGIC;
     Bus_RNW_reg : in STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg\ : in STD_LOGIC;
-    \INFERRED_GEN.cnt_i_reg[0]\ : in STD_LOGIC;
     rx : in STD_LOGIC
   );
 end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_uartlite_rx;
 
 architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_uartlite_rx is
-  signal INPUT_DOUBLE_REGS3_n_3 : STD_LOGIC;
+  signal INPUT_DOUBLE_REGS3_n_0 : STD_LOGIC;
   signal INPUT_DOUBLE_REGS3_n_4 : STD_LOGIC;
   signal RX_D2 : STD_LOGIC;
   signal \SERIAL_TO_PARALLEL[8].fifo_din[8]_i_1_n_0\ : STD_LOGIC;
-  signal \data_shift_reg[13]_srl14___UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_12_n_0\ : STD_LOGIC;
-  signal \data_shift_reg[14]_UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_13_n_0\ : STD_LOGIC;
+  signal \data_shift_reg[13]_srl14___U0_UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_12_n_0\ : STD_LOGIC;
+  signal \data_shift_reg[14]_U0_UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_13_n_0\ : STD_LOGIC;
   signal data_shift_reg_gate_n_0 : STD_LOGIC;
   signal data_shift_reg_r_0_n_0 : STD_LOGIC;
   signal data_shift_reg_r_10_n_0 : STD_LOGIC;
@@ -2711,24 +2711,24 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_uartlite_rx 
   signal valid_rx : STD_LOGIC;
   signal valid_rx_i_1_n_0 : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \SERIAL_TO_PARALLEL[2].fifo_din[2]_i_1\ : label is "soft_lutpair15";
-  attribute SOFT_HLUTNM of \SERIAL_TO_PARALLEL[3].fifo_din[3]_i_1\ : label is "soft_lutpair15";
-  attribute SOFT_HLUTNM of \SERIAL_TO_PARALLEL[4].fifo_din[4]_i_1\ : label is "soft_lutpair16";
-  attribute SOFT_HLUTNM of \SERIAL_TO_PARALLEL[5].fifo_din[5]_i_1\ : label is "soft_lutpair16";
-  attribute SOFT_HLUTNM of \SERIAL_TO_PARALLEL[6].fifo_din[6]_i_1\ : label is "soft_lutpair17";
-  attribute SOFT_HLUTNM of \SERIAL_TO_PARALLEL[7].fifo_din[7]_i_1\ : label is "soft_lutpair17";
+  attribute SOFT_HLUTNM of \SERIAL_TO_PARALLEL[2].fifo_din[2]_i_1\ : label is "soft_lutpair14";
+  attribute SOFT_HLUTNM of \SERIAL_TO_PARALLEL[3].fifo_din[3]_i_1\ : label is "soft_lutpair14";
+  attribute SOFT_HLUTNM of \SERIAL_TO_PARALLEL[4].fifo_din[4]_i_1\ : label is "soft_lutpair15";
+  attribute SOFT_HLUTNM of \SERIAL_TO_PARALLEL[5].fifo_din[5]_i_1\ : label is "soft_lutpair15";
+  attribute SOFT_HLUTNM of \SERIAL_TO_PARALLEL[6].fifo_din[6]_i_1\ : label is "soft_lutpair16";
+  attribute SOFT_HLUTNM of \SERIAL_TO_PARALLEL[7].fifo_din[7]_i_1\ : label is "soft_lutpair16";
   attribute srl_bus_name : string;
-  attribute srl_bus_name of \data_shift_reg[13]_srl14___UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_12\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_RX_I/data_shift_reg ";
+  attribute srl_bus_name of \data_shift_reg[13]_srl14___U0_UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_12\ : label is "\U0/UARTLITE_CORE_I/UARTLITE_RX_I/data_shift_reg ";
   attribute srl_name : string;
-  attribute srl_name of \data_shift_reg[13]_srl14___UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_12\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_RX_I/data_shift_reg[13]_srl14___UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_12 ";
-  attribute SOFT_HLUTNM of \data_shift_reg[13]_srl14___UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_12_i_1\ : label is "soft_lutpair14";
-  attribute SOFT_HLUTNM of valid_rx_i_1 : label is "soft_lutpair14";
+  attribute srl_name of \data_shift_reg[13]_srl14___U0_UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_12\ : label is "\U0/UARTLITE_CORE_I/UARTLITE_RX_I/data_shift_reg[13]_srl14___U0_UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_12 ";
+  attribute SOFT_HLUTNM of \data_shift_reg[13]_srl14___U0_UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_12_i_1\ : label is "soft_lutpair17";
+  attribute SOFT_HLUTNM of valid_rx_i_1 : label is "soft_lutpair17";
 begin
   data_shift_reg_r_12_0 <= \^data_shift_reg_r_12_0\;
   s_axi_aresetn_0 <= \^s_axi_aresetn_0\;
 INPUT_DOUBLE_REGS3: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cdc_sync
      port map (
-      EN_16x_Baud_reg => INPUT_DOUBLE_REGS3_n_3,
+      EN_16x_Baud_reg => INPUT_DOUBLE_REGS3_n_4,
       clr_Status => clr_Status,
       en_16x_Baud => en_16x_Baud,
       fifo_Write0 => fifo_Write0,
@@ -2743,7 +2743,7 @@ INPUT_DOUBLE_REGS3: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cdc_sy
       start_Edge_Detected => start_Edge_Detected,
       status_reg(0) => status_reg(1),
       \status_reg_reg[1]\ => \status_reg_reg[1]\,
-      stop_Bit_Position_reg => INPUT_DOUBLE_REGS3_n_4
+      stop_Bit_Position_reg => INPUT_DOUBLE_REGS3_n_0
     );
 Interrupt_i_1: unisim.vcomponents.LUT1
     generic map(
@@ -2757,7 +2757,7 @@ Interrupt_i_1: unisim.vcomponents.LUT1
      port map (
       C => s_axi_aclk,
       CE => '1',
-      D => INPUT_DOUBLE_REGS3_n_4,
+      D => INPUT_DOUBLE_REGS3_n_0,
       Q => fifo_din(1),
       R => \^s_axi_aresetn_0\
     );
@@ -2921,7 +2921,7 @@ SRL_FIFO_I: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f_0
       \status_reg_reg[2]\ => \status_reg_reg[2]\,
       valid_rx => valid_rx
     );
-\data_shift_reg[13]_srl14___UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_12\: unisim.vcomponents.SRL16E
+\data_shift_reg[13]_srl14___U0_UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_12\: unisim.vcomponents.SRL16E
      port map (
       A0 => '1',
       A1 => '0',
@@ -2930,9 +2930,9 @@ SRL_FIFO_I: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f_0
       CE => en_16x_Baud,
       CLK => s_axi_aclk,
       D => p_1_out(0),
-      Q => \data_shift_reg[13]_srl14___UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_12_n_0\
+      Q => \data_shift_reg[13]_srl14___U0_UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_12_n_0\
     );
-\data_shift_reg[13]_srl14___UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_12_i_1\: unisim.vcomponents.LUT4
+\data_shift_reg[13]_srl14___U0_UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_12_i_1\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"0E00"
     )
@@ -2943,12 +2943,12 @@ SRL_FIFO_I: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f_0
       I3 => valid_rx,
       O => p_1_out(0)
     );
-\data_shift_reg[14]_UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_13\: unisim.vcomponents.FDRE
+\data_shift_reg[14]_U0_UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_13\: unisim.vcomponents.FDRE
      port map (
       C => s_axi_aclk,
       CE => en_16x_Baud,
-      D => \data_shift_reg[13]_srl14___UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_12_n_0\,
-      Q => \data_shift_reg[14]_UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_13_n_0\,
+      D => \data_shift_reg[13]_srl14___U0_UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_12_n_0\,
+      Q => \data_shift_reg[14]_U0_UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_13_n_0\,
       R => '0'
     );
 \data_shift_reg[15]\: unisim.vcomponents.FDRE
@@ -2964,7 +2964,7 @@ data_shift_reg_gate: unisim.vcomponents.LUT2
       INIT => X"8"
     )
         port map (
-      I0 => \data_shift_reg[14]_UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_13_n_0\,
+      I0 => \data_shift_reg[14]_U0_UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_13_n_0\,
       I1 => data_shift_reg_r_13_n_0,
       O => data_shift_reg_gate_n_0
     );
@@ -3100,7 +3100,7 @@ frame_err_ocrd_reg: unisim.vcomponents.FDRE
      port map (
       C => s_axi_aclk,
       CE => '1',
-      D => INPUT_DOUBLE_REGS3_n_3,
+      D => INPUT_DOUBLE_REGS3_n_4,
       Q => frame_err_ocrd,
       R => \^s_axi_aresetn_0\
     );
@@ -3274,14 +3274,16 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_uartlite_tx is
   port (
-    tx : out STD_LOGIC;
     FIFO_Full_reg : out STD_LOGIC;
+    tx : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 0 to 0 );
     Interrupt0 : out STD_LOGIC;
+    en_16x_Baud : in STD_LOGIC;
     s_axi_aclk : in STD_LOGIC;
     \data_shift_reg[15]_0\ : in STD_LOGIC;
-    en_16x_Baud : in STD_LOGIC;
     \data_shift_reg[15]_1\ : in STD_LOGIC;
+    \INFERRED_GEN.cnt_i_reg[0]\ : in STD_LOGIC;
+    s_axi_aresetn : in STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[1].ce_out_i_reg\ : in STD_LOGIC;
     Bus_RNW_reg : in STD_LOGIC;
     fifo_wr : in STD_LOGIC;
@@ -3289,17 +3291,15 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_uartlite_tx is
     tx_Buffer_Empty_Pre : in STD_LOGIC;
     Interrupt_reg : in STD_LOGIC_VECTOR ( 0 to 0 );
     rx_Data_Present_Pre : in STD_LOGIC;
-    \INFERRED_GEN.cnt_i_reg[0]\ : in STD_LOGIC;
-    s_axi_aresetn : in STD_LOGIC;
     s_axi_wdata : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
 end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_uartlite_tx;
 
 architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_uartlite_tx is
-  signal SRL_FIFO_I_n_4 : STD_LOGIC;
+  signal SRL_FIFO_I_n_1 : STD_LOGIC;
   signal TX0 : STD_LOGIC;
-  signal \data_shift_reg[13]_srl13___UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_11_n_0\ : STD_LOGIC;
-  signal \data_shift_reg[14]_UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_12_n_0\ : STD_LOGIC;
+  signal \data_shift_reg[13]_srl13___U0_UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_11_n_0\ : STD_LOGIC;
+  signal \data_shift_reg[14]_U0_UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_12_n_0\ : STD_LOGIC;
   signal data_shift_reg_gate_n_0 : STD_LOGIC;
   signal div16 : STD_LOGIC;
   signal fifo_Read : STD_LOGIC;
@@ -3318,12 +3318,10 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_uartlite_tx 
   signal tx_Data_Enable_i_1_n_0 : STD_LOGIC;
   signal tx_Data_Enable_reg_n_0 : STD_LOGIC;
   signal tx_Start : STD_LOGIC;
-  attribute KEEP : string;
-  attribute KEEP of TX_reg : label is "yes";
   attribute srl_bus_name : string;
-  attribute srl_bus_name of \data_shift_reg[13]_srl13___UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_11\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_TX_I/data_shift_reg ";
+  attribute srl_bus_name of \data_shift_reg[13]_srl13___U0_UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_11\ : label is "\U0/UARTLITE_CORE_I/UARTLITE_TX_I/data_shift_reg ";
   attribute srl_name : string;
-  attribute srl_name of \data_shift_reg[13]_srl13___UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_11\ : label is "U0/\UARTLITE_CORE_I/UARTLITE_TX_I/data_shift_reg[13]_srl13___UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_11 ";
+  attribute srl_name of \data_shift_reg[13]_srl13___U0_UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_11\ : label is "\U0/UARTLITE_CORE_I/UARTLITE_TX_I/data_shift_reg[13]_srl13___U0_UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_11 ";
   attribute SOFT_HLUTNM : string;
   attribute SOFT_HLUTNM of \mux_sel[0]_i_1\ : label is "soft_lutpair19";
   attribute SOFT_HLUTNM of \mux_sel[1]_i_1\ : label is "soft_lutpair19";
@@ -3350,7 +3348,7 @@ SRL_FIFO_I: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f
       serial_Data_reg_0 => \mux_sel_reg_n_0_[2]\,
       tx_Buffer_Empty_Pre => tx_Buffer_Empty_Pre,
       tx_DataBits => tx_DataBits,
-      tx_Data_Enable_reg => SRL_FIFO_I_n_4,
+      tx_Data_Enable_reg => SRL_FIFO_I_n_1,
       tx_Start => tx_Start,
       tx_Start_reg => tx_Data_Enable_reg_n_0
     );
@@ -3370,7 +3368,7 @@ TX_reg: unisim.vcomponents.FDSE
       CE => '1',
       D => TX0,
       Q => tx,
-      S => \data_shift_reg[15]_0\
+      S => \data_shift_reg[15]_1\
     );
 \data_shift_reg[0]\: unisim.vcomponents.FDSE
      port map (
@@ -3378,9 +3376,9 @@ TX_reg: unisim.vcomponents.FDSE
       CE => en_16x_Baud,
       D => div16,
       Q => p_0_in(1),
-      S => \data_shift_reg[15]_0\
+      S => \data_shift_reg[15]_1\
     );
-\data_shift_reg[13]_srl13___UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_11\: unisim.vcomponents.SRL16E
+\data_shift_reg[13]_srl13___U0_UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_11\: unisim.vcomponents.SRL16E
      port map (
       A0 => '0',
       A1 => '0',
@@ -3389,14 +3387,14 @@ TX_reg: unisim.vcomponents.FDSE
       CE => en_16x_Baud,
       CLK => s_axi_aclk,
       D => p_0_in(1),
-      Q => \data_shift_reg[13]_srl13___UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_11_n_0\
+      Q => \data_shift_reg[13]_srl13___U0_UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_11_n_0\
     );
-\data_shift_reg[14]_UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_12\: unisim.vcomponents.FDRE
+\data_shift_reg[14]_U0_UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_12\: unisim.vcomponents.FDRE
      port map (
       C => s_axi_aclk,
       CE => en_16x_Baud,
-      D => \data_shift_reg[13]_srl13___UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_11_n_0\,
-      Q => \data_shift_reg[14]_UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_12_n_0\,
+      D => \data_shift_reg[13]_srl13___U0_UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_11_n_0\,
+      Q => \data_shift_reg[14]_U0_UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_12_n_0\,
       R => '0'
     );
 \data_shift_reg[15]\: unisim.vcomponents.FDRE
@@ -3405,15 +3403,15 @@ TX_reg: unisim.vcomponents.FDSE
       CE => en_16x_Baud,
       D => data_shift_reg_gate_n_0,
       Q => div16,
-      R => \data_shift_reg[15]_0\
+      R => \data_shift_reg[15]_1\
     );
 data_shift_reg_gate: unisim.vcomponents.LUT2
     generic map(
       INIT => X"8"
     )
         port map (
-      I0 => \data_shift_reg[14]_UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_12_n_0\,
-      I1 => \data_shift_reg[15]_1\,
+      I0 => \data_shift_reg[14]_U0_UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_12_n_0\,
+      I1 => \data_shift_reg[15]_0\,
       O => data_shift_reg_gate_n_0
     );
 fifo_Read_i_1: unisim.vcomponents.LUT4
@@ -3433,7 +3431,7 @@ fifo_Read_reg: unisim.vcomponents.FDRE
       CE => '1',
       D => fifo_Read0,
       Q => fifo_Read,
-      R => \data_shift_reg[15]_0\
+      R => \data_shift_reg[15]_1\
     );
 \mux_sel[0]_i_1\: unisim.vcomponents.LUT5
     generic map(
@@ -3477,7 +3475,7 @@ fifo_Read_reg: unisim.vcomponents.FDRE
       CE => '1',
       D => \mux_sel[0]_i_1_n_0\,
       Q => \mux_sel_reg_n_0_[0]\,
-      S => \data_shift_reg[15]_0\
+      S => \data_shift_reg[15]_1\
     );
 \mux_sel_reg[1]\: unisim.vcomponents.FDSE
      port map (
@@ -3485,7 +3483,7 @@ fifo_Read_reg: unisim.vcomponents.FDRE
       CE => '1',
       D => \mux_sel[1]_i_1_n_0\,
       Q => p_5_in,
-      S => \data_shift_reg[15]_0\
+      S => \data_shift_reg[15]_1\
     );
 \mux_sel_reg[2]\: unisim.vcomponents.FDSE
      port map (
@@ -3493,7 +3491,7 @@ fifo_Read_reg: unisim.vcomponents.FDRE
       CE => '1',
       D => \mux_sel[2]_i_1_n_0\,
       Q => \mux_sel_reg_n_0_[2]\,
-      S => \data_shift_reg[15]_0\
+      S => \data_shift_reg[15]_1\
     );
 serial_Data_reg: unisim.vcomponents.FDRE
      port map (
@@ -3501,7 +3499,7 @@ serial_Data_reg: unisim.vcomponents.FDRE
       CE => '1',
       D => mux_Out,
       Q => serial_Data,
-      R => \data_shift_reg[15]_0\
+      R => \data_shift_reg[15]_1\
     );
 tx_DataBits_i_1: unisim.vcomponents.LUT4
     generic map(
@@ -3520,7 +3518,7 @@ tx_DataBits_reg: unisim.vcomponents.FDRE
       CE => '1',
       D => tx_DataBits0,
       Q => tx_DataBits,
-      R => \data_shift_reg[15]_0\
+      R => \data_shift_reg[15]_1\
     );
 tx_Data_Enable_i_1: unisim.vcomponents.LUT3
     generic map(
@@ -3538,15 +3536,15 @@ tx_Data_Enable_reg: unisim.vcomponents.FDRE
       CE => '1',
       D => tx_Data_Enable_i_1_n_0,
       Q => tx_Data_Enable_reg_n_0,
-      R => \data_shift_reg[15]_0\
+      R => \data_shift_reg[15]_1\
     );
 tx_Start_reg: unisim.vcomponents.FDRE
      port map (
       C => s_axi_aclk,
       CE => '1',
-      D => SRL_FIFO_I_n_4,
+      D => SRL_FIFO_I_n_1,
       Q => tx_Start,
-      R => \data_shift_reg[15]_0\
+      R => \data_shift_reg[15]_1\
     );
 end STRUCTURE;
 library IEEE;
@@ -3556,9 +3554,9 @@ use UNISIM.VCOMPONENTS.ALL;
 entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_uartlite_core is
   port (
     bus2ip_reset : out STD_LOGIC;
-    tx : out STD_LOGIC;
     rx_Buffer_Full : out STD_LOGIC;
     tx_Buffer_Full : out STD_LOGIC;
+    tx : out STD_LOGIC;
     interrupt : out STD_LOGIC;
     status_reg : out STD_LOGIC_VECTOR ( 1 downto 0 );
     enable_interrupts : out STD_LOGIC;
@@ -3568,7 +3566,7 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_uartlite_core is
     s_axi_aclk : in STD_LOGIC;
     reset_TX_FIFO : in STD_LOGIC;
     reset_RX_FIFO : in STD_LOGIC;
-    clr_Status_reg_0 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    bus2ip_rdce : in STD_LOGIC_VECTOR ( 0 to 0 );
     enable_interrupts_reg_0 : in STD_LOGIC;
     tx_Buffer_Empty_Pre_reg_0 : in STD_LOGIC;
     rx_Data_Present_Pre_reg_0 : in STD_LOGIC;
@@ -3586,7 +3584,7 @@ end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_uartlite_core;
 architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_uartlite_core is
   signal \^inferred_gen.cnt_i_reg[4]\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal Interrupt0 : STD_LOGIC;
-  signal UARTLITE_RX_I_n_2 : STD_LOGIC;
+  signal UARTLITE_RX_I_n_1 : STD_LOGIC;
   signal UARTLITE_RX_I_n_3 : STD_LOGIC;
   signal UARTLITE_RX_I_n_4 : STD_LOGIC;
   signal \^bus2ip_reset\ : STD_LOGIC;
@@ -3626,7 +3624,7 @@ UARTLITE_RX_I: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_uartlite_rx
       \INFERRED_GEN.cnt_i_reg[0]\ => reset_RX_FIFO_reg_n_0,
       Q(0) => \^inferred_gen.cnt_i_reg[4]\(0),
       clr_Status => clr_Status,
-      data_shift_reg_r_12_0 => UARTLITE_RX_I_n_2,
+      data_shift_reg_r_12_0 => UARTLITE_RX_I_n_1,
       en_16x_Baud => en_16x_Baud,
       \out\(7 downto 0) => \out\(7 downto 0),
       rx => rx,
@@ -3646,8 +3644,8 @@ UARTLITE_TX_I: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_uartlite_tx
       Interrupt0 => Interrupt0,
       Interrupt_reg(0) => \^inferred_gen.cnt_i_reg[4]\(0),
       Q(0) => Q(0),
-      \data_shift_reg[15]_0\ => \^bus2ip_reset\,
-      \data_shift_reg[15]_1\ => UARTLITE_RX_I_n_2,
+      \data_shift_reg[15]_0\ => UARTLITE_RX_I_n_1,
+      \data_shift_reg[15]_1\ => \^bus2ip_reset\,
       en_16x_Baud => en_16x_Baud,
       enable_interrupts => \^enable_interrupts\,
       fifo_wr => fifo_wr,
@@ -3662,7 +3660,7 @@ clr_Status_reg: unisim.vcomponents.FDRE
      port map (
       C => s_axi_aclk,
       CE => '1',
-      D => clr_Status_reg_0(0),
+      D => bus2ip_rdce(0),
       Q => clr_Status,
       R => \^bus2ip_reset\
     );
@@ -3735,55 +3733,34 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_uartlite is
   port (
+    tx : out STD_LOGIC;
+    interrupt : out STD_LOGIC;
+    s_axi_rdata : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    s_axi_rresp : out STD_LOGIC_VECTOR ( 0 to 0 );
+    \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]\ : out STD_LOGIC;
+    \GEN_BKEND_CE_REGISTERS[3].ce_out_i_reg[3]\ : out STD_LOGIC;
+    s_axi_bvalid : out STD_LOGIC;
+    s_axi_rvalid : out STD_LOGIC;
+    s_axi_bresp : out STD_LOGIC_VECTOR ( 0 to 0 );
     s_axi_aclk : in STD_LOGIC;
     s_axi_aresetn : in STD_LOGIC;
-    interrupt : out STD_LOGIC;
-    s_axi_awaddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s_axi_awvalid : in STD_LOGIC;
-    s_axi_awready : out STD_LOGIC;
-    s_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    s_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s_axi_wvalid : in STD_LOGIC;
-    s_axi_wready : out STD_LOGIC;
-    s_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s_axi_bvalid : out STD_LOGIC;
-    s_axi_bready : in STD_LOGIC;
-    s_axi_araddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s_axi_arvalid : in STD_LOGIC;
-    s_axi_arready : out STD_LOGIC;
-    s_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    s_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s_axi_rvalid : out STD_LOGIC;
-    s_axi_rready : in STD_LOGIC;
     rx : in STD_LOGIC;
-    tx : out STD_LOGIC
+    s_axi_wdata : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    s_axi_awvalid : in STD_LOGIC;
+    s_axi_wvalid : in STD_LOGIC;
+    s_axi_arvalid : in STD_LOGIC;
+    s_axi_araddr : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    s_axi_awaddr : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    s_axi_bready : in STD_LOGIC;
+    s_axi_rready : in STD_LOGIC
   );
-  attribute C_BAUDRATE : integer;
-  attribute C_BAUDRATE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_uartlite : entity is 9600;
-  attribute C_DATA_BITS : integer;
-  attribute C_DATA_BITS of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_uartlite : entity is 8;
-  attribute C_FAMILY : string;
-  attribute C_FAMILY of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_uartlite : entity is "artix7";
-  attribute C_ODD_PARITY : integer;
-  attribute C_ODD_PARITY of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_uartlite : entity is 0;
-  attribute C_S_AXI_ACLK_FREQ_HZ : integer;
-  attribute C_S_AXI_ACLK_FREQ_HZ of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_uartlite : entity is 100000000;
-  attribute C_S_AXI_ADDR_WIDTH : integer;
-  attribute C_S_AXI_ADDR_WIDTH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_uartlite : entity is 4;
-  attribute C_S_AXI_DATA_WIDTH : integer;
-  attribute C_S_AXI_DATA_WIDTH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_uartlite : entity is 32;
-  attribute C_USE_PARITY : integer;
-  attribute C_USE_PARITY of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_uartlite : entity is 0;
-  attribute downgradeipidentifiedwarnings : string;
-  attribute downgradeipidentifiedwarnings of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_uartlite : entity is "yes";
 end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_uartlite;
 
 architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_uartlite is
-  signal \<const0>\ : STD_LOGIC;
-  signal AXI_LITE_IPIF_I_n_11 : STD_LOGIC;
-  signal AXI_LITE_IPIF_I_n_13 : STD_LOGIC;
   signal AXI_LITE_IPIF_I_n_14 : STD_LOGIC;
-  signal AXI_LITE_IPIF_I_n_15 : STD_LOGIC;
+  signal AXI_LITE_IPIF_I_n_16 : STD_LOGIC;
+  signal AXI_LITE_IPIF_I_n_7 : STD_LOGIC;
+  signal AXI_LITE_IPIF_I_n_8 : STD_LOGIC;
   signal \I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg\ : STD_LOGIC;
   signal \I_SLAVE_ATTACHMENT/I_DECODER/GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg\ : STD_LOGIC;
   signal \I_SLAVE_ATTACHMENT/I_DECODER/GEN_BKEND_CE_REGISTERS[1].ce_out_i_reg\ : STD_LOGIC;
@@ -3796,56 +3773,21 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_uartlite
   signal reset_TX_FIFO : STD_LOGIC;
   signal rx_Buffer_Full : STD_LOGIC;
   signal rx_Data : STD_LOGIC_VECTOR ( 0 to 7 );
-  signal \^s_axi_bresp\ : STD_LOGIC_VECTOR ( 1 to 1 );
-  signal \^s_axi_rdata\ : STD_LOGIC_VECTOR ( 7 downto 0 );
-  signal \^s_axi_rresp\ : STD_LOGIC_VECTOR ( 1 to 1 );
-  signal \^s_axi_wready\ : STD_LOGIC;
   signal status_reg : STD_LOGIC_VECTOR ( 1 to 2 );
   signal tx_Buffer_Empty : STD_LOGIC;
   signal tx_Buffer_Full : STD_LOGIC;
 begin
-  s_axi_awready <= \^s_axi_wready\;
-  s_axi_bresp(1) <= \^s_axi_bresp\(1);
-  s_axi_bresp(0) <= \<const0>\;
-  s_axi_rdata(31) <= \<const0>\;
-  s_axi_rdata(30) <= \<const0>\;
-  s_axi_rdata(29) <= \<const0>\;
-  s_axi_rdata(28) <= \<const0>\;
-  s_axi_rdata(27) <= \<const0>\;
-  s_axi_rdata(26) <= \<const0>\;
-  s_axi_rdata(25) <= \<const0>\;
-  s_axi_rdata(24) <= \<const0>\;
-  s_axi_rdata(23) <= \<const0>\;
-  s_axi_rdata(22) <= \<const0>\;
-  s_axi_rdata(21) <= \<const0>\;
-  s_axi_rdata(20) <= \<const0>\;
-  s_axi_rdata(19) <= \<const0>\;
-  s_axi_rdata(18) <= \<const0>\;
-  s_axi_rdata(17) <= \<const0>\;
-  s_axi_rdata(16) <= \<const0>\;
-  s_axi_rdata(15) <= \<const0>\;
-  s_axi_rdata(14) <= \<const0>\;
-  s_axi_rdata(13) <= \<const0>\;
-  s_axi_rdata(12) <= \<const0>\;
-  s_axi_rdata(11) <= \<const0>\;
-  s_axi_rdata(10) <= \<const0>\;
-  s_axi_rdata(9) <= \<const0>\;
-  s_axi_rdata(8) <= \<const0>\;
-  s_axi_rdata(7 downto 0) <= \^s_axi_rdata\(7 downto 0);
-  s_axi_rresp(1) <= \^s_axi_rresp\(1);
-  s_axi_rresp(0) <= \<const0>\;
-  s_axi_wready <= \^s_axi_wready\;
 AXI_LITE_IPIF_I: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_lite_ipif
      port map (
       Bus_RNW_reg => \I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg\,
-      Bus_RNW_reg_reg => AXI_LITE_IPIF_I_n_15,
+      Bus_RNW_reg_reg => AXI_LITE_IPIF_I_n_8,
       \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg\ => \I_SLAVE_ATTACHMENT/I_DECODER/GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg\,
       \GEN_BKEND_CE_REGISTERS[1].ce_out_i_reg\ => \I_SLAVE_ATTACHMENT/I_DECODER/GEN_BKEND_CE_REGISTERS[1].ce_out_i_reg\,
-      \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]\ => \^s_axi_wready\,
-      \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_0\(0) => bus2ip_rdce(1),
-      \GEN_BKEND_CE_REGISTERS[3].ce_out_i_reg[3]\ => s_axi_arready,
-      \INFERRED_GEN.cnt_i_reg[4]\ => AXI_LITE_IPIF_I_n_11,
+      \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]\ => \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]\,
+      \GEN_BKEND_CE_REGISTERS[3].ce_out_i_reg[3]\ => \GEN_BKEND_CE_REGISTERS[3].ce_out_i_reg[3]\,
+      \INFERRED_GEN.cnt_i_reg[4]\ => AXI_LITE_IPIF_I_n_14,
       Q(0) => \UARTLITE_RX_I/rx_Data_Empty\,
+      bus2ip_rdce(0) => bus2ip_rdce(1),
       bus2ip_reset => bus2ip_reset,
       enable_interrupts => enable_interrupts,
       fifo_wr => \UARTLITE_TX_I/fifo_wr\,
@@ -3861,44 +3803,40 @@ AXI_LITE_IPIF_I: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_lite_
       reset_TX_FIFO => reset_TX_FIFO,
       rx_Buffer_Full => rx_Buffer_Full,
       s_axi_aclk => s_axi_aclk,
-      s_axi_araddr(1 downto 0) => s_axi_araddr(3 downto 2),
+      s_axi_araddr(1 downto 0) => s_axi_araddr(1 downto 0),
       s_axi_aresetn => s_axi_aresetn,
-      s_axi_aresetn_0 => AXI_LITE_IPIF_I_n_14,
+      s_axi_aresetn_0 => AXI_LITE_IPIF_I_n_7,
       s_axi_arvalid => s_axi_arvalid,
-      s_axi_awaddr(1 downto 0) => s_axi_awaddr(3 downto 2),
+      s_axi_awaddr(1 downto 0) => s_axi_awaddr(1 downto 0),
       s_axi_awvalid => s_axi_awvalid,
       s_axi_bready => s_axi_bready,
-      s_axi_bresp(0) => \^s_axi_bresp\(1),
+      s_axi_bresp(0) => s_axi_bresp(0),
       s_axi_bvalid => s_axi_bvalid,
-      s_axi_rdata(7 downto 0) => \^s_axi_rdata\(7 downto 0),
+      s_axi_rdata(7 downto 0) => s_axi_rdata(7 downto 0),
       s_axi_rready => s_axi_rready,
-      s_axi_rresp(0) => \^s_axi_rresp\(1),
+      s_axi_rresp(0) => s_axi_rresp(0),
       s_axi_rvalid => s_axi_rvalid,
       s_axi_wdata(2) => s_axi_wdata(4),
       s_axi_wdata(1 downto 0) => s_axi_wdata(1 downto 0),
-      \s_axi_wdata[4]\ => AXI_LITE_IPIF_I_n_13,
+      \s_axi_wdata[4]\ => AXI_LITE_IPIF_I_n_16,
       s_axi_wvalid => s_axi_wvalid,
       status_reg(1) => status_reg(1),
       status_reg(0) => status_reg(2),
       tx_Buffer_Empty_Pre_reg(0) => tx_Buffer_Empty,
       tx_Buffer_Full => tx_Buffer_Full
     );
-GND: unisim.vcomponents.GND
-     port map (
-      G => \<const0>\
-    );
 UARTLITE_CORE_I: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_uartlite_core
      port map (
       Bus_RNW_reg => \I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg\,
-      FIFO_Full_reg => AXI_LITE_IPIF_I_n_15,
+      FIFO_Full_reg => AXI_LITE_IPIF_I_n_8,
       \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg\ => \I_SLAVE_ATTACHMENT/I_DECODER/GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg\,
       \GEN_BKEND_CE_REGISTERS[1].ce_out_i_reg\ => \I_SLAVE_ATTACHMENT/I_DECODER/GEN_BKEND_CE_REGISTERS[1].ce_out_i_reg\,
       \INFERRED_GEN.cnt_i_reg[4]\(0) => \UARTLITE_RX_I/rx_Data_Empty\,
       Q(0) => tx_Buffer_Empty,
+      bus2ip_rdce(0) => bus2ip_rdce(1),
       bus2ip_reset => bus2ip_reset,
-      clr_Status_reg_0(0) => bus2ip_rdce(1),
       enable_interrupts => enable_interrupts,
-      enable_interrupts_reg_0 => AXI_LITE_IPIF_I_n_13,
+      enable_interrupts_reg_0 => AXI_LITE_IPIF_I_n_16,
       fifo_wr => \UARTLITE_TX_I/fifo_wr\,
       interrupt => interrupt,
       \out\(7) => rx_Data(0),
@@ -3913,14 +3851,14 @@ UARTLITE_CORE_I: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_uartlite_
       reset_TX_FIFO => reset_TX_FIFO,
       rx => rx,
       rx_Buffer_Full => rx_Buffer_Full,
-      rx_Data_Present_Pre_reg_0 => AXI_LITE_IPIF_I_n_14,
+      rx_Data_Present_Pre_reg_0 => AXI_LITE_IPIF_I_n_7,
       s_axi_aclk => s_axi_aclk,
       s_axi_aresetn => s_axi_aresetn,
       s_axi_wdata(7 downto 0) => s_axi_wdata(7 downto 0),
       status_reg(1) => status_reg(1),
       status_reg(0) => status_reg(2),
       tx => tx,
-      tx_Buffer_Empty_Pre_reg_0 => AXI_LITE_IPIF_I_n_11,
+      tx_Buffer_Empty_Pre_reg_0 => AXI_LITE_IPIF_I_n_14,
       tx_Buffer_Full => tx_Buffer_Full
     );
 end STRUCTURE;
@@ -3965,29 +3903,10 @@ end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix;
 
 architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
   signal \<const0>\ : STD_LOGIC;
+  signal \^s_axi_awready\ : STD_LOGIC;
   signal \^s_axi_bresp\ : STD_LOGIC_VECTOR ( 1 to 1 );
   signal \^s_axi_rdata\ : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal \^s_axi_rresp\ : STD_LOGIC_VECTOR ( 1 to 1 );
-  signal NLW_U0_s_axi_bresp_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal NLW_U0_s_axi_rdata_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 8 );
-  signal NLW_U0_s_axi_rresp_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
-  attribute C_BAUDRATE : integer;
-  attribute C_BAUDRATE of U0 : label is 9600;
-  attribute C_DATA_BITS : integer;
-  attribute C_DATA_BITS of U0 : label is 8;
-  attribute C_FAMILY : string;
-  attribute C_FAMILY of U0 : label is "artix7";
-  attribute C_ODD_PARITY : integer;
-  attribute C_ODD_PARITY of U0 : label is 0;
-  attribute C_S_AXI_ACLK_FREQ_HZ : integer;
-  attribute C_S_AXI_ACLK_FREQ_HZ of U0 : label is 100000000;
-  attribute C_S_AXI_ADDR_WIDTH : integer;
-  attribute C_S_AXI_ADDR_WIDTH of U0 : label is 4;
-  attribute C_S_AXI_DATA_WIDTH : integer;
-  attribute C_S_AXI_DATA_WIDTH of U0 : label is 32;
-  attribute C_USE_PARITY : integer;
-  attribute C_USE_PARITY of U0 : label is 0;
-  attribute downgradeipidentifiedwarnings of U0 : label is "yes";
   attribute x_interface_info : string;
   attribute x_interface_info of interrupt : signal is "xilinx.com:signal:interrupt:1.0 INTERRUPT INTERRUPT";
   attribute x_interface_parameter : string;
@@ -4018,6 +3937,7 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
   attribute x_interface_info of s_axi_wdata : signal is "xilinx.com:interface:aximm:1.0 S_AXI WDATA";
   attribute x_interface_info of s_axi_wstrb : signal is "xilinx.com:interface:aximm:1.0 S_AXI WSTRB";
 begin
+  s_axi_awready <= \^s_axi_awready\;
   s_axi_bresp(1) <= \^s_axi_bresp\(1);
   s_axi_bresp(0) <= \<const0>\;
   s_axi_rdata(31) <= \<const0>\;
@@ -4047,38 +3967,31 @@ begin
   s_axi_rdata(7 downto 0) <= \^s_axi_rdata\(7 downto 0);
   s_axi_rresp(1) <= \^s_axi_rresp\(1);
   s_axi_rresp(0) <= \<const0>\;
+  s_axi_wready <= \^s_axi_awready\;
 GND: unisim.vcomponents.GND
      port map (
       G => \<const0>\
     );
 U0: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_uartlite
      port map (
+      \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]\ => \^s_axi_awready\,
+      \GEN_BKEND_CE_REGISTERS[3].ce_out_i_reg[3]\ => s_axi_arready,
       interrupt => interrupt,
       rx => rx,
       s_axi_aclk => s_axi_aclk,
-      s_axi_araddr(3 downto 2) => s_axi_araddr(3 downto 2),
-      s_axi_araddr(1 downto 0) => B"00",
+      s_axi_araddr(1 downto 0) => s_axi_araddr(3 downto 2),
       s_axi_aresetn => s_axi_aresetn,
-      s_axi_arready => s_axi_arready,
       s_axi_arvalid => s_axi_arvalid,
-      s_axi_awaddr(3 downto 2) => s_axi_awaddr(3 downto 2),
-      s_axi_awaddr(1 downto 0) => B"00",
-      s_axi_awready => s_axi_awready,
+      s_axi_awaddr(1 downto 0) => s_axi_awaddr(3 downto 2),
       s_axi_awvalid => s_axi_awvalid,
       s_axi_bready => s_axi_bready,
-      s_axi_bresp(1) => \^s_axi_bresp\(1),
-      s_axi_bresp(0) => NLW_U0_s_axi_bresp_UNCONNECTED(0),
+      s_axi_bresp(0) => \^s_axi_bresp\(1),
       s_axi_bvalid => s_axi_bvalid,
-      s_axi_rdata(31 downto 8) => NLW_U0_s_axi_rdata_UNCONNECTED(31 downto 8),
       s_axi_rdata(7 downto 0) => \^s_axi_rdata\(7 downto 0),
       s_axi_rready => s_axi_rready,
-      s_axi_rresp(1) => \^s_axi_rresp\(1),
-      s_axi_rresp(0) => NLW_U0_s_axi_rresp_UNCONNECTED(0),
+      s_axi_rresp(0) => \^s_axi_rresp\(1),
       s_axi_rvalid => s_axi_rvalid,
-      s_axi_wdata(31 downto 8) => B"000000000000000000000000",
       s_axi_wdata(7 downto 0) => s_axi_wdata(7 downto 0),
-      s_axi_wready => s_axi_wready,
-      s_axi_wstrb(3 downto 0) => B"0000",
       s_axi_wvalid => s_axi_wvalid,
       tx => tx
     );

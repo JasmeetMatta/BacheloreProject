@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date         : Fri Feb 16 01:05:47 2024
+| Date         : Thu Feb 29 21:58:00 2024
 | Host         : Jasmeet running 64-bit major release  (build 9200)
 | Command      : report_utilization -file Led_Control_utilization_synth.rpt -pb Led_Control_utilization_synth.pb
 | Design       : Led_Control
@@ -34,8 +34,8 @@ Table of Contents
 | Slice LUTs*             |    0 |     0 |          0 |     63400 |  0.00 |
 |   LUT as Logic          |    0 |     0 |          0 |     63400 |  0.00 |
 |   LUT as Memory         |    0 |     0 |          0 |     19000 |  0.00 |
-| Slice Registers         |    1 |     0 |          0 |    126800 | <0.01 |
-|   Register as Flip Flop |    1 |     0 |          0 |    126800 | <0.01 |
+| Slice Registers         |   33 |     0 |          0 |    126800 |  0.03 |
+|   Register as Flip Flop |   33 |     0 |          0 |    126800 |  0.03 |
 |   Register as Latch     |    0 |     0 |          0 |    126800 |  0.00 |
 | F7 Muxes                |    0 |     0 |          0 |     31700 |  0.00 |
 | F8 Muxes                |    0 |     0 |          0 |     15850 |  0.00 |
@@ -59,7 +59,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 1     |          Yes |       Reset |            - |
+| 33    |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -150,8 +150,8 @@ Warning! LUT value is adjusted to account for LUT combining.
 +----------+------+---------------------+
 | OBUF     |   73 |                  IO |
 | OBUFT    |   34 |                  IO |
+| FDRE     |   33 |        Flop & Latch |
 | IBUF     |    2 |                  IO |
-| FDRE     |    1 |        Flop & Latch |
 | BUFG     |    1 |               Clock |
 +----------+------+---------------------+
 
@@ -161,6 +161,8 @@ Warning! LUT value is adjusted to account for LUT combining.
 
 +----------+------+
 | Ref Name | Used |
++----------+------+
+| Led_H2   |    1 |
 +----------+------+
 
 

@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Feb 29 21:24:58 2024
+# Process ID: 1940
+# Current directory: C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5160 C:\Users\jasme\Desktop\DFX\Vivado_Project\DFX_Nexys_A7\DFX_Nexys_A7.xpr
+# Log file: C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/vivado.log
+# Journal file: C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7\vivado.jou
+# Running On: Jasmeet, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 16990 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.xpr
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+read_checkpoint -cell [get_cells design_1_i/Led_Control_0/U0/u1] ./netlist/LED1/u1.dcp
+write_checkpoint ./netlist/config1/config1.dcp
+write_checkpoint -force ./netlist/config1/config1.dcp
+opt_design
+place_design
+route_design
+write_checkpoint -force ./netlist/config1/configrouted.dcp
+update_design  -cell [get_cells design_1_i/Led_Control_0/U0/u1] -black_box
+lock_design -level routing
+write_checkpoint -force ./netlist/static/staticrouted.dcp
+read_checkpoint -cell [get_cells design_1_i/Led_Control_0/U0/u1] ./netlist/LED2/u1.dcp
+opt_design
+place_design
+route_design
+write_checkpoint -force ./netlist/config2/config2routed.dcp
+write_bitstream -force ./bitstream/config2/config2.bit
+open_checkpoint ./netlist/config1/configrouted.dcp
+current_project DFX_Nexys_A7
+current_project project_configrouted
+write_bitstream -force ./bitstream/config1/config1.bit
+current_project DFX_Nexys_A7
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/bitstream/config1/config1.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/bitstream/config2/config2_pblock_u1_partial.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_project

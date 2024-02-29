@@ -3,8 +3,8 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Fri Feb 16 01:27:51 2024
-# Process ID: 17732
+# Start of session at: Thu Feb 29 19:12:59 2024
+# Process ID: 24272
 # Current directory: C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.runs/design_1_axi_gpio_1_0_synth_1
 # Command line: vivado.exe -log design_1_axi_gpio_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_gpio_1_0.tcl
 # Log file: C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.runs/design_1_axi_gpio_1_0_synth_1/design_1_axi_gpio_1_0.vds
@@ -12,9 +12,9 @@
 # Running On: Jasmeet, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 16990 MB
 #-----------------------------------------------------------
 source design_1_axi_gpio_1_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 442.684 ; gain = 163.609
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 440.832 ; gain = 163.559
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/VivadoCustomIP/NexysA7_IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jasme/Desktop/DFX/Vivado_Project/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2023.1/data/ip'.
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_gpio_1_0
 Command: synth_design -top design_1_axi_gpio_1_0 -part xc7a100tcsg324-1 -incremental_mode off -mode out_of_context
@@ -24,9 +24,10 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 1484
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [Synth 8-7075] Helper process launched with PID 24596
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1285.078 ; gain = 410.172
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1284.141 ; gain = 409.656
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_1_0' [c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/synth/design_1_axi_gpio_1_0.vhd:84]
 	Parameter C_FAMILY bound to: artix7 - type: string 
@@ -336,58 +337,48 @@ WARNING: [Synth 8-7129] Port S_AXI_WSTRB[2] in module slave_attachment is either
 WARNING: [Synth 8-7129] Port S_AXI_WSTRB[1] in module slave_attachment is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_WSTRB[0] in module slave_attachment is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1385.367 ; gain = 510.461
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1384.719 ; gain = 510.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1385.367 ; gain = 510.461
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1384.719 ; gain = 510.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1385.367 ; gain = 510.461
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1384.719 ; gain = 510.234
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1385.367 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1384.719 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 96 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_ooc.xdc] for cell 'U0'
-Parsing XDC File [c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_board.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_board.xdc] for cell 'U0'
-Parsing XDC File [c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0.xdc] for cell 'U0'
-Parsing XDC File [C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.runs/design_1_axi_gpio_1_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.runs/design_1_axi_gpio_1_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1476.004 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1410.363 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 96 instances were transformed.
   FDR => FDRE: 96 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 1476.039 ; gain = 0.035
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1412.082 ; gain = 1.719
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1476.039 ; gain = 601.133
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1412.082 ; gain = 537.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1476.039 ; gain = 601.133
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1412.082 ; gain = 537.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.runs/design_1_axi_gpio_1_0_synth_1/dont_touch.xdc, line 9).
-Applied set_property KEEP = true for U0/gpio_core_1/GPIO_IO_O[15]. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1476.039 ; gain = 601.133
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1412.082 ; gain = 537.598
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
 ---------------------------------------------------------------------------------------------------
@@ -400,7 +391,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 1476.039 ; gain = 601.133
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1412.082 ; gain = 537.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -442,158 +433,126 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-7129] Port s_axi_wstrb[3] in module axi_gpio is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_wstrb[2] in module axi_gpio is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_wstrb[1] in module axi_gpio is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_wstrb[0] in module axi_gpio is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gpio2_io_i[31] in module axi_gpio is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gpio2_io_i[30] in module axi_gpio is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gpio2_io_i[29] in module axi_gpio is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gpio2_io_i[28] in module axi_gpio is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gpio2_io_i[27] in module axi_gpio is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gpio2_io_i[26] in module axi_gpio is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gpio2_io_i[25] in module axi_gpio is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gpio2_io_i[24] in module axi_gpio is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gpio2_io_i[23] in module axi_gpio is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gpio2_io_i[22] in module axi_gpio is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gpio2_io_i[21] in module axi_gpio is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gpio2_io_i[20] in module axi_gpio is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gpio2_io_i[19] in module axi_gpio is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gpio2_io_i[18] in module axi_gpio is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gpio2_io_i[17] in module axi_gpio is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gpio2_io_i[16] in module axi_gpio is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gpio2_io_i[15] in module axi_gpio is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gpio2_io_i[14] in module axi_gpio is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gpio2_io_i[13] in module axi_gpio is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gpio2_io_i[12] in module axi_gpio is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gpio2_io_i[11] in module axi_gpio is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gpio2_io_i[10] in module axi_gpio is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gpio2_io_i[9] in module axi_gpio is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gpio2_io_i[8] in module axi_gpio is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gpio2_io_i[7] in module axi_gpio is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gpio2_io_i[6] in module axi_gpio is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gpio2_io_i[5] in module axi_gpio is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gpio2_io_i[4] in module axi_gpio is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gpio2_io_i[3] in module axi_gpio is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gpio2_io_i[2] in module axi_gpio is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gpio2_io_i[1] in module axi_gpio is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gpio2_io_i[0] in module axi_gpio is either unconnected or has no load
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[0].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[1].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[2].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[3].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[4].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[5].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[6].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[7].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[8].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[9].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[10].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[11].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[12].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[13].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[14].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[15].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[4].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[5].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[6].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[7].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[8].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[9].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[10].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[11].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[12].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[13].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[14].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[15].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[4].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[5].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[6].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[7].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[8].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[9].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[10].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[11].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[12].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[13].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[14].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[15].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[4].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[5].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[6].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[7].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[8].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[9].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[10].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[11].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[12].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[13].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[14].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[15].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[4].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[5].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[6].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[7].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[8].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[9].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[10].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[11].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[12].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[13].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[14].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[15].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[4].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[5].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[6].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[7].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[8].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[9].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[10].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[11].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[12].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[13].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[14].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[15].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+WARNING: [Synth 8-7129] Port s_axi_wstrb[3] in module design_1_axi_gpio_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[2] in module design_1_axi_gpio_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[1] in module design_1_axi_gpio_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[0] in module design_1_axi_gpio_1_0 is either unconnected or has no load
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[0].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[1].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[2].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[3].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[4].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[5].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[6].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[7].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[8].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[9].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[10].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[11].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[12].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[13].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[14].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[15].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[4].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[5].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[6].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[7].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[8].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[9].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[10].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[11].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[12].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[13].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[14].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[15].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[4].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[5].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[6].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[7].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[8].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[9].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[10].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[11].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[12].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[13].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[14].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[15].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[4].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[5].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[6].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[7].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[8].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[9].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[10].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[11].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[12].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[13].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[14].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[15].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[4].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[5].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[6].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[7].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[8].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[9].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[10].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[11].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[12].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[13].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[14].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[15].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[4].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[5].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[6].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[7].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[8].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[9].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[10].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[11].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[12].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[13].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[14].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module design_1_axi_gpio_1_0.
+INFO: [Synth 8-3332] Sequential element (U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[15].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module design_1_axi_gpio_1_0.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 1476.039 ; gain = 601.133
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1412.082 ; gain = 537.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 1476.039 ; gain = 601.133
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 1412.082 ; gain = 537.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 1476.039 ; gain = 601.133
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 1412.082 ; gain = 537.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 1476.039 ; gain = 601.133
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 1412.082 ; gain = 537.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -611,37 +570,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 1476.039 ; gain = 601.133
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 1412.082 ; gain = 537.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 1476.039 ; gain = 601.133
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 1412.082 ; gain = 537.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 1476.039 ; gain = 601.133
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 1412.082 ; gain = 537.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 1476.039 ; gain = 601.133
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 1412.082 ; gain = 537.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 1476.039 ; gain = 601.133
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 1412.082 ; gain = 537.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 1476.039 ; gain = 601.133
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 1412.082 ; gain = 537.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -667,27 +626,26 @@ Report Cell Usage:
 |8     |FDSE |     1|
 +------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 1476.039 ; gain = 601.133
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 1412.082 ; gain = 537.598
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 37 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:33 . Memory (MB): peak = 1476.039 ; gain = 510.461
-Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 1476.039 ; gain = 601.133
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1412.082 ; gain = 510.234
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 1412.082 ; gain = 537.598
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1476.039 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1412.082 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1476.039 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1412.082 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: fb867210
+Synth Design complete | Checksum: c61febfb
 INFO: [Common 17-83] Releasing license: Synthesis
-238 Infos, 112 Warnings, 0 Critical Warnings and 0 Errors encountered.
+237 Infos, 81 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:42 . Memory (MB): peak = 1476.039 ; gain = 998.891
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:41 . Memory (MB): peak = 1412.082 ; gain = 935.168
 INFO: [Common 17-1381] The checkpoint 'C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.runs/design_1_axi_gpio_1_0_synth_1/design_1_axi_gpio_1_0.dcp' has been generated.
 INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_axi_gpio_1_0, cache-ID = d4efe8bf09773987
 INFO: [Coretcl 2-1174] Renamed 7 cell refs.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.runs/design_1_axi_gpio_1_0_synth_1/design_1_axi_gpio_1_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_axi_gpio_1_0_utilization_synth.rpt -pb design_1_axi_gpio_1_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Feb 16 01:28:45 2024...
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 29 19:13:54 2024...

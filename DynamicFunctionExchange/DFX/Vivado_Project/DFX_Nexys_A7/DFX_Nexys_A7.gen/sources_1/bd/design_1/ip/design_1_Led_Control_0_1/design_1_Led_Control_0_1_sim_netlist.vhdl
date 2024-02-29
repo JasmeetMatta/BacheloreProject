@@ -2,7 +2,7 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
--- Date        : Sat Feb 17 00:30:45 2024
+-- Date        : Thu Feb 29 22:02:19 2024
 -- Host        : Jasmeet running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ip/design_1_Led_Control_0_1/design_1_Led_Control_0_1_sim_netlist.vhdl
@@ -19,8 +19,8 @@ entity design_1_Led_Control_0_1_Led_Control is
   port (
     m_axi_wvalid : out STD_LOGIC;
     m_axi_wdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    m_axi_aresetn : in STD_LOGIC;
-    m_axi_aclk : in STD_LOGIC
+    m_axi_aclk : in STD_LOGIC;
+    m_axi_aresetn : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of design_1_Led_Control_0_1_Led_Control : entity is "Led_Control";
@@ -29,10 +29,13 @@ end design_1_Led_Control_0_1_Led_Control;
 architecture STRUCTURE of design_1_Led_Control_0_1_Led_Control is
   component design_1_Led_Control_0_1_Led_H2 is
   port (
-    addrs : out STD_LOGIC_VECTOR ( 31 downto 0 )
+    addrs : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    clk : in STD_LOGIC
   );
   end component design_1_Led_Control_0_1_Led_H2;
   signal data_h1 : STD_LOGIC_VECTOR ( 31 downto 0 );
+  attribute black_box : string;
+  attribute black_box of u1 : label is "yes";
 begin
 m_axi_awvalid_reg: unisim.vcomponents.FDRE
      port map (
@@ -300,7 +303,8 @@ m_axi_awvalid_reg: unisim.vcomponents.FDRE
     );
 u1: component design_1_Led_Control_0_1_Led_H2
      port map (
-      addrs(31 downto 0) => data_h1(31 downto 0)
+      addrs(31 downto 0) => data_h1(31 downto 0),
+      clk => m_axi_aclk
     );
 end STRUCTURE;
 library IEEE;

@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "design_1_Led_Control_0_1_synth_1" START { ROLLUP_AUTO }
+set_msg_config  -id {17-179}  -suppress 
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
@@ -85,16 +86,13 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part_repo_paths {C:/Users/jasme/AppData/Roaming/Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store} [current_project]
 set_property board_part digilentinc.com:nexys-a7-100t:part0:1.2 [current_project]
-set_property ip_repo_paths {
-  d:/VivadoCustomIP/NexysA7_IP
-  c:/Users/jasme/AppData/Roaming/Xilinx/ip_repo
-} [current_project]
+set_property ip_repo_paths c:/Users/jasme/Desktop/DFX/Vivado_Project/ip_repo [current_project]
 update_ip_catalog
 set_property ip_output_repo c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.srcs/sources_1/bd/design_1/ip/design_1_Led_Control_0_1/design_1_Led_Control_0_1.xci
+read_ip -quiet C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.srcs/sources_1/bd/design_1/ip/design_1_Led_Control_0_1/design_1_Led_Control_0_1.xci
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

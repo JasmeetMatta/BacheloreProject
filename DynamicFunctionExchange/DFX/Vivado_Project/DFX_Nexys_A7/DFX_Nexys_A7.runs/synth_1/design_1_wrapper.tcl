@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_msg_config  -id {17-179}  -suppress 
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -84,10 +85,7 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part_repo_paths {C:/Users/jasme/AppData/Roaming/Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store} [current_project]
 set_property board_part digilentinc.com:nexys-a7-100t:part0:1.2 [current_project]
-set_property ip_repo_paths {
-  d:/VivadoCustomIP/NexysA7_IP
-  c:/Users/jasme/AppData/Roaming/Xilinx/ip_repo
-} [current_project]
+set_property ip_repo_paths c:/Users/jasme/Desktop/DFX/Vivado_Project/ip_repo [current_project]
 update_ip_catalog
 set_property ip_output_repo c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
@@ -136,6 +134,9 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.srcs/constrs_1/new/PRConstraints.xdc
+set_property used_in_implementation false [get_files C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.srcs/constrs_1/new/PRConstraints.xdc]
+
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1

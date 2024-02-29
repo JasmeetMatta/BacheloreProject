@@ -2,7 +2,7 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-// Date        : Mon Feb 12 17:28:23 2024
+// Date        : Thu Feb 29 19:11:31 2024
 // Host        : Jasmeet running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 //               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_ilmb_v10_0_sim_netlist.v
@@ -67,119 +67,6 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
   (* x_interface_info = "xilinx.com:interface:lmb:1.0 LMB_M CE" *) output LMB_CE;
   (* x_interface_info = "xilinx.com:interface:lmb:1.0 LMB_Sl_0 BE" *) output [0:3]LMB_BE;
 
-  wire [0:31]LMB_ABus;
-  wire LMB_AddrStrobe;
-  wire [0:3]LMB_BE;
-  wire LMB_CE;
-  wire LMB_Clk;
-  wire [0:31]LMB_ReadDBus;
-  wire LMB_ReadStrobe;
-  wire LMB_Ready;
-  wire LMB_Rst;
-  wire LMB_UE;
-  wire LMB_Wait;
-  wire [0:31]LMB_WriteDBus;
-  wire LMB_WriteStrobe;
-  wire [0:31]M_ABus;
-  wire M_AddrStrobe;
-  wire [0:3]M_BE;
-  wire [0:31]M_DBus;
-  wire M_ReadStrobe;
-  wire M_WriteStrobe;
-  wire SYS_Rst;
-  wire [0:0]Sl_CE;
-  wire [0:31]Sl_DBus;
-  wire [0:0]Sl_Ready;
-  wire [0:0]Sl_UE;
-  wire [0:0]Sl_Wait;
-
-  (* C_EXT_RESET_HIGH = "1" *) 
-  (* C_LMB_AWIDTH = "32" *) 
-  (* C_LMB_DWIDTH = "32" *) 
-  (* C_LMB_NUM_SLAVES = "1" *) 
-  (* C_LMB_PROTOCOL = "0" *) 
-  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_lmb_v10 U0
-       (.LMB_ABus(LMB_ABus),
-        .LMB_AddrStrobe(LMB_AddrStrobe),
-        .LMB_BE(LMB_BE),
-        .LMB_CE(LMB_CE),
-        .LMB_Clk(LMB_Clk),
-        .LMB_ReadDBus(LMB_ReadDBus),
-        .LMB_ReadStrobe(LMB_ReadStrobe),
-        .LMB_Ready(LMB_Ready),
-        .LMB_Rst(LMB_Rst),
-        .LMB_UE(LMB_UE),
-        .LMB_Wait(LMB_Wait),
-        .LMB_WriteDBus(LMB_WriteDBus),
-        .LMB_WriteStrobe(LMB_WriteStrobe),
-        .M_ABus(M_ABus),
-        .M_AddrStrobe(M_AddrStrobe),
-        .M_BE(M_BE),
-        .M_DBus(M_DBus),
-        .M_ReadStrobe(M_ReadStrobe),
-        .M_WriteStrobe(M_WriteStrobe),
-        .SYS_Rst(SYS_Rst),
-        .Sl_CE(Sl_CE),
-        .Sl_DBus(Sl_DBus),
-        .Sl_Ready(Sl_Ready),
-        .Sl_UE(Sl_UE),
-        .Sl_Wait(Sl_Wait));
-endmodule
-
-(* C_EXT_RESET_HIGH = "1" *) (* C_LMB_AWIDTH = "32" *) (* C_LMB_DWIDTH = "32" *) 
-(* C_LMB_NUM_SLAVES = "1" *) (* C_LMB_PROTOCOL = "0" *) 
-module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_lmb_v10
-   (LMB_Clk,
-    SYS_Rst,
-    LMB_Rst,
-    M_ABus,
-    M_ReadStrobe,
-    M_WriteStrobe,
-    M_AddrStrobe,
-    M_DBus,
-    M_BE,
-    Sl_DBus,
-    Sl_Ready,
-    Sl_Wait,
-    Sl_UE,
-    Sl_CE,
-    LMB_ABus,
-    LMB_ReadStrobe,
-    LMB_WriteStrobe,
-    LMB_AddrStrobe,
-    LMB_ReadDBus,
-    LMB_WriteDBus,
-    LMB_Ready,
-    LMB_Wait,
-    LMB_UE,
-    LMB_CE,
-    LMB_BE);
-  input LMB_Clk;
-  input SYS_Rst;
-  output LMB_Rst;
-  input [0:31]M_ABus;
-  input M_ReadStrobe;
-  input M_WriteStrobe;
-  input M_AddrStrobe;
-  input [0:31]M_DBus;
-  input [0:3]M_BE;
-  input [0:31]Sl_DBus;
-  input [0:0]Sl_Ready;
-  input [0:0]Sl_Wait;
-  input [0:0]Sl_UE;
-  input [0:0]Sl_CE;
-  output [0:31]LMB_ABus;
-  output LMB_ReadStrobe;
-  output LMB_WriteStrobe;
-  output LMB_AddrStrobe;
-  output [0:31]LMB_ReadDBus;
-  output [0:31]LMB_WriteDBus;
-  output LMB_Ready;
-  output LMB_Wait;
-  output LMB_UE;
-  output LMB_CE;
-  output [0:3]LMB_BE;
-
   wire LMB_Clk;
   wire LMB_Rst;
   wire [0:31]M_ABus;
@@ -206,6 +93,24 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_lmb_v10
   assign LMB_Wait = Sl_Wait;
   assign LMB_WriteDBus[0:31] = M_DBus;
   assign LMB_WriteStrobe = M_WriteStrobe;
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_lmb_v10 U0
+       (.LMB_Clk(LMB_Clk),
+        .LMB_Rst(LMB_Rst),
+        .SYS_Rst(SYS_Rst));
+endmodule
+
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_lmb_v10
+   (LMB_Rst,
+    SYS_Rst,
+    LMB_Clk);
+  output LMB_Rst;
+  input SYS_Rst;
+  input LMB_Clk;
+
+  wire LMB_Clk;
+  wire LMB_Rst;
+  wire SYS_Rst;
+
   (* BOX_TYPE = "PRIMITIVE" *) 
   (* XILINX_LEGACY_PRIM = "FDS" *) 
   (* XILINX_TRANSFORM_PINMAP = "VCC:CE" *) 

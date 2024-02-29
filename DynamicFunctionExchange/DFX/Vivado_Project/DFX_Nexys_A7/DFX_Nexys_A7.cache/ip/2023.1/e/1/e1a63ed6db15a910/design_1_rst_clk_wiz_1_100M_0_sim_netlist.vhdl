@@ -2,7 +2,7 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
--- Date        : Mon Feb 12 17:28:23 2024
+-- Date        : Thu Feb 29 19:11:31 2024
 -- Host        : Jasmeet running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 --               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_rst_clk_wiz_1_100M_0_sim_netlist.vhdl
@@ -434,7 +434,7 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_lpf is
   attribute box_type : string;
   attribute box_type of POR_SRL_I : label is "PRIMITIVE";
   attribute srl_name : string;
-  attribute srl_name of POR_SRL_I : label is "U0/\EXT_LPF/POR_SRL_I ";
+  attribute srl_name of POR_SRL_I : label is "\U0/EXT_LPF/POR_SRL_I ";
 begin
 \ACTIVE_LOW_AUX.ACT_LO_AUX\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cdc_sync
      port map (
@@ -907,35 +907,17 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_proc_sys_reset is
   port (
-    slowest_sync_clk : in STD_LOGIC;
-    ext_reset_in : in STD_LOGIC;
-    aux_reset_in : in STD_LOGIC;
-    mb_debug_sys_rst : in STD_LOGIC;
-    dcm_locked : in STD_LOGIC;
     mb_reset : out STD_LOGIC;
     bus_struct_reset : out STD_LOGIC_VECTOR ( 0 to 0 );
-    peripheral_reset : out STD_LOGIC_VECTOR ( 0 to 0 );
     interconnect_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 );
-    peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
+    peripheral_reset : out STD_LOGIC_VECTOR ( 0 to 0 );
+    peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 );
+    slowest_sync_clk : in STD_LOGIC;
+    dcm_locked : in STD_LOGIC;
+    mb_debug_sys_rst : in STD_LOGIC;
+    ext_reset_in : in STD_LOGIC;
+    aux_reset_in : in STD_LOGIC
   );
-  attribute C_AUX_RESET_HIGH : string;
-  attribute C_AUX_RESET_HIGH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_proc_sys_reset : entity is "1'b0";
-  attribute C_AUX_RST_WIDTH : integer;
-  attribute C_AUX_RST_WIDTH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_proc_sys_reset : entity is 4;
-  attribute C_EXT_RESET_HIGH : string;
-  attribute C_EXT_RESET_HIGH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_proc_sys_reset : entity is "1'b0";
-  attribute C_EXT_RST_WIDTH : integer;
-  attribute C_EXT_RST_WIDTH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_proc_sys_reset : entity is 4;
-  attribute C_FAMILY : string;
-  attribute C_FAMILY of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_proc_sys_reset : entity is "artix7";
-  attribute C_NUM_BUS_RST : integer;
-  attribute C_NUM_BUS_RST of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_proc_sys_reset : entity is 1;
-  attribute C_NUM_INTERCONNECT_ARESETN : integer;
-  attribute C_NUM_INTERCONNECT_ARESETN of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_proc_sys_reset : entity is 1;
-  attribute C_NUM_PERP_ARESETN : integer;
-  attribute C_NUM_PERP_ARESETN of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_proc_sys_reset : entity is 1;
-  attribute C_NUM_PERP_RST : integer;
-  attribute C_NUM_PERP_RST of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_proc_sys_reset : entity is 1;
 end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_proc_sys_reset;
 
 architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_proc_sys_reset is
@@ -1070,24 +1052,6 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
 end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix;
 
 architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
-  attribute C_AUX_RESET_HIGH : string;
-  attribute C_AUX_RESET_HIGH of U0 : label is "1'b0";
-  attribute C_AUX_RST_WIDTH : integer;
-  attribute C_AUX_RST_WIDTH of U0 : label is 4;
-  attribute C_EXT_RESET_HIGH : string;
-  attribute C_EXT_RESET_HIGH of U0 : label is "1'b0";
-  attribute C_EXT_RST_WIDTH : integer;
-  attribute C_EXT_RST_WIDTH of U0 : label is 4;
-  attribute C_FAMILY : string;
-  attribute C_FAMILY of U0 : label is "artix7";
-  attribute C_NUM_BUS_RST : integer;
-  attribute C_NUM_BUS_RST of U0 : label is 1;
-  attribute C_NUM_INTERCONNECT_ARESETN : integer;
-  attribute C_NUM_INTERCONNECT_ARESETN of U0 : label is 1;
-  attribute C_NUM_PERP_ARESETN : integer;
-  attribute C_NUM_PERP_ARESETN of U0 : label is 1;
-  attribute C_NUM_PERP_RST : integer;
-  attribute C_NUM_PERP_RST of U0 : label is 1;
   attribute x_interface_info : string;
   attribute x_interface_info of aux_reset_in : signal is "xilinx.com:signal:reset:1.0 aux_reset RST";
   attribute x_interface_parameter : string;

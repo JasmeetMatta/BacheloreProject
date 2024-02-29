@@ -70,6 +70,9 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "design_1_mdm_1_0_synth_1" START { ROLLUP_AUTO }
+set_param constr.inNewReadCheckpointFlow 1
+set_param constraints.enableBinaryConstraints 0
+set_msg_config  -id {17-179}  -suppress 
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
@@ -86,11 +89,13 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part_repo_paths {C:/Users/jasme/AppData/Roaming/Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store} [current_project]
 set_property board_part digilentinc.com:nexys-a7-100t:part0:1.2 [current_project]
+set_property ip_repo_paths c:/Users/jasme/Desktop/DFX/Vivado_Project/ip_repo [current_project]
+update_ip_catalog
 set_property ip_output_repo c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xci
+read_ip -quiet C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xci
 set_property used_in_implementation false [get_files -all c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0_ooc_trace.xdc]
 

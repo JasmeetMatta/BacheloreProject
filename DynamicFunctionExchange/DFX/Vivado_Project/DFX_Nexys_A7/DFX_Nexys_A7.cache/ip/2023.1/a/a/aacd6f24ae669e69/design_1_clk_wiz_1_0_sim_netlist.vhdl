@@ -2,7 +2,7 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
--- Date        : Mon Feb 12 17:28:23 2024
+-- Date        : Thu Feb 29 19:11:31 2024
 -- Host        : Jasmeet running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 --               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_clk_wiz_1_0_sim_netlist.vhdl
@@ -17,10 +17,10 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_design_1_clk_wiz_1_0_clk_wiz is
   port (
-    clk_out1 : out STD_LOGIC;
-    resetn : in STD_LOGIC;
     locked : out STD_LOGIC;
-    clk_in1 : in STD_LOGIC
+    clk_out1 : out STD_LOGIC;
+    clk_in1 : in STD_LOGIC;
+    resetn : in STD_LOGIC
   );
 end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_design_1_clk_wiz_1_0_clk_wiz;
 

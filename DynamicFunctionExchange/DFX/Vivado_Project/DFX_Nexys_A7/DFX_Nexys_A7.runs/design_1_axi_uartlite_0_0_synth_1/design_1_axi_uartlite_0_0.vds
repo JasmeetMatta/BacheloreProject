@@ -3,8 +3,8 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Mon Feb 12 17:27:02 2024
-# Process ID: 14604
+# Start of session at: Thu Feb 29 19:10:14 2024
+# Process ID: 2692
 # Current directory: C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.runs/design_1_axi_uartlite_0_0_synth_1
 # Command line: vivado.exe -log design_1_axi_uartlite_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_uartlite_0_0.tcl
 # Log file: C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.runs/design_1_axi_uartlite_0_0_synth_1/design_1_axi_uartlite_0_0.vds
@@ -12,7 +12,10 @@
 # Running On: Jasmeet, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 16990 MB
 #-----------------------------------------------------------
 source design_1_axi_uartlite_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 441.867 ; gain = 164.012
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 441.543 ; gain = 163.715
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jasme/Desktop/DFX/Vivado_Project/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2023.1/data/ip'.
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_uartlite_0_0
 Command: synth_design -top design_1_axi_uartlite_0_0 -part xc7a100tcsg324-1 -incremental_mode off -mode out_of_context
 Starting synth_design
@@ -21,9 +24,10 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 4664
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [Synth 8-7075] Helper process launched with PID 25552
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 1284.750 ; gain = 408.727
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1284.844 ; gain = 410.949
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_0_0' [c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/synth/design_1_axi_uartlite_0_0.vhd:86]
 	Parameter C_FAMILY bound to: artix7 - type: string 
@@ -129,59 +133,48 @@ WARNING: [Synth 8-7129] Port prmry_vect_in[0] in module cdc_sync is either uncon
 WARNING: [Synth 8-7129] Port scndry_resetn in module cdc_sync is either unconnected or has no load
 WARNING: [Synth 8-7129] Port bus2ip_cs in module uartlite_core is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1390.309 ; gain = 514.285
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1389.965 ; gain = 516.070
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 1390.309 ; gain = 514.285
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 1389.965 ; gain = 516.070
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 1390.309 ; gain = 514.285
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 1389.965 ; gain = 516.070
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1390.309 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1389.965 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_ooc.xdc] for cell 'U0'
-Parsing XDC File [c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_board.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_board.xdc] for cell 'U0'
-Parsing XDC File [c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xdc] for cell 'U0'
-Parsing XDC File [C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.runs/design_1_axi_uartlite_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.runs/design_1_axi_uartlite_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1483.984 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1433.684 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 6 instances were transformed.
   FDR => FDRE: 6 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.305 . Memory (MB): peak = 1484.027 ; gain = 0.043
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.164 . Memory (MB): peak = 1434.977 ; gain = 1.293
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:36 . Memory (MB): peak = 1484.027 ; gain = 608.004
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 1434.977 ; gain = 561.082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:36 . Memory (MB): peak = 1484.027 ; gain = 608.004
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 1434.977 ; gain = 561.082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.runs/design_1_axi_uartlite_0_0_synth_1/dont_touch.xdc, line 9).
-Applied set_property KEEP = true for rx. (constraint file  auto generated constraint).
-Applied set_property KEEP = true for U0/UARTLITE_CORE_I/UARTLITE_TX_I/TX. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:37 . Memory (MB): peak = 1484.027 ; gain = 608.004
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:30 . Memory (MB): peak = 1434.977 ; gain = 561.082
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
 ---------------------------------------------------------------------------------------------------
@@ -194,7 +187,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:37 . Memory (MB): peak = 1484.027 ; gain = 608.004
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:30 . Memory (MB): peak = 1434.977 ; gain = 561.082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -236,56 +229,80 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-7129] Port s_axi_wdata[31] in module axi_uartlite is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_wdata[30] in module axi_uartlite is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_wdata[29] in module axi_uartlite is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_wdata[28] in module axi_uartlite is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_wdata[27] in module axi_uartlite is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_wdata[26] in module axi_uartlite is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_wdata[25] in module axi_uartlite is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_wdata[24] in module axi_uartlite is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_wdata[23] in module axi_uartlite is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_wdata[22] in module axi_uartlite is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_wdata[21] in module axi_uartlite is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_wdata[20] in module axi_uartlite is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_wdata[19] in module axi_uartlite is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_wdata[18] in module axi_uartlite is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_wdata[17] in module axi_uartlite is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_wdata[16] in module axi_uartlite is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_wdata[15] in module axi_uartlite is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_wdata[14] in module axi_uartlite is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_wdata[13] in module axi_uartlite is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_wdata[12] in module axi_uartlite is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_wdata[11] in module axi_uartlite is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_wdata[10] in module axi_uartlite is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_wdata[9] in module axi_uartlite is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_wdata[8] in module axi_uartlite is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_wstrb[3] in module axi_uartlite is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_wstrb[2] in module axi_uartlite is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_wstrb[1] in module axi_uartlite is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_wstrb[0] in module axi_uartlite is either unconnected or has no load
-INFO: [Synth 8-3332] Sequential element (UARTLITE_CORE_I/UARTLITE_RX_I/INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_uartlite.
-INFO: [Synth 8-3332] Sequential element (UARTLITE_CORE_I/UARTLITE_RX_I/INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_uartlite.
+INFO: [Synth 8-3917] design design_1_axi_uartlite_0_0 has port s_axi_rdata[31] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_uartlite_0_0 has port s_axi_rdata[30] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_uartlite_0_0 has port s_axi_rdata[29] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_uartlite_0_0 has port s_axi_rdata[28] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_uartlite_0_0 has port s_axi_rdata[27] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_uartlite_0_0 has port s_axi_rdata[26] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_uartlite_0_0 has port s_axi_rdata[25] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_uartlite_0_0 has port s_axi_rdata[24] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_uartlite_0_0 has port s_axi_rdata[23] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_uartlite_0_0 has port s_axi_rdata[22] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_uartlite_0_0 has port s_axi_rdata[21] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_uartlite_0_0 has port s_axi_rdata[20] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_uartlite_0_0 has port s_axi_rdata[19] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_uartlite_0_0 has port s_axi_rdata[18] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_uartlite_0_0 has port s_axi_rdata[17] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_uartlite_0_0 has port s_axi_rdata[16] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_uartlite_0_0 has port s_axi_rdata[15] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_uartlite_0_0 has port s_axi_rdata[14] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_uartlite_0_0 has port s_axi_rdata[13] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_uartlite_0_0 has port s_axi_rdata[12] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_uartlite_0_0 has port s_axi_rdata[11] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_uartlite_0_0 has port s_axi_rdata[10] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_uartlite_0_0 has port s_axi_rdata[9] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_uartlite_0_0 has port s_axi_rdata[8] driven by constant 0
+WARNING: [Synth 8-7129] Port s_axi_wdata[31] in module design_1_axi_uartlite_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[30] in module design_1_axi_uartlite_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[29] in module design_1_axi_uartlite_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[28] in module design_1_axi_uartlite_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[27] in module design_1_axi_uartlite_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[26] in module design_1_axi_uartlite_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[25] in module design_1_axi_uartlite_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[24] in module design_1_axi_uartlite_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[23] in module design_1_axi_uartlite_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[22] in module design_1_axi_uartlite_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[21] in module design_1_axi_uartlite_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[20] in module design_1_axi_uartlite_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[19] in module design_1_axi_uartlite_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[18] in module design_1_axi_uartlite_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[17] in module design_1_axi_uartlite_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[16] in module design_1_axi_uartlite_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[15] in module design_1_axi_uartlite_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[14] in module design_1_axi_uartlite_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[13] in module design_1_axi_uartlite_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[12] in module design_1_axi_uartlite_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[11] in module design_1_axi_uartlite_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[10] in module design_1_axi_uartlite_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[9] in module design_1_axi_uartlite_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[8] in module design_1_axi_uartlite_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[3] in module design_1_axi_uartlite_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[2] in module design_1_axi_uartlite_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[1] in module design_1_axi_uartlite_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[0] in module design_1_axi_uartlite_0_0 is either unconnected or has no load
+INFO: [Synth 8-3332] Sequential element (U0/UARTLITE_CORE_I/UARTLITE_RX_I/INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module design_1_axi_uartlite_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/UARTLITE_CORE_I/UARTLITE_RX_I/INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module design_1_axi_uartlite_0_0.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:41 . Memory (MB): peak = 1484.027 ; gain = 608.004
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:34 . Memory (MB): peak = 1434.977 ; gain = 561.082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:50 . Memory (MB): peak = 1484.027 ; gain = 608.004
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:42 . Memory (MB): peak = 1434.977 ; gain = 561.082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:50 . Memory (MB): peak = 1484.027 ; gain = 608.004
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:42 . Memory (MB): peak = 1434.977 ; gain = 561.082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:51 . Memory (MB): peak = 1484.027 ; gain = 608.004
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:43 . Memory (MB): peak = 1434.977 ; gain = 561.082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -303,49 +320,49 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:58 . Memory (MB): peak = 1484.027 ; gain = 608.004
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:50 . Memory (MB): peak = 1434.977 ; gain = 561.082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:58 . Memory (MB): peak = 1484.027 ; gain = 608.004
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:50 . Memory (MB): peak = 1434.977 ; gain = 561.082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:58 . Memory (MB): peak = 1484.027 ; gain = 608.004
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:50 . Memory (MB): peak = 1434.977 ; gain = 561.082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:58 . Memory (MB): peak = 1484.027 ; gain = 608.004
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:50 . Memory (MB): peak = 1434.977 ; gain = 561.082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:58 . Memory (MB): peak = 1484.027 ; gain = 608.004
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:50 . Memory (MB): peak = 1434.977 ; gain = 561.082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:58 . Memory (MB): peak = 1484.027 ; gain = 608.004
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:50 . Memory (MB): peak = 1434.977 ; gain = 561.082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 
 Static Shift Register Report:
-+-------------+--------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|Module Name  | RTL Name                                         | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
-+-------------+--------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|axi_uartlite | UARTLITE_CORE_I/UARTLITE_RX_I/data_shift_reg[15] | 16     | 1     | YES          | NO                 | YES               | 1      | 0       | 
-|axi_uartlite | UARTLITE_CORE_I/UARTLITE_TX_I/data_shift_reg[15] | 15     | 1     | YES          | NO                 | YES               | 1      | 0       | 
-+-------------+--------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
++--------------------------+-----------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name               | RTL Name                                            | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++--------------------------+-----------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|design_1_axi_uartlite_0_0 | U0/UARTLITE_CORE_I/UARTLITE_RX_I/data_shift_reg[15] | 16     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|design_1_axi_uartlite_0_0 | U0/UARTLITE_CORE_I/UARTLITE_TX_I/data_shift_reg[15] | 15     | 1     | YES          | NO                 | YES               | 1      | 0       | 
++--------------------------+-----------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 
 
 Dynamic Shift Register Report:
@@ -385,30 +402,29 @@ Report Cell Usage:
 |11    |FDSE   |    18|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:58 . Memory (MB): peak = 1484.027 ; gain = 608.004
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:50 . Memory (MB): peak = 1434.977 ; gain = 561.082
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 29 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:50 . Memory (MB): peak = 1484.027 ; gain = 514.285
-Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:58 . Memory (MB): peak = 1484.027 ; gain = 608.004
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:46 . Memory (MB): peak = 1434.977 ; gain = 516.070
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:50 . Memory (MB): peak = 1434.977 ; gain = 561.082
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1484.027 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1434.977 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1484.027 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1434.977 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 4 instances were transformed.
   FDR => FDRE: 4 instances
 
-Synth Design complete | Checksum: 9d8ce0b9
+Synth Design complete | Checksum: bc8e49de
 INFO: [Common 17-83] Releasing license: Synthesis
-66 Infos, 74 Warnings, 0 Critical Warnings and 0 Errors encountered.
+92 Infos, 75 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:01:06 . Memory (MB): peak = 1484.027 ; gain = 1007.148
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:58 . Memory (MB): peak = 1434.977 ; gain = 958.352
 INFO: [Common 17-1381] The checkpoint 'C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.runs/design_1_axi_uartlite_0_0_synth_1/design_1_axi_uartlite_0_0.dcp' has been generated.
 INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_axi_uartlite_0_0, cache-ID = 16978083f78f70b5
 INFO: [Coretcl 2-1174] Renamed 19 cell refs.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.runs/design_1_axi_uartlite_0_0_synth_1/design_1_axi_uartlite_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_axi_uartlite_0_0_utilization_synth.rpt -pb design_1_axi_uartlite_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Feb 12 17:28:25 2024...
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 29 19:11:32 2024...

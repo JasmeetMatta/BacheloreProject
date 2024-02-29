@@ -2,7 +2,7 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-// Date        : Mon Feb 12 17:28:23 2024
+// Date        : Thu Feb 29 19:11:31 2024
 // Host        : Jasmeet running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 //               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_rst_clk_wiz_1_100M_0_sim_netlist.v
@@ -235,7 +235,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
   wire aux_reset_in;
   wire [0:0]bus_struct_reset;
   wire dcm_locked;
-  (* RTL_KEEP = "yes" *) (* x_interface_info = "xilinx.com:signal:reset:1.0 ext_reset RST" *) (* x_interface_parameter = "XIL_INTERFACENAME ext_reset, BOARD.ASSOCIATED_PARAM RESET_BOARD_INTERFACE, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) wire ext_reset_in;
+  wire ext_reset_in;
   wire [0:0]interconnect_aresetn;
   wire mb_debug_sys_rst;
   wire mb_reset;
@@ -243,15 +243,6 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
   wire [0:0]peripheral_reset;
   wire slowest_sync_clk;
 
-  (* C_AUX_RESET_HIGH = "1'b0" *) 
-  (* C_AUX_RST_WIDTH = "4" *) 
-  (* C_EXT_RESET_HIGH = "1'b0" *) 
-  (* C_EXT_RST_WIDTH = "4" *) 
-  (* C_FAMILY = "artix7" *) 
-  (* C_NUM_BUS_RST = "1" *) 
-  (* C_NUM_INTERCONNECT_ARESETN = "1" *) 
-  (* C_NUM_PERP_ARESETN = "1" *) 
-  (* C_NUM_PERP_RST = "1" *) 
   decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_proc_sys_reset U0
        (.aux_reset_in(aux_reset_in),
         .bus_struct_reset(bus_struct_reset),
@@ -370,7 +361,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_lpf
   (* XILINX_LEGACY_PRIM = "SRL16" *) 
   (* XILINX_TRANSFORM_PINMAP = "VCC:CE" *) 
   (* box_type = "PRIMITIVE" *) 
-  (* srl_name = "U0/\\EXT_LPF/POR_SRL_I " *) 
+  (* srl_name = "\\U0/EXT_LPF/POR_SRL_I " *) 
   SRL16E #(
     .INIT(16'hFFFF)) 
     POR_SRL_I
@@ -416,30 +407,27 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_lpf
         .R(1'b0));
 endmodule
 
-(* C_AUX_RESET_HIGH = "1'b0" *) (* C_AUX_RST_WIDTH = "4" *) (* C_EXT_RESET_HIGH = "1'b0" *) 
-(* C_EXT_RST_WIDTH = "4" *) (* C_FAMILY = "artix7" *) (* C_NUM_BUS_RST = "1" *) 
-(* C_NUM_INTERCONNECT_ARESETN = "1" *) (* C_NUM_PERP_ARESETN = "1" *) (* C_NUM_PERP_RST = "1" *) 
 module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_proc_sys_reset
-   (slowest_sync_clk,
-    ext_reset_in,
-    aux_reset_in,
-    mb_debug_sys_rst,
-    dcm_locked,
-    mb_reset,
+   (mb_reset,
     bus_struct_reset,
-    peripheral_reset,
     interconnect_aresetn,
-    peripheral_aresetn);
-  input slowest_sync_clk;
-  input ext_reset_in;
-  input aux_reset_in;
-  input mb_debug_sys_rst;
-  input dcm_locked;
+    peripheral_reset,
+    peripheral_aresetn,
+    slowest_sync_clk,
+    dcm_locked,
+    mb_debug_sys_rst,
+    ext_reset_in,
+    aux_reset_in);
   output mb_reset;
   output [0:0]bus_struct_reset;
-  output [0:0]peripheral_reset;
   output [0:0]interconnect_aresetn;
+  output [0:0]peripheral_reset;
   output [0:0]peripheral_aresetn;
+  input slowest_sync_clk;
+  input dcm_locked;
+  input mb_debug_sys_rst;
+  input ext_reset_in;
+  input aux_reset_in;
 
   wire Bsr_out;
   wire MB_out;

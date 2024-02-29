@@ -3,10 +3,10 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Fri Feb 23 00:13:23 2024
-# Process ID: 26352
+# Start of session at: Thu Feb 29 19:17:46 2024
+# Process ID: 2340
 # Current directory: C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/netlist/LED1/LED1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21428 C:\Users\jasme\Desktop\DFX\Vivado_Project\DFX_Nexys_A7\netlist\LED1\LED1\LED1.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10176 C:\Users\jasme\Desktop\DFX\Vivado_Project\DFX_Nexys_A7\netlist\LED1\LED1\LED1.xpr
 # Log file: C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/netlist/LED1/LED1/vivado.log
 # Journal file: C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/netlist/LED1/LED1\vivado.jou
 # Running On: Jasmeet, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 16990 MB

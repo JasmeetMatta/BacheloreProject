@@ -82,11 +82,19 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part_repo_paths {C:/Users/jasme/AppData/Roaming/Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store} [current_project]
 set_property board_part digilentinc.com:nexys-a7-100t:part0:1.2 [current_project]
+set_property ip_repo_paths {
+  c:/Users/jasme/Desktop/DFX/Vivado_Project/ip_repo
+  d:/VivadoCustomIP/NexysA7_IP
+} [current_project]
+update_ip_catalog
 set_property ip_output_repo c:/Users/jasme/Desktop/DFX/Vivado_Project/M_AXI_LED_LOGIC/M_AXI_LED_LOGIC.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib C:/Users/jasme/Desktop/DFX/Vivado_Project/M_AXI_LED_LOGIC/M_AXI_LED_LOGIC.srcs/sources_1/new/Led_Control.vhd
+read_vhdl -library xil_defaultlib {
+  C:/Users/jasme/Desktop/DFX/Vivado_Project/M_AXI_LED_LOGIC/M_AXI_LED_LOGIC.srcs/sources_1/new/Led_H1.vhd
+  C:/Users/jasme/Desktop/DFX/Vivado_Project/M_AXI_LED_LOGIC/M_AXI_LED_LOGIC.srcs/sources_1/new/Led_Control.vhd
+}
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -97,6 +105,8 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental C:/Users/jasme/Desktop/DFX/Vivado_Project/M_AXI_LED_LOGIC/M_AXI_LED_LOGIC.srcs/utils_1/imports/synth_1/Led_Control.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

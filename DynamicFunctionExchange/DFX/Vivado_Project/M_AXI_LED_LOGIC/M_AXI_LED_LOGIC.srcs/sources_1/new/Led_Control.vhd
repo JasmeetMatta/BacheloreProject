@@ -67,19 +67,23 @@ end Led_Control;
 
 architecture Behavioral of Led_Control is
 
-component Led_H1
-port(O: out std_logic_vector(31 downto 0));
+component Led_H2
+port(addrs: out std_logic_vector(31 downto 0);
+     clk : in std_logic);
 end component;
 
+    attribute black_box : string;
+    attribute black_box of Led_H2 : component is "yes";
+    
     signal clk  : std_logic;
     signal rstn : std_logic;
     signal data_h1 : std_logic_vector(31 downto 0);
 begin
-    u1: Led_H1 port map(O=>data_h1);
+
     -- Map general signals
     clk <= m_axi_aclk;
     rstn <= m_axi_aresetn;
-
+    u1: Led_H2 port map(addrs=>data_h1, clk => m_axi_aclk);
 
     -- Default protection flags
     m_axi_awprot <= "000";

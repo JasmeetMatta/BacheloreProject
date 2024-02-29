@@ -2,7 +2,7 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-// Date        : Sat Feb 17 00:30:45 2024
+// Date        : Thu Feb 29 22:02:19 2024
 // Host        : Jasmeet running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ip/design_1_Led_Control_0_1/design_1_Led_Control_0_1_sim_netlist.v
@@ -150,12 +150,12 @@ endmodule
 module design_1_Led_Control_0_1_Led_Control
    (m_axi_wvalid,
     m_axi_wdata,
-    m_axi_aresetn,
-    m_axi_aclk);
+    m_axi_aclk,
+    m_axi_aresetn);
   output m_axi_wvalid;
   output [31:0]m_axi_wdata;
-  input m_axi_aresetn;
   input m_axi_aclk;
+  input m_axi_aresetn;
 
   wire [31:0]data_h1;
   wire m_axi_aclk;
@@ -361,14 +361,18 @@ module design_1_Led_Control_0_1_Led_Control
         .D(data_h1[9]),
         .Q(m_axi_wdata[9]),
         .R(1'b0));
+  (* black_box = "yes" *) 
   design_1_Led_Control_0_1_Led_H2 u1
-       (.addrs(data_h1));
+       (.addrs(data_h1),
+        .clk(m_axi_aclk));
 endmodule
 
 (* ORIG_REF_NAME = "Led_H2" *) 
 module design_1_Led_Control_0_1_Led_H2
-   (addrs);
+   (addrs,
+    clk);
   output [31:0]addrs;
+  input clk;
 
 
 endmodule
