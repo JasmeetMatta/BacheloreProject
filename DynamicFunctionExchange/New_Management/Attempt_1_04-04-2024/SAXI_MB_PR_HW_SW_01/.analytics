@@ -1,0 +1,5 @@
+timestamp=[2024-04-05 00:35:00], mode=WORKBENCH_UI_INIT, duration=0:00:00.023, duration_ms=23, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2024-04-05 00:35:00], mode=WORKBENCH_START, duration=0:00:23.254, duration_ms=23254, data={}
+timestamp=[2024-04-05 00:35:03], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.643, duration_ms=1643, data={}
+timestamp=[2024-04-05 00:36:37], mode=PLATFORM_CREATION, duration=0:00:06.024, duration_ms=6024, data={platform_source=dsa, os=standalone, processor=microblaze, platform=null}
+timestamp=[2024-04-05 00:37:07], mode=PLATFORM_GENERATION, duration=0:00:04.050, duration_ms=4050, data={name=LED_PR}
