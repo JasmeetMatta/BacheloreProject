@@ -1,0 +1,22 @@
+Command: pr_verify ../DFX_Nexys_A7/netlist/config1/configrouted.dcp ../DFX_Nexys_A7/netlist/config2/config2routed.dcp -file verify.log
+Thu Mar 21 22:16:53 2024
+
+INFO: [Constraints 18-1020] PR Verify Summary:
+DCP1: ../DFX_Nexys_A7/netlist/config1/configrouted.dcp
+  Number of reconfigurable modules compared = 1
+  Number of partition pins compared         = 33
+  Number of static tiles compared           = 1224
+  Number of static sites compared           = 697
+  Number of static cells compared           = 4205
+  Number of static routed nodes compared    = 55070
+  Number of static routed pips compared     = 51454
+
+DCP2: ../DFX_Nexys_A7/netlist/config2/config2routed.dcp
+  Number of reconfigurable modules compared = 1
+  Number of partition pins compared         = 33
+  Number of static tiles compared           = 1224
+  Number of static sites compared           = 697
+  Number of static cells compared           = 4205
+  Number of static routed nodes compared    = 55070
+  Number of static routed pips compared     = 51454
+INFO: [Vivado 12-3253] PR_VERIFY: check points ../DFX_Nexys_A7/netlist/config1/configrouted.dcp and ../DFX_Nexys_A7/netlist/config2/config2routed.dcp are compatible

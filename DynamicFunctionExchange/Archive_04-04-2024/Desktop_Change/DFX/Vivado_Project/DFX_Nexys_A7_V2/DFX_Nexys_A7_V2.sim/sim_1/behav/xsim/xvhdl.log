@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7_V2/DFX_Nexys_A7_V2.ip_user_files/bd/design_1/ipshared/6e1c/src/Led_Control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Led_Control'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7_V2/DFX_Nexys_A7_V2.ip_user_files/bd/design_1/ip/design_1_Led_Control_0_0/sim/design_1_Led_Control_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_Led_Control_0_0'

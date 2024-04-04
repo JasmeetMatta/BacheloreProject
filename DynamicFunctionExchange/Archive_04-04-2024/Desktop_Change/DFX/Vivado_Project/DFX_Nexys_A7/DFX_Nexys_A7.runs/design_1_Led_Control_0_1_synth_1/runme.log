@@ -1,0 +1,355 @@
+
+*** Running vivado
+    with args -log design_1_Led_Control_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_Led_Control_0_1.tcl
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_Led_Control_0_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 441.566 ; gain = 164.246
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jasme/Desktop/DFX/Vivado_Project/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2023.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_Led_Control_0_1
+Command: synth_design -top design_1_Led_Control_0_1 -part xc7a100tcsg324-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+
+*** Running vivado
+    with args -log design_1_Led_Control_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_Led_Control_0_1.tcl
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_Led_Control_0_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 442.277 ; gain = 164.469
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jasme/Desktop/DFX/Vivado_Project/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2023.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_Led_Control_0_1
+Command: synth_design -top design_1_Led_Control_0_1 -part xc7a100tcsg324-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [Synth 8-7075] Helper process launched with PID 9108
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1284.754 ; gain = 409.145
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_Led_Control_0_1' [c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ip/design_1_Led_Control_0_1/synth/design_1_Led_Control_0_1.vhd:79]
+INFO: [Synth 8-3491] module 'Led_Control' declared at 'c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ipshared/aebc/src/Led_Control.vhd:34' bound to instance 'U0' of component 'Led_Control' [c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ip/design_1_Led_Control_0_1/synth/design_1_Led_Control_0_1.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'Led_Control' [c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ipshared/aebc/src/Led_Control.vhd:68]
+INFO: [Synth 8-637] synthesizing blackbox instance 'u1' of component 'Led_H2' [c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ipshared/aebc/src/Led_Control.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'Led_Control' (0#1) [c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ipshared/aebc/src/Led_Control.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'design_1_Led_Control_0_1' (0#1) [c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ip/design_1_Led_Control_0_1/synth/design_1_Led_Control_0_1.vhd:79]
+WARNING: [Synth 8-6014] Unused sequential element m_axi_wvalid_reg was removed.  [c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ipshared/aebc/src/Led_Control.vhd:97]
+WARNING: [Synth 8-3848] Net m_axi_bready in module/entity Led_Control does not have driver. [c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ipshared/aebc/src/Led_Control.vhd:53]
+WARNING: [Synth 8-3848] Net m_axi_araddr in module/entity Led_Control does not have driver. [c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ipshared/aebc/src/Led_Control.vhd:58]
+WARNING: [Synth 8-3848] Net m_axi_rready in module/entity Led_Control does not have driver. [c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.gen/sources_1/bd/design_1/ipshared/aebc/src/Led_Control.vhd:62]
+WARNING: [Synth 8-7129] Port m_axi_bready in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[31] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[30] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[29] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[28] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[27] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[26] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[25] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[24] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[23] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[22] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[21] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[20] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[19] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[18] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[17] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[16] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[15] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[14] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[13] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[12] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[11] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[10] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[9] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[8] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[7] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[6] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[5] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[4] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[3] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[2] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[1] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[0] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rready in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_awready in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_wready in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bvalid in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_arready in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rvalid in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rdata[31] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rdata[30] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rdata[29] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rdata[28] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rdata[27] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rdata[26] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rdata[25] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rdata[24] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rdata[23] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rdata[22] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rdata[21] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rdata[20] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rdata[19] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rdata[18] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rdata[17] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rdata[16] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rdata[15] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rdata[14] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rdata[13] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rdata[12] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rdata[11] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rdata[10] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rdata[9] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rdata[8] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rdata[7] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rdata[6] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rdata[5] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rdata[4] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rdata[3] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rdata[2] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rdata[1] in module Led_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rdata[0] in module Led_Control is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1377.941 ; gain = 502.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1377.941 ; gain = 502.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1377.941 ; gain = 502.332
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1377.941 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1461.102 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1461.102 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1461.102 ; gain = 585.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1461.102 ; gain = 585.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1461.102 ; gain = 585.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1461.102 ; gain = 585.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3917] design design_1_Led_Control_0_1 has port m_axi_awprot[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_Led_Control_0_1 has port m_axi_awprot[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_Led_Control_0_1 has port m_axi_awprot[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_Led_Control_0_1 has port m_axi_arprot[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_Led_Control_0_1 has port m_axi_arprot[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_Led_Control_0_1 has port m_axi_arprot[0] driven by constant 0
+WARNING: [Synth 8-7129] Port m_axi_bready in module design_1_Led_Control_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[31] in module design_1_Led_Control_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[30] in module design_1_Led_Control_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[29] in module design_1_Led_Control_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[28] in module design_1_Led_Control_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[27] in module design_1_Led_Control_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[26] in module design_1_Led_Control_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[25] in module design_1_Led_Control_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[24] in module design_1_Led_Control_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[23] in module design_1_Led_Control_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[22] in module design_1_Led_Control_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[21] in module design_1_Led_Control_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[20] in module design_1_Led_Control_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[19] in module design_1_Led_Control_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[18] in module design_1_Led_Control_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[17] in module design_1_Led_Control_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[16] in module design_1_Led_Control_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[15] in module design_1_Led_Control_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[14] in module design_1_Led_Control_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[13] in module design_1_Led_Control_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[12] in module design_1_Led_Control_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[11] in module design_1_Led_Control_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[10] in module design_1_Led_Control_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[9] in module design_1_Led_Control_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[8] in module design_1_Led_Control_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[7] in module design_1_Led_Control_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[6] in module design_1_Led_Control_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[5] in module design_1_Led_Control_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_araddr[4] in module design_1_Led_Control_0_1 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1461.102 ; gain = 585.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1461.102 ; gain = 585.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1461.102 ; gain = 585.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1461.102 ; gain = 585.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1461.102 ; gain = 585.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1461.102 ; gain = 585.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1461.102 ; gain = 585.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1461.102 ; gain = 585.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1461.102 ; gain = 585.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1461.102 ; gain = 585.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |Led_H2        |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |Led_H2_bbox |     1|
+|2     |FDRE        |    33|
++------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1461.102 ; gain = 585.492
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 72 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 1461.102 ; gain = 502.332
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1461.102 ; gain = 585.492
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1461.102 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1461.102 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 1bbf824f
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1461.102 ; gain = 983.797
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.runs/design_1_Led_Control_0_1_synth_1/design_1_Led_Control_0_1.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_Led_Control_0_1, cache-ID = 48fd74ae9c64c920
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.runs/design_1_Led_Control_0_1_synth_1/design_1_Led_Control_0_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_Led_Control_0_1_utilization_synth.rpt -pb design_1_Led_Control_0_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 29 22:02:19 2024...

@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "Led_AXI_AttemptInfi_behav" "xil_defaultlib.Led_AXI_AttemptInfi" -log "elaborate.log" 

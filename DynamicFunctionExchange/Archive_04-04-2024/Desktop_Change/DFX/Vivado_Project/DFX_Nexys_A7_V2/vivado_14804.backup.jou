@@ -1,0 +1,62 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Mar 21 22:12:59 2024
+# Process ID: 14804
+# Current directory: C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7_V2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12156 C:\Users\jasme\Desktop\DFX\Vivado_Project\DFX_Nexys_A7_V2\DFX_Nexys_A7_V2.xpr
+# Log file: C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7_V2/vivado.log
+# Journal file: C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7_V2\vivado.jou
+# Running On: Jasmeet, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 16990 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7_V2/DFX_Nexys_A7_V2.xpr
+update_compile_order -fileset sources_1
+close_project
+open_project C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.xpr
+update_compile_order -fileset sources_1
+pr_verify ../DFX_Nexys_A7/netlist/config1/configrouted.dcp ../DFX_Nexys_A7/netlist/config2/config2routed.dcp -file verify.log
+open_bd_design {C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7/DFX_Nexys_A7.srcs/sources_1/bd/design_1/design_1.bd}
+open_run synth_1 -name synth_1
+resize_pblock pblock_u1 -remove {DSP48_X0Y20:DSP48_X0Y39 RAMB18_X0Y20:RAMB18_X0Y39 RAMB36_X0Y10:RAMB36_X0Y19} -locs keep_all
+resize_pblock pblock_u1 -add SLICE_X12Y50:SLICE_X51Y99 -remove SLICE_X12Y50:SLICE_X15Y99 -locs keep_all
+resize_pblock pblock_u1 -add {SLICE_X6Y50:SLICE_X29Y99 DSP48_X0Y20:DSP48_X0Y39 RAMB18_X0Y20:RAMB18_X0Y39 RAMB36_X0Y10:RAMB36_X0Y19} -remove SLICE_X0Y50:SLICE_X7Y99 -locs keep_all
+resize_pblock pblock_u1 -locs keep_all
+resize_pblock pblock_u1 -locs keep_all
+resize_pblock pblock_u1 -add {SLICE_X6Y50:SLICE_X29Y99 DSP48_X0Y20:DSP48_X0Y39 RAMB18_X0Y20:RAMB18_X0Y39 RAMB36_X0Y10:RAMB36_X0Y19} -remove {SLICE_X6Y50:SLICE_X51Y99 DSP48_X0Y20:DSP48_X0Y39 RAMB18_X0Y20:RAMB18_X0Y39 RAMB36_X0Y10:RAMB36_X0Y19} -locs keep_all
+resize_pblock pblock_u1 -remove {DSP48_X0Y20:DSP48_X0Y39 RAMB18_X0Y20:RAMB18_X0Y39 RAMB36_X0Y10:RAMB36_X0Y19} -locs keep_all
+resize_pblock pblock_u1 -locs keep_all
+resize_pblock pblock_u1 -add {SLICE_X8Y50:SLICE_X15Y99 DSP48_X0Y20:DSP48_X0Y39} -remove SLICE_X8Y50:SLICE_X11Y99 -locs keep_all
+resize_pblock pblock_u1 -add {SLICE_X6Y50:SLICE_X11Y99 DSP48_X0Y20:DSP48_X0Y39 RAMB18_X0Y20:RAMB18_X0Y39 RAMB36_X0Y10:RAMB36_X0Y19} -remove SLICE_X6Y50:SLICE_X7Y99 -locs keep_all
+resize_pblock pblock_u1 -remove {DSP48_X0Y20:DSP48_X0Y39 RAMB18_X0Y20:RAMB18_X0Y39 RAMB36_X0Y10:RAMB36_X0Y19} -locs keep_all
+resize_pblock pblock_u1 -add {SLICE_X6Y50:SLICE_X15Y99 DSP48_X0Y20:DSP48_X0Y39 RAMB18_X0Y20:RAMB18_X0Y39 RAMB36_X0Y10:RAMB36_X0Y19} -remove SLICE_X6Y50:SLICE_X7Y99 -locs keep_all
+resize_pblock pblock_u1 -add {SLICE_X6Y50:SLICE_X11Y99 RAMB18_X0Y20:RAMB18_X0Y39 RAMB36_X0Y10:RAMB36_X0Y19} -remove {SLICE_X6Y50:SLICE_X29Y99 DSP48_X0Y20:DSP48_X0Y39 RAMB18_X0Y20:RAMB18_X0Y39 RAMB36_X0Y10:RAMB36_X0Y19} -locs keep_all
+resize_pblock pblock_u1 -add {SLICE_X6Y50:SLICE_X11Y99 RAMB18_X0Y20:RAMB18_X0Y39 RAMB36_X0Y10:RAMB36_X0Y19} -remove {SLICE_X6Y50:SLICE_X11Y99 RAMB18_X0Y20:RAMB18_X0Y39 RAMB36_X0Y10:RAMB36_X0Y19} -locs keep_all
+resize_pblock pblock_u1 -remove {RAMB18_X0Y20:RAMB18_X0Y39 RAMB36_X0Y10:RAMB36_X0Y19} -locs keep_all
+delete_pblock [get_pblocks  pblock_u1]
+startgroup
+create_pblock pblock_u1
+resize_pblock pblock_u1 -add {SLICE_X52Y100:SLICE_X83Y149 DSP48_X1Y40:DSP48_X2Y59 RAMB18_X1Y40:RAMB18_X3Y59 RAMB36_X1Y20:RAMB36_X3Y29}
+add_cells_to_pblock pblock_u1 [get_cells [list design_1_i/Led_Control_0/U0/u1]] -clear_locs
+endgroup
+set_property RESET_AFTER_RECONFIG 1 [get_pblocks pblock_u1]
+set_property SNAPPING_MODE ON [get_pblocks pblock_u1]
+set_property SNAPPING_MODE ROUTING [get_pblocks pblock_u1]
+set_property SNAPPING_MODE ON [get_pblocks pblock_u1]
+create_drc_ruledeck ruledeck_1
+add_drc_checks -ruledeck ruledeck_1 [get_drc_checks {HDPRABS-3 HDPRABS-2 HDPRABS-1 HDPRA-65 HDPRA-64 HDPRA-63 HDPRA-62 HDPRA-60 HDPRA-58 HDPRA-57 HDPRA-56 HDPRA-55 HDPRA-54 HDPRA-53 HDPRA-52 HDPRA-51 HDPRA-21 HDPR-122 HDPR-115 HDPR-117 HDPR-98 HDPR-52 HDPR-43 HDPR-20 HDPR-126 HDPR-123 HDPR-120 HDPR-119 HDPR-88 HDPR-41 HDPR-40 HDPR-30 HDPR-121 HDPR-35 HDPR-34 HDPR-133 HDPR-132 HDPR-131 HDPR-125 HDPR-124 HDPR-118 HDPR-116 HDPR-114 HDPR-113 HDPR-112 HDPR-111 HDPR-110 HDPR-109 HDPR-108 HDPR-107 HDPR-106 HDPR-105 HDPR-103 HDPR-100 HDPR-99 HDPR-97 HDPR-96 HDPR-95 HDPR-94 HDPR-93 HDPR-92 HDPR-91 HDPR-90 HDPR-87 HDPR-86 HDPR-85 HDPR-84 HDPR-83 HDPR-74 HDPR-73 HDPR-72 HDPR-71 HDPR-70 HDPR-69 HDPR-68 HDPR-67 HDPR-66 HDPR-65 HDPR-64 HDPR-63 HDPR-62 HDPR-61 HDPR-60 HDPR-59 HDPR-58 HDPR-57 HDPR-54 HDPR-51 HDPR-50 HDPR-49 HDPR-48 HDPR-47 HDPR-46 HDPR-45 HDPR-44 HDPR-42 HDPR-39 HDPR-38 HDPR-37 HDPR-36 HDPR-33 HDPR-32 HDPR-29 HDPR-28 HDPR-27 HDPR-26 HDPR-25 HDPR-23 HDPR-22 HDPR-19 HDPR-18 HDPR-17 HDPR-16 HDPR-15 HDPR-14 HDPR-13 HDPR-12 HDPR-11 HDPR-10 HDPR-9 HDPR-8 HDPR-7 HDPR-6 HDPR-5 HDPR-4 HDPR-3 HDPR-2 HDPR-1}]
+report_drc -name drc_1 -ruledecks {ruledeck_1}
+delete_drc_ruledeck ruledeck_1
+read_checkpoint -cell design_1_i/Led_Control_0/U0/u1 ../DFX_Nexys_A7/netlist/LED1/u1.dcp
+create_drc_ruledeck ruledeck_1
+add_drc_checks -ruledeck ruledeck_1 [get_drc_checks {HDPRABS-3 HDPRABS-2 HDPRABS-1 HDPRA-65 HDPRA-64 HDPRA-63 HDPRA-62 HDPRA-60 HDPRA-58 HDPRA-57 HDPRA-56 HDPRA-55 HDPRA-54 HDPRA-53 HDPRA-52 HDPRA-51 HDPRA-21 HDPR-122 HDPR-115 HDPR-117 HDPR-98 HDPR-52 HDPR-43 HDPR-20 HDPR-126 HDPR-123 HDPR-120 HDPR-119 HDPR-88 HDPR-41 HDPR-40 HDPR-30 HDPR-121 HDPR-35 HDPR-34 HDPR-133 HDPR-132 HDPR-131 HDPR-125 HDPR-124 HDPR-118 HDPR-116 HDPR-114 HDPR-113 HDPR-112 HDPR-111 HDPR-110 HDPR-109 HDPR-108 HDPR-107 HDPR-106 HDPR-105 HDPR-103 HDPR-100 HDPR-99 HDPR-97 HDPR-96 HDPR-95 HDPR-94 HDPR-93 HDPR-92 HDPR-91 HDPR-90 HDPR-87 HDPR-86 HDPR-85 HDPR-84 HDPR-83 HDPR-74 HDPR-73 HDPR-72 HDPR-71 HDPR-70 HDPR-69 HDPR-68 HDPR-67 HDPR-66 HDPR-65 HDPR-64 HDPR-63 HDPR-62 HDPR-61 HDPR-60 HDPR-59 HDPR-58 HDPR-57 HDPR-54 HDPR-51 HDPR-50 HDPR-49 HDPR-48 HDPR-47 HDPR-46 HDPR-45 HDPR-44 HDPR-42 HDPR-39 HDPR-38 HDPR-37 HDPR-36 HDPR-33 HDPR-32 HDPR-29 HDPR-28 HDPR-27 HDPR-26 HDPR-25 HDPR-23 HDPR-22 HDPR-19 HDPR-18 HDPR-17 HDPR-16 HDPR-15 HDPR-14 HDPR-13 HDPR-12 HDPR-11 HDPR-10 HDPR-9 HDPR-8 HDPR-7 HDPR-6 HDPR-5 HDPR-4 HDPR-3 HDPR-2 HDPR-1}]
+report_drc -name drc_1 -ruledecks {ruledeck_1}
+delete_drc_ruledeck ruledeck_1
+opt_design
+place_design
+route_design t
+route_design
+close_design
+open_run synth_1 -name synth_1

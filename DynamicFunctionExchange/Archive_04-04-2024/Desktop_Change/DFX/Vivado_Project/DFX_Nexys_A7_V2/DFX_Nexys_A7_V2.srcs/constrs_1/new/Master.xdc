@@ -1,0 +1,8 @@
+set_property PACKAGE_PIN H17 [get_ports {Led_0[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {Led_0[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {Led_0[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {Led_0[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {Led_0[0]}]
+set_property PACKAGE_PIN K15 [get_ports {Led_0[1]}]
+set_property PACKAGE_PIN J13 [get_ports {Led_0[2]}]
+set_property PACKAGE_PIN N14 [get_ports {Led_0[3]}]

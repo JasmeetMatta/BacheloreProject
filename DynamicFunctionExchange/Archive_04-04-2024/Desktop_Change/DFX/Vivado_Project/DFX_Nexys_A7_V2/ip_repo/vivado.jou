@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Wed Apr  3 01:32:48 2024
+# Process ID: 8748
+# Current directory: C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7_V2/ip_repo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17504 C:\Users\jasme\Desktop\DFX\Vivado_Project\DFX_Nexys_A7_V2\ip_repo\tmp_edit_project.xpr
+# Log file: C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7_V2/ip_repo/vivado.log
+# Journal file: C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7_V2/ip_repo\vivado.jou
+# Running On: Jasmeet, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 16990 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7_V2/ip_repo/tmp_edit_project.xpr
+update_compile_order -fileset sources_1
+ipx::open_ipxact_file C:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7_V2/ip_repo/component.xml
+set_property core_revision 50 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7_V2/ip_repo
+ipx::merge_project_changes ports [ipx::current_core]
+set_property core_revision 51 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/jasme/Desktop/DFX/Vivado_Project/DFX_Nexys_A7_V2/ip_repo
+ipx::merge_project_changes ports [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
