@@ -1,5 +1,5 @@
-00:37:03 **** Build of project LED_PR ****
-buildplatform.bat 51294 LED_PR  
+00:41:54 **** Build of project LED_PR ****
+buildplatform.bat 51467 LED_PR  
 ECHO is off.
 ECHO is off.
 XSDB Server Channel: tcfchan#1
@@ -53,12 +53,12 @@ tions -Wall -Wextra -fno-tree-loop-distribute-patterns"
 cc1.exe: fatal error: *.c: Invalid argument
 compilation terminated.
 make[2]: *** [Makefile:18: libs] Error 1
-make[1]: *** [Makefile:46: microblaze_0/libsrc/Led_Control_04_2024_v1_0/src/make.libs] Error 2
 Failed to generate the platform.
-make: *** [Makefile:18: all] Error 2
+make[1]: *** [Makefile:46: microblaze_0/libsrc/Led_Control_04_2024_v1_0/src/make.libs] Error 2
 Reason: Failed to build  the bsp sources for domain - standalone_domain
-Failed to build  the bsp sources for domain - standalone_domain
+make: *** [Makefile:18: all] Error 2
     invoked from within
+Failed to build  the bsp sources for domain - standalone_domain
 "::tcf::eval -progress {apply {{msg} {puts $msg}}} {tcf_send_command tcfchan#0 xsdb eval s es {{platform active LED_PR; platform generate }}}"
     (procedure "::tcf::send_command" line 4)
     invoked from within
@@ -72,5 +72,5 @@ Failed to build  the bsp sources for domain - standalone_domain
     set lastind..."
     (file "D:/Xilinx/Vitis/2023.1\scripts\vitis\util\buildplatform.tcl" line 11)
 
-00:37:07 Build Finished (took 3s.978ms)
+00:41:57 Build Finished (took 2s.197ms)
 
