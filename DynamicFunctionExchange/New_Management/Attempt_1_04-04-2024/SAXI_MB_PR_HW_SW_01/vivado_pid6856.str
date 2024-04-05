@@ -233,3 +233,4 @@ selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // al
 selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // ao
 // Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
 dismissDialog("Edit in IP Packager"); // h.a
+// HMemoryUtils.trashcanNow. Engine heap size: 1,278 MB. GUI used memory: 75 MB. Current time: 4/5/24, 3:05:45 AM CEST
