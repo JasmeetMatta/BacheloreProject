@@ -52,6 +52,8 @@
 #include "xbasic_types.h"
 #include "xparameters.h"
 #include "Led_Control_04_2024.h"
+#include "microblaze_sleep.h"
+
 
 XGpio_Config *buttons_config;
 XGpio_Config *Led_config;
@@ -71,11 +73,14 @@ int main()
 	initialization();
     while (1){
     	buttonData = XGpio_DiscreteRead(&buttons,1);
+    	xil_printf("buttonData: 0x%08x", buttonData);
+    	print("\n\r");
     	LED_CONTROL_04_2024_mWriteReg(&LedBaseaddr_p,0,buttonData);
     	LedIpData = LED_CONTROL_04_2024_mReadReg(&LedBaseaddr_p,4);
     	XGpio_DiscreteWrite(&Led,1,LedIpData);
     	xil_printf("LedIpData: 0x%08x", LedIpData);
     	print("\n\r");
+    	//MB_Sleep(500);
     }
 //    print("Hello World\n\r");
 //    print("Successfully ran Hello World application");

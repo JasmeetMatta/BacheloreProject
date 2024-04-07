@@ -2,7 +2,7 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
--- Date        : Fri Apr  5 00:28:01 2024
+-- Date        : Sun Apr  7 01:10:20 2024
 -- Host        : Jasmeet running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
 --               c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/ip/design_1_Led_Control_04_2024_0_1/design_1_Led_Control_04_2024_0_1_stub.vhdl

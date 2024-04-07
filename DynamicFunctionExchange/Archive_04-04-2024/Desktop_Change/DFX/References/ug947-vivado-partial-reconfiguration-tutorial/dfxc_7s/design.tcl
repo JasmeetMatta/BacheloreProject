@@ -31,8 +31,8 @@ source $tclDir/dfx_utils.tcl
 ### Select one only
 ###############################################################
 #set xboard        "kc705"
-set xboard        "NX7"
-#set xboard        "vc707"
+#set xboard        "NX7"
+set xboard        "vc707"
 #set xboard        "vc709"
 
 ###############################################################

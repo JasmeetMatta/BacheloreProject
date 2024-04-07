@@ -88,3 +88,6 @@ con
 ----------------End of Script----------------
 
 02:57:24 INFO  : Launch script is exported to file 'V:\SAXI_MB_PR_HW_SW_01\LEDPR_Application_01_system\_ide\scripts\debugger_ledpr_application_01-default.tcl'
+03:10:45 INFO  : Disconnected from the channel tcfchan#8.
+18:12:36 DEBUG : Logs will be stored at 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/IDE.log'.
+18:12:38 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\VProject\Attempt_1_04-04-2024\SAXI_MB_PR_HW_SW_01\temp_xsdb_launch_script.tcl

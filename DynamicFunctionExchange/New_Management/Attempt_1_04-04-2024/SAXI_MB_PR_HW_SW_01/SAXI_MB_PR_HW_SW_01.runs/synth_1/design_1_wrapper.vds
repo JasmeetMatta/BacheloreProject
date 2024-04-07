@@ -3,8 +3,8 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Fri Apr  5 00:28:07 2024
-# Process ID: 11176
+# Start of session at: Sun Apr  7 01:10:23 2024
+# Process ID: 13228
 # Current directory: C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/design_1_wrapper.vds
@@ -12,42 +12,47 @@
 # Running On: Jasmeet, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 16990 MB
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 443.352 ; gain = 165.277
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 440.602 ; gain = 161.176
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/VProject/Attempt_1_04-04-2024/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2023.1/data/ip'.
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
 Current IP cache path is c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.cache/ip 
+Command: read_checkpoint -auto_incremental -incremental C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top design_1_wrapper -part xc7a100tcsg324-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 5632
+INFO: [Synth 8-7075] Helper process launched with PID 18344
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1311.512 ; gain = 410.430
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1314.398 ; gain = 411.398
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:26]
 INFO: [Synth 8-3491] module 'design_1' declared at 'c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:2066' bound to instance 'design_1_i' of component 'design_1' [C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:38]
 INFO: [Synth 8-638] synthesizing module 'design_1' [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:2081]
-INFO: [Synth 8-3491] module 'design_1_Led_Control_04_2024_0_1' declared at 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-11176-Jasmeet/realtime/design_1_Led_Control_04_2024_0_1_stub.vhdl:6' bound to instance 'Led_Control_04_2024_0' of component 'design_1_Led_Control_04_2024_0_1' [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:2482]
-INFO: [Synth 8-638] synthesizing module 'design_1_Led_Control_04_2024_0_1' [C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-11176-Jasmeet/realtime/design_1_Led_Control_04_2024_0_1_stub.vhdl:33]
-INFO: [Synth 8-3491] module 'design_1_axi_gpio_0_0' declared at 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-11176-Jasmeet/realtime/design_1_axi_gpio_0_0_stub.vhdl:6' bound to instance 'axi_gpio_0' of component 'design_1_axi_gpio_0_0' [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:2506]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_0' [C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-11176-Jasmeet/realtime/design_1_axi_gpio_0_0_stub.vhdl:32]
-INFO: [Synth 8-3491] module 'design_1_axi_gpio_1_0' declared at 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-11176-Jasmeet/realtime/design_1_axi_gpio_1_0_stub.vhdl:6' bound to instance 'axi_gpio_1' of component 'design_1_axi_gpio_1_0' [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:2529]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_1_0' [C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-11176-Jasmeet/realtime/design_1_axi_gpio_1_0_stub.vhdl:32]
-INFO: [Synth 8-3491] module 'design_1_axi_uartlite_0_0' declared at 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-11176-Jasmeet/realtime/design_1_axi_uartlite_0_0_stub.vhdl:6' bound to instance 'axi_uartlite_0' of component 'design_1_axi_uartlite_0_0' [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:2552]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_0_0' [C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-11176-Jasmeet/realtime/design_1_axi_uartlite_0_0_stub.vhdl:34]
-INFO: [Synth 8-3491] module 'design_1_clk_wiz_1_0' declared at 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-11176-Jasmeet/realtime/design_1_clk_wiz_1_0_stub.vhdl:6' bound to instance 'clk_wiz_1' of component 'design_1_clk_wiz_1_0' [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:2577]
-INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_1_0' [C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-11176-Jasmeet/realtime/design_1_clk_wiz_1_0_stub.vhdl:16]
-INFO: [Synth 8-3491] module 'design_1_mdm_1_0' declared at 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-11176-Jasmeet/realtime/design_1_mdm_1_0_stub.vhdl:6' bound to instance 'mdm_1' of component 'design_1_mdm_1_0' [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:2584]
-INFO: [Synth 8-638] synthesizing module 'design_1_mdm_1_0' [C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-11176-Jasmeet/realtime/design_1_mdm_1_0_stub.vhdl:22]
-INFO: [Synth 8-3491] module 'design_1_microblaze_0_0' declared at 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-11176-Jasmeet/realtime/design_1_microblaze_0_0_stub.vhdl:6' bound to instance 'microblaze_0' of component 'design_1_microblaze_0_0' [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:2597]
-INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_0' [C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-11176-Jasmeet/realtime/design_1_microblaze_0_0_stub.vhdl:64]
-INFO: [Synth 8-3491] module 'design_1_microblaze_0_axi_intc_0' declared at 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-11176-Jasmeet/realtime/design_1_microblaze_0_axi_intc_0_stub.vhdl:6' bound to instance 'microblaze_0_axi_intc' of component 'design_1_microblaze_0_axi_intc_0' [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:2683]
-INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_axi_intc_0' [C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-11176-Jasmeet/realtime/design_1_microblaze_0_axi_intc_0_stub.vhdl:37]
+INFO: [Synth 8-3491] module 'design_1_Led_Control_04_2024_0_1' declared at 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-13228-Jasmeet/realtime/design_1_Led_Control_04_2024_0_1_stub.vhdl:6' bound to instance 'Led_Control_04_2024_0' of component 'design_1_Led_Control_04_2024_0_1' [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:2482]
+INFO: [Synth 8-638] synthesizing module 'design_1_Led_Control_04_2024_0_1' [C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-13228-Jasmeet/realtime/design_1_Led_Control_04_2024_0_1_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_0_0' declared at 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-13228-Jasmeet/realtime/design_1_axi_gpio_0_0_stub.vhdl:6' bound to instance 'axi_gpio_0' of component 'design_1_axi_gpio_0_0' [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:2506]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_0' [C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-13228-Jasmeet/realtime/design_1_axi_gpio_0_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_1_0' declared at 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-13228-Jasmeet/realtime/design_1_axi_gpio_1_0_stub.vhdl:6' bound to instance 'axi_gpio_1' of component 'design_1_axi_gpio_1_0' [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:2529]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_1_0' [C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-13228-Jasmeet/realtime/design_1_axi_gpio_1_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'design_1_axi_uartlite_0_0' declared at 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-13228-Jasmeet/realtime/design_1_axi_uartlite_0_0_stub.vhdl:6' bound to instance 'axi_uartlite_0' of component 'design_1_axi_uartlite_0_0' [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:2552]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_0_0' [C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-13228-Jasmeet/realtime/design_1_axi_uartlite_0_0_stub.vhdl:34]
+INFO: [Synth 8-3491] module 'design_1_clk_wiz_1_0' declared at 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-13228-Jasmeet/realtime/design_1_clk_wiz_1_0_stub.vhdl:6' bound to instance 'clk_wiz_1' of component 'design_1_clk_wiz_1_0' [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:2577]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_1_0' [C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-13228-Jasmeet/realtime/design_1_clk_wiz_1_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'design_1_mdm_1_0' declared at 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-13228-Jasmeet/realtime/design_1_mdm_1_0_stub.vhdl:6' bound to instance 'mdm_1' of component 'design_1_mdm_1_0' [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:2584]
+INFO: [Synth 8-638] synthesizing module 'design_1_mdm_1_0' [C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-13228-Jasmeet/realtime/design_1_mdm_1_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'design_1_microblaze_0_0' declared at 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-13228-Jasmeet/realtime/design_1_microblaze_0_0_stub.vhdl:6' bound to instance 'microblaze_0' of component 'design_1_microblaze_0_0' [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:2597]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_0' [C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-13228-Jasmeet/realtime/design_1_microblaze_0_0_stub.vhdl:64]
+INFO: [Synth 8-3491] module 'design_1_microblaze_0_axi_intc_0' declared at 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-13228-Jasmeet/realtime/design_1_microblaze_0_axi_intc_0_stub.vhdl:6' bound to instance 'microblaze_0_axi_intc' of component 'design_1_microblaze_0_axi_intc_0' [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:2683]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_axi_intc_0' [C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-13228-Jasmeet/realtime/design_1_microblaze_0_axi_intc_0_stub.vhdl:37]
 INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_axi_periph_0' [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:1324]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_8RVYHO' [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:58]
 INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_8RVYHO' (0#1) [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:58]
@@ -61,28 +66,28 @@ INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_5LX7BU' [c:/VProject/A
 INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_5LX7BU' (0#1) [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:466]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1RZP34U' [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:1135]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1RZP34U' (0#1) [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:1135]
-INFO: [Synth 8-3491] module 'design_1_xbar_0' declared at 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-11176-Jasmeet/realtime/design_1_xbar_0_stub.vhdl:6' bound to instance 'xbar' of component 'design_1_xbar_0' [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:1948]
-INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-11176-Jasmeet/realtime/design_1_xbar_0_stub.vhdl:52]
+INFO: [Synth 8-3491] module 'design_1_xbar_0' declared at 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-13228-Jasmeet/realtime/design_1_xbar_0_stub.vhdl:6' bound to instance 'xbar' of component 'design_1_xbar_0' [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:1948]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-13228-Jasmeet/realtime/design_1_xbar_0_stub.vhdl:52]
 INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_axi_periph_0' (0#1) [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:1324]
 INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:556]
-INFO: [Synth 8-3491] module 'design_1_dlmb_bram_if_cntlr_0' declared at 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-11176-Jasmeet/realtime/design_1_dlmb_bram_if_cntlr_0_stub.vhdl:6' bound to instance 'dlmb_bram_if_cntlr' of component 'design_1_dlmb_bram_if_cntlr_0' [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:770]
-INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-11176-Jasmeet/realtime/design_1_dlmb_bram_if_cntlr_0_stub.vhdl:32]
-INFO: [Synth 8-3491] module 'design_1_dlmb_v10_0' declared at 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-11176-Jasmeet/realtime/design_1_dlmb_v10_0_stub.vhdl:6' bound to instance 'dlmb_v10' of component 'design_1_dlmb_v10_0' [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:824]
-INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_v10_0' [C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-11176-Jasmeet/realtime/design_1_dlmb_v10_0_stub.vhdl:37]
-INFO: [Synth 8-3491] module 'design_1_ilmb_bram_if_cntlr_0' declared at 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-11176-Jasmeet/realtime/design_1_ilmb_bram_if_cntlr_0_stub.vhdl:6' bound to instance 'ilmb_bram_if_cntlr' of component 'design_1_ilmb_bram_if_cntlr_0' [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:852]
-INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-11176-Jasmeet/realtime/design_1_ilmb_bram_if_cntlr_0_stub.vhdl:32]
-INFO: [Synth 8-3491] module 'design_1_ilmb_v10_0' declared at 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-11176-Jasmeet/realtime/design_1_ilmb_v10_0_stub.vhdl:6' bound to instance 'ilmb_v10' of component 'design_1_ilmb_v10_0' [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:906]
-INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_v10_0' [C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-11176-Jasmeet/realtime/design_1_ilmb_v10_0_stub.vhdl:37]
-INFO: [Synth 8-3491] module 'design_1_lmb_bram_0' declared at 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-11176-Jasmeet/realtime/design_1_lmb_bram_0_stub.vhdl:6' bound to instance 'lmb_bram' of component 'design_1_lmb_bram_0' [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:934]
-INFO: [Synth 8-638] synthesizing module 'design_1_lmb_bram_0' [C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-11176-Jasmeet/realtime/design_1_lmb_bram_0_stub.vhdl:28]
+INFO: [Synth 8-3491] module 'design_1_dlmb_bram_if_cntlr_0' declared at 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-13228-Jasmeet/realtime/design_1_dlmb_bram_if_cntlr_0_stub.vhdl:6' bound to instance 'dlmb_bram_if_cntlr' of component 'design_1_dlmb_bram_if_cntlr_0' [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:770]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-13228-Jasmeet/realtime/design_1_dlmb_bram_if_cntlr_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'design_1_dlmb_v10_0' declared at 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-13228-Jasmeet/realtime/design_1_dlmb_v10_0_stub.vhdl:6' bound to instance 'dlmb_v10' of component 'design_1_dlmb_v10_0' [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:824]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_v10_0' [C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-13228-Jasmeet/realtime/design_1_dlmb_v10_0_stub.vhdl:37]
+INFO: [Synth 8-3491] module 'design_1_ilmb_bram_if_cntlr_0' declared at 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-13228-Jasmeet/realtime/design_1_ilmb_bram_if_cntlr_0_stub.vhdl:6' bound to instance 'ilmb_bram_if_cntlr' of component 'design_1_ilmb_bram_if_cntlr_0' [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:852]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-13228-Jasmeet/realtime/design_1_ilmb_bram_if_cntlr_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'design_1_ilmb_v10_0' declared at 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-13228-Jasmeet/realtime/design_1_ilmb_v10_0_stub.vhdl:6' bound to instance 'ilmb_v10' of component 'design_1_ilmb_v10_0' [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:906]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_v10_0' [C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-13228-Jasmeet/realtime/design_1_ilmb_v10_0_stub.vhdl:37]
+INFO: [Synth 8-3491] module 'design_1_lmb_bram_0' declared at 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-13228-Jasmeet/realtime/design_1_lmb_bram_0_stub.vhdl:6' bound to instance 'lmb_bram' of component 'design_1_lmb_bram_0' [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:934]
+INFO: [Synth 8-638] synthesizing module 'design_1_lmb_bram_0' [C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-13228-Jasmeet/realtime/design_1_lmb_bram_0_stub.vhdl:28]
 INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (0#1) [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:556]
 INFO: [Synth 8-3491] module 'design_1_microblaze_0_xlconcat_0' declared at 'c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/synth/design_1_microblaze_0_xlconcat_0.v:53' bound to instance 'microblaze_0_xlconcat' of component 'design_1_microblaze_0_xlconcat_0' [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:2859]
 INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_xlconcat_0' [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/synth/design_1_microblaze_0_xlconcat_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_xlconcat_0' (0#1) [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/synth/design_1_microblaze_0_xlconcat_0.v:53]
-INFO: [Synth 8-3491] module 'design_1_rst_clk_wiz_1_100M_0' declared at 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-11176-Jasmeet/realtime/design_1_rst_clk_wiz_1_100M_0_stub.vhdl:6' bound to instance 'rst_clk_wiz_1_100M' of component 'design_1_rst_clk_wiz_1_100M_0' [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:2864]
-INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_1_100M_0' [C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-11176-Jasmeet/realtime/design_1_rst_clk_wiz_1_100M_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'design_1_rst_clk_wiz_1_100M_0' declared at 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-13228-Jasmeet/realtime/design_1_rst_clk_wiz_1_100M_0_stub.vhdl:6' bound to instance 'rst_clk_wiz_1_100M' of component 'design_1_rst_clk_wiz_1_100M_0' [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:2864]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_1_100M_0' [C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/.Xil/Vivado-13228-Jasmeet/realtime/design_1_rst_clk_wiz_1_100M_0_stub.vhdl:22]
 INFO: [Synth 8-256] done synthesizing module 'design_1' (0#1) [c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/synth/design_1.vhd:2081]
 INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (0#1) [C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:26]
 WARNING: [Synth 8-7129] Port In1[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
@@ -187,18 +192,18 @@ WARNING: [Synth 8-7129] Port In99[0] in module xlconcat_v2_1_4_xlconcat is eithe
 WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1414.605 ; gain = 513.523
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1417.938 ; gain = 514.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1414.605 ; gain = 513.523
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1417.938 ; gain = 514.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1414.605 ; gain = 513.523
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1417.938 ; gain = 514.938
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1414.605 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1417.938 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -237,21 +242,23 @@ Parsing XDC File [C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_P
 Finished Parsing XDC File [C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1440.629 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1424.488 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 1440.629 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1424.488 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1440.844 ; gain = 539.762
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1427.992 ; gain = 524.992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1440.844 ; gain = 539.762
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1427.992 ; gain = 524.992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -277,10 +284,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_0. (constrain
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_1. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/Led_Control_04_2024_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1440.844 ; gain = 539.762
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1427.992 ; gain = 524.992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1440.844 ; gain = 539.762
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1427.992 ; gain = 524.992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -303,25 +310,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1440.844 ; gain = 539.762
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1427.992 ; gain = 524.992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 1440.844 ; gain = 539.762
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1427.992 ; gain = 524.992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 1440.844 ; gain = 539.762
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1427.992 ; gain = 524.992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 1440.844 ; gain = 539.762
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1427.992 ; gain = 524.992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -339,37 +346,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1440.844 ; gain = 539.762
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1427.992 ; gain = 524.992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1440.844 ; gain = 539.762
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1427.992 ; gain = 524.992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1440.844 ; gain = 539.762
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1427.992 ; gain = 524.992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1440.844 ; gain = 539.762
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1427.992 ; gain = 524.992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1440.844 ; gain = 539.762
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1427.992 ; gain = 524.992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1440.844 ; gain = 539.762
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1427.992 ; gain = 524.992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -419,24 +426,24 @@ Report Cell Usage:
 |17    |OBUF                                  |    17|
 +------+--------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1440.844 ; gain = 539.762
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1427.992 ; gain = 524.992
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 1440.844 ; gain = 513.523
-Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1440.844 ; gain = 539.762
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 1427.992 ; gain = 514.938
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1427.992 ; gain = 524.992
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1440.844 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1432.172 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1440.844 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1435.805 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 Synth Design complete | Checksum: 6e417048
 INFO: [Common 17-83] Releasing license: Synthesis
-72 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+78 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1440.844 ; gain = 954.277
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1435.805 ; gain = 932.445
 INFO: [Common 17-1381] The checkpoint 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Apr  5 00:28:55 2024...
+INFO: [Common 17-206] Exiting Vivado at Sun Apr  7 01:11:09 2024...

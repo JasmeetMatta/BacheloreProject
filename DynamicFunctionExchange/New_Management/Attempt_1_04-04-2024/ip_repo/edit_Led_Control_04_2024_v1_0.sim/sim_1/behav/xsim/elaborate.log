@@ -1,0 +1,18 @@
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Led_Control_04_2024_v1_0_behav xil_defaultlib.Led_Control_04_2024_v1_0 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.LED_Logic [led_logic_default]
+Compiling architecture arch_imp of entity xil_defaultlib.Led_Control_04_2024_v1_0_S00_AXI_LED [led_control_04_2024_v1_0_s00_axi...]
+Compiling architecture arch_imp of entity xil_defaultlib.led_control_04_2024_v1_0
+Built simulation snapshot Led_Control_04_2024_v1_0_behav

@@ -40,11 +40,13 @@ end LED_Logic;
 
 architecture Behavioral of LED_Logic is
     signal LedCounter: integer range 0 to 15;
+
 begin
     process(clk) is
     begin
         if rising_edge(clk) then
-            if unsigned(button_in(1 downto 0)) = 1  then
+
+            if button_in = x"00000001" or button_in = x"00000002" or button_in = x"00000004" or button_in = x"00000008" then
                       LedCounter <= LedCounter + 1;
                       --secDealy <= 0;
                       --countBool := false;
@@ -52,11 +54,12 @@ begin
 
             if LedCounter = 15 then
                     LedCounter <= 0;
-            end if;
+            end if; 
+
          end if;
     end process;
 
-    process(LedCounter) is
+    process(LedCounter, clk) is
     begin     
             case LedCounter is 
                 when 0 =>

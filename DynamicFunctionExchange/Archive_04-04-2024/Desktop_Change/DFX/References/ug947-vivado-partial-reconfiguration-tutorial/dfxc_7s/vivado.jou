@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sun Apr  7 01:47:10 2024
+# Process ID: 20248
+# Current directory: C:/Users/jasme/Desktop/BacheloreProject/DynamicFunctionExchange/Archive_04-04-2024/Desktop_Change/DFX/References/ug947-vivado-partial-reconfiguration-tutorial/dfxc_7s
+# Command line: vivado.exe -source design.tcl
+# Log file: C:/Users/jasme/Desktop/BacheloreProject/DynamicFunctionExchange/Archive_04-04-2024/Desktop_Change/DFX/References/ug947-vivado-partial-reconfiguration-tutorial/dfxc_7s/vivado.log
+# Journal file: C:/Users/jasme/Desktop/BacheloreProject/DynamicFunctionExchange/Archive_04-04-2024/Desktop_Change/DFX/References/ug947-vivado-partial-reconfiguration-tutorial/dfxc_7s\vivado.jou
+# Running On: Jasmeet, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 16990 MB
+#-----------------------------------------------------------
+start_gui
+source design.tcl
+update_compile_order -fileset sources_1

@@ -20,3 +20,16 @@ bsp reload
 platform generate
 platform clean
 platform generate
+platform active {LED_PR_Attempt1}
+platform config -updatehw {C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/design_1_wrapper.xsa}
+platform generate
+platform config -updatehw {C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/design_1_wrapper.xsa}
+platform generate
+platform config -updatehw {C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/design_1_wrapper.xsa}
+platform generate
+platform config -updatehw {C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/design_1_wrapper.xsa}
+platform generate
+platform config -updatehw {C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/design_1_wrapper.xsa}
+platform generate
+platform config -updatehw {C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/design_1_wrapper.xsa}
+platform generate

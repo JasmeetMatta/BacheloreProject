@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Led_Control_04_2024_1_0/hdl/LED_Logic.vhd" \
+"../../../../Led_Control_04_2024_1_0/hdl/Led_Control_04_2024_v1_0_S00_AXI_LED.vhd" \
+"../../../../Led_Control_04_2024_1_0/hdl/Led_Control_04_2024_v1_0.vhd" \
+
+# Do not sort compile order
+nosort

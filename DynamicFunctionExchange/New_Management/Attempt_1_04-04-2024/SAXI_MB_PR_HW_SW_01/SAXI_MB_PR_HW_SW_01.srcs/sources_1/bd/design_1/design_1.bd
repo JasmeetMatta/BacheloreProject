@@ -1222,8 +1222,8 @@
           "microblaze_0_axi_periph/M02_ACLK",
           "axi_gpio_1/s_axi_aclk",
           "microblaze_0_axi_periph/M03_ACLK",
-          "Led_Control_04_2024_0/s00_axi_led_aclk",
-          "microblaze_0_axi_periph/M04_ACLK"
+          "microblaze_0_axi_periph/M04_ACLK",
+          "Led_Control_04_2024_0/s00_axi_led_aclk"
         ]
       },
       "microblaze_0_intr": {
@@ -1265,8 +1265,8 @@
           "microblaze_0_axi_periph/M02_ARESETN",
           "axi_gpio_1/s_axi_aresetn",
           "microblaze_0_axi_periph/M03_ARESETN",
-          "Led_Control_04_2024_0/s00_axi_led_aresetn",
-          "microblaze_0_axi_periph/M04_ARESETN"
+          "microblaze_0_axi_periph/M04_ARESETN",
+          "Led_Control_04_2024_0/s00_axi_led_aresetn"
         ]
       },
       "sys_clock_1": {

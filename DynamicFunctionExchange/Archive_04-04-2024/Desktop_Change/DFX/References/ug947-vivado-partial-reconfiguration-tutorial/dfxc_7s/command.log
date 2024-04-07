@@ -1,0 +1,34 @@
+file mkdir ./Synth
+file delete -force ./Synth/Static
+file mkdir ./Synth/Static
+puts "#HD: Running synthesis for block Static"
+create_project -in_memory -part xc7vx485tffg1761-2 > ./Synth/Static/create_project.log
+set_property source_mgmt_mode All [current_project]
+add_files ./Sources/hdl/top/clocks.v
+add_files ./Sources/hdl/top/count_rp.v
+add_files ./Sources/hdl/top/shift_rp.v
+add_files ./Sources/hdl/top/debouncer.vhd
+set_property LIBRARY work [get_files ./Sources/hdl/top/debouncer.vhd]
+add_files ./Sources/hdl/top/top.vhd
+set_property LIBRARY work [get_files ./Sources/hdl/top/top.vhd]
+add_files ./Sources/ip/axi_emc_inst/axi_emc_inst.xci > ./Synth/Static/axi_emc_inst_add.log
+generate_target all [get_ips axi_emc_inst] > ./Synth/Static/axi_emc_inst_generate.log
+add_files ./Sources/ip/dfx_controller/dfx_controller.xci > ./Synth/Static/dfx_controller_add.log
+synth_ip [get_files ./Sources/ip/dfx_controller/dfx_controller.xci] > ./Synth/Static/dfx_controller_synth.log
+add_files ./Sources/ip/jtag_to_axi/jtag_to_axi.xci > ./Synth/Static/jtag_to_axi_add.log
+synth_ip [get_files ./Sources/ip/jtag_to_axi/jtag_to_axi.xci] > ./Synth/Static/jtag_to_axi_synth.log
+add_files ./Sources/ip/ila_vs_count/ila_vs_count.xci > ./Synth/Static/ila_vs_count_add.log
+generate_target all [get_ips ila_vs_count] > ./Synth/Static/ila_vs_count_generate.log
+add_files ./Sources/ip/ila_vs_shift/ila_vs_shift.xci > ./Synth/Static/ila_vs_shift_add.log
+generate_target all [get_ips ila_vs_shift] > ./Synth/Static/ila_vs_shift_generate.log
+add_files ./Sources/ip/ila_rom/ila_rom.xci > ./Synth/Static/ila_rom_add.log
+generate_target all [get_ips ila_rom] > ./Synth/Static/ila_rom_generate.log
+add_files ./Sources/ip/ila_axi_mem/ila_axi_mem.xci > ./Synth/Static/ila_axi_mem_add.log
+generate_target all [get_ips ila_axi_mem] > ./Synth/Static/ila_axi_mem_generate.log
+add_files ./Sources/ip/ila_axi_reg/ila_axi_reg.xci > ./Synth/Static/ila_axi_reg_add.log
+generate_target all [get_ips ila_axi_reg] > ./Synth/Static/ila_axi_reg_generate.log
+add_files ./Sources/ip/ila_icap/ila_icap.xci > ./Synth/Static/ila_icap_add.log
+generate_target all [get_ips ila_icap] > ./Synth/Static/ila_icap_generate.log
+add_files ./Sources/xdc/top_vc707.xdc
+set_property USED_IN {synthesis} [get_files ./Sources/xdc/top_vc707.xdc]
+synth_design -mode default -flatten_hierarchy rebuilt -top top -part xc7vx485tffg1761-2 > ./Synth/Static/top_synth_design.rds
