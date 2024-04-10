@@ -1,0 +1,28 @@
+00:16:48 **** Incremental Build of configuration Debug for project NormalPR_Attempt1 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/Normal_PR/export/Normal_PR/sw/Normal_PR/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:51:
+C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/Normal_PR/export/Normal_PR/sw/Normal_PR/standalone_domain/bspinclude/include/xbasic_types.h:102:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+  102 | #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+      |  ^~~~~~~
+C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/Normal_PR/export/Normal_PR/sw/Normal_PR/standalone_domain/bspinclude/include/xbasic_types.h:103:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+  103 | #warning  Please refer the Standalone BSP UG647 for further details
+      |  ^~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: NormalPR_Attempt1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/Normal_PR/export/Normal_PR/sw/Normal_PR/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "NormalPR_Attempt1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: NormalPR_Attempt1.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size NormalPR_Attempt1.elf  |tee "NormalPR_Attempt1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6156	    320	   3108	   9584	   2570	NormalPR_Attempt1.elf
+'Finished building: NormalPR_Attempt1.elf.size'
+' '
+
+00:16:49 Build Finished (took 530ms)
+

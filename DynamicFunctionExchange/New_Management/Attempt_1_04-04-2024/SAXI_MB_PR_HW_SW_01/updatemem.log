@@ -3,22 +3,22 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # 
 # 
-# Start of session at: Sun Apr  7 01:15:57 2024
-# Process ID: 7384
-# Current directory: C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01
-# Command line: updatemem.exe -mode batch -source D:/Xilinx/Vitis/2023.1/scripts/updatemem/main.tcl -notrace -tclargs -meminfo C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/LEDPR_Application_01/_ide/bitstream/design_1_wrapper.mmi -data D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/microblaze/mb_bootloop_le.elf -proc design_1_i/microblaze_0 -bit C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/LEDPR_Application_01/_ide/bitstream/design_1_wrapper.bit -out C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/LEDPR_Application_01/_ide/bitstream/download.bit -force
-# Log file: C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/updatemem.log
-# Journal file: C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01\updatemem.jou
+# Start of session at: Wed Apr 10 00:59:02 2024
+# Process ID: 14584
+# Current directory: c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01
+# Command line: updatemem.exe -mode batch -source D:/Xilinx/Vitis/2023.1/scripts/updatemem/main.tcl -notrace -tclargs -meminfo C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/SAXI_MB_PR_01.runs/impl_1/LED_PR_wrapper.mmi -data D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/microblaze/mb_bootloop_le.elf -proc LED_PR_i/microblaze_0 -bit C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/SAXI_MB_PR_01.runs/impl_1/LED_PR_wrapper.bit -out C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/SAXI_MB_PR_01.runs/impl_1/download.bit -force
+# Log file: c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/updatemem.log
+# Journal file: c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01\updatemem.jou
 # Running On: Jasmeet, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 16990 MB
 #-----------------------------------------------------------
 source D:/Xilinx/Vitis/2023.1/scripts/updatemem/main.tcl -notrace
-Command: update_mem -meminfo C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/LEDPR_Application_01/_ide/bitstream/design_1_wrapper.mmi -data D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/microblaze/mb_bootloop_le.elf -proc design_1_i/microblaze_0 -bit C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/LEDPR_Application_01/_ide/bitstream/design_1_wrapper.bit -out C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/LEDPR_Application_01/_ide/bitstream/download.bit -force
-Loading bitfile C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/LEDPR_Application_01/_ide/bitstream/design_1_wrapper.bit
+Command: update_mem -meminfo C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/SAXI_MB_PR_01.runs/impl_1/LED_PR_wrapper.mmi -data D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/microblaze/mb_bootloop_le.elf -proc LED_PR_i/microblaze_0 -bit C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/SAXI_MB_PR_01.runs/impl_1/LED_PR_wrapper.bit -out C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/SAXI_MB_PR_01.runs/impl_1/download.bit -force
+Loading bitfile C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/SAXI_MB_PR_01.runs/impl_1/LED_PR_wrapper.bit
 Loading data files...
 Updating memory content...
 Creating bitstream...
-Writing bitstream C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/LEDPR_Application_01/_ide/bitstream/download.bit...
+Writing bitstream C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/SAXI_MB_PR_01.runs/impl_1/download.bit...
 0 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 update_mem completed successfully
-update_mem: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 625.652 ; gain = 532.852
-INFO: [Common 17-206] Exiting updatemem at Sun Apr  7 01:16:09 2024...
+update_mem: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 626.180 ; gain = 533.176
+INFO: [Common 17-206] Exiting updatemem at Wed Apr 10 00:59:13 2024...

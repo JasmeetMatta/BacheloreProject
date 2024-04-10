@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# updatemem v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# 
+# 
+# Start of session at: Wed Apr 10 00:46:15 2024
+# Process ID: 21828
+# Current directory: c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01
+# Command line: updatemem.exe -mode batch -source D:/Xilinx/Vitis/2023.1/scripts/updatemem/main.tcl -notrace -tclargs -meminfo C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/SAXI_MB_PR_01.runs/impl_1/LED_PR_wrapper.mmi -data D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/microblaze/mb_bootloop_le.elf -proc LED_PR_i/microblaze_0 -bit C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/SAXI_MB_PR_01.runs/impl_1/LED_PR_wrapper.bit -out C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/SAXI_MB_PR_01.runs/impl_1/download.bit -force
+# Log file: c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/updatemem.log
+# Journal file: c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01\updatemem.jou
+# Running On: Jasmeet, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 16990 MB
+#-----------------------------------------------------------
+source D:/Xilinx/Vitis/2023.1/scripts/updatemem/main.tcl -notrace
+Command: update_mem -meminfo C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/SAXI_MB_PR_01.runs/impl_1/LED_PR_wrapper.mmi -data D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/microblaze/mb_bootloop_le.elf -proc LED_PR_i/microblaze_0 -bit C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/SAXI_MB_PR_01.runs/impl_1/LED_PR_wrapper.bit -out C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/SAXI_MB_PR_01.runs/impl_1/download.bit -force
+Loading bitfile C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/SAXI_MB_PR_01.runs/impl_1/LED_PR_wrapper.bit
+Loading data files...
+Updating memory content...
+Creating bitstream...
+Writing bitstream C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/SAXI_MB_PR_01.runs/impl_1/download.bit...
+0 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+update_mem completed successfully
+update_mem: Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 627.000 ; gain = 533.238
+INFO: [Common 17-206] Exiting updatemem at Wed Apr 10 00:46:27 2024...

@@ -482,17 +482,6 @@
  
  
 /******************************************************************/
-/* Definitions for driver LED_CONTROL_04_2024 */
-#define XPAR_LED_CONTROL_04_2024_NUM_INSTANCES 1
-
-/* Definitions for peripheral LED_CONTROL_04_2024_0 */
-#define XPAR_LED_CONTROL_04_2024_0_DEVICE_ID 0
-#define XPAR_LED_CONTROL_04_2024_0_S00_AXI_LED_BASEADDR 0x44A00000
-#define XPAR_LED_CONTROL_04_2024_0_S00_AXI_LED_HIGHADDR 0x44A0FFFF
-
-
-/******************************************************************/
-
 /* Definitions for driver BRAM */
 #define XPAR_XBRAM_NUM_INSTANCES 2U
 
@@ -575,6 +564,19 @@
 #define XPAR_ILMB_0_CNTLR_HIGHADDR 0x0001FFFF
 #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
 #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
+
+
+/******************************************************************/
+
+
+/* Peripheral Definitions for peripheral LED_CONTROL_09_2024_0 */
+#define XPAR_LED_CONTROL_09_2024_0_S00_AXI_BASEADDR 0x44A00000
+#define XPAR_LED_CONTROL_09_2024_0_S00_AXI_HIGHADDR 0x44A0FFFF
+
+
+/******************************************************************/
+
+
 
 
 /******************************************************************/

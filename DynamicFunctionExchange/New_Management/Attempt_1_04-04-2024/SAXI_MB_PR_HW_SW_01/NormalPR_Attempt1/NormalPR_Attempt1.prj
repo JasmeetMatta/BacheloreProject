@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="NormalPR_Attempt1" location="C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/NormalPR_Attempt1" platform="C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/Normal_PR/export/Normal_PR/Normal_PR.xpfm" platformUID="xilinx:nexys-a7-100t::0.0(custom)" systemProject="NormalPR_Attempt1_system" sysConfig="Normal_PR" runtime="C/C++" cpu="standalone_domain" cpuInstance="microblaze_0" os="standalone" mssSignature="ecead60fbbcf4f3539716971ea03d252">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.738927922">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.1600211478" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

@@ -36,7 +36,7 @@
       "axi_uartlite_0": "",
       "axi_gpio_0": "",
       "axi_gpio_1": "",
-      "Led_Control_04_2024_0": ""
+      "LED_control_09_2024_0": ""
     },
     "interface_ports": {
       "usb_uart": {
@@ -1099,11 +1099,11 @@
           }
         }
       },
-      "Led_Control_04_2024_0": {
-        "vlnv": "xilinx.com:user:Led_Control_04_2024:1.0",
-        "xci_name": "design_1_Led_Control_04_2024_0_1",
-        "xci_path": "ip\\design_1_Led_Control_04_2024_0_1\\design_1_Led_Control_04_2024_0_1.xci",
-        "inst_hier_path": "Led_Control_04_2024_0"
+      "LED_control_09_2024_0": {
+        "vlnv": "xilinx.com:user:LED_control_09_2024:1.0",
+        "xci_name": "design_1_LED_control_09_2024_0_1",
+        "xci_path": "ip\\design_1_LED_control_09_2024_0_1\\design_1_LED_control_09_2024_0_1.xci",
+        "inst_hier_path": "LED_control_09_2024_0"
       }
     },
     "interface_nets": {
@@ -1152,7 +1152,7 @@
       "microblaze_0_axi_periph_M04_AXI": {
         "interface_ports": [
           "microblaze_0_axi_periph/M04_AXI",
-          "Led_Control_04_2024_0/S00_AXI_LED"
+          "LED_control_09_2024_0/S00_AXI"
         ]
       },
       "microblaze_0_debug": {
@@ -1223,7 +1223,7 @@
           "axi_gpio_1/s_axi_aclk",
           "microblaze_0_axi_periph/M03_ACLK",
           "microblaze_0_axi_periph/M04_ACLK",
-          "Led_Control_04_2024_0/s00_axi_led_aclk"
+          "LED_control_09_2024_0/s00_axi_aclk"
         ]
       },
       "microblaze_0_intr": {
@@ -1266,7 +1266,7 @@
           "axi_gpio_1/s_axi_aresetn",
           "microblaze_0_axi_periph/M03_ARESETN",
           "microblaze_0_axi_periph/M04_ARESETN",
-          "Led_Control_04_2024_0/s00_axi_led_aresetn"
+          "LED_control_09_2024_0/s00_axi_aresetn"
         ]
       },
       "sys_clock_1": {
@@ -1281,12 +1281,12 @@
         "address_spaces": {
           "Data": {
             "segments": {
-              "SEG_Led_Control_04_2024_0_S00_AXI_LED_reg": {
-                "address_block": "/Led_Control_04_2024_0/S00_AXI_LED/S00_AXI_LED_reg",
+              "SEG_LED_control_09_2024_0_S00_AXI_reg": {
+                "address_block": "/LED_control_09_2024_0/S00_AXI/S00_AXI_reg",
                 "offset": "0x44A00000",
                 "range": "64K",
-                "offset_base_param": "C_S00_AXI_LED_BASEADDR",
-                "offset_high_param": "C_S00_AXI_LED_HIGHADDR"
+                "offset_base_param": "C_S00_AXI_BASEADDR",
+                "offset_high_param": "C_S00_AXI_HIGHADDR"
               },
               "SEG_axi_gpio_0_Reg": {
                 "address_block": "/axi_gpio_0/S_AXI/Reg",

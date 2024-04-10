@@ -33,3 +33,22 @@ platform config -updatehw {C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/
 platform generate
 platform config -updatehw {C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/design_1_wrapper.xsa}
 platform generate
+platform generate -domains 
+platform active {LED_PR_Attempt1}
+platform config -updatehw {C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/design_1_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/design_1_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/design_1_wrapper.xsa}
+platform generate -domains 
+platform active {LED_PR_Attempt1}
+platform config -updatehw {C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/design_1_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/design_1_wrapper.xsa}
+platform generate -domains 
+platform active {LED_PR_Attempt1}
+platform config -updatehw {C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/design_1_wrapper.xsa}
+platform generate -domains 
+platform active {LED_PR_Attempt1}
+platform config -updatehw {C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/design_1_wrapper.xsa}
+platform generate -domains 

@@ -1,0 +1,111 @@
+17:17:21 DEBUG : Logs will be stored at 'C:/VProject/Attempt_3_10-04-2024/LedCount/IDE.log'.
+17:18:34 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\VProject\Attempt_3_10-04-2024\LedCount\temp_xsdb_launch_script.tcl
+17:18:34 INFO  : Registering command handlers for Vitis TCF services
+17:18:37 INFO  : Platform repository initialization has completed.
+17:18:40 INFO  : XSCT server has started successfully.
+17:18:45 INFO  : plnx-install-location is set to ''
+17:18:45 INFO  : Successfully done setting XSCT server connection channel  
+17:18:45 INFO  : Successfully done query RDI_DATADIR 
+17:18:45 INFO  : Successfully done setting workspace for the tool. 
+17:19:17 INFO  : Result from executing command 'getProjects': PR_Platform
+17:19:17 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+17:22:18 INFO  : Result from executing command 'getProjects': PR_Platform
+17:22:18 INFO  : Result from executing command 'getPlatforms': PR_Platform|C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/export/PR_Platform/PR_Platform.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+17:28:26 INFO  : Checking for BSP changes to sync application flags for project 'PR_Application_Test'...
+17:35:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B61CC0A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B61CC0A-13631093-0"}' command is executed.
+17:35:22 INFO  : 'fpga -state' command is executed.
+17:35:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:35:22 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B61CC0A' is selected.
+17:35:22 INFO  : 'jtag frequency' command is executed.
+17:35:22 INFO  : Context for processor 'microblaze_0' is selected.
+17:35:22 INFO  : Hardware design and registers information is loaded from 'C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/export/PR_Platform/hw/design_1_wrapper.xsa'.
+17:35:22 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:35:22 INFO  : Context for processor 'microblaze_0' is selected.
+17:35:22 INFO  : Processor reset is completed for 'microblaze_0'.
+17:35:22 INFO  : Context for processor 'microblaze_0' is selected.
+17:35:22 INFO  : The application 'C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Application_Test/Debug/PR_Application_Test.elf' is downloaded to processor 'microblaze_0'.
+17:35:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/export/PR_Platform/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -processor
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Application_Test/Debug/PR_Application_Test.elf
+----------------End of Script----------------
+
+17:35:22 INFO  : Context for processor 'microblaze_0' is selected.
+17:35:22 INFO  : 'con' command is executed.
+17:35:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:35:22 INFO  : Launch script is exported to file 'C:\VProject\Attempt_3_10-04-2024\LedCount\PR_Application_Test_system\_ide\scripts\debugger_pr_application_test-default.tcl'
+17:37:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:37:52 INFO  : Disconnected from the channel tcfchan#3.
+17:37:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B61CC0A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B61CC0A-13631093-0"}' command is executed.
+17:37:54 INFO  : 'fpga -state' command is executed.
+17:37:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:37:54 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B61CC0A' is selected.
+17:37:54 INFO  : 'jtag frequency' command is executed.
+17:37:54 INFO  : Context for processor 'microblaze_0' is selected.
+17:37:54 INFO  : Hardware design and registers information is loaded from 'C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/export/PR_Platform/hw/design_1_wrapper.xsa'.
+17:37:54 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:37:54 INFO  : Context for processor 'microblaze_0' is selected.
+17:37:54 INFO  : Processor reset is completed for 'microblaze_0'.
+17:37:54 INFO  : Context for processor 'microblaze_0' is selected.
+17:37:54 INFO  : The application 'C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Application_Test/Debug/PR_Application_Test.elf' is downloaded to processor 'microblaze_0'.
+17:37:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/export/PR_Platform/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -processor
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Application_Test/Debug/PR_Application_Test.elf
+----------------End of Script----------------
+
+17:37:54 INFO  : Context for processor 'microblaze_0' is selected.
+17:37:54 INFO  : 'con' command is executed.
+17:37:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:37:54 INFO  : Launch script is exported to file 'C:\VProject\Attempt_3_10-04-2024\LedCount\PR_Application_Test_system\_ide\scripts\debugger_pr_application_test-default.tcl'
+17:49:00 INFO  : Disconnected from the channel tcfchan#4.
+17:49:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B61CC0A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B61CC0A-13631093-0"}' command is executed.
+17:49:01 INFO  : 'fpga -state' command is executed.
+17:49:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:49:01 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B61CC0A' is selected.
+17:49:01 INFO  : 'jtag frequency' command is executed.
+17:49:01 INFO  : Context for processor 'microblaze_0' is selected.
+17:49:01 INFO  : Hardware design and registers information is loaded from 'C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/export/PR_Platform/hw/design_1_wrapper.xsa'.
+17:49:01 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:49:01 INFO  : Context for processor 'microblaze_0' is selected.
+17:49:01 INFO  : Processor reset is completed for 'microblaze_0'.
+17:49:01 INFO  : Context for processor 'microblaze_0' is selected.
+17:49:01 INFO  : The application 'C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Application_Test/Debug/PR_Application_Test.elf' is downloaded to processor 'microblaze_0'.
+17:49:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/export/PR_Platform/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -processor
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Application_Test/Debug/PR_Application_Test.elf
+----------------End of Script----------------
+
+17:49:01 INFO  : Context for processor 'microblaze_0' is selected.
+17:49:01 INFO  : 'con' command is executed.
+17:49:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:49:01 INFO  : Launch script is exported to file 'C:\VProject\Attempt_3_10-04-2024\LedCount\PR_Application_Test_system\_ide\scripts\debugger_pr_application_test-default.tcl'
+17:51:25 INFO  : Disconnected from the channel tcfchan#5.

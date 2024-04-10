@@ -16,7 +16,7 @@ entity Led_Control_04_2024_v1_0_S00_AXI_LED is
 	);
 	port (
 		-- Users to add ports here
-
+        Led: out std_logic_vector(3 downto 0);
 		-- User ports ends
 		-- Do not modify the ports beyond this line
 
@@ -357,13 +357,14 @@ begin
 	process (slv_reg0, LedOut, slv_reg2, slv_reg3, axi_araddr, S_AXI_ARESETN, slv_reg_rden)
 	variable loc_addr :std_logic_vector(OPT_MEM_ADDR_BITS downto 0);
 	begin
+	    slv_reg1 <= LedOut;
 	    -- Address decoding for reading registers
 	    loc_addr := axi_araddr(ADDR_LSB + OPT_MEM_ADDR_BITS downto ADDR_LSB);
 	    case loc_addr is
 	      when b"00" =>
 	        reg_data_out <= slv_reg0;
 	      when b"01" =>
-	        reg_data_out <= LedOut;
+	        reg_data_out <=  LedOut;
 	      when b"10" =>
 	        reg_data_out <= slv_reg2;
 	      when b"11" =>
@@ -395,6 +396,8 @@ begin
 	-- Add user logic here
     LedLogic: Led_logic
         port map (clk=> S_AXI_ACLK, button_in => slv_reg0, Led_out => LedOut);
+        
+        Led <= LedOut(3 downto 0);
 	-- User logic ends
 
 end arch_imp;

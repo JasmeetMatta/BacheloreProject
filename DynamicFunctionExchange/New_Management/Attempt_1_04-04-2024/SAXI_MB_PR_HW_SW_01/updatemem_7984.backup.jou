@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# updatemem v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# 
+# 
+# Start of session at: Tue Apr  9 17:34:22 2024
+# Process ID: 7984
+# Current directory: c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01
+# Command line: updatemem.exe -mode batch -source D:/Xilinx/Vitis/2023.1/scripts/updatemem/main.tcl -notrace -tclargs -meminfo C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/_ide/bitstream/LED_PR_wrapper.mmi -data D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/microblaze/mb_bootloop_le.elf -proc LED_PR_i/microblaze_0 -bit C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/_ide/bitstream/LED_PR_wrapper.bit -out C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/_ide/bitstream/download.bit -force
+# Log file: c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/updatemem.log
+# Journal file: c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01\updatemem.jou
+# Running On: Jasmeet, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 16990 MB
+#-----------------------------------------------------------
+source D:/Xilinx/Vitis/2023.1/scripts/updatemem/main.tcl -notrace

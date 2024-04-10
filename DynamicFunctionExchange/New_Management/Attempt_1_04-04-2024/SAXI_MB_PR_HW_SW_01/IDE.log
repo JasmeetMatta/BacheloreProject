@@ -905,3 +905,175 @@ con
 ----------------End of Script----------------
 
 01:17:32 INFO  : Launch script is exported to file 'C:\VProject\Attempt_1_04-04-2024\SAXI_MB_PR_HW_SW_01\LEDPR_Application_01_system\_ide\scripts\debugger_ledpr_application_01-default.tcl'
+02:24:16 INFO  : Disconnected from the channel tcfchan#28.
+00:10:09 DEBUG : Logs will be stored at 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/IDE.log'.
+00:10:11 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\VProject\Attempt_1_04-04-2024\SAXI_MB_PR_HW_SW_01\temp_xsdb_launch_script.tcl
+00:10:17 INFO  : XSCT server has started successfully.
+00:10:17 INFO  : Successfully done setting XSCT server connection channel  
+00:10:17 INFO  : plnx-install-location is set to ''
+00:10:18 INFO  : Registering command handlers for Vitis TCF services
+00:10:19 INFO  : Platform repository initialization has completed.
+00:10:23 INFO  : Successfully done setting workspace for the tool. 
+00:10:23 INFO  : Successfully done query RDI_DATADIR 
+00:11:42 INFO  : Result from executing command 'getProjects': LED_PR_Attempt1;Normal_PR
+00:11:42 INFO  : Result from executing command 'getPlatforms': LED_PR_Attempt1|C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/LED_PR_Attempt1/export/LED_PR_Attempt1/LED_PR_Attempt1.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+00:12:30 INFO  : Result from executing command 'getProjects': LED_PR_Attempt1;Normal_PR
+00:12:30 INFO  : Result from executing command 'getPlatforms': LED_PR_Attempt1|C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/LED_PR_Attempt1/export/LED_PR_Attempt1/LED_PR_Attempt1.xpfm;Normal_PR|C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/Normal_PR/export/Normal_PR/Normal_PR.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+00:16:06 INFO  : Result from executing command 'getProjects': LED_PR_Attempt1;Normal_PR
+00:16:06 INFO  : Result from executing command 'getPlatforms': LED_PR_Attempt1|C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/LED_PR_Attempt1/export/LED_PR_Attempt1/LED_PR_Attempt1.xpfm;Normal_PR|C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/Normal_PR/export/Normal_PR/Normal_PR.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+00:16:06 INFO  : Checking for BSP changes to sync application flags for project 'NormalPR_Attempt1'...
+00:16:48 INFO  : Checking for BSP changes to sync application flags for project 'NormalPR_Attempt1'...
+00:18:12 INFO  : Bit file 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/NormalPR_Attempt1/_ide/bitstream/download.bit' is generated.
+00:18:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:18:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B61CC0A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B61CC0A-13631093-0"}' command is executed.
+00:18:17 INFO  : Device configured successfully with "C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/NormalPR_Attempt1/_ide/bitstream/download.bit"
+00:18:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:18:26 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B61CC0A' is selected.
+00:18:26 INFO  : 'jtag frequency' command is executed.
+00:18:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B61CC0A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B61CC0A-13631093-0"}' command is executed.
+00:18:28 INFO  : Device configured successfully with "C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/NormalPR_Attempt1/_ide/bitstream/download.bit"
+00:18:28 INFO  : Context for processor 'microblaze_0' is selected.
+00:18:28 INFO  : Hardware design and registers information is loaded from 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/Normal_PR/export/Normal_PR/hw/design_1_wrapper_08-2024.xsa'.
+00:18:28 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+00:18:28 INFO  : Context for processor 'microblaze_0' is selected.
+00:18:28 INFO  : System reset is completed.
+00:18:31 INFO  : 'after 3000' command is executed.
+00:18:31 INFO  : Context for processor 'microblaze_0' is selected.
+00:18:31 INFO  : The application 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/NormalPR_Attempt1/Debug/NormalPR_Attempt1.elf' is downloaded to processor 'microblaze_0'.
+00:18:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B61CC0A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B61CC0A-13631093-0"}
+fpga -file C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/NormalPR_Attempt1/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/Normal_PR/export/Normal_PR/hw/design_1_wrapper_08-2024.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/NormalPR_Attempt1/Debug/NormalPR_Attempt1.elf
+----------------End of Script----------------
+
+00:18:32 INFO  : Context for processor 'microblaze_0' is selected.
+00:18:32 INFO  : 'con' command is executed.
+00:18:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+00:18:32 INFO  : Launch script is exported to file 'C:\VProject\Attempt_1_04-04-2024\SAXI_MB_PR_HW_SW_01\NormalPR_Attempt1_system\_ide\scripts\debugger_normalpr_attempt1-default.tcl'
+00:21:45 INFO  : Result from executing command 'getProjects': LED_PR_Attempt1;Normal_PR
+00:21:45 INFO  : Result from executing command 'getPlatforms': LED_PR_Attempt1|C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/LED_PR_Attempt1/export/LED_PR_Attempt1/LED_PR_Attempt1.xpfm;Normal_PR|C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/Normal_PR/export/Normal_PR/Normal_PR.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+00:21:45 INFO  : Checking for BSP changes to sync application flags for project 'LEDPR_Application_01'...
+00:22:12 INFO  : Bit file 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/LEDPR_Application_01/_ide/bitstream/download.bit' is generated.
+00:22:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:22:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B61CC0A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B61CC0A-13631093-0"}' command is executed.
+00:22:14 INFO  : Device configured successfully with "C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/LEDPR_Application_01/_ide/bitstream/download.bit"
+00:22:23 INFO  : Disconnected from the channel tcfchan#4.
+00:22:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:22:24 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B61CC0A' is selected.
+00:22:24 INFO  : 'jtag frequency' command is executed.
+00:22:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B61CC0A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B61CC0A-13631093-0"}' command is executed.
+00:22:27 INFO  : Device configured successfully with "C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/LEDPR_Application_01/_ide/bitstream/download.bit"
+00:22:27 INFO  : Context for processor 'microblaze_0' is selected.
+00:22:27 INFO  : Hardware design and registers information is loaded from 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/LED_PR_Attempt1/export/LED_PR_Attempt1/hw/design_1_wrapper.xsa'.
+00:22:27 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+00:22:27 INFO  : Context for processor 'microblaze_0' is selected.
+00:22:27 INFO  : System reset is completed.
+00:22:30 INFO  : 'after 3000' command is executed.
+00:22:30 INFO  : Context for processor 'microblaze_0' is selected.
+00:22:30 INFO  : The application 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/LEDPR_Application_01/Debug/LEDPR_Application_01.elf' is downloaded to processor 'microblaze_0'.
+00:22:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B61CC0A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B61CC0A-13631093-0"}
+fpga -file C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/LEDPR_Application_01/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/LED_PR_Attempt1/export/LED_PR_Attempt1/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/LEDPR_Application_01/Debug/LEDPR_Application_01.elf
+----------------End of Script----------------
+
+00:22:30 INFO  : Context for processor 'microblaze_0' is selected.
+00:22:30 INFO  : 'con' command is executed.
+00:22:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+00:22:30 INFO  : Launch script is exported to file 'C:\VProject\Attempt_1_04-04-2024\SAXI_MB_PR_HW_SW_01\LEDPR_Application_01_system\_ide\scripts\debugger_ledpr_application_01-default.tcl'
+00:43:23 INFO  : Hardware specification for platform project 'LED_PR_Attempt1' is updated.
+00:43:37 INFO  : Result from executing command 'getProjects': LED_PR_Attempt1;Normal_PR
+00:43:37 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+00:49:51 INFO  : Hardware specification for platform project 'LED_PR_Attempt1' is updated.
+00:50:08 INFO  : Result from executing command 'getProjects': LED_PR_Attempt1;Normal_PR
+00:50:08 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+00:59:22 INFO  : Hardware specification for platform project 'LED_PR_Attempt1' is updated.
+00:59:38 INFO  : Result from executing command 'getProjects': LED_PR_Attempt1;Normal_PR
+00:59:38 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+01:01:28 ERROR : XSCT server calls should not be made from TCF thread.
+java.lang.RuntimeException: XSCT server calls should not be made from TCF thread.
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.issueAndWait(XSDBCommandManager.java:392) [com.xilinx.sdk.xsdb_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdk.xsdb.XsdbCommandUtils.executeAndRespond(XsdbCommandUtils.java:325) [com.xilinx.sdk.xsdb_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdk.hw.internal.HwPlatform.dispose(HwPlatform.java:1325) [com.xilinx.sdk.hw_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdk.hw.internal.HwSpecFactory.removeHwSpec(HwSpecFactory.java:92) [com.xilinx.sdk.hw_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdk.hw.internal.HwSpecFactory.validateGetFromCache(HwSpecFactory.java:78) [com.xilinx.sdk.hw_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdk.hw.internal.HwSpecFactory.createHwSpec(HwSpecFactory.java:48) [com.xilinx.sdk.hw_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdx.sdsoc.debug.ui.SdsLaunchConfigUtil.createHwPlatform(SdsLaunchConfigUtil.java:57) [com.xilinx.sdx.sdsoc.debug.ui_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdx.sdsoc.debug.ui.SdsLaunchConfigModel.iniHwPlatform(SdsLaunchConfigModel.java:187) [com.xilinx.sdx.sdsoc.debug.ui_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdk.tcf.internal.debug.ui.common.BaseLaunchConfigModel.getHwPlatform(BaseLaunchConfigModel.java:577) [com.xilinx.sdk.tcf.debug_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdk.tcf.internal.debug.ui.common.BaseLaunchConfigModel.readCrossTriggerModel(BaseLaunchConfigModel.java:173) [com.xilinx.sdk.tcf.debug_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdk.tcf.internal.debug.ui.common.BaseLaunchConfigModel.readAndSetAttributes(BaseLaunchConfigModel.java:156) [com.xilinx.sdk.tcf.debug_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdx.sdsoc.debug.ui.SdsLaunchConfigModel.newInstance(SdsLaunchConfigModel.java:109) [com.xilinx.sdx.sdsoc.debug.ui_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdx.sdsoc.debug.launch.SdsTcfLaunchDelegate.createConfigModel(SdsTcfLaunchDelegate.java:85) [com.xilinx.sdx.sdsoc.debug_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdx.sdsoc.debug.launch.SdsTcfLaunchDelegate.generateReports(SdsTcfLaunchDelegate.java:641) [com.xilinx.sdx.sdsoc.debug_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdx.sdsoc.debug.launch.SdsTcfLaunchDelegate.onDisconnected(SdsTcfLaunchDelegate.java:615) [com.xilinx.sdx.sdsoc.debug_1.0.0.202305040745.jar:?]
+	at org.eclipse.tcf.internal.debug.ui.model.TCFModelManager$1.onDisconnected(TCFModelManager.java:79) [org.eclipse.tcf.debug.ui_1.7.0.202305040745.jar:?]
+	at org.eclipse.tcf.internal.debug.model.TCFLaunch.onDisconnected(TCFLaunch.java:532) [org.eclipse.tcf.debug_1.7.0.202305040745.jar:?]
+	at org.eclipse.tcf.internal.debug.model.TCFLaunch$43.onChannelClosed(TCFLaunch.java:1643) [org.eclipse.tcf.debug_1.7.0.202305040745.jar:?]
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:858) [org.eclipse.tcf.core_1.7.0.202305040745.jar:?]
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98) [org.eclipse.tcf_1.7.0.202305040745.jar:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+01:01:28 INFO  : Disconnected from the channel tcfchan#6.
+01:11:32 DEBUG : Logs will be stored at 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/IDE.log'.
+01:11:33 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\VProject\Attempt_1_04-04-2024\SAXI_MB_PR_HW_SW_01\temp_xsdb_launch_script.tcl
+01:11:35 INFO  : XSCT server has started successfully.
+01:11:35 INFO  : Successfully done setting XSCT server connection channel  
+01:11:35 INFO  : plnx-install-location is set to ''
+01:11:35 INFO  : Successfully done setting workspace for the tool. 
+01:11:36 INFO  : Successfully done query RDI_DATADIR 
+01:11:36 INFO  : Platform repository initialization has completed.
+01:11:36 INFO  : Registering command handlers for Vitis TCF services
+01:11:48 INFO  : Hardware specification for platform project 'LED_PR_Attempt1' is updated.
+01:11:58 INFO  : Result from executing command 'getProjects': LED_PR_Attempt1;Normal_PR
+01:11:58 INFO  : Result from executing command 'getPlatforms': LED_PR_Attempt1|C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/LED_PR_Attempt1/export/LED_PR_Attempt1/LED_PR_Attempt1.xpfm;Normal_PR|C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/Normal_PR/export/Normal_PR/Normal_PR.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+01:28:37 INFO  : Hardware specification for platform project 'LED_PR_Attempt1' is updated.
+01:28:49 INFO  : Result from executing command 'getProjects': LED_PR_Attempt1;Normal_PR
+01:28:49 INFO  : Result from executing command 'getPlatforms': LED_PR_Attempt1|C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/LED_PR_Attempt1/export/LED_PR_Attempt1/LED_PR_Attempt1.xpfm;Normal_PR|C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/Normal_PR/export/Normal_PR/Normal_PR.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+01:34:53 DEBUG : Logs will be stored at 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/IDE.log'.
+01:34:54 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\VProject\Attempt_1_04-04-2024\SAXI_MB_PR_HW_SW_01\temp_xsdb_launch_script.tcl
+01:34:56 INFO  : XSCT server has started successfully.
+01:34:56 INFO  : plnx-install-location is set to ''
+01:34:56 INFO  : Successfully done setting XSCT server connection channel  
+01:34:56 INFO  : Successfully done setting workspace for the tool. 
+01:34:57 INFO  : Successfully done query RDI_DATADIR 
+01:34:57 INFO  : Platform repository initialization has completed.
+01:34:57 INFO  : Registering command handlers for Vitis TCF services
+01:35:32 INFO  : Hardware specification for platform project 'LED_PR_Attempt1' is updated.
+01:35:43 INFO  : Result from executing command 'getProjects': LED_PR_Attempt1;Normal_PR
+01:35:43 INFO  : Result from executing command 'getPlatforms': LED_PR_Attempt1|C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/LED_PR_Attempt1/export/LED_PR_Attempt1/LED_PR_Attempt1.xpfm;Normal_PR|C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/Normal_PR/export/Normal_PR/Normal_PR.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+16:47:42 DEBUG : Logs will be stored at 'C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/IDE.log'.
+16:47:44 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\VProject\Attempt_1_04-04-2024\SAXI_MB_PR_HW_SW_01\temp_xsdb_launch_script.tcl
+16:47:50 INFO  : XSCT server has started successfully.
+16:47:50 INFO  : Successfully done setting XSCT server connection channel  
+16:47:51 INFO  : Registering command handlers for Vitis TCF services
+16:47:52 INFO  : Platform repository initialization has completed.
+16:47:56 INFO  : plnx-install-location is set to ''
+16:47:56 INFO  : Successfully done setting workspace for the tool. 
+16:47:56 INFO  : Successfully done query RDI_DATADIR 
+16:48:07 INFO  : Hardware specification for platform project 'LED_PR_Attempt1' is updated.
+16:48:30 INFO  : Result from executing command 'getProjects': LED_PR_Attempt1;Normal_PR
+16:48:30 INFO  : Result from executing command 'getPlatforms': LED_PR_Attempt1|C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/LED_PR_Attempt1/export/LED_PR_Attempt1/LED_PR_Attempt1.xpfm;Normal_PR|C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/Normal_PR/export/Normal_PR/Normal_PR.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm

@@ -2,7 +2,7 @@
 --Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
---Date        : Sun Apr  7 01:09:11 2024
+--Date        : Tue Apr  9 01:22:45 2024
 --Host        : Jasmeet running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -741,10 +741,10 @@ architecture STRUCTURE of microblaze_0_local_memory_imp_1K0VQXK is
   signal NLW_ilmb_v10_LMB_Rst_UNCONNECTED : STD_LOGIC;
   signal NLW_lmb_bram_rsta_busy_UNCONNECTED : STD_LOGIC;
   signal NLW_lmb_bram_rstb_busy_UNCONNECTED : STD_LOGIC;
-  attribute BMM_INFO_ADDRESS_SPACE : string;
-  attribute BMM_INFO_ADDRESS_SPACE of dlmb_bram_if_cntlr : label is "byte  0x00000000 32 > design_1 microblaze_0_local_memory/lmb_bram";
   attribute KEEP_HIERARCHY : string;
   attribute KEEP_HIERARCHY of dlmb_bram_if_cntlr : label is "yes";
+  attribute bmm_info_address_space : string;
+  attribute bmm_info_address_space of dlmb_bram_if_cntlr : label is "byte  0x00000000 32 > design_1 microblaze_0_local_memory/lmb_bram";
 begin
   DLMB_ce <= microblaze_0_dlmb_CE;
   DLMB_readdbus(0 to 31) <= microblaze_0_dlmb_READDBUS(0 to 31);
@@ -2072,10 +2072,10 @@ entity design_1 is
     usb_uart_rxd : in STD_LOGIC;
     usb_uart_txd : out STD_LOGIC
   );
-  attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=24,numReposBlks=16,numNonXlnxBlks=0,numHierBlks=8,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=4,da_board_cnt=6,da_mb_cnt=1,synth_mode=OOC_per_IP}";
-  attribute HW_HANDOFF : string;
-  attribute HW_HANDOFF of design_1 : entity is "design_1.hwdef";
+  attribute core_generation_info : string;
+  attribute core_generation_info of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=24,numReposBlks=16,numNonXlnxBlks=0,numHierBlks=8,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=7,da_board_cnt=6,da_mb_cnt=1,synth_mode=OOC_per_IP}";
+  attribute hw_handoff : string;
+  attribute hw_handoff of design_1 : entity is "design_1.hwdef";
 end design_1;
 
 architecture STRUCTURE of design_1 is
@@ -2280,31 +2280,31 @@ architecture STRUCTURE of design_1 is
     gpio_io_o : out STD_LOGIC_VECTOR ( 15 downto 0 )
   );
   end component design_1_axi_gpio_1_0;
-  component design_1_Led_Control_04_2024_0_1 is
+  component design_1_LED_control_09_2024_0_1 is
   port (
-    s00_axi_led_aclk : in STD_LOGIC;
-    s00_axi_led_aresetn : in STD_LOGIC;
-    s00_axi_led_awaddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_led_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s00_axi_led_awvalid : in STD_LOGIC;
-    s00_axi_led_awready : out STD_LOGIC;
-    s00_axi_led_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    s00_axi_led_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_led_wvalid : in STD_LOGIC;
-    s00_axi_led_wready : out STD_LOGIC;
-    s00_axi_led_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s00_axi_led_bvalid : out STD_LOGIC;
-    s00_axi_led_bready : in STD_LOGIC;
-    s00_axi_led_araddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_led_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s00_axi_led_arvalid : in STD_LOGIC;
-    s00_axi_led_arready : out STD_LOGIC;
-    s00_axi_led_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    s00_axi_led_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s00_axi_led_rvalid : out STD_LOGIC;
-    s00_axi_led_rready : in STD_LOGIC
+    s00_axi_aclk : in STD_LOGIC;
+    s00_axi_aresetn : in STD_LOGIC;
+    s00_axi_awaddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s00_axi_awvalid : in STD_LOGIC;
+    s00_axi_awready : out STD_LOGIC;
+    s00_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    s00_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_wvalid : in STD_LOGIC;
+    s00_axi_wready : out STD_LOGIC;
+    s00_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_bvalid : out STD_LOGIC;
+    s00_axi_bready : in STD_LOGIC;
+    s00_axi_araddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s00_axi_arvalid : in STD_LOGIC;
+    s00_axi_arready : out STD_LOGIC;
+    s00_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    s00_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_rvalid : out STD_LOGIC;
+    s00_axi_rready : in STD_LOGIC
   );
-  end component design_1_Led_Control_04_2024_0_1;
+  end component design_1_LED_control_09_2024_0_1;
   signal axi_gpio_0_GPIO_TRI_I : STD_LOGIC_VECTOR ( 4 downto 0 );
   signal axi_gpio_1_GPIO_TRI_O : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal axi_uartlite_0_UART_RxD : STD_LOGIC;
@@ -2458,20 +2458,20 @@ architecture STRUCTURE of design_1 is
   signal sys_clock_1 : STD_LOGIC;
   signal NLW_rst_clk_wiz_1_100M_interconnect_aresetn_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_rst_clk_wiz_1_100M_peripheral_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
-  attribute BMM_INFO_PROCESSOR : string;
-  attribute BMM_INFO_PROCESSOR of microblaze_0 : label is "microblaze-le > design_1 microblaze_0_local_memory/dlmb_bram_if_cntlr";
   attribute KEEP_HIERARCHY : string;
   attribute KEEP_HIERARCHY of microblaze_0 : label is "yes";
-  attribute X_INTERFACE_INFO : string;
-  attribute X_INTERFACE_INFO of reset : signal is "xilinx.com:signal:reset:1.0 RST.RESET RST";
-  attribute X_INTERFACE_PARAMETER : string;
-  attribute X_INTERFACE_PARAMETER of reset : signal is "XIL_INTERFACENAME RST.RESET, INSERT_VIP 0, POLARITY ACTIVE_LOW";
-  attribute X_INTERFACE_INFO of sys_clock : signal is "xilinx.com:signal:clock:1.0 CLK.SYS_CLOCK CLK";
-  attribute X_INTERFACE_PARAMETER of sys_clock : signal is "XIL_INTERFACENAME CLK.SYS_CLOCK, CLK_DOMAIN design_1_sys_clock, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0";
-  attribute X_INTERFACE_INFO of usb_uart_rxd : signal is "xilinx.com:interface:uart:1.0 usb_uart RxD";
-  attribute X_INTERFACE_INFO of usb_uart_txd : signal is "xilinx.com:interface:uart:1.0 usb_uart TxD";
-  attribute X_INTERFACE_INFO of led_16bits_tri_o : signal is "xilinx.com:interface:gpio:1.0 led_16bits TRI_O";
-  attribute X_INTERFACE_INFO of push_buttons_5bits_tri_i : signal is "xilinx.com:interface:gpio:1.0 push_buttons_5bits TRI_I";
+  attribute bmm_info_processor : string;
+  attribute bmm_info_processor of microblaze_0 : label is "microblaze-le > design_1 microblaze_0_local_memory/dlmb_bram_if_cntlr";
+  attribute x_interface_info : string;
+  attribute x_interface_info of reset : signal is "xilinx.com:signal:reset:1.0 RST.RESET RST";
+  attribute x_interface_parameter : string;
+  attribute x_interface_parameter of reset : signal is "XIL_INTERFACENAME RST.RESET, INSERT_VIP 0, POLARITY ACTIVE_LOW";
+  attribute x_interface_info of sys_clock : signal is "xilinx.com:signal:clock:1.0 CLK.SYS_CLOCK CLK";
+  attribute x_interface_parameter of sys_clock : signal is "XIL_INTERFACENAME CLK.SYS_CLOCK, CLK_DOMAIN design_1_sys_clock, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0";
+  attribute x_interface_info of usb_uart_rxd : signal is "xilinx.com:interface:uart:1.0 usb_uart RxD";
+  attribute x_interface_info of usb_uart_txd : signal is "xilinx.com:interface:uart:1.0 usb_uart TxD";
+  attribute x_interface_info of led_16bits_tri_o : signal is "xilinx.com:interface:gpio:1.0 led_16bits TRI_O";
+  attribute x_interface_info of push_buttons_5bits_tri_i : signal is "xilinx.com:interface:gpio:1.0 push_buttons_5bits TRI_I";
 begin
   axi_gpio_0_GPIO_TRI_I(4 downto 0) <= push_buttons_5bits_tri_i(4 downto 0);
   axi_uartlite_0_UART_RxD <= usb_uart_rxd;
@@ -2479,29 +2479,29 @@ begin
   reset_1 <= reset;
   sys_clock_1 <= sys_clock;
   usb_uart_txd <= axi_uartlite_0_UART_TxD;
-Led_Control_04_2024_0: component design_1_Led_Control_04_2024_0_1
+LED_control_09_2024_0: component design_1_LED_control_09_2024_0_1
      port map (
-      s00_axi_led_aclk => microblaze_0_Clk,
-      s00_axi_led_araddr(3 downto 0) => microblaze_0_axi_periph_M04_AXI_ARADDR(3 downto 0),
-      s00_axi_led_aresetn => rst_clk_wiz_1_100M_peripheral_aresetn(0),
-      s00_axi_led_arprot(2 downto 0) => microblaze_0_axi_periph_M04_AXI_ARPROT(2 downto 0),
-      s00_axi_led_arready => microblaze_0_axi_periph_M04_AXI_ARREADY,
-      s00_axi_led_arvalid => microblaze_0_axi_periph_M04_AXI_ARVALID,
-      s00_axi_led_awaddr(3 downto 0) => microblaze_0_axi_periph_M04_AXI_AWADDR(3 downto 0),
-      s00_axi_led_awprot(2 downto 0) => microblaze_0_axi_periph_M04_AXI_AWPROT(2 downto 0),
-      s00_axi_led_awready => microblaze_0_axi_periph_M04_AXI_AWREADY,
-      s00_axi_led_awvalid => microblaze_0_axi_periph_M04_AXI_AWVALID,
-      s00_axi_led_bready => microblaze_0_axi_periph_M04_AXI_BREADY,
-      s00_axi_led_bresp(1 downto 0) => microblaze_0_axi_periph_M04_AXI_BRESP(1 downto 0),
-      s00_axi_led_bvalid => microblaze_0_axi_periph_M04_AXI_BVALID,
-      s00_axi_led_rdata(31 downto 0) => microblaze_0_axi_periph_M04_AXI_RDATA(31 downto 0),
-      s00_axi_led_rready => microblaze_0_axi_periph_M04_AXI_RREADY,
-      s00_axi_led_rresp(1 downto 0) => microblaze_0_axi_periph_M04_AXI_RRESP(1 downto 0),
-      s00_axi_led_rvalid => microblaze_0_axi_periph_M04_AXI_RVALID,
-      s00_axi_led_wdata(31 downto 0) => microblaze_0_axi_periph_M04_AXI_WDATA(31 downto 0),
-      s00_axi_led_wready => microblaze_0_axi_periph_M04_AXI_WREADY,
-      s00_axi_led_wstrb(3 downto 0) => microblaze_0_axi_periph_M04_AXI_WSTRB(3 downto 0),
-      s00_axi_led_wvalid => microblaze_0_axi_periph_M04_AXI_WVALID
+      s00_axi_aclk => microblaze_0_Clk,
+      s00_axi_araddr(3 downto 0) => microblaze_0_axi_periph_M04_AXI_ARADDR(3 downto 0),
+      s00_axi_aresetn => rst_clk_wiz_1_100M_peripheral_aresetn(0),
+      s00_axi_arprot(2 downto 0) => microblaze_0_axi_periph_M04_AXI_ARPROT(2 downto 0),
+      s00_axi_arready => microblaze_0_axi_periph_M04_AXI_ARREADY,
+      s00_axi_arvalid => microblaze_0_axi_periph_M04_AXI_ARVALID,
+      s00_axi_awaddr(3 downto 0) => microblaze_0_axi_periph_M04_AXI_AWADDR(3 downto 0),
+      s00_axi_awprot(2 downto 0) => microblaze_0_axi_periph_M04_AXI_AWPROT(2 downto 0),
+      s00_axi_awready => microblaze_0_axi_periph_M04_AXI_AWREADY,
+      s00_axi_awvalid => microblaze_0_axi_periph_M04_AXI_AWVALID,
+      s00_axi_bready => microblaze_0_axi_periph_M04_AXI_BREADY,
+      s00_axi_bresp(1 downto 0) => microblaze_0_axi_periph_M04_AXI_BRESP(1 downto 0),
+      s00_axi_bvalid => microblaze_0_axi_periph_M04_AXI_BVALID,
+      s00_axi_rdata(31 downto 0) => microblaze_0_axi_periph_M04_AXI_RDATA(31 downto 0),
+      s00_axi_rready => microblaze_0_axi_periph_M04_AXI_RREADY,
+      s00_axi_rresp(1 downto 0) => microblaze_0_axi_periph_M04_AXI_RRESP(1 downto 0),
+      s00_axi_rvalid => microblaze_0_axi_periph_M04_AXI_RVALID,
+      s00_axi_wdata(31 downto 0) => microblaze_0_axi_periph_M04_AXI_WDATA(31 downto 0),
+      s00_axi_wready => microblaze_0_axi_periph_M04_AXI_WREADY,
+      s00_axi_wstrb(3 downto 0) => microblaze_0_axi_periph_M04_AXI_WSTRB(3 downto 0),
+      s00_axi_wvalid => microblaze_0_axi_periph_M04_AXI_WVALID
     );
 axi_gpio_0: component design_1_axi_gpio_0_0
      port map (

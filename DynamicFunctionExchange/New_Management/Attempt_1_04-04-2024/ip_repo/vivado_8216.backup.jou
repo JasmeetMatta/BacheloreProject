@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Mon Apr  8 00:02:39 2024
+# Process ID: 8216
+# Current directory: C:/VProject/Attempt_1_04-04-2024/ip_repo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12936 C:\VProject\Attempt_1_04-04-2024\ip_repo\edit_Led_Control_04_2024_v1_0.xpr
+# Log file: C:/VProject/Attempt_1_04-04-2024/ip_repo/vivado.log
+# Journal file: C:/VProject/Attempt_1_04-04-2024/ip_repo\vivado.jou
+# Running On: Jasmeet, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 16990 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/VProject/Attempt_1_04-04-2024/ip_repo/edit_Led_Control_04_2024_v1_0.xpr
+update_compile_order -fileset sources_1
+ipx::open_ipxact_file C:/VProject/Attempt_1_04-04-2024/ip_repo/Led_Control_04_2024_1_0/component.xml
+create_peripheral xilinx.com user Led_Control_08_2024 1.0 -dir C:/VProject/Attempt_1_04-04-2024/ip_repo
+add_peripheral_interface S00_AXI -interface_mode slave -axi_type lite [ipx::find_open_core xilinx.com:user:Led_Control_08_2024:1.0]
+generate_peripheral -driver -bfm_example_design -debug_hw_example_design [ipx::find_open_core xilinx.com:user:Led_Control_08_2024:1.0]
+write_peripheral [ipx::find_open_core xilinx.com:user:Led_Control_08_2024:1.0]
+set_property  ip_repo_paths  {C:/VProject/Attempt_1_04-04-2024/ip_repo/Led_Control_08_2024_1_0 C:/VProject/Attempt_1_04-04-2024/ip_repo/Led_Control_04_2024_1_0} [current_project]
+update_ip_catalog -rebuild
+ipx::edit_ip_in_project -upgrade true -name edit_Led_Control_08_2024_v1_0 -directory C:/VProject/Attempt_1_04-04-2024/ip_repo c:/VProject/Attempt_1_04-04-2024/ip_repo/Led_Control_08_2024_1_0/component.xml
+update_compile_order -fileset sources_1
+current_project edit_Led_Control_04_2024_v1_0
+current_project edit_Led_Control_08_2024_v1_0
+add_files -norecurse -copy_to c:/VProject/Attempt_1_04-04-2024/ip_repo/Led_Control_08_2024_1_0/src C:/VProject/Attempt_1_04-04-2024/ip_repo/Led_Control_04_2024_1_0/hdl/LED_Logic.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_project

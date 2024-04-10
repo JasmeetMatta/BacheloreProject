@@ -48,6 +48,9 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/LED_control_09_2024_1_0"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/LED_Control_09-2024_1_0"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/Led_Control_08_2024_1_0"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/Led_Control_04_2024_1_0"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPDefaultOutputPath" Val="$PGENDIR/sources_1"/>
@@ -105,20 +108,12 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/Led_Control_04_2024_1_0/hdl/Led_Control_04_2024_v1_0.vhd">
-        <FileInfo>
-          <Attr Name="Library" Val="xil_defaultlib"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PPRDIR/Led_Control_04_2024_1_0/component.xml">
         <FileInfo SFType="IPXACT"/>
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="Led_Control_04_2024_v1_0"/>
-        <Option Name="TopRTLFile" Val="$PPRDIR/Led_Control_04_2024_1_0/hdl/Led_Control_04_2024_v1_0.vhd"/>
+        <Option Name="TopModule" Val="Led_Control_04_2024_v1_0_S00_AXI_LED"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
@@ -131,7 +126,7 @@
       <Filter Type="Srcs"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="Led_Control_04_2024_v1_0"/>
+        <Option Name="TopModule" Val="Led_Control_04_2024_v1_0_S00_AXI_LED"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="TransportPathDelay" Val="0"/>

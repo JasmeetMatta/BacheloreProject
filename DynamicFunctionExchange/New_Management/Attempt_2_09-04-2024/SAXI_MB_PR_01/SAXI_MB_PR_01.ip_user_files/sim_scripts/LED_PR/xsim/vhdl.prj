@@ -1,0 +1,20 @@
+vhdl xil_defaultlib  \
+"../../../bd/LED_PR/ip/LED_PR_microblaze_0_0/sim/LED_PR_microblaze_0_0.vhd" \
+"../../../bd/LED_PR/ip/LED_PR_dlmb_v10_0/sim/LED_PR_dlmb_v10_0.vhd" \
+"../../../bd/LED_PR/ip/LED_PR_ilmb_v10_0/sim/LED_PR_ilmb_v10_0.vhd" \
+"../../../bd/LED_PR/ip/LED_PR_dlmb_bram_if_cntlr_0/sim/LED_PR_dlmb_bram_if_cntlr_0.vhd" \
+"../../../bd/LED_PR/ip/LED_PR_ilmb_bram_if_cntlr_0/sim/LED_PR_ilmb_bram_if_cntlr_0.vhd" \
+"../../../bd/LED_PR/ip/LED_PR_microblaze_0_axi_intc_0/sim/LED_PR_microblaze_0_axi_intc_0.vhd" \
+"../../../bd/LED_PR/ip/LED_PR_mdm_1_0/sim/LED_PR_mdm_1_0.vhd" \
+"../../../bd/LED_PR/ip/LED_PR_rst_clk_wiz_1_100M_0/sim/LED_PR_rst_clk_wiz_1_100M_0.vhd" \
+"../../../bd/LED_PR/ip/LED_PR_axi_uartlite_0_0/sim/LED_PR_axi_uartlite_0_0.vhd" \
+"../../../bd/LED_PR/ip/LED_PR_axi_gpio_0_0/sim/LED_PR_axi_gpio_0_0.vhd" \
+"../../../bd/LED_PR/ip/LED_PR_axi_gpio_1_0/sim/LED_PR_axi_gpio_1_0.vhd" \
+"../../../bd/LED_PR/ipshared/cd7f/hdl/Led_SAXI_01_v1_0_S_AXI.vhd" \
+"../../../bd/LED_PR/ipshared/cd7f/hdl/Led_SAXI_01_v1_0.vhd" \
+"../../../bd/LED_PR/ipshared/cd7f/hdl/Led_Button.vhd" \
+"../../../bd/LED_PR/ip/LED_PR_Led_SAXI_01_0_0/sim/LED_PR_Led_SAXI_01_0_0.vhd" \
+"../../../bd/LED_PR/sim/LED_PR.vhd" \
+
+# Do not sort compile order
+nosort

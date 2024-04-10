@@ -9,4 +9,11 @@
 	<item key="programfpga.sdxproject" value="LEDPR_Application_01_system"/>
 	<item key="LEDPR_Application_01_system-microblaze_0-initElf" value="bootloop"/>
 	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Nexys A7 -100T 210292B61CC0A&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Nexys A7 -100T-210292B61CC0A-13631093-0&quot;}}]}"/>
+	<item key="NormalPR_Attempt1_system-bitFile" value="${project_loc:NormalPR_Attempt1}/_ide/bitstream/design_1_wrapper_08-2024.bit"/>
+	<item key="NormalPR_Attempt1_system-bmmFile" value="${project_loc:NormalPR_Attempt1}/_ide/bitstream/design_1_wrapper_08-2024.mmi"/>
+	<item key="NormalPR_Attempt1_system-target" value="Local"/>
+	<item key="NormalPR_Attempt1_system-device" value="Auto Detect"/>
+	<item key="NormalPR_Attempt1_system-partial_bit" value="false"/>
+	<item key="NormalPR_Attempt1_system-skip_rev_check" value="false"/>
+	<item key="NormalPR_Attempt1_system-microblaze_0-initElf" value="bootloop"/>
 </section>

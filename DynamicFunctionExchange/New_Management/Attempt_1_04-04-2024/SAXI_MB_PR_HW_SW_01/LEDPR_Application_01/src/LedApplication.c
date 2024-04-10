@@ -75,9 +75,10 @@ int main()
     	buttonData = XGpio_DiscreteRead(&buttons,1);
     	xil_printf("buttonData: 0x%08x", buttonData);
     	print("\n\r");
-    	LED_CONTROL_04_2024_mWriteReg(&LedBaseaddr_p,0,buttonData);
-    	LedIpData = LED_CONTROL_04_2024_mReadReg(&LedBaseaddr_p,4);
-    	XGpio_DiscreteWrite(&Led,1,LedIpData);
+    	*(LedBaseaddr_p+0) = buttonData;
+    	//LED_CONTROL_04_2024_mWriteReg(&LedBaseaddr_p,0,buttonData);
+    	//LedIpData = LED_CONTROL_04_2024_mReadReg(&LedBaseaddr_p,4);
+    	XGpio_DiscreteWrite(&Led,1,*(LedBaseaddr_p+1));
     	xil_printf("LedIpData: 0x%08x", LedIpData);
     	print("\n\r");
     	//MB_Sleep(500);

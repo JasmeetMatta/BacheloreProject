@@ -1,4 +1,4 @@
-01:17:21 **** Incremental Build of configuration Debug for project LEDPR_Application_01 ****
+00:21:46 **** Incremental Build of configuration Debug for project LEDPR_Application_01 ****
 make all 
 'Building file: ../src/LedApplication.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -10,39 +10,7 @@ C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/LED_PR_Attempt1/export/LED_
 C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/LED_PR_Attempt1/export/LED_PR_Attempt1/sw/LED_PR_Attempt1/standalone_domain/bspinclude/include/xbasic_types.h:103:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
   103 | #warning  Please refer the Standalone BSP UG647 for further details
       |  ^~~~~~~
-In file included from ../src/LedApplication.c:54:
-../src/LedApplication.c: In function 'main':
-C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/LED_PR_Attempt1/export/LED_PR_Attempt1/sw/LED_PR_Attempt1/standalone_domain/bspinclude/include/Led_Control_04_2024.h:35:33: warning: passing argument 1 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]
-   35 |         Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
-      |                   ~~~~~~~~~~~~~~^~~~~~~~~~~~~
-      |                                 |
-      |                                 Xuint32 ** {aka long unsigned int **}
-../src/LedApplication.c:78:9: note: in expansion of macro 'LED_CONTROL_04_2024_mWriteReg'
-   78 |         LED_CONTROL_04_2024_mWriteReg(&LedBaseaddr_p,0,buttonData);
-      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/LED_PR_Attempt1/export/LED_PR_Attempt1/sw/LED_PR_Attempt1/standalone_domain/bspinclude/include/xgpio_l.h:61,
-                 from C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/LED_PR_Attempt1/export/LED_PR_Attempt1/sw/LED_PR_Attempt1/standalone_domain/bspinclude/include/xgpio.h:117,
-                 from ../src/LedApplication.c:51:
-C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/LED_PR_Attempt1/export/LED_PR_Attempt1/sw/LED_PR_Attempt1/standalone_domain/bspinclude/include/xil_io.h:208:38: note: expected 'UINTPTR' {aka 'unsigned int'} but argument is of type 'Xuint32 **' {aka 'long unsigned int **'}
-  208 | static INLINE void Xil_Out32(UINTPTR Addr, u32 Value)
-      |                              ~~~~~~~~^~~~
-C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/LED_PR_Attempt1/export/LED_PR_Attempt1/sw/LED_PR_Attempt1/standalone_domain/bspinclude/include/Led_Control_04_2024.h:55:28: warning: passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]
-   55 |     Xil_In32((BaseAddress) + (RegOffset))
-      |              ~~~~~~~~~~~~~~^~~~~~~~~~~~~
-      |                            |
-      |                            Xuint32 ** {aka long unsigned int **}
-../src/LedApplication.c:79:21: note: in expansion of macro 'LED_CONTROL_04_2024_mReadReg'
-   79 |         LedIpData = LED_CONTROL_04_2024_mReadReg(&LedBaseaddr_p,4);
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-C:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/LED_PR_Attempt1/export/LED_PR_Attempt1/sw/LED_PR_Attempt1/standalone_domain/bspinclude/include/xil_io.h:134:36: note: expected 'UINTPTR' {aka 'unsigned int'} but argument is of type 'Xuint32 **' {aka 'long unsigned int **'}
-  134 | static INLINE u32 Xil_In32(UINTPTR Addr)
-      |                            ~~~~~~~~^~~~
 'Finished building: ../src/LedApplication.c'
-' '
-'Building file: ../src/platform.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IC:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/LED_PR_Attempt1/export/LED_PR_Attempt1/sw/LED_PR_Attempt1/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-'Finished building: ../src/platform.c'
 ' '
 'Building target: LEDPR_Application_01.elf'
 'Invoking: MicroBlaze gcc linker'
@@ -52,9 +20,9 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/VProject/Attempt_1_04-04-2024/SAXI_MB_P
 'Invoking: MicroBlaze Print Size'
 mb-size LEDPR_Application_01.elf  |tee "LEDPR_Application_01.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   7588	    356	   3168	  11112	   2b68	LEDPR_Application_01.elf
+   7440	    356	   3164	  10960	   2ad0	LEDPR_Application_01.elf
 'Finished building: LEDPR_Application_01.elf.size'
 ' '
 
-01:17:22 Build Finished (took 713ms)
+00:21:46 Build Finished (took 729ms)
 

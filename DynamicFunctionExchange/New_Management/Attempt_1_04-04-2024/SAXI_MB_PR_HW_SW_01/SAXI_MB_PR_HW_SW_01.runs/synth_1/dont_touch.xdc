@@ -52,7 +52,7 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_ax
 # IP: bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_gpio_1_0 || ORIG_REF_NAME==design_1_axi_gpio_1_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_Led_Control_04_2024_0_1/design_1_Led_Control_04_2024_0_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_Led_Control_04_2024_0_1 || ORIG_REF_NAME==design_1_Led_Control_04_2024_0_1} -quiet] -quiet
+# IP: bd/design_1/ip/design_1_LED_control_09_2024_0_1/design_1_LED_control_09_2024_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_LED_control_09_2024_0_1 || ORIG_REF_NAME==design_1_LED_control_09_2024_0_1} -quiet] -quiet
 
 # XDC: c:/VProject/Attempt_1_04-04-2024/SAXI_MB_PR_HW_SW_01/SAXI_MB_PR_HW_SW_01.gen/sources_1/bd/design_1/design_1_ooc.xdc

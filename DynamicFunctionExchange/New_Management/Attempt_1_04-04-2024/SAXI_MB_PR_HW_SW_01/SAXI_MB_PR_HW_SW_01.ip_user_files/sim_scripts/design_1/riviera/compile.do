@@ -144,10 +144,10 @@ vcom -work axi_gpio_v2_0_30 -93  -incr \
 vcom -work xil_defaultlib -93  -incr \
 "../../../bd/design_1/ip/design_1_axi_gpio_0_0/sim/design_1_axi_gpio_0_0.vhd" \
 "../../../bd/design_1/ip/design_1_axi_gpio_1_0/sim/design_1_axi_gpio_1_0.vhd" \
-"../../../bd/design_1/ipshared/0e93/hdl/Led_Control_04_2024_v1_0_S00_AXI_LED.vhd" \
-"../../../bd/design_1/ipshared/0e93/hdl/LED_Logic.vhd" \
-"../../../bd/design_1/ipshared/0e93/hdl/Led_Control_04_2024_v1_0.vhd" \
-"../../../bd/design_1/ip/design_1_Led_Control_04_2024_0_1/sim/design_1_Led_Control_04_2024_0_1.vhd" \
+"../../../bd/design_1/ipshared/b7db/hdl/LED_control_09_2024_v1_0_S00_AXI.vhd" \
+"../../../bd/design_1/ipshared/b7db/src/LED_Logic.vhd" \
+"../../../bd/design_1/ipshared/b7db/hdl/LED_control_09_2024_v1_0.vhd" \
+"../../../bd/design_1/ip/design_1_LED_control_09_2024_0_1/sim/design_1_LED_control_09_2024_0_1.vhd" \
 "../../../bd/design_1/sim/design_1.vhd" \
 
 vlog -work xil_defaultlib \

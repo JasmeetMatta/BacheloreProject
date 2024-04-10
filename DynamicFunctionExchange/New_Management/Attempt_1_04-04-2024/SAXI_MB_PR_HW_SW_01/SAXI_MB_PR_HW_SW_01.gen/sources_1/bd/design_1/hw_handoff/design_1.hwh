@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Apr  7 01:09:12 2024" VIVADOVERSION="2023.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Apr  9 16:38:23 2024" VIVADOVERSION="2023.1">
 
   <SYSTEMINFO ARCH="artix7" BOARD="digilentinc.com:nexys-a7-100t:part0:1.2" DEVICE="7a100t" NAME="design_1" PACKAGE="csg324" SPEEDGRADE="-1"/>
 
@@ -57,128 +57,128 @@
   </EXTERNALINTERFACES>
 
   <MODULES>
-    <MODULE COREREVISION="6" FULLNAME="/Led_Control_04_2024_0" HWVERSION="1.0" INSTANCE="Led_Control_04_2024_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Led_Control_04_2024" VLNV="xilinx.com:user:Led_Control_04_2024:1.0">
+    <MODULE COREREVISION="3" FULLNAME="/LED_control_09_2024_0" HWVERSION="1.0" INSTANCE="LED_control_09_2024_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="LED_control_09_2024" VLNV="xilinx.com:user:LED_control_09_2024:1.0">
       <DOCUMENTS/>
       <ADDRESSBLOCKS>
-        <ADDRESSBLOCK ACCESS="" INTERFACE="S00_AXI_LED" NAME="S00_AXI_LED_reg" RANGE="4096" USAGE="register"/>
+        <ADDRESSBLOCK ACCESS="" INTERFACE="S00_AXI" NAME="S00_AXI_reg" RANGE="4096" USAGE="register"/>
       </ADDRESSBLOCKS>
       <PARAMETERS>
-        <PARAMETER NAME="C_S00_AXI_LED_DATA_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="C_S00_AXI_LED_ADDR_WIDTH" VALUE="4"/>
-        <PARAMETER NAME="Component_Name" VALUE="design_1_Led_Control_04_2024_0_1"/>
+        <PARAMETER NAME="C_S00_AXI_DATA_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_S00_AXI_ADDR_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_LED_control_09_2024_0_1"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-        <PARAMETER NAME="C_S00_AXI_LED_BASEADDR" VALUE="0x44A00000"/>
-        <PARAMETER NAME="C_S00_AXI_LED_HIGHADDR" VALUE="0x44A0FFFF"/>
+        <PARAMETER NAME="C_S00_AXI_BASEADDR" VALUE="0x44A00000"/>
+        <PARAMETER NAME="C_S00_AXI_HIGHADDR" VALUE="0x44A0FFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s00_axi_led_aclk" SIGIS="clk" SIGNAME="clk_wiz_1_clk_out1">
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s00_axi_aclk" SIGIS="clk" SIGNAME="clk_wiz_1_clk_out1">
           <CONNECTIONS>
             <CONNECTION INSTANCE="clk_wiz_1" PORT="clk_out1"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s00_axi_led_aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="rst_clk_wiz_1_100M_peripheral_aresetn">
+        <PORT DIR="I" NAME="s00_axi_aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="rst_clk_wiz_1_100M_peripheral_aresetn">
           <CONNECTIONS>
             <CONNECTION INSTANCE="rst_clk_wiz_1_100M" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="3" NAME="s00_axi_led_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="Led_Control_04_2024_0_s00_axi_led_awaddr">
+        <PORT DIR="I" LEFT="3" NAME="s00_axi_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="LED_control_09_2024_0_s00_axi_awaddr">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M04_AXI_awaddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="2" NAME="s00_axi_led_awprot" RIGHT="0" SIGIS="undef" SIGNAME="Led_Control_04_2024_0_s00_axi_led_awprot">
+        <PORT DIR="I" LEFT="2" NAME="s00_axi_awprot" RIGHT="0" SIGIS="undef" SIGNAME="LED_control_09_2024_0_s00_axi_awprot">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M04_AXI_awprot"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s00_axi_led_awvalid" SIGIS="undef" SIGNAME="Led_Control_04_2024_0_s00_axi_led_awvalid">
+        <PORT DIR="I" NAME="s00_axi_awvalid" SIGIS="undef" SIGNAME="LED_control_09_2024_0_s00_axi_awvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M04_AXI_awvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="s00_axi_led_awready" SIGIS="undef" SIGNAME="Led_Control_04_2024_0_s00_axi_led_awready">
+        <PORT DIR="O" NAME="s00_axi_awready" SIGIS="undef" SIGNAME="LED_control_09_2024_0_s00_axi_awready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M04_AXI_awready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="s00_axi_led_wdata" RIGHT="0" SIGIS="undef" SIGNAME="Led_Control_04_2024_0_s00_axi_led_wdata">
+        <PORT DIR="I" LEFT="31" NAME="s00_axi_wdata" RIGHT="0" SIGIS="undef" SIGNAME="LED_control_09_2024_0_s00_axi_wdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M04_AXI_wdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="3" NAME="s00_axi_led_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="Led_Control_04_2024_0_s00_axi_led_wstrb">
+        <PORT DIR="I" LEFT="3" NAME="s00_axi_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="LED_control_09_2024_0_s00_axi_wstrb">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M04_AXI_wstrb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s00_axi_led_wvalid" SIGIS="undef" SIGNAME="Led_Control_04_2024_0_s00_axi_led_wvalid">
+        <PORT DIR="I" NAME="s00_axi_wvalid" SIGIS="undef" SIGNAME="LED_control_09_2024_0_s00_axi_wvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M04_AXI_wvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="s00_axi_led_wready" SIGIS="undef" SIGNAME="Led_Control_04_2024_0_s00_axi_led_wready">
+        <PORT DIR="O" NAME="s00_axi_wready" SIGIS="undef" SIGNAME="LED_control_09_2024_0_s00_axi_wready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M04_AXI_wready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="1" NAME="s00_axi_led_bresp" RIGHT="0" SIGIS="undef" SIGNAME="Led_Control_04_2024_0_s00_axi_led_bresp">
+        <PORT DIR="O" LEFT="1" NAME="s00_axi_bresp" RIGHT="0" SIGIS="undef" SIGNAME="LED_control_09_2024_0_s00_axi_bresp">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M04_AXI_bresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="s00_axi_led_bvalid" SIGIS="undef" SIGNAME="Led_Control_04_2024_0_s00_axi_led_bvalid">
+        <PORT DIR="O" NAME="s00_axi_bvalid" SIGIS="undef" SIGNAME="LED_control_09_2024_0_s00_axi_bvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M04_AXI_bvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s00_axi_led_bready" SIGIS="undef" SIGNAME="Led_Control_04_2024_0_s00_axi_led_bready">
+        <PORT DIR="I" NAME="s00_axi_bready" SIGIS="undef" SIGNAME="LED_control_09_2024_0_s00_axi_bready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M04_AXI_bready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="3" NAME="s00_axi_led_araddr" RIGHT="0" SIGIS="undef" SIGNAME="Led_Control_04_2024_0_s00_axi_led_araddr">
+        <PORT DIR="I" LEFT="3" NAME="s00_axi_araddr" RIGHT="0" SIGIS="undef" SIGNAME="LED_control_09_2024_0_s00_axi_araddr">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M04_AXI_araddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="2" NAME="s00_axi_led_arprot" RIGHT="0" SIGIS="undef" SIGNAME="Led_Control_04_2024_0_s00_axi_led_arprot">
+        <PORT DIR="I" LEFT="2" NAME="s00_axi_arprot" RIGHT="0" SIGIS="undef" SIGNAME="LED_control_09_2024_0_s00_axi_arprot">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M04_AXI_arprot"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s00_axi_led_arvalid" SIGIS="undef" SIGNAME="Led_Control_04_2024_0_s00_axi_led_arvalid">
+        <PORT DIR="I" NAME="s00_axi_arvalid" SIGIS="undef" SIGNAME="LED_control_09_2024_0_s00_axi_arvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M04_AXI_arvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="s00_axi_led_arready" SIGIS="undef" SIGNAME="Led_Control_04_2024_0_s00_axi_led_arready">
+        <PORT DIR="O" NAME="s00_axi_arready" SIGIS="undef" SIGNAME="LED_control_09_2024_0_s00_axi_arready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M04_AXI_arready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="s00_axi_led_rdata" RIGHT="0" SIGIS="undef" SIGNAME="Led_Control_04_2024_0_s00_axi_led_rdata">
+        <PORT DIR="O" LEFT="31" NAME="s00_axi_rdata" RIGHT="0" SIGIS="undef" SIGNAME="LED_control_09_2024_0_s00_axi_rdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M04_AXI_rdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="1" NAME="s00_axi_led_rresp" RIGHT="0" SIGIS="undef" SIGNAME="Led_Control_04_2024_0_s00_axi_led_rresp">
+        <PORT DIR="O" LEFT="1" NAME="s00_axi_rresp" RIGHT="0" SIGIS="undef" SIGNAME="LED_control_09_2024_0_s00_axi_rresp">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M04_AXI_rresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="s00_axi_led_rvalid" SIGIS="undef" SIGNAME="Led_Control_04_2024_0_s00_axi_led_rvalid">
+        <PORT DIR="O" NAME="s00_axi_rvalid" SIGIS="undef" SIGNAME="LED_control_09_2024_0_s00_axi_rvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M04_AXI_rvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s00_axi_led_rready" SIGIS="undef" SIGNAME="Led_Control_04_2024_0_s00_axi_led_rready">
+        <PORT DIR="I" NAME="s00_axi_rready" SIGIS="undef" SIGNAME="LED_control_09_2024_0_s00_axi_rready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M04_AXI_rready"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
       <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="microblaze_0_axi_periph_M04_AXI" DATAWIDTH="32" NAME="S00_AXI_LED" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
+        <BUSINTERFACE BUSNAME="microblaze_0_axi_periph_M04_AXI" DATAWIDTH="32" NAME="S00_AXI" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
           <PARAMETER NAME="WIZ_DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="WIZ_NUM_REG" VALUE="4"/>
           <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
@@ -213,25 +213,25 @@
           <PARAMETER NAME="WUSER_BITS_PER_BYTE" VALUE="0"/>
           <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
           <PORTMAPS>
-            <PORTMAP LOGICAL="AWADDR" PHYSICAL="s00_axi_led_awaddr"/>
-            <PORTMAP LOGICAL="AWPROT" PHYSICAL="s00_axi_led_awprot"/>
-            <PORTMAP LOGICAL="AWVALID" PHYSICAL="s00_axi_led_awvalid"/>
-            <PORTMAP LOGICAL="AWREADY" PHYSICAL="s00_axi_led_awready"/>
-            <PORTMAP LOGICAL="WDATA" PHYSICAL="s00_axi_led_wdata"/>
-            <PORTMAP LOGICAL="WSTRB" PHYSICAL="s00_axi_led_wstrb"/>
-            <PORTMAP LOGICAL="WVALID" PHYSICAL="s00_axi_led_wvalid"/>
-            <PORTMAP LOGICAL="WREADY" PHYSICAL="s00_axi_led_wready"/>
-            <PORTMAP LOGICAL="BRESP" PHYSICAL="s00_axi_led_bresp"/>
-            <PORTMAP LOGICAL="BVALID" PHYSICAL="s00_axi_led_bvalid"/>
-            <PORTMAP LOGICAL="BREADY" PHYSICAL="s00_axi_led_bready"/>
-            <PORTMAP LOGICAL="ARADDR" PHYSICAL="s00_axi_led_araddr"/>
-            <PORTMAP LOGICAL="ARPROT" PHYSICAL="s00_axi_led_arprot"/>
-            <PORTMAP LOGICAL="ARVALID" PHYSICAL="s00_axi_led_arvalid"/>
-            <PORTMAP LOGICAL="ARREADY" PHYSICAL="s00_axi_led_arready"/>
-            <PORTMAP LOGICAL="RDATA" PHYSICAL="s00_axi_led_rdata"/>
-            <PORTMAP LOGICAL="RRESP" PHYSICAL="s00_axi_led_rresp"/>
-            <PORTMAP LOGICAL="RVALID" PHYSICAL="s00_axi_led_rvalid"/>
-            <PORTMAP LOGICAL="RREADY" PHYSICAL="s00_axi_led_rready"/>
+            <PORTMAP LOGICAL="AWADDR" PHYSICAL="s00_axi_awaddr"/>
+            <PORTMAP LOGICAL="AWPROT" PHYSICAL="s00_axi_awprot"/>
+            <PORTMAP LOGICAL="AWVALID" PHYSICAL="s00_axi_awvalid"/>
+            <PORTMAP LOGICAL="AWREADY" PHYSICAL="s00_axi_awready"/>
+            <PORTMAP LOGICAL="WDATA" PHYSICAL="s00_axi_wdata"/>
+            <PORTMAP LOGICAL="WSTRB" PHYSICAL="s00_axi_wstrb"/>
+            <PORTMAP LOGICAL="WVALID" PHYSICAL="s00_axi_wvalid"/>
+            <PORTMAP LOGICAL="WREADY" PHYSICAL="s00_axi_wready"/>
+            <PORTMAP LOGICAL="BRESP" PHYSICAL="s00_axi_bresp"/>
+            <PORTMAP LOGICAL="BVALID" PHYSICAL="s00_axi_bvalid"/>
+            <PORTMAP LOGICAL="BREADY" PHYSICAL="s00_axi_bready"/>
+            <PORTMAP LOGICAL="ARADDR" PHYSICAL="s00_axi_araddr"/>
+            <PORTMAP LOGICAL="ARPROT" PHYSICAL="s00_axi_arprot"/>
+            <PORTMAP LOGICAL="ARVALID" PHYSICAL="s00_axi_arvalid"/>
+            <PORTMAP LOGICAL="ARREADY" PHYSICAL="s00_axi_arready"/>
+            <PORTMAP LOGICAL="RDATA" PHYSICAL="s00_axi_rdata"/>
+            <PORTMAP LOGICAL="RRESP" PHYSICAL="s00_axi_rresp"/>
+            <PORTMAP LOGICAL="RVALID" PHYSICAL="s00_axi_rvalid"/>
+            <PORTMAP LOGICAL="RREADY" PHYSICAL="s00_axi_rready"/>
           </PORTMAPS>
         </BUSINTERFACE>
       </BUSINTERFACES>
@@ -1929,7 +1929,7 @@
             <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M03_ACLK"/>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M04_ACLK"/>
-            <CONNECTION INSTANCE="Led_Control_04_2024_0" PORT="s00_axi_led_aclk"/>
+            <CONNECTION INSTANCE="LED_control_09_2024_0" PORT="s00_axi_aclk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="locked" SIGIS="undef" SIGNAME="clk_wiz_1_locked">
@@ -2671,7 +2671,7 @@
         <MEMRANGE ADDRESSBLOCK="Reg" BASENAME="C_BASEADDR" BASEVALUE="0x40010000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x4001FFFF" INSTANCE="axi_gpio_1" IS_DATA="TRUE" IS_INSTRUCTION="FALSE" MASTERBUSINTERFACE="M_AXI_DP" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="S_AXI"/>
         <MEMRANGE ADDRESSBLOCK="Reg" BASENAME="C_BASEADDR" BASEVALUE="0x40600000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x4060FFFF" INSTANCE="axi_uartlite_0" IS_DATA="TRUE" IS_INSTRUCTION="FALSE" MASTERBUSINTERFACE="M_AXI_DP" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="S_AXI"/>
         <MEMRANGE ADDRESSBLOCK="Reg" BASENAME="C_BASEADDR" BASEVALUE="0x41200000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x4120FFFF" INSTANCE="microblaze_0_axi_intc" IS_DATA="TRUE" IS_INSTRUCTION="FALSE" MASTERBUSINTERFACE="M_AXI_DP" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="s_axi"/>
-        <MEMRANGE ADDRESSBLOCK="S00_AXI_LED_reg" BASENAME="C_S00_AXI_LED_BASEADDR" BASEVALUE="0x44A00000" HIGHNAME="C_S00_AXI_LED_HIGHADDR" HIGHVALUE="0x44A0FFFF" INSTANCE="Led_Control_04_2024_0" IS_DATA="TRUE" IS_INSTRUCTION="FALSE" MASTERBUSINTERFACE="M_AXI_DP" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="S00_AXI_LED"/>
+        <MEMRANGE ADDRESSBLOCK="S00_AXI_reg" BASENAME="C_S00_AXI_BASEADDR" BASEVALUE="0x44A00000" HIGHNAME="C_S00_AXI_HIGHADDR" HIGHVALUE="0x44A0FFFF" INSTANCE="LED_control_09_2024_0" IS_DATA="TRUE" IS_INSTRUCTION="FALSE" MASTERBUSINTERFACE="M_AXI_DP" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="S00_AXI"/>
       </MEMORYMAP>
       <PERIPHERALS>
         <PERIPHERAL INSTANCE="microblaze_0_local_memory_dlmb_bram_if_cntlr"/>
@@ -2680,7 +2680,7 @@
         <PERIPHERAL INSTANCE="axi_gpio_1"/>
         <PERIPHERAL INSTANCE="axi_uartlite_0"/>
         <PERIPHERAL INSTANCE="microblaze_0_axi_intc"/>
-        <PERIPHERAL INSTANCE="Led_Control_04_2024_0"/>
+        <PERIPHERAL INSTANCE="LED_control_09_2024_0"/>
       </PERIPHERALS>
     </MODULE>
     <MODULE COREREVISION="17" FULLNAME="/microblaze_0_axi_intc" HWVERSION="4.1" INSTANCE="microblaze_0_axi_intc" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="INTERRUPT_CNTLR" MODTYPE="axi_intc" VLNV="xilinx.com:ip:axi_intc:4.1">
@@ -5248,99 +5248,99 @@
             <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_rready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M04_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="Led_Control_04_2024_0_s00_axi_led_awaddr">
+        <PORT DIR="O" LEFT="31" NAME="M04_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="LED_control_09_2024_0_s00_axi_awaddr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Led_Control_04_2024_0" PORT="s00_axi_led_awaddr"/>
+            <CONNECTION INSTANCE="LED_control_09_2024_0" PORT="s00_axi_awaddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="2" NAME="M04_AXI_awprot" RIGHT="0" SIGIS="undef" SIGNAME="Led_Control_04_2024_0_s00_axi_led_awprot">
+        <PORT DIR="O" LEFT="2" NAME="M04_AXI_awprot" RIGHT="0" SIGIS="undef" SIGNAME="LED_control_09_2024_0_s00_axi_awprot">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Led_Control_04_2024_0" PORT="s00_axi_led_awprot"/>
+            <CONNECTION INSTANCE="LED_control_09_2024_0" PORT="s00_axi_awprot"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M04_AXI_awvalid" SIGIS="undef" SIGNAME="Led_Control_04_2024_0_s00_axi_led_awvalid">
+        <PORT DIR="O" NAME="M04_AXI_awvalid" SIGIS="undef" SIGNAME="LED_control_09_2024_0_s00_axi_awvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Led_Control_04_2024_0" PORT="s00_axi_led_awvalid"/>
+            <CONNECTION INSTANCE="LED_control_09_2024_0" PORT="s00_axi_awvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M04_AXI_awready" SIGIS="undef" SIGNAME="Led_Control_04_2024_0_s00_axi_led_awready">
+        <PORT DIR="I" NAME="M04_AXI_awready" SIGIS="undef" SIGNAME="LED_control_09_2024_0_s00_axi_awready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Led_Control_04_2024_0" PORT="s00_axi_led_awready"/>
+            <CONNECTION INSTANCE="LED_control_09_2024_0" PORT="s00_axi_awready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M04_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="Led_Control_04_2024_0_s00_axi_led_wdata">
+        <PORT DIR="O" LEFT="31" NAME="M04_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="LED_control_09_2024_0_s00_axi_wdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Led_Control_04_2024_0" PORT="s00_axi_led_wdata"/>
+            <CONNECTION INSTANCE="LED_control_09_2024_0" PORT="s00_axi_wdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="3" NAME="M04_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="Led_Control_04_2024_0_s00_axi_led_wstrb">
+        <PORT DIR="O" LEFT="3" NAME="M04_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="LED_control_09_2024_0_s00_axi_wstrb">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Led_Control_04_2024_0" PORT="s00_axi_led_wstrb"/>
+            <CONNECTION INSTANCE="LED_control_09_2024_0" PORT="s00_axi_wstrb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M04_AXI_wvalid" SIGIS="undef" SIGNAME="Led_Control_04_2024_0_s00_axi_led_wvalid">
+        <PORT DIR="O" NAME="M04_AXI_wvalid" SIGIS="undef" SIGNAME="LED_control_09_2024_0_s00_axi_wvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Led_Control_04_2024_0" PORT="s00_axi_led_wvalid"/>
+            <CONNECTION INSTANCE="LED_control_09_2024_0" PORT="s00_axi_wvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M04_AXI_wready" SIGIS="undef" SIGNAME="Led_Control_04_2024_0_s00_axi_led_wready">
+        <PORT DIR="I" NAME="M04_AXI_wready" SIGIS="undef" SIGNAME="LED_control_09_2024_0_s00_axi_wready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Led_Control_04_2024_0" PORT="s00_axi_led_wready"/>
+            <CONNECTION INSTANCE="LED_control_09_2024_0" PORT="s00_axi_wready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M04_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="Led_Control_04_2024_0_s00_axi_led_bresp">
+        <PORT DIR="I" LEFT="1" NAME="M04_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="LED_control_09_2024_0_s00_axi_bresp">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Led_Control_04_2024_0" PORT="s00_axi_led_bresp"/>
+            <CONNECTION INSTANCE="LED_control_09_2024_0" PORT="s00_axi_bresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M04_AXI_bvalid" SIGIS="undef" SIGNAME="Led_Control_04_2024_0_s00_axi_led_bvalid">
+        <PORT DIR="I" NAME="M04_AXI_bvalid" SIGIS="undef" SIGNAME="LED_control_09_2024_0_s00_axi_bvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Led_Control_04_2024_0" PORT="s00_axi_led_bvalid"/>
+            <CONNECTION INSTANCE="LED_control_09_2024_0" PORT="s00_axi_bvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M04_AXI_bready" SIGIS="undef" SIGNAME="Led_Control_04_2024_0_s00_axi_led_bready">
+        <PORT DIR="O" NAME="M04_AXI_bready" SIGIS="undef" SIGNAME="LED_control_09_2024_0_s00_axi_bready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Led_Control_04_2024_0" PORT="s00_axi_led_bready"/>
+            <CONNECTION INSTANCE="LED_control_09_2024_0" PORT="s00_axi_bready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M04_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="Led_Control_04_2024_0_s00_axi_led_araddr">
+        <PORT DIR="O" LEFT="31" NAME="M04_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="LED_control_09_2024_0_s00_axi_araddr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Led_Control_04_2024_0" PORT="s00_axi_led_araddr"/>
+            <CONNECTION INSTANCE="LED_control_09_2024_0" PORT="s00_axi_araddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="2" NAME="M04_AXI_arprot" RIGHT="0" SIGIS="undef" SIGNAME="Led_Control_04_2024_0_s00_axi_led_arprot">
+        <PORT DIR="O" LEFT="2" NAME="M04_AXI_arprot" RIGHT="0" SIGIS="undef" SIGNAME="LED_control_09_2024_0_s00_axi_arprot">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Led_Control_04_2024_0" PORT="s00_axi_led_arprot"/>
+            <CONNECTION INSTANCE="LED_control_09_2024_0" PORT="s00_axi_arprot"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M04_AXI_arvalid" SIGIS="undef" SIGNAME="Led_Control_04_2024_0_s00_axi_led_arvalid">
+        <PORT DIR="O" NAME="M04_AXI_arvalid" SIGIS="undef" SIGNAME="LED_control_09_2024_0_s00_axi_arvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Led_Control_04_2024_0" PORT="s00_axi_led_arvalid"/>
+            <CONNECTION INSTANCE="LED_control_09_2024_0" PORT="s00_axi_arvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M04_AXI_arready" SIGIS="undef" SIGNAME="Led_Control_04_2024_0_s00_axi_led_arready">
+        <PORT DIR="I" NAME="M04_AXI_arready" SIGIS="undef" SIGNAME="LED_control_09_2024_0_s00_axi_arready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Led_Control_04_2024_0" PORT="s00_axi_led_arready"/>
+            <CONNECTION INSTANCE="LED_control_09_2024_0" PORT="s00_axi_arready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="M04_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="Led_Control_04_2024_0_s00_axi_led_rdata">
+        <PORT DIR="I" LEFT="31" NAME="M04_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="LED_control_09_2024_0_s00_axi_rdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Led_Control_04_2024_0" PORT="s00_axi_led_rdata"/>
+            <CONNECTION INSTANCE="LED_control_09_2024_0" PORT="s00_axi_rdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M04_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="Led_Control_04_2024_0_s00_axi_led_rresp">
+        <PORT DIR="I" LEFT="1" NAME="M04_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="LED_control_09_2024_0_s00_axi_rresp">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Led_Control_04_2024_0" PORT="s00_axi_led_rresp"/>
+            <CONNECTION INSTANCE="LED_control_09_2024_0" PORT="s00_axi_rresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M04_AXI_rvalid" SIGIS="undef" SIGNAME="Led_Control_04_2024_0_s00_axi_led_rvalid">
+        <PORT DIR="I" NAME="M04_AXI_rvalid" SIGIS="undef" SIGNAME="LED_control_09_2024_0_s00_axi_rvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Led_Control_04_2024_0" PORT="s00_axi_led_rvalid"/>
+            <CONNECTION INSTANCE="LED_control_09_2024_0" PORT="s00_axi_rvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M04_AXI_rready" SIGIS="undef" SIGNAME="Led_Control_04_2024_0_s00_axi_led_rready">
+        <PORT DIR="O" NAME="M04_AXI_rready" SIGIS="undef" SIGNAME="LED_control_09_2024_0_s00_axi_rready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Led_Control_04_2024_0" PORT="s00_axi_led_rready"/>
+            <CONNECTION INSTANCE="LED_control_09_2024_0" PORT="s00_axi_rready"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -6681,7 +6681,7 @@
             <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M03_ARESETN"/>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M04_ARESETN"/>
-            <CONNECTION INSTANCE="Led_Control_04_2024_0" PORT="s00_axi_led_aresetn"/>
+            <CONNECTION INSTANCE="LED_control_09_2024_0" PORT="s00_axi_aresetn"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

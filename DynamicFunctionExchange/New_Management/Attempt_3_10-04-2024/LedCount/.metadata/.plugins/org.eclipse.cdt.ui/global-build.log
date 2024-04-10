@@ -1,0 +1,35 @@
+Nothing to build in platform 'PR_Platform'
+
+17:28:26 **** Build of configuration Debug for project PR_Application_Test ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/export/PR_Platform/sw/PR_Platform/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:52:
+C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/export/PR_Platform/sw/PR_Platform/standalone_domain/bspinclude/include/xbasic_types.h:102:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+  102 | #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+      |  ^~~~~~~
+C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/export/PR_Platform/sw/PR_Platform/standalone_domain/bspinclude/include/xbasic_types.h:103:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+  103 | #warning  Please refer the Standalone BSP UG647 for further details
+      |  ^~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IC:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/export/PR_Platform/sw/PR_Platform/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: PR_Application_Test.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/export/PR_Platform/sw/PR_Platform/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "PR_Application_Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PR_Application_Test.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PR_Application_Test.elf  |tee "PR_Application_Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6992	    340	   3140	  10472	   28e8	PR_Application_Test.elf
+'Finished building: PR_Application_Test.elf.size'
+' '
+17:28:29 **** Build of configuration Debug for project PR_Application_Test_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."

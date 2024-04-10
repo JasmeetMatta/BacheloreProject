@@ -1,0 +1,356 @@
+17:24:52 DEBUG : Logs will be stored at 'C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/IDE.log'.
+17:25:00 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\VProject\Attempt_2_09-04-2024\SAXI_MB_PR_01\temp_xsdb_launch_script.tcl
+17:25:00 INFO  : Registering command handlers for Vitis TCF services
+17:25:02 INFO  : Platform repository initialization has completed.
+17:25:04 INFO  : XSCT server has started successfully.
+17:25:07 INFO  : Successfully done setting XSCT server connection channel  
+17:25:07 INFO  : plnx-install-location is set to ''
+17:25:07 INFO  : Successfully done query RDI_DATADIR 
+17:25:07 INFO  : Successfully done setting workspace for the tool. 
+17:26:18 INFO  : Result from executing command 'getProjects': LED_PR_Attempt1
+17:26:18 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+17:27:53 INFO  : Result from executing command 'getProjects': LED_PR_Attempt1
+17:27:53 INFO  : Result from executing command 'getPlatforms': LED_PR_Attempt1|C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_PR_Attempt1/export/LED_PR_Attempt1/LED_PR_Attempt1.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+17:31:53 INFO  : Checking for BSP changes to sync application flags for project 'LED_Application1'...
+17:33:27 INFO  : Checking for BSP changes to sync application flags for project 'LED_Application1'...
+17:34:35 INFO  : Bit file 'C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/_ide/bitstream/download.bit' is generated.
+17:34:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:34:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B61CC0A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B61CC0A-13631093-0"}' command is executed.
+17:34:41 INFO  : Device configured successfully with "C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/_ide/bitstream/download.bit"
+17:34:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:34:47 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B61CC0A' is selected.
+17:34:47 INFO  : 'jtag frequency' command is executed.
+17:34:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B61CC0A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B61CC0A-13631093-0"}' command is executed.
+17:34:49 INFO  : Device configured successfully with "C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/_ide/bitstream/download.bit"
+17:34:49 INFO  : Context for processor 'microblaze_0' is selected.
+17:34:50 INFO  : Hardware design and registers information is loaded from 'C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_PR_Attempt1/export/LED_PR_Attempt1/hw/LED_PR_wrapper.xsa'.
+17:34:50 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:34:50 INFO  : Context for processor 'microblaze_0' is selected.
+17:34:50 INFO  : System reset is completed.
+17:34:53 INFO  : 'after 3000' command is executed.
+17:34:53 INFO  : Context for processor 'microblaze_0' is selected.
+17:34:53 INFO  : The application 'C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/Debug/LED_Application1.elf' is downloaded to processor 'microblaze_0'.
+17:34:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B61CC0A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B61CC0A-13631093-0"}
+fpga -file C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_PR_Attempt1/export/LED_PR_Attempt1/hw/LED_PR_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/Debug/LED_Application1.elf
+----------------End of Script----------------
+
+17:34:53 INFO  : Context for processor 'microblaze_0' is selected.
+17:34:53 INFO  : 'con' command is executed.
+17:34:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:34:53 INFO  : Launch script is exported to file 'C:\VProject\Attempt_2_09-04-2024\SAXI_MB_PR_01\LED_Application1_system\_ide\scripts\debugger_led_application1-default.tcl'
+17:35:19 INFO  : Checking for BSP changes to sync application flags for project 'LED_Application1'...
+17:35:37 INFO  : Disconnected from the channel tcfchan#3.
+17:35:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:35:38 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B61CC0A' is selected.
+17:35:38 INFO  : 'jtag frequency' command is executed.
+17:35:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B61CC0A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B61CC0A-13631093-0"}' command is executed.
+17:35:40 INFO  : Device configured successfully with "C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/_ide/bitstream/download.bit"
+17:35:40 INFO  : Context for processor 'microblaze_0' is selected.
+17:35:40 INFO  : Hardware design and registers information is loaded from 'C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_PR_Attempt1/export/LED_PR_Attempt1/hw/LED_PR_wrapper.xsa'.
+17:35:40 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:35:41 INFO  : Context for processor 'microblaze_0' is selected.
+17:35:41 INFO  : System reset is completed.
+17:35:44 INFO  : 'after 3000' command is executed.
+17:35:44 INFO  : Context for processor 'microblaze_0' is selected.
+17:35:44 INFO  : The application 'C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/Debug/LED_Application1.elf' is downloaded to processor 'microblaze_0'.
+17:35:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B61CC0A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B61CC0A-13631093-0"}
+fpga -file C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_PR_Attempt1/export/LED_PR_Attempt1/hw/LED_PR_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/Debug/LED_Application1.elf
+----------------End of Script----------------
+
+17:35:44 INFO  : Context for processor 'microblaze_0' is selected.
+17:35:44 INFO  : 'con' command is executed.
+17:35:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:35:44 INFO  : Launch script is exported to file 'C:\VProject\Attempt_2_09-04-2024\SAXI_MB_PR_01\LED_Application1_system\_ide\scripts\debugger_led_application1-default.tcl'
+17:36:01 INFO  : Bit file 'C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/_ide/bitstream/download.bit' is generated.
+17:36:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:36:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B61CC0A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B61CC0A-13631093-0"}' command is executed.
+17:36:03 INFO  : Device configured successfully with "C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/_ide/bitstream/download.bit"
+17:36:11 INFO  : Disconnected from the channel tcfchan#4.
+17:36:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:36:12 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B61CC0A' is selected.
+17:36:12 INFO  : 'jtag frequency' command is executed.
+17:36:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B61CC0A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B61CC0A-13631093-0"}' command is executed.
+17:36:14 INFO  : Device configured successfully with "C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/_ide/bitstream/download.bit"
+17:36:14 INFO  : Context for processor 'microblaze_0' is selected.
+17:36:14 INFO  : Hardware design and registers information is loaded from 'C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_PR_Attempt1/export/LED_PR_Attempt1/hw/LED_PR_wrapper.xsa'.
+17:36:14 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:36:14 INFO  : Context for processor 'microblaze_0' is selected.
+17:36:14 INFO  : System reset is completed.
+17:36:17 INFO  : 'after 3000' command is executed.
+17:36:17 INFO  : Context for processor 'microblaze_0' is selected.
+17:36:17 INFO  : The application 'C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/Debug/LED_Application1.elf' is downloaded to processor 'microblaze_0'.
+17:36:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B61CC0A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B61CC0A-13631093-0"}
+fpga -file C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_PR_Attempt1/export/LED_PR_Attempt1/hw/LED_PR_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/Debug/LED_Application1.elf
+----------------End of Script----------------
+
+17:36:17 INFO  : Context for processor 'microblaze_0' is selected.
+17:36:17 INFO  : 'con' command is executed.
+17:36:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:36:17 INFO  : Launch script is exported to file 'C:\VProject\Attempt_2_09-04-2024\SAXI_MB_PR_01\LED_Application1_system\_ide\scripts\debugger_led_application1-default.tcl'
+00:39:50 INFO  : Hardware specification for platform project 'LED_PR_Attempt1' is updated.
+00:40:27 INFO  : Result from executing command 'getProjects': LED_PR_Attempt1
+00:40:27 INFO  : Result from executing command 'getPlatforms': LED_PR_Attempt1|C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_PR_Attempt1/export/LED_PR_Attempt1/LED_PR_Attempt1.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+00:40:31 INFO  : Checking for BSP changes to sync application flags for project 'LED_Application1'...
+00:40:33 INFO  : The hardware specification used by project 'LED_Application1' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+00:40:33 INFO  : The file 'C:\VProject\Attempt_2_09-04-2024\SAXI_MB_PR_01\LED_Application1\_ide\bitstream\download.bit' stored in project is removed.
+00:40:33 INFO  : The file 'C:\VProject\Attempt_2_09-04-2024\SAXI_MB_PR_01\LED_Application1\_ide\bitstream\LED_PR_wrapper.bit' stored in project is removed.
+00:40:33 INFO  : The file 'C:\VProject\Attempt_2_09-04-2024\SAXI_MB_PR_01\LED_Application1\_ide\bitstream\LED_PR_wrapper.mmi' stored in project is removed.
+00:40:33 INFO  : The updated bitstream files are copied from platform to folder 'C:\VProject\Attempt_2_09-04-2024\SAXI_MB_PR_01\LED_Application1\_ide\bitstream' in project 'LED_Application1'.
+00:44:47 INFO  : Hardware specification for platform project 'LED_PR_Attempt1' is updated.
+00:45:35 INFO  : Result from executing command 'getProjects': LED_PR_Attempt1
+00:45:35 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+00:46:28 INFO  : Bit file 'C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/SAXI_MB_PR_01.runs/impl_1/download.bit' is generated.
+00:46:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:46:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B61CC0A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B61CC0A-13631093-0"}' command is executed.
+00:46:30 INFO  : Device configured successfully with "C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/SAXI_MB_PR_01.runs/impl_1/download.bit"
+00:46:38 INFO  : Disconnected from the channel tcfchan#5.
+00:46:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:46:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+00:46:48 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+00:46:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:46:52 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B61CC0A' is selected.
+00:46:52 INFO  : 'jtag frequency' command is executed.
+00:46:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B61CC0A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B61CC0A-13631093-0"}' command is executed.
+00:46:52 ERROR : couldn't open "C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/_ide/bitstream/download.bit": no such file or directory
+00:46:52 ERROR : Exception occured while running Program Device.
+java.lang.RuntimeException: couldn't open "C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/_ide/bitstream/download.bit": no such file or directory
+00:46:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+00:46:52 ERROR : couldn't open "C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/_ide/bitstream/download.bit": no such file or directory
+00:47:53 INFO  : Checking for BSP changes to sync application flags for project 'LED_Application1'...
+00:47:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:47:58 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B61CC0A' is selected.
+00:47:58 INFO  : 'jtag frequency' command is executed.
+00:47:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B61CC0A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B61CC0A-13631093-0"}' command is executed.
+00:47:58 ERROR : couldn't open "C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/_ide/bitstream/download.bit": no such file or directory
+00:47:58 ERROR : Exception occured while running Program Device.
+java.lang.RuntimeException: couldn't open "C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/_ide/bitstream/download.bit": no such file or directory
+00:47:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+00:47:58 ERROR : couldn't open "C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/_ide/bitstream/download.bit": no such file or directory
+00:49:18 INFO  : Hardware specification for platform project 'LED_PR_Attempt1' is updated.
+00:55:47 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\VProject\Attempt_2_09-04-2024\SAXI_MB_PR_01\temp_xsdb_launch_script.tcl
+00:55:49 INFO  : XSCT server has started successfully.
+00:56:00 INFO  : Hardware specification for platform project 'LED_PR_Attempt1' is updated.
+00:56:48 INFO  : Checking for BSP changes to sync application flags for project 'LED_Application1'...
+00:56:48 WARN  : Failed to closehw "C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_PR_Attempt1/export/LED_PR_Attempt1/hw/LED_PR_wrapper_01.xsa"
+Reason: Invalid workspace. set workspace using setws command
+00:56:48 ERROR : Failed to openhw "C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_PR_Attempt1/export/LED_PR_Attempt1/hw/LED_PR_wrapper_01.xsa"
+Reason: Invalid workspace. set workspace using setws command
+00:56:48 ERROR : Failed to update application flags from BSP for 'LED_Application1'. Reason: null
+java.lang.NullPointerException: null
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305) ~[com.xilinx.sdx.sw_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214) ~[com.xilinx.sdx.sw_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:64) ~[com.xilinx.sdx.sdk.core_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160) ~[com.xilinx.sdx.sdk.core_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78) [com.xilinx.sdx.sdk.core_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48) [com.xilinx.sdx.sdk.core_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91) [com.xilinx.sdk.managedbuilder_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.generateMakefiles(XilinxGnuMakefileGenerator.java:40) [com.xilinx.sdk.managedbuilder_1.0.0.202305040745.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1008) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) [org.eclipse.equinox.common_3.11.0.v20200206-0817.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) [org.eclipse.equinox.common_3.11.0.v20200206-0817.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291) [org.eclipse.ui.ide_3.17.0.v20200217-1511.jar:?]
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.700.v20200106-1020.jar:?]
+00:56:49 ERROR : Failed to compute checksum of hardware specification file used by project 'LED_Application1'
+00:56:49 ERROR : Failed to openhw "C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_PR_Attempt1/export/LED_PR_Attempt1/hw/LED_PR_wrapper_01.xsa"
+Reason: Invalid workspace. set workspace using setws command
+00:56:49 ERROR : Failed to openhw "C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_PR_Attempt1/export/LED_PR_Attempt1/hw/LED_PR_wrapper_01.xsa"
+Reason: Invalid workspace. set workspace using setws command
+00:56:49 ERROR : Failed to openhw "C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_PR_Attempt1/export/LED_PR_Attempt1/hw/LED_PR_wrapper_01.xsa"
+Reason: Invalid workspace. set workspace using setws command
+00:58:43 DEBUG : Logs will be stored at 'C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/IDE.log'.
+00:58:44 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\VProject\Attempt_2_09-04-2024\SAXI_MB_PR_01\temp_xsdb_launch_script.tcl
+00:58:46 INFO  : XSCT server has started successfully.
+00:58:46 INFO  : Successfully done setting XSCT server connection channel  
+00:58:46 INFO  : plnx-install-location is set to ''
+00:58:46 INFO  : Successfully done setting workspace for the tool. 
+00:58:47 INFO  : Successfully done query RDI_DATADIR 
+00:58:48 INFO  : Platform repository initialization has completed.
+00:58:48 INFO  : Registering command handlers for Vitis TCF services
+00:58:52 INFO  : Checking for BSP changes to sync application flags for project 'LED_Application1'...
+00:58:53 INFO  : The hardware specification used by project 'LED_Application1' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+00:58:53 INFO  : The file 'C:\VProject\Attempt_2_09-04-2024\SAXI_MB_PR_01\LED_Application1\_ide\bitstream\LED_PR_wrapper_01.bit' stored in project is removed.
+00:58:53 INFO  : The file 'C:\VProject\Attempt_2_09-04-2024\SAXI_MB_PR_01\LED_Application1\_ide\bitstream\LED_PR_wrapper_01.mmi' stored in project is removed.
+00:58:53 INFO  : The updated bitstream files are copied from platform to folder 'C:\VProject\Attempt_2_09-04-2024\SAXI_MB_PR_01\LED_Application1\_ide\bitstream' in project 'LED_Application1'.
+00:59:13 INFO  : Bit file 'C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/SAXI_MB_PR_01.runs/impl_1/download.bit' is generated.
+00:59:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:59:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B61CC0A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B61CC0A-13631093-0"}' command is executed.
+00:59:18 INFO  : Device configured successfully with "C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/SAXI_MB_PR_01.runs/impl_1/download.bit"
+00:59:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:59:25 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B61CC0A' is selected.
+00:59:25 INFO  : 'jtag frequency' command is executed.
+00:59:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B61CC0A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B61CC0A-13631093-0"}' command is executed.
+00:59:25 ERROR : couldn't open "C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/_ide/bitstream/download.bit": no such file or directory
+00:59:25 ERROR : Exception occured while running Program Device.
+java.lang.RuntimeException: couldn't open "C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/_ide/bitstream/download.bit": no such file or directory
+00:59:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+00:59:25 ERROR : couldn't open "C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/_ide/bitstream/download.bit": no such file or directory
+01:06:18 DEBUG : Logs will be stored at 'C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/IDE.log'.
+01:06:20 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\VProject\Attempt_2_09-04-2024\SAXI_MB_PR_01\temp_xsdb_launch_script.tcl
+01:06:26 INFO  : Registering command handlers for Vitis TCF services
+01:06:26 INFO  : XSCT server has started successfully.
+01:06:26 INFO  : plnx-install-location is set to ''
+01:06:26 INFO  : Successfully done setting XSCT server connection channel  
+01:06:27 INFO  : Platform repository initialization has completed.
+01:06:35 INFO  : Successfully done setting workspace for the tool. 
+01:06:35 INFO  : Successfully done query RDI_DATADIR 
+01:06:45 INFO  : Checking for BSP changes to sync application flags for project 'LED_Application1'...
+01:07:18 INFO  : Bit file 'C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/SAXI_MB_PR_01.runs/impl_1/download.bit' is generated.
+01:07:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:07:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B61CC0A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B61CC0A-13631093-0"}' command is executed.
+01:07:24 INFO  : Device configured successfully with "C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/SAXI_MB_PR_01.runs/impl_1/download.bit"
+01:07:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:07:29 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B61CC0A' is selected.
+01:07:29 INFO  : 'jtag frequency' command is executed.
+01:07:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B61CC0A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B61CC0A-13631093-0"}' command is executed.
+01:07:29 ERROR : couldn't open "C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/_ide/bitstream/download.bit": no such file or directory
+01:07:29 ERROR : Exception occured while running Program Device.
+java.lang.RuntimeException: couldn't open "C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/_ide/bitstream/download.bit": no such file or directory
+01:07:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+01:07:29 ERROR : couldn't open "C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/_ide/bitstream/download.bit": no such file or directory
+01:09:06 INFO  : Bit file 'C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/SAXI_MB_PR_01.runs/impl_1/download.bit' is generated.
+01:09:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:09:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B61CC0A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B61CC0A-13631093-0"}' command is executed.
+01:09:08 INFO  : Device configured successfully with "C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/SAXI_MB_PR_01.runs/impl_1/download.bit"
+01:09:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:09:13 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B61CC0A' is selected.
+01:09:13 INFO  : 'jtag frequency' command is executed.
+01:09:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B61CC0A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B61CC0A-13631093-0"}' command is executed.
+01:09:13 ERROR : couldn't open "C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/_ide/bitstream/download.bit": no such file or directory
+01:09:13 ERROR : Exception occured while running Program Device.
+java.lang.RuntimeException: couldn't open "C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/_ide/bitstream/download.bit": no such file or directory
+01:09:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+01:09:13 ERROR : couldn't open "C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/_ide/bitstream/download.bit": no such file or directory
+01:11:04 INFO  : Bit file 'C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/SAXI_MB_PR_01.runs/impl_1/download.bit' is generated.
+01:11:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:11:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B61CC0A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B61CC0A-13631093-0"}' command is executed.
+01:11:06 INFO  : Device configured successfully with "C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/SAXI_MB_PR_01.runs/impl_1/download.bit"
+01:11:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:11:10 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B61CC0A' is selected.
+01:11:10 INFO  : 'jtag frequency' command is executed.
+01:11:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B61CC0A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B61CC0A-13631093-0"}' command is executed.
+01:11:10 ERROR : couldn't open "C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/_ide/bitstream/download.bit": no such file or directory
+01:11:10 ERROR : Exception occured while running Program Device.
+java.lang.RuntimeException: couldn't open "C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/_ide/bitstream/download.bit": no such file or directory
+01:11:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+01:11:10 ERROR : couldn't open "C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/_ide/bitstream/download.bit": no such file or directory
+01:11:48 INFO  : Checking for BSP changes to sync application flags for project 'LED_Application1'...
+01:12:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:12:23 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292B61CC0A' is selected.
+01:12:23 INFO  : 'jtag frequency' command is executed.
+01:12:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B61CC0A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B61CC0A-13631093-0"}' command is executed.
+01:12:26 INFO  : Device configured successfully with "C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/_ide/bitstream/download.bit"
+01:12:26 INFO  : Context for processor 'microblaze_0' is selected.
+01:12:26 INFO  : Hardware design and registers information is loaded from 'C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_PR_Attempt1/export/LED_PR_Attempt1/hw/LED_PR_wrapper.xsa'.
+01:12:26 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+01:12:26 INFO  : Context for processor 'microblaze_0' is selected.
+01:12:26 INFO  : System reset is completed.
+01:12:29 INFO  : 'after 3000' command is executed.
+01:12:29 INFO  : Context for processor 'microblaze_0' is selected.
+01:12:29 INFO  : The application 'C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/Debug/LED_Application1.elf' is downloaded to processor 'microblaze_0'.
+01:12:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B61CC0A" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B61CC0A-13631093-0"}
+fpga -file C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_PR_Attempt1/export/LED_PR_Attempt1/hw/LED_PR_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/VProject/Attempt_2_09-04-2024/SAXI_MB_PR_01/LED_Application1/Debug/LED_Application1.elf
+----------------End of Script----------------
+
+01:12:29 INFO  : Context for processor 'microblaze_0' is selected.
+01:12:29 INFO  : 'con' command is executed.
+01:12:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+01:12:29 INFO  : Launch script is exported to file 'C:\VProject\Attempt_2_09-04-2024\SAXI_MB_PR_01\LED_Application1_system\_ide\scripts\debugger_led_application1-default.tcl'
+01:13:19 INFO  : Checking for BSP changes to sync application flags for project 'LED_Application1'...
+01:14:34 INFO  : Disconnected from the channel tcfchan#1.
