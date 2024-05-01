@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Wed Apr 17 16:38:00 2024
+# Process ID: 14456
+# Current directory: C:/Users/jasme/Desktop/BacheloreProject/DynamicFunctionExchange/New_Management/Attempt_4_10-04-2024/ExternalIP/ipcores/zycap/zycap
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19104 C:\Users\jasme\Desktop\BacheloreProject\DynamicFunctionExchange\New_Management\Attempt_4_10-04-2024\ExternalIP\ipcores\zycap\zycap\zycap.xpr
+# Log file: C:/Users/jasme/Desktop/BacheloreProject/DynamicFunctionExchange/New_Management/Attempt_4_10-04-2024/ExternalIP/ipcores/zycap/zycap/vivado.log
+# Journal file: C:/Users/jasme/Desktop/BacheloreProject/DynamicFunctionExchange/New_Management/Attempt_4_10-04-2024/ExternalIP/ipcores/zycap/zycap\vivado.jou
+# Running On: Jasmeet, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 16990 MB
+#-----------------------------------------------------------
+start_gui
+open_project -read_only -part xc7a100tcsg324-1 C:/Users/jasme/Desktop/BacheloreProject/DynamicFunctionExchange/New_Management/Attempt_4_10-04-2024/ExternalIP/ipcores/zycap/zycap/zycap.xpr
+update_compile_order -fileset sources_1
+save_project_as zycapNexys C:/Users/jasme/Desktop/BacheloreProject/DynamicFunctionExchange/New_Management/Attempt_4_10-04-2024/ExternalIP/ipcores/zycap/zycapNexys -force
+report_ip_status -name ip_status 
+report_ip_status -name ip_status 

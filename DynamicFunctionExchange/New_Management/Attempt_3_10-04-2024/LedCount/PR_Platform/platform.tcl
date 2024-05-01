@@ -16,3 +16,10 @@ platform write
 platform generate -domains 
 platform active {PR_Platform}
 platform generate
+platform active {PR_Platform}
+bsp reload
+bsp setlib -name xilffs -ver 5.0
+bsp write
+bsp reload
+catch {bsp regenerate}
+platform generate

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="DFX_Led_Application" location="C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Application" platform="C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/DFX_Led_Platform.xpfm" platformUID="xilinx:nexys-a7-100t::0.0(custom)" systemProject="DFX_Led_Application_system" sysConfig="DFX_Led_Platform" runtime="C/C++" cpu="standalone_domain" cpuInstance="microblaze_0" os="standalone" mssSignature="8a1d1d13588dd0cc3fdb8ec386aa1663">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.2083136610">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.292878716" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

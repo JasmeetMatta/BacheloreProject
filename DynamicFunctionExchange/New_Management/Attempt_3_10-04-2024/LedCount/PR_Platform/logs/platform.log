@@ -1190,3 +1190,737 @@ TRACE::2024-04-10.17:22:18::SCWMssOS::Checking the sw design at  C:/VProject/Att
 TRACE::2024-04-10.17:22:18::SCWMssOS::DEBUG:  swdes dump  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss|system||
 
 TRACE::2024-04-10.17:22:18::SCWMssOS::Sw design exists and opened at  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:24::SCWPlatform::Trying to open the hw design at C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:24::SCWPlatform::DSA given C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:24::SCWPlatform::DSA absoulate path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:24::SCWPlatform::DSA directory C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw
+TRACE::2024-04-16.23:39:24::SCWPlatform:: Platform Path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:24::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2024-04-16.23:39:24::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-04-16.23:39:24::SCWPlatform::Opened new HwDB with name design_1_wrapper
+TRACE::2024-04-16.23:39:24::SCWReader::Active system found as  PR_Platform
+TRACE::2024-04-16.23:39:24::SCWReader::Handling sysconfig PR_Platform
+TRACE::2024-04-16.23:39:24::SCWDomain::checking for install qemu data   : 
+TRACE::2024-04-16.23:39:24::SCWPlatform::Trying to open the hw design at C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:24::SCWPlatform::DSA given C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:24::SCWPlatform::DSA absoulate path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:24::SCWPlatform::DSA directory C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw
+TRACE::2024-04-16.23:39:24::SCWPlatform:: Platform Path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:24::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2024-04-16.23:39:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2024-04-16.23:39:24::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2024-04-16.23:39:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-04-16.23:39:24::SCWPlatform::Trying to open the hw design at C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:24::SCWPlatform::DSA given C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:24::SCWPlatform::DSA absoulate path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:24::SCWPlatform::DSA directory C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw
+TRACE::2024-04-16.23:39:24::SCWPlatform:: Platform Path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:24::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2024-04-16.23:39:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2024-04-16.23:39:24::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2024-04-16.23:39:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-04-16.23:39:24::SCWPlatform::Trying to open the hw design at C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:24::SCWPlatform::DSA given C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:24::SCWPlatform::DSA absoulate path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:24::SCWPlatform::DSA directory C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw
+TRACE::2024-04-16.23:39:24::SCWPlatform:: Platform Path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:24::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2024-04-16.23:39:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2024-04-16.23:39:24::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2024-04-16.23:39:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-04-16.23:39:24::SCWPlatform::Trying to open the hw design at C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:24::SCWPlatform::DSA given C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:24::SCWPlatform::DSA absoulate path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:24::SCWPlatform::DSA directory C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw
+TRACE::2024-04-16.23:39:24::SCWPlatform:: Platform Path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:24::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2024-04-16.23:39:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2024-04-16.23:39:24::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2024-04-16.23:39:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-04-16.23:39:24::SCWMssOS::Checking the sw design at  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:24::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-04-16.23:39:24::SCWMssOS::No sw design opened at  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:24::SCWMssOS::mss exists loading the mss file  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:24::SCWMssOS::Opened the sw design from mss  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:24::SCWMssOS::Adding the swdes entry C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2024-04-16.23:39:24::SCWMssOS::updating the scw layer about changes
+TRACE::2024-04-16.23:39:24::SCWMssOS::Opened the sw design.  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:24::SCWMssOS::Saving the mss changes C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:24::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-04-16.23:39:24::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-04-16.23:39:24::SCWMssOS::Commit changes completed.
+TRACE::2024-04-16.23:39:24::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-04-16.23:39:24::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-04-16.23:39:24::SCWPlatform::Trying to open the hw design at C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:24::SCWPlatform::DSA given C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:24::SCWPlatform::DSA absoulate path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:24::SCWPlatform::DSA directory C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw
+TRACE::2024-04-16.23:39:24::SCWPlatform:: Platform Path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:24::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2024-04-16.23:39:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2024-04-16.23:39:24::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2024-04-16.23:39:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-04-16.23:39:24::SCWMssOS::Checking the sw design at  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:24::SCWMssOS::DEBUG:  swdes dump  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-04-16.23:39:24::SCWMssOS::Sw design exists and opened at  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:24::SCWReader::No isolation master present  
+TRACE::2024-04-16.23:39:30::SCWPlatform::Trying to open the hw design at C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:30::SCWPlatform::DSA given C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:30::SCWPlatform::DSA absoulate path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:30::SCWPlatform::DSA directory C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw
+TRACE::2024-04-16.23:39:30::SCWPlatform:: Platform Path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:30::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2024-04-16.23:39:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2024-04-16.23:39:30::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2024-04-16.23:39:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-04-16.23:39:30::SCWMssOS::Checking the sw design at  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:30::SCWMssOS::DEBUG:  swdes dump  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-04-16.23:39:30::SCWMssOS::Sw design exists and opened at  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:30::SCWMssOS::In reload Mss file.
+TRACE::2024-04-16.23:39:30::SCWPlatform::Trying to open the hw design at C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:30::SCWPlatform::DSA given C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:30::SCWPlatform::DSA absoulate path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:30::SCWPlatform::DSA directory C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw
+TRACE::2024-04-16.23:39:30::SCWPlatform:: Platform Path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:30::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2024-04-16.23:39:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2024-04-16.23:39:30::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2024-04-16.23:39:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-04-16.23:39:30::SCWMssOS::Checking the sw design at  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:30::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-04-16.23:39:30::SCWMssOS::No sw design opened at  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:30::SCWMssOS::mss exists loading the mss file  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:30::SCWMssOS::Opened the sw design from mss  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:30::SCWMssOS::Adding the swdes entry C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2024-04-16.23:39:30::SCWMssOS::updating the scw layer about changes
+TRACE::2024-04-16.23:39:30::SCWMssOS::Opened the sw design.  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:30::SCWMssOS::Saving the mss changes C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:30::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-04-16.23:39:30::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-04-16.23:39:30::SCWMssOS::Commit changes completed.
+TRACE::2024-04-16.23:39:30::SCWPlatform::Trying to open the hw design at C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:30::SCWPlatform::DSA given C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:30::SCWPlatform::DSA absoulate path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:30::SCWPlatform::DSA directory C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw
+TRACE::2024-04-16.23:39:30::SCWPlatform:: Platform Path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:30::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2024-04-16.23:39:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2024-04-16.23:39:30::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2024-04-16.23:39:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-04-16.23:39:30::SCWMssOS::Checking the sw design at  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:30::SCWMssOS::DEBUG:  swdes dump  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-04-16.23:39:30::SCWMssOS::Sw design exists and opened at  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:30::SCWMssOS::Removing the swdes entry for  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:33::SCWPlatform::Trying to open the hw design at C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:33::SCWPlatform::DSA given C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:33::SCWPlatform::DSA absoulate path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:33::SCWPlatform::DSA directory C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw
+TRACE::2024-04-16.23:39:33::SCWPlatform:: Platform Path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:33::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2024-04-16.23:39:33::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2024-04-16.23:39:33::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2024-04-16.23:39:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-04-16.23:39:33::SCWMssOS::Checking the sw design at  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:33::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-04-16.23:39:33::SCWMssOS::No sw design opened at  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:33::SCWMssOS::mss exists loading the mss file  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:33::SCWMssOS::Opened the sw design from mss  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:33::SCWMssOS::Adding the swdes entry C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2024-04-16.23:39:33::SCWMssOS::updating the scw layer about changes
+TRACE::2024-04-16.23:39:33::SCWMssOS::Opened the sw design.  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:52::SCWPlatform::Trying to open the hw design at C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:52::SCWPlatform::DSA given C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:52::SCWPlatform::DSA absoulate path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:52::SCWPlatform::DSA directory C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw
+TRACE::2024-04-16.23:39:52::SCWPlatform:: Platform Path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:52::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2024-04-16.23:39:52::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2024-04-16.23:39:52::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2024-04-16.23:39:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-04-16.23:39:52::SCWMssOS::Checking the sw design at  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:52::SCWMssOS::DEBUG:  swdes dump  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-04-16.23:39:52::SCWMssOS::Sw design exists and opened at  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:52::SCWMssOS::Adding Library:  xilffs:5.0
+TRACE::2024-04-16.23:39:52::SCWMssOS::Added Library:  xilffs
+TRACE::2024-04-16.23:39:52::SCWPlatform::Trying to open the hw design at C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:52::SCWPlatform::DSA given C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:52::SCWPlatform::DSA absoulate path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:52::SCWPlatform::DSA directory C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw
+TRACE::2024-04-16.23:39:52::SCWPlatform:: Platform Path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:52::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2024-04-16.23:39:52::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2024-04-16.23:39:52::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2024-04-16.23:39:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-04-16.23:39:52::SCWMssOS::Checking the sw design at  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:52::SCWMssOS::DEBUG:  swdes dump  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-04-16.23:39:52::SCWMssOS::Sw design exists and opened at  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:59::SCWMssOS::Saving the mss changes C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:59::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-04-16.23:39:59::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-04-16.23:39:59::SCWMssOS::Commit changes completed.
+TRACE::2024-04-16.23:39:59::SCWPlatform::Trying to open the hw design at C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:59::SCWPlatform::DSA given C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:59::SCWPlatform::DSA absoulate path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:59::SCWPlatform::DSA directory C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw
+TRACE::2024-04-16.23:39:59::SCWPlatform:: Platform Path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:59::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2024-04-16.23:39:59::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2024-04-16.23:39:59::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2024-04-16.23:39:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-04-16.23:39:59::SCWMssOS::Checking the sw design at  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:59::SCWMssOS::DEBUG:  swdes dump  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-04-16.23:39:59::SCWMssOS::Sw design exists and opened at  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:59::SCWWriter::formatted JSON is {
+	"platformName":	"PR_Platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"PR_Platform",
+	"platHandOff":	"C:/Users/jasme/Desktop/BacheloreProject/DynamicFunctionExchange/New_Management/Attempt_3_10-04-2024/LedCount/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"PR_Platform",
+	"systems":	[{
+			"systemName":	"PR_Platform",
+			"systemDesc":	"PR_Platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"PR_Platform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.1",
+					"mssFile":	"",
+					"md5Digest":	"6b03bc7e69e2a5f02236b2339ae51ec9",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:5.0"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2024-04-16.23:39:59::SCWMssOS::Saving the mss changes C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:59::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-04-16.23:39:59::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-04-16.23:39:59::SCWMssOS::Commit changes completed.
+TRACE::2024-04-16.23:39:59::SCWPlatform::Trying to open the hw design at C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:59::SCWPlatform::DSA given C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:59::SCWPlatform::DSA absoulate path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:59::SCWPlatform::DSA directory C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw
+TRACE::2024-04-16.23:39:59::SCWPlatform:: Platform Path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:59::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2024-04-16.23:39:59::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2024-04-16.23:39:59::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2024-04-16.23:39:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-04-16.23:39:59::SCWMssOS::Checking the sw design at  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:59::SCWMssOS::DEBUG:  swdes dump  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-04-16.23:39:59::SCWMssOS::Sw design exists and opened at  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:59::SCWMssOS::Removing the swdes entry for  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:59::SCWMssOS::In reload Mss file.
+TRACE::2024-04-16.23:39:59::SCWPlatform::Trying to open the hw design at C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:59::SCWPlatform::DSA given C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:59::SCWPlatform::DSA absoulate path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:59::SCWPlatform::DSA directory C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw
+TRACE::2024-04-16.23:39:59::SCWPlatform:: Platform Path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:59::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2024-04-16.23:39:59::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2024-04-16.23:39:59::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2024-04-16.23:39:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-04-16.23:39:59::SCWMssOS::Checking the sw design at  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:59::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-04-16.23:39:59::SCWMssOS::No sw design opened at  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:59::SCWMssOS::mss exists loading the mss file  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:59::SCWMssOS::Opened the sw design from mss  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:59::SCWMssOS::Adding the swdes entry C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2024-04-16.23:39:59::SCWMssOS::updating the scw layer about changes
+TRACE::2024-04-16.23:39:59::SCWMssOS::Opened the sw design.  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:59::SCWPlatform::Trying to open the hw design at C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:59::SCWPlatform::DSA given C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:59::SCWPlatform::DSA absoulate path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:59::SCWPlatform::DSA directory C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw
+TRACE::2024-04-16.23:39:59::SCWPlatform:: Platform Path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:59::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2024-04-16.23:39:59::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2024-04-16.23:39:59::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2024-04-16.23:39:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-04-16.23:39:59::SCWMssOS::Checking the sw design at  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:59::SCWMssOS::DEBUG:  swdes dump  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-04-16.23:39:59::SCWMssOS::Sw design exists and opened at  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:59::SCWMssOS:: library already available in sw design:  xilffs:5.0
+TRACE::2024-04-16.23:39:59::SCWMssOS::Saving the mss changes C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:59::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-04-16.23:39:59::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-04-16.23:39:59::SCWMssOS::Commit changes completed.
+TRACE::2024-04-16.23:39:59::SCWPlatform::Trying to open the hw design at C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:59::SCWPlatform::DSA given C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:59::SCWPlatform::DSA absoulate path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:59::SCWPlatform::DSA directory C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw
+TRACE::2024-04-16.23:39:59::SCWPlatform:: Platform Path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:59::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2024-04-16.23:39:59::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2024-04-16.23:39:59::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2024-04-16.23:39:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-04-16.23:39:59::SCWMssOS::Checking the sw design at  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:59::SCWMssOS::DEBUG:  swdes dump  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-04-16.23:39:59::SCWMssOS::Sw design exists and opened at  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:59::SCWMssOS::Removing the swdes entry for  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:59::SCWPlatform::Trying to open the hw design at C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:59::SCWPlatform::DSA given C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:59::SCWPlatform::DSA absoulate path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:59::SCWPlatform::DSA directory C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw
+TRACE::2024-04-16.23:39:59::SCWPlatform:: Platform Path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:39:59::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2024-04-16.23:39:59::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2024-04-16.23:39:59::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2024-04-16.23:39:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-04-16.23:39:59::SCWMssOS::Checking the sw design at  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:59::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-04-16.23:39:59::SCWMssOS::No sw design opened at  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:59::SCWMssOS::mss exists loading the mss file  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:59::SCWMssOS::Opened the sw design from mss  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:59::SCWMssOS::Adding the swdes entry C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2024-04-16.23:39:59::SCWMssOS::updating the scw layer about changes
+TRACE::2024-04-16.23:39:59::SCWMssOS::Opened the sw design.  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:39:59::SCWMssOS::Completed writing the mss file at C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp
+TRACE::2024-04-16.23:40:00::SCWMssOS::Forcing BSP Sources regeneration.
+LOG::2024-04-16.23:41:03::SCWPlatform::Started generating the artifacts platform PR_Platform
+TRACE::2024-04-16.23:41:03::SCWPlatform::Sanity checking of platform is completed
+LOG::2024-04-16.23:41:03::SCWPlatform::Started generating the artifacts for system configuration PR_Platform
+LOG::2024-04-16.23:41:03::SCWSystem::Checking the domain standalone_domain
+LOG::2024-04-16.23:41:03::SCWSystem::Not a boot domain 
+LOG::2024-04-16.23:41:03::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2024-04-16.23:41:03::SCWDomain::Generating domain artifcats
+TRACE::2024-04-16.23:41:03::SCWMssOS::Generating standalone artifcats
+TRACE::2024-04-16.23:41:03::SCWMssOS:: Copying the user libraries. 
+TRACE::2024-04-16.23:41:03::SCWPlatform::Trying to open the hw design at C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:41:03::SCWPlatform::DSA given C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:41:03::SCWPlatform::DSA absoulate path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:41:03::SCWPlatform::DSA directory C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw
+TRACE::2024-04-16.23:41:03::SCWPlatform:: Platform Path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:41:03::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2024-04-16.23:41:03::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2024-04-16.23:41:03::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2024-04-16.23:41:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-04-16.23:41:03::SCWMssOS::Checking the sw design at  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:41:03::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-04-16.23:41:03::SCWMssOS::No sw design opened at  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:41:03::SCWMssOS::mss exists loading the mss file  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:41:03::SCWMssOS::Opened the sw design from mss  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:41:03::SCWMssOS::Adding the swdes entry C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2024-04-16.23:41:03::SCWMssOS::updating the scw layer about changes
+TRACE::2024-04-16.23:41:03::SCWMssOS::Opened the sw design.  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:41:03::SCWMssOS::Completed writing the mss file at C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp
+TRACE::2024-04-16.23:41:03::SCWMssOS::Mss edits present, copying mssfile into export location C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:41:03::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2024-04-16.23:41:03::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2024-04-16.23:41:03::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2024-04-16.23:41:03::SCWMssOS::doing bsp build ... 
+TRACE::2024-04-16.23:41:03::SCWMssOS::System Command Ran  C: & cd  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp & make 
+TRACE::2024-04-16.23:41:04::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2024-04-16.23:41:04::SCWMssOS::"Running Make include in microblaze_0/libsrc/bram_v4_8/src"
+
+TRACE::2024-04-16.23:41:04::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2024-04-16.23:41:04::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2024-04-16.23:41:04::SCWMssOS::-Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-04-16.23:41:04::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_17/src"
+
+TRACE::2024-04-16.23:41:04::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_17/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2024-04-16.23:41:04::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2024-04-16.23:41:04::SCWMssOS::-Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-04-16.23:41:04::SCWMssOS::"Running Make include in microblaze_0/libsrc/gpio_v4_9/src"
+
+TRACE::2024-04-16.23:41:04::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2024-04-16.23:41:04::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2024-04-16.23:41:04::SCWMssOS::-Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-04-16.23:41:04::SCWMssOS::"Running Make include in microblaze_0/libsrc/intc_v3_16/src"
+
+TRACE::2024-04-16.23:41:04::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_16/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2024-04-16.23:41:04::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2024-04-16.23:41:04::SCWMssOS:: -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-04-16.23:41:04::SCWMssOS::"Running Make include in microblaze_0/libsrc/Led_AXI_v1_0/src"
+
+TRACE::2024-04-16.23:41:04::SCWMssOS::make -C microblaze_0/libsrc/Led_AXI_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2024-04-16.23:41:04::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+TRACE::2024-04-16.23:41:04::SCWMssOS::ll -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-04-16.23:41:04::SCWMssOS::"Running Make include in microblaze_0/libsrc/standalone_v8_1/src"
+
+TRACE::2024-04-16.23:41:04::SCWMssOS::make -C microblaze_0/libsrc/standalone_v8_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2024-04-16.23:41:04::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections 
+TRACE::2024-04-16.23:41:04::SCWMssOS::-Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-04-16.23:41:05::SCWMssOS::"Running Make include in microblaze_0/libsrc/uartlite_v3_8/src"
+
+TRACE::2024-04-16.23:41:05::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2024-04-16.23:41:05::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+TRACE::2024-04-16.23:41:05::SCWMssOS::all -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-04-16.23:41:05::SCWMssOS::"Running Make include in microblaze_0/libsrc/xilffs_v5_0/src"
+
+TRACE::2024-04-16.23:41:05::SCWMssOS::make -C microblaze_0/libsrc/xilffs_v5_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+TRACE::2024-04-16.23:41:05::SCWMssOS::LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wal
+TRACE::2024-04-16.23:41:05::SCWMssOS::l -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-04-16.23:41:05::SCWMssOS::"Running Make libs in microblaze_0/libsrc/Led_AXI_v1_0/src"
+
+TRACE::2024-04-16.23:41:05::SCWMssOS::make -C microblaze_0/libsrc/Led_AXI_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2024-04-16.23:41:05::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2024-04-16.23:41:05::SCWMssOS::-Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-04-16.23:41:05::SCWMssOS::"Compiling Led_AXI..."
+
+ERROR::2024-04-16.23:41:06::SCWMssOS::Failed to build  the bsp sources for domain - standalone_domain
+ERROR::2024-04-16.23:41:06::SCWSystem::Error in Processing the domain standalone_domain
+LOG::2024-04-16.23:42:15::SCWPlatform::Started generating the artifacts platform PR_Platform
+TRACE::2024-04-16.23:42:15::SCWPlatform::Sanity checking of platform is completed
+LOG::2024-04-16.23:42:15::SCWPlatform::Started generating the artifacts for system configuration PR_Platform
+LOG::2024-04-16.23:42:15::SCWSystem::Checking the domain standalone_domain
+LOG::2024-04-16.23:42:15::SCWSystem::Not a boot domain 
+LOG::2024-04-16.23:42:15::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2024-04-16.23:42:15::SCWDomain::Generating domain artifcats
+TRACE::2024-04-16.23:42:15::SCWMssOS::Generating standalone artifcats
+TRACE::2024-04-16.23:42:15::SCWMssOS:: Copying the user libraries. 
+TRACE::2024-04-16.23:42:15::SCWPlatform::Trying to open the hw design at C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:42:15::SCWPlatform::DSA given C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:42:15::SCWPlatform::DSA absoulate path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:42:15::SCWPlatform::DSA directory C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw
+TRACE::2024-04-16.23:42:15::SCWPlatform:: Platform Path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:42:15::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2024-04-16.23:42:15::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2024-04-16.23:42:15::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2024-04-16.23:42:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-04-16.23:42:15::SCWMssOS::Checking the sw design at  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:42:15::SCWMssOS::DEBUG:  swdes dump  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-04-16.23:42:15::SCWMssOS::Sw design exists and opened at  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:42:15::SCWMssOS::Completed writing the mss file at C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp
+TRACE::2024-04-16.23:42:15::SCWMssOS::Mss edits present, copying mssfile into export location C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:42:15::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2024-04-16.23:42:15::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2024-04-16.23:42:15::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2024-04-16.23:42:15::SCWMssOS::doing bsp build ... 
+TRACE::2024-04-16.23:42:15::SCWMssOS::System Command Ran  C: & cd  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp & make 
+TRACE::2024-04-16.23:42:15::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2024-04-16.23:42:15::SCWMssOS::"Running Make include in microblaze_0/libsrc/bram_v4_8/src"
+
+TRACE::2024-04-16.23:42:15::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2024-04-16.23:42:15::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2024-04-16.23:42:15::SCWMssOS::-Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-04-16.23:42:15::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_17/src"
+
+TRACE::2024-04-16.23:42:15::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_17/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2024-04-16.23:42:15::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2024-04-16.23:42:15::SCWMssOS::-Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-04-16.23:42:16::SCWMssOS::"Running Make include in microblaze_0/libsrc/gpio_v4_9/src"
+
+TRACE::2024-04-16.23:42:16::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2024-04-16.23:42:16::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2024-04-16.23:42:16::SCWMssOS::-Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-04-16.23:42:16::SCWMssOS::"Running Make include in microblaze_0/libsrc/intc_v3_16/src"
+
+TRACE::2024-04-16.23:42:16::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_16/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2024-04-16.23:42:16::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2024-04-16.23:42:16::SCWMssOS:: -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-04-16.23:42:16::SCWMssOS::"Running Make include in microblaze_0/libsrc/Led_AXI_v1_0/src"
+
+TRACE::2024-04-16.23:42:16::SCWMssOS::make -C microblaze_0/libsrc/Led_AXI_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2024-04-16.23:42:16::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+TRACE::2024-04-16.23:42:16::SCWMssOS::ll -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-04-16.23:42:16::SCWMssOS::"Running Make include in microblaze_0/libsrc/standalone_v8_1/src"
+
+TRACE::2024-04-16.23:42:16::SCWMssOS::make -C microblaze_0/libsrc/standalone_v8_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2024-04-16.23:42:16::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections 
+TRACE::2024-04-16.23:42:16::SCWMssOS::-Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-04-16.23:42:16::SCWMssOS::"Running Make include in microblaze_0/libsrc/uartlite_v3_8/src"
+
+TRACE::2024-04-16.23:42:16::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2024-04-16.23:42:16::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+TRACE::2024-04-16.23:42:16::SCWMssOS::all -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-04-16.23:42:16::SCWMssOS::"Running Make include in microblaze_0/libsrc/xilffs_v5_0/src"
+
+TRACE::2024-04-16.23:42:16::SCWMssOS::make -C microblaze_0/libsrc/xilffs_v5_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+TRACE::2024-04-16.23:42:16::SCWMssOS::LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wal
+TRACE::2024-04-16.23:42:16::SCWMssOS::l -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-04-16.23:42:16::SCWMssOS::"Running Make libs in microblaze_0/libsrc/Led_AXI_v1_0/src"
+
+TRACE::2024-04-16.23:42:16::SCWMssOS::make -C microblaze_0/libsrc/Led_AXI_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2024-04-16.23:42:16::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2024-04-16.23:42:16::SCWMssOS::-Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-04-16.23:42:16::SCWMssOS::"Compiling Led_AXI..."
+
+TRACE::2024-04-16.23:42:17::SCWMssOS::'Finished building libraries sequentially.'
+
+TRACE::2024-04-16.23:42:17::SCWMssOS::make -j 10 --no-print-directory par_libs
+
+TRACE::2024-04-16.23:42:17::SCWMssOS::"Running Make include in microblaze_0/libsrc/bram_v4_8/src"
+
+TRACE::2024-04-16.23:42:17::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_17/src"
+
+TRACE::2024-04-16.23:42:17::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2024-04-16.23:42:17::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2024-04-16.23:42:17::SCWMssOS::-Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-04-16.23:42:17::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_17/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2024-04-16.23:42:17::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2024-04-16.23:42:17::SCWMssOS::-Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-04-16.23:42:17::SCWMssOS::"Running Make include in microblaze_0/libsrc/gpio_v4_9/src"
+
+TRACE::2024-04-16.23:42:17::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2024-04-16.23:42:17::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2024-04-16.23:42:17::SCWMssOS::-Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-04-16.23:42:17::SCWMssOS::"Running Make include in microblaze_0/libsrc/intc_v3_16/src"
+
+TRACE::2024-04-16.23:42:17::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_16/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2024-04-16.23:42:17::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2024-04-16.23:42:17::SCWMssOS:: -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-04-16.23:42:17::SCWMssOS::"Running Make include in microblaze_0/libsrc/Led_AXI_v1_0/src"
+
+TRACE::2024-04-16.23:42:18::SCWMssOS::make -C microblaze_0/libsrc/Led_AXI_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2024-04-16.23:42:18::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+TRACE::2024-04-16.23:42:18::SCWMssOS::ll -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-04-16.23:42:18::SCWMssOS::"Running Make include in microblaze_0/libsrc/standalone_v8_1/src"
+
+TRACE::2024-04-16.23:42:18::SCWMssOS::make -C microblaze_0/libsrc/standalone_v8_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2024-04-16.23:42:18::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections 
+TRACE::2024-04-16.23:42:18::SCWMssOS::-Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-04-16.23:42:18::SCWMssOS::"Running Make include in microblaze_0/libsrc/uartlite_v3_8/src"
+
+TRACE::2024-04-16.23:42:18::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2024-04-16.23:42:18::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+TRACE::2024-04-16.23:42:18::SCWMssOS::all -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-04-16.23:42:18::SCWMssOS::"Running Make include in microblaze_0/libsrc/xilffs_v5_0/src"
+
+TRACE::2024-04-16.23:42:18::SCWMssOS::make -C microblaze_0/libsrc/xilffs_v5_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+TRACE::2024-04-16.23:42:18::SCWMssOS::LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wal
+TRACE::2024-04-16.23:42:18::SCWMssOS::l -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-04-16.23:42:18::SCWMssOS::"Running Make libs in microblaze_0/libsrc/bram_v4_8/src"
+
+TRACE::2024-04-16.23:42:18::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2024-04-16.23:42:18::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -We
+TRACE::2024-04-16.23:42:18::SCWMssOS::xtra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-04-16.23:42:18::SCWMssOS::"Running Make libs in microblaze_0/libsrc/cpu_v2_17/src"
+
+TRACE::2024-04-16.23:42:18::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_17/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2024-04-16.23:42:18::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -We
+TRACE::2024-04-16.23:42:18::SCWMssOS::xtra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-04-16.23:42:18::SCWMssOS::"Running Make libs in microblaze_0/libsrc/gpio_v4_9/src"
+
+TRACE::2024-04-16.23:42:18::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2024-04-16.23:42:18::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -We
+TRACE::2024-04-16.23:42:18::SCWMssOS::xtra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-04-16.23:42:18::SCWMssOS::"Running Make libs in microblaze_0/libsrc/intc_v3_16/src"
+
+TRACE::2024-04-16.23:42:18::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_16/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+TRACE::2024-04-16.23:42:18::SCWMssOS::FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -W
+TRACE::2024-04-16.23:42:18::SCWMssOS::extra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-04-16.23:42:18::SCWMssOS::"Running Make libs in microblaze_0/libsrc/standalone_v8_1/src"
+
+TRACE::2024-04-16.23:42:18::SCWMssOS::make -C microblaze_0/libsrc/standalone_v8_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2024-04-16.23:42:18::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+TRACE::2024-04-16.23:42:18::SCWMssOS::ll -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-04-16.23:42:18::SCWMssOS::"Running Make libs in microblaze_0/libsrc/uartlite_v3_8/src"
+
+TRACE::2024-04-16.23:42:18::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2024-04-16.23:42:18::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2024-04-16.23:42:18::SCWMssOS:: -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-04-16.23:42:18::SCWMssOS::"Running Make libs in microblaze_0/libsrc/xilffs_v5_0/src"
+
+TRACE::2024-04-16.23:42:18::SCWMssOS::make -C microblaze_0/libsrc/xilffs_v5_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+TRACE::2024-04-16.23:42:18::SCWMssOS::_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -
+TRACE::2024-04-16.23:42:18::SCWMssOS::Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-04-16.23:42:19::SCWMssOS::"DEBUG NON_LTO_OBJECTS is ../../../lib/microblaze_interrupt_handler.o"
+
+TRACE::2024-04-16.23:42:19::SCWMssOS::'Finished building libraries parallelly.'
+
+TRACE::2024-04-16.23:42:19::SCWMssOS::make --no-print-directory archive
+
+TRACE::2024-04-16.23:42:19::SCWMssOS::mb-ar -r  microblaze_0/lib/libxil.a microblaze_0/lib/_exit.o microblaze_0/lib/errno.o microblaze_0/lib/fcntl.o microblaze_0/lib
+TRACE::2024-04-16.23:42:19::SCWMssOS::/hw_exception_handler.o microblaze_0/lib/inbyte.o microblaze_0/lib/microblaze_disable_dcache.o microblaze_0/lib/microblaze_disa
+TRACE::2024-04-16.23:42:19::SCWMssOS::ble_exceptions.o microblaze_0/lib/microblaze_disable_icache.o microblaze_0/lib/microblaze_disable_interrupts.o microblaze_0/lib
+TRACE::2024-04-16.23:42:19::SCWMssOS::/microblaze_enable_dcache.o microblaze_0/lib/microblaze_enable_exceptions.o microblaze_0/lib/microblaze_enable_icache.o microbl
+TRACE::2024-04-16.23:42:19::SCWMssOS::aze_0/lib/microblaze_enable_interrupts.o microblaze_0/lib/microblaze_exception_handler.o microblaze_0/lib/microblaze_flush_cach
+TRACE::2024-04-16.23:42:19::SCWMssOS::e_ext.o microblaze_0/lib/microblaze_flush_cache_ext_range.o microblaze_0/lib/microblaze_flush_dcache.o microblaze_0/lib/microbl
+TRACE::2024-04-16.23:42:19::SCWMssOS::aze_flush_dcache_range.o microblaze_0/lib/microblaze_init_dcache_range.o microblaze_0/lib/microblaze_init_icache_range.o microb
+TRACE::2024-04-16.23:42:19::SCWMssOS::laze_0/lib/microblaze_interrupt_handler.o microblaze_0/lib/microblaze_interrupts_g.o microblaze_0/lib/microblaze_invalidate_cac
+TRACE::2024-04-16.23:42:19::SCWMssOS::he_ext.o microblaze_0/lib/microblaze_invalidate_cache_ext_range.o microblaze_0/lib/microblaze_invalidate_dcache.o microblaze_0/
+TRACE::2024-04-16.23:42:19::SCWMssOS::lib/microblaze_invalidate_dcache_range.o microblaze_0/lib/microblaze_invalidate_icache.o microblaze_0/lib/microblaze_invalidate
+TRACE::2024-04-16.23:42:19::SCWMssOS::_icache_range.o microblaze_0/lib/microblaze_scrub.o microblaze_0/lib/microblaze_selftest.o microblaze_0/lib/microblaze_sleep.o 
+TRACE::2024-04-16.23:42:19::SCWMssOS::microblaze_0/lib/microblaze_update_dcache.o microblaze_0/lib/microblaze_update_icache.o microblaze_0/lib/outbyte.o microblaze_0
+TRACE::2024-04-16.23:42:19::SCWMssOS::/lib/print.o microblaze_0/lib/pvr.o microblaze_0/lib/xbram.o microblaze_0/lib/xbram_g.o microblaze_0/lib/xbram_intr.o microblaz
+TRACE::2024-04-16.23:42:19::SCWMssOS::e_0/lib/xbram_selftest.o microblaze_0/lib/xbram_sinit.o microblaze_0/lib/xgpio.o microblaze_0/lib/xgpio_extra.o microblaze_0/li
+TRACE::2024-04-16.23:42:19::SCWMssOS::b/xgpio_g.o microblaze_0/lib/xgpio_intr.o microblaze_0/lib/xgpio_selftest.o microblaze_0/lib/xgpio_sinit.o microblaze_0/lib/xil
+TRACE::2024-04-16.23:42:19::SCWMssOS::_assert.o microblaze_0/lib/xil_cache.o microblaze_0/lib/xil_clocking.o microblaze_0/lib/xil_exception.o microblaze_0/lib/xil_me
+TRACE::2024-04-16.23:42:19::SCWMssOS::m.o microblaze_0/lib/xil_misc_psreset_api.o microblaze_0/lib/xil_printf.o microblaze_0/lib/xil_sleepcommon.o microblaze_0/lib/x
+TRACE::2024-04-16.23:42:19::SCWMssOS::il_testcache.o microblaze_0/lib/xil_testio.o microblaze_0/lib/xil_testmem.o microblaze_0/lib/xil_util.o microblaze_0/lib/xintc.
+TRACE::2024-04-16.23:42:19::SCWMssOS::o microblaze_0/lib/xintc_g.o microblaze_0/lib/xintc_intr.o microblaze_0/lib/xintc_l.o microblaze_0/lib/xintc_options.o microbla
+TRACE::2024-04-16.23:42:19::SCWMssOS::ze_0/lib/xintc_selftest.o microblaze_0/lib/xinterrupt_wrap.o microblaze_0/lib/xio.o microblaze_0/lib/xplatform_info.o microblaz
+TRACE::2024-04-16.23:42:19::SCWMssOS::e_0/lib/xuartlite.o microblaze_0/lib/xuartlite_g.o microblaze_0/lib/xuartlite_intr.o microblaze_0/lib/xuartlite_l.o microblaze_
+TRACE::2024-04-16.23:42:19::SCWMssOS::0/lib/xuartlite_selftest.o microblaze_0/lib/xuartlite_sinit.o microblaze_0/lib/xuartlite_stats.o
+
+TRACE::2024-04-16.23:42:19::SCWMssOS::'Finished building libraries'
+
+TRACE::2024-04-16.23:42:19::SCWMssOS::Copying to export directory.
+TRACE::2024-04-16.23:42:20::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2024-04-16.23:42:20::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2024-04-16.23:42:20::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2024-04-16.23:42:20::SCWSystem::Completed Processing the sysconfig PR_Platform
+LOG::2024-04-16.23:42:20::SCWPlatform::Completed generating the artifacts for system configuration PR_Platform
+TRACE::2024-04-16.23:42:20::SCWPlatform::Started preparing the platform 
+TRACE::2024-04-16.23:42:20::SCWSystem::Writing the bif file for system config PR_Platform
+TRACE::2024-04-16.23:42:20::SCWSystem::dir created 
+TRACE::2024-04-16.23:42:20::SCWSystem::Writing the bif 
+TRACE::2024-04-16.23:42:20::SCWPlatform::Started writing the spfm file 
+TRACE::2024-04-16.23:42:20::SCWPlatform::Started writing the xpfm file 
+TRACE::2024-04-16.23:42:20::SCWPlatform::Completed generating the platform
+TRACE::2024-04-16.23:42:20::SCWMssOS::Saving the mss changes C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:42:20::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-04-16.23:42:20::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-04-16.23:42:20::SCWMssOS::Commit changes completed.
+TRACE::2024-04-16.23:42:20::SCWPlatform::Trying to open the hw design at C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:42:20::SCWPlatform::DSA given C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:42:20::SCWPlatform::DSA absoulate path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:42:20::SCWPlatform::DSA directory C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw
+TRACE::2024-04-16.23:42:20::SCWPlatform:: Platform Path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:42:20::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2024-04-16.23:42:20::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2024-04-16.23:42:20::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2024-04-16.23:42:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-04-16.23:42:20::SCWMssOS::Checking the sw design at  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:42:20::SCWMssOS::DEBUG:  swdes dump  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-04-16.23:42:20::SCWMssOS::Sw design exists and opened at  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:42:20::SCWWriter::formatted JSON is {
+	"platformName":	"PR_Platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"PR_Platform",
+	"platHandOff":	"C:/Users/jasme/Desktop/BacheloreProject/DynamicFunctionExchange/New_Management/Attempt_3_10-04-2024/LedCount/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"PR_Platform",
+	"systems":	[{
+			"systemName":	"PR_Platform",
+			"systemDesc":	"PR_Platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"PR_Platform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.1",
+					"mssFile":	"",
+					"md5Digest":	"da71ca7e106a546c0df3e400fc5e0649",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:5.0"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2024-04-16.23:42:20::SCWPlatform::updated the xpfm file.
+TRACE::2024-04-16.23:42:20::SCWPlatform::Trying to open the hw design at C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:42:20::SCWPlatform::DSA given C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:42:20::SCWPlatform::DSA absoulate path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:42:20::SCWPlatform::DSA directory C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw
+TRACE::2024-04-16.23:42:20::SCWPlatform:: Platform Path C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/hw/design_1_wrapper.xsa
+TRACE::2024-04-16.23:42:20::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2024-04-16.23:42:20::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2024-04-16.23:42:20::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2024-04-16.23:42:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-04-16.23:42:20::SCWMssOS::Checking the sw design at  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2024-04-16.23:42:20::SCWMssOS::DEBUG:  swdes dump  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-04-16.23:42:20::SCWMssOS::Sw design exists and opened at  C:/VProject/Attempt_3_10-04-2024/LedCount/PR_Platform/microblaze_0/standalone_domain/bsp/system.mss

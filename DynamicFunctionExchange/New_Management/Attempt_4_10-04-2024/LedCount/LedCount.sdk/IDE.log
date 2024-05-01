@@ -1,0 +1,158 @@
+15:23:05 DEBUG : Logs will be stored at 'C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/IDE.log'.
+15:23:11 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\VProject\Attempt_4_10-04-2024\LedCount\LedCount.sdk\temp_xsdb_launch_script.tcl
+15:23:12 INFO  : Registering command handlers for Vitis TCF services
+15:23:13 INFO  : Platform repository initialization has completed.
+15:23:18 INFO  : XSCT server has started successfully.
+15:23:22 INFO  : Successfully done setting XSCT server connection channel  
+15:23:22 INFO  : plnx-install-location is set to ''
+15:23:22 INFO  : Successfully done query RDI_DATADIR 
+15:23:22 INFO  : Successfully done setting workspace for the tool. 
+15:23:56 INFO  : Result from executing command 'getProjects': DFX_Led_Platform
+15:23:56 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+15:26:09 INFO  : Result from executing command 'getProjects': DFX_Led_Platform
+15:26:09 INFO  : Result from executing command 'getPlatforms': DFX_Led_Platform|C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/DFX_Led_Platform.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+23:33:02 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\VProject\Attempt_4_10-04-2024\LedCount\LedCount.sdk\temp_xsdb_launch_script.tcl
+23:33:04 INFO  : XSCT server has started successfully.
+23:33:04 ERROR : Failed to update hardware specification for project 'DFX_Led_Platform'.
+Reason: Failed to execute command 'platform config -updatehw {C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/design_1_wrapper.xsa}'. Click on details for more information.
+23:33:35 DEBUG : Logs will be stored at 'C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/IDE.log'.
+23:33:35 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\VProject\Attempt_4_10-04-2024\LedCount\LedCount.sdk\temp_xsdb_launch_script.tcl
+23:33:37 INFO  : XSCT server has started successfully.
+23:33:38 INFO  : Registering command handlers for Vitis TCF services
+23:33:38 INFO  : Successfully done setting XSCT server connection channel  
+23:33:38 INFO  : plnx-install-location is set to ''
+23:33:38 INFO  : Successfully done query RDI_DATADIR 
+23:33:38 INFO  : Successfully done setting workspace for the tool. 
+23:33:38 INFO  : Platform repository initialization has completed.
+23:33:47 INFO  : Hardware specification for platform project 'DFX_Led_Platform' is updated.
+23:34:10 INFO  : Result from executing command 'getProjects': DFX_Led_Platform
+23:34:10 INFO  : Result from executing command 'getPlatforms': DFX_Led_Platform|C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/DFX_Led_Platform.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+23:45:01 INFO  : No changes in MSS file content so sources will not be generated.
+23:45:36 INFO  : Result from executing command 'getProjects': DFX_Led_Platform
+23:45:36 INFO  : Result from executing command 'getPlatforms': DFX_Led_Platform|C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/DFX_Led_Platform.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+19:10:58 DEBUG : Logs will be stored at 'C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/IDE.log'.
+19:11:00 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\VProject\Attempt_4_10-04-2024\LedCount\LedCount.sdk\temp_xsdb_launch_script.tcl
+19:11:06 INFO  : XSCT server has started successfully.
+19:11:06 INFO  : plnx-install-location is set to ''
+19:11:06 INFO  : Successfully done setting XSCT server connection channel  
+19:11:08 INFO  : Platform repository initialization has completed.
+19:11:08 INFO  : Registering command handlers for Vitis TCF services
+19:11:17 INFO  : Successfully done setting workspace for the tool. 
+19:11:17 INFO  : Successfully done query RDI_DATADIR 
+19:21:08 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+19:21:09 INFO  : Updating application flags with new BSP settings...
+19:21:09 INFO  : Successfully updated application flags for project DFX_Led_Application.
+19:21:14 INFO  : The hardware specification used by project 'DFX_Led_Application' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+19:21:14 INFO  : The updated bitstream files are copied from platform to folder 'C:\VProject\Attempt_4_10-04-2024\LedCount\LedCount.sdk\DFX_Led_Application\_ide\bitstream' in project 'DFX_Led_Application'.
+14:09:39 DEBUG : Logs will be stored at 'C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/IDE.log'.
+14:09:40 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\VProject\Attempt_4_10-04-2024\LedCount\LedCount.sdk\temp_xsdb_launch_script.tcl
+14:09:44 INFO  : XSCT server has started successfully.
+14:09:44 INFO  : Successfully done setting XSCT server connection channel  
+14:09:44 INFO  : plnx-install-location is set to ''
+14:09:45 INFO  : Platform repository initialization has completed.
+14:09:45 INFO  : Registering command handlers for Vitis TCF services
+14:09:48 INFO  : Successfully done setting workspace for the tool. 
+14:09:48 INFO  : Successfully done query RDI_DATADIR 
+04:03:09 DEBUG : Logs will be stored at 'C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/IDE.log'.
+04:03:11 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\VProject\Attempt_4_10-04-2024\LedCount\LedCount.sdk\temp_xsdb_launch_script.tcl
+04:03:16 INFO  : Registering command handlers for Vitis TCF services
+04:03:18 INFO  : Platform repository initialization has completed.
+04:03:19 INFO  : XSCT server has started successfully.
+04:03:26 INFO  : Successfully done setting XSCT server connection channel  
+04:03:26 INFO  : plnx-install-location is set to ''
+04:03:26 INFO  : Successfully done query RDI_DATADIR 
+04:03:26 INFO  : Successfully done setting workspace for the tool. 
+04:46:03 INFO  : Result from executing command 'getProjects': DFX_Led_Platform
+04:46:03 INFO  : Result from executing command 'getPlatforms': DFX_Led_Platform|C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/DFX_Led_Platform.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+04:46:04 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+04:46:34 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+04:46:52 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+04:49:12 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+04:49:22 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+04:49:41 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+04:50:22 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+04:51:11 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+04:54:10 INFO  : No changes in MSS file content so sources will not be generated.
+04:55:16 INFO  : Result from executing command 'getProjects': DFX_Led_Platform
+04:55:16 INFO  : Result from executing command 'getPlatforms': DFX_Led_Platform|C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/DFX_Led_Platform.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+04:55:16 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+05:00:10 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+05:07:04 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+05:07:53 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+05:08:08 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+05:08:35 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+05:10:03 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+05:13:22 INFO  : Result from executing command 'getProjects': DFX_Led_Platform
+05:13:22 INFO  : Result from executing command 'getPlatforms': DFX_Led_Platform|C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/DFX_Led_Platform.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+05:13:27 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+05:13:42 INFO  : Result from executing command 'getProjects': DFX_Led_Platform
+05:13:42 INFO  : Result from executing command 'getPlatforms': DFX_Led_Platform|C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/DFX_Led_Platform.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+05:17:42 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+12:15:55 INFO  : Result from executing command 'getProjects': DFX_Led_Platform
+12:15:55 INFO  : Result from executing command 'getPlatforms': DFX_Led_Platform|C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/DFX_Led_Platform.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+12:16:02 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+12:16:02 INFO  : Updating application flags with new BSP settings...
+12:16:02 INFO  : Successfully updated application flags for project DFX_Led_Application.
+12:16:57 INFO  : No changes in MSS file content so sources will not be generated.
+12:22:43 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+12:23:40 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+12:24:57 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+12:25:20 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+12:28:16 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+12:28:25 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+12:30:06 INFO  : No changes in MSS file content so sources will not be generated.
+12:30:48 INFO  : Result from executing command 'getProjects': DFX_Led_Platform
+12:30:48 INFO  : Result from executing command 'getPlatforms': DFX_Led_Platform|C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/DFX_Led_Platform.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+12:30:53 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+12:33:08 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+12:33:20 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+19:07:57 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+19:09:46 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+19:10:37 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+19:11:54 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+19:12:13 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+19:12:49 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+19:13:38 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+19:14:01 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+19:19:12 DEBUG : Logs will be stored at 'C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/IDE.log'.
+19:19:12 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\VProject\Attempt_4_10-04-2024\LedCount\LedCount.sdk\temp_xsdb_launch_script.tcl
+19:19:15 INFO  : Registering command handlers for Vitis TCF services
+19:19:16 INFO  : Platform repository initialization has completed.
+19:19:16 INFO  : XSCT server has started successfully.
+19:19:17 INFO  : Successfully done setting XSCT server connection channel  
+19:19:17 INFO  : plnx-install-location is set to ''
+19:19:19 INFO  : Successfully done setting workspace for the tool. 
+19:19:19 INFO  : Successfully done query RDI_DATADIR 
+19:19:23 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+19:19:39 INFO  : Result from executing command 'removePlatformRepo': 
+19:19:49 INFO  : Result from executing command 'getProjects': DFX_Led_Platform
+19:19:49 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+19:19:50 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+17:07:32 DEBUG : Logs will be stored at 'C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/IDE.log'.
+17:07:34 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\VProject\Attempt_4_10-04-2024\LedCount\LedCount.sdk\temp_xsdb_launch_script.tcl
+17:07:42 INFO  : Registering command handlers for Vitis TCF services
+17:07:44 INFO  : Platform repository initialization has completed.
+17:07:44 INFO  : XSCT server has started successfully.
+17:07:44 INFO  : Successfully done setting XSCT server connection channel  
+17:07:44 INFO  : plnx-install-location is set to ''
+17:07:53 INFO  : Successfully done setting workspace for the tool. 
+17:07:54 INFO  : Successfully done query RDI_DATADIR 
+17:08:00 INFO  : Hardware specification for platform project 'DFX_Led_Platform' is updated.
+17:08:44 INFO  : Result from executing command 'getProjects': DFX_Led_Platform
+17:08:44 INFO  : Result from executing command 'getPlatforms': DFX_Led_Platform|C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/DFX_Led_Platform.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+17:09:23 INFO  : Result from executing command 'getProjects': DFX_Led_Platform
+17:09:23 INFO  : Result from executing command 'getPlatforms': DFX_Led_Platform|C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/DFX_Led_Platform.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+17:09:28 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+17:09:28 INFO  : Updating application flags with new BSP settings...
+17:09:28 INFO  : Successfully updated application flags for project DFX_Led_Application.
+17:10:58 INFO  : Result from executing command 'getProjects': DFX_Led_Platform
+17:10:58 INFO  : Result from executing command 'getPlatforms': DFX_Led_Platform|C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/DFX_Led_Platform.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+17:11:02 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+17:11:02 INFO  : Updating application flags with new BSP settings...
+17:11:02 INFO  : Successfully updated application flags for project DFX_Led_Application.
+17:15:27 INFO  : No changes in MSS file content so sources will not be generated.
+17:17:45 INFO  : No changes in MSS file content so sources will not be generated.
+17:17:52 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+23:03:05 INFO  : No changes in MSS file content so sources will not be generated.
+23:35:14 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...
+23:35:28 INFO  : Checking for BSP changes to sync application flags for project 'DFX_Led_Application'...

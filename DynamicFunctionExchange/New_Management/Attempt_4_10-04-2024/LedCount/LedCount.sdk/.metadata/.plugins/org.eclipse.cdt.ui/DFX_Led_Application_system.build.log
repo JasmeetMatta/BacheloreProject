@@ -1,0 +1,8 @@
+19:19:41 **** Clean-only build of configuration Debug for project DFX_Led_Application_system ****
+make clean 
+rm -rf ./_sds
+rm -rf package
+rm -f system.bif
+
+19:19:41 Build Finished (took 96ms)
+

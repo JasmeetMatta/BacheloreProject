@@ -1,0 +1,30 @@
+Nothing to build in platform 'DFX_Led_Platform'
+
+15:34:26 **** Incremental Build of configuration Debug for project DFX_Led_Application ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/sw/DFX_Led_Platform/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:54:
+C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/sw/DFX_Led_Platform/standalone_domain/bspinclude/include/xbasic_types.h:102:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+  102 | #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+      |  ^~~~~~~
+C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/sw/DFX_Led_Platform/standalone_domain/bspinclude/include/xbasic_types.h:103:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+  103 | #warning  Please refer the Standalone BSP UG647 for further details
+      |  ^~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: DFX_Led_Application.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/sw/DFX_Led_Platform/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "DFX_Led_Application.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+d:/xilinx/vitis/2023.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/12.2.0/ld.exe: ./src/helloworld.o: in function `FfsSdPolledExample':
+C:\VProject\Attempt_4_10-04-2024\LedCount\LedCount.sdk\DFX_Led_Application\Debug/../src/helloworld.c:267: undefined reference to `f_mount'
+d:/xilinx/vitis/2023.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/12.2.0/ld.exe: C:\VProject\Attempt_4_10-04-2024\LedCount\LedCount.sdk\DFX_Led_Application\Debug/../src/helloworld.c:278: undefined reference to `f_mkfs'
+d:/xilinx/vitis/2023.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/12.2.0/ld.exe: C:\VProject\Attempt_4_10-04-2024\LedCount\LedCount.sdk\DFX_Led_Application\Debug/../src/helloworld.c:291: undefined reference to `f_open'
+d:/xilinx/vitis/2023.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/12.2.0/ld.exe: C:\VProject\Attempt_4_10-04-2024\LedCount\LedCount.sdk\DFX_Led_Application\Debug/../src/helloworld.c:299: undefined reference to `f_lseek'
+d:/xilinx/vitis/2023.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/12.2.0/ld.exe: C:\VProject\Attempt_4_10-04-2024\LedCount\LedCount.sdk\DFX_Led_Application\Debug/../src/helloworld.c:307: undefined reference to `f_write'
+d:/xilinx/vitis/2023.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/12.2.0/ld.exe: C:\VProject\Attempt_4_10-04-2024\LedCount\LedCount.sdk\DFX_Led_Application\Debug/../src/helloworld.c:316: undefined reference to `f_lseek'
+d:/xilinx/vitis/2023.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/12.2.0/ld.exe: C:\VProject\Attempt_4_10-04-2024\LedCount\LedCount.sdk\DFX_Led_Application\Debug/../src/helloworld.c:324: undefined reference to `f_read'
+d:/xilinx/vitis/2023.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/12.2.0/ld.exe: C:\VProject\Attempt_4_10-04-2024\LedCount\LedCount.sdk\DFX_Led_Application\Debug/../src/helloworld.c:342: undefined reference to `f_close'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: DFX_Led_Application.elf] Error 1

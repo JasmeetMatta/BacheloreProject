@@ -3,10 +3,10 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Wed Apr 10 16:32:43 2024
-# Process ID: 15924
+# Start of session at: Wed Apr 17 17:26:11 2024
+# Process ID: 1688
 # Current directory: C:/VProject/Attempt_3_10-04-2024/LedCount
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12544 C:\VProject\Attempt_3_10-04-2024\LedCount\LedCount.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3776 C:\VProject\Attempt_3_10-04-2024\LedCount\LedCount.xpr
 # Log file: C:/VProject/Attempt_3_10-04-2024/LedCount/vivado.log
 # Journal file: C:/VProject/Attempt_3_10-04-2024/LedCount\vivado.jou
 # Running On: Jasmeet, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 16990 MB
@@ -15,120 +15,4 @@ start_gui
 open_project C:/VProject/Attempt_3_10-04-2024/LedCount/LedCount.xpr
 update_compile_order -fileset sources_1
 open_bd_design {C:/VProject/Attempt_3_10-04-2024/LedCount/LedCount.srcs/sources_1/bd/design_1/design_1.bd}
-report_ip_status -name ip_status 
-upgrade_ip -vlnv xilinx.com:user:Led_AXI:1.0 [get_ips  design_1_Led_AXI_0_0] -log ip_upgrade.log
-export_ip_user_files -of_objects [get_ips design_1_Led_AXI_0_0] -no_script -sync -force -quiet
-generate_target all [get_files  C:/VProject/Attempt_3_10-04-2024/LedCount/LedCount.srcs/sources_1/bd/design_1/design_1.bd]
-catch { config_ip_cache -export [get_ips -all design_1_Led_AXI_0_0] }
-export_ip_user_files -of_objects [get_files C:/VProject/Attempt_3_10-04-2024/LedCount/LedCount.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
-create_ip_run [get_files -of_objects [get_fileset sources_1] C:/VProject/Attempt_3_10-04-2024/LedCount/LedCount.srcs/sources_1/bd/design_1/design_1.bd]
-launch_runs design_1_Led_AXI_0_0_synth_1 -jobs 6
-wait_on_run design_1_Led_AXI_0_0_synth_1
-export_simulation -of_objects [get_files C:/VProject/Attempt_3_10-04-2024/LedCount/LedCount.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/VProject/Attempt_3_10-04-2024/LedCount/LedCount.ip_user_files/sim_scripts -ip_user_files_dir C:/VProject/Attempt_3_10-04-2024/LedCount/LedCount.ip_user_files -ipstatic_source_dir C:/VProject/Attempt_3_10-04-2024/LedCount/LedCount.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/VProject/Attempt_3_10-04-2024/LedCount/LedCount.cache/compile_simlib/modelsim} {questa=C:/VProject/Attempt_3_10-04-2024/LedCount/LedCount.cache/compile_simlib/questa} {riviera=C:/VProject/Attempt_3_10-04-2024/LedCount/LedCount.cache/compile_simlib/riviera} {activehdl=C:/VProject/Attempt_3_10-04-2024/LedCount/LedCount.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-report_ip_status -name ip_status 
-reset_run synth_1
-launch_runs synth_1 -jobs 6
-wait_on_run synth_1
 open_run synth_1 -name synth_1
-startgroup
-create_pblock pblock_count_0
-resize_pblock pblock_count_0 -add {SLICE_X52Y51:SLICE_X85Y99 DSP48_X1Y22:DSP48_X2Y39 RAMB18_X1Y22:RAMB18_X3Y39 RAMB36_X1Y11:RAMB36_X3Y19}
-add_cells_to_pblock pblock_count_0 [get_cells [list design_1_i/Led_AXI_0/U0/Led_AXI_v1_0_S_AXI_inst/count_0]] -clear_locs
-endgroup
-set_property RESET_AFTER_RECONFIG 1 [get_pblocks pblock_count_0]
-set_property SNAPPING_MODE ON [get_pblocks pblock_count_0]
-file mkdir C:/VProject/Attempt_3_10-04-2024/LedCount/LedCount.srcs/constrs_1/new
-close [ open C:/VProject/Attempt_3_10-04-2024/LedCount/LedCount.srcs/constrs_1/new/PrConstraints.xdc w ]
-add_files -fileset constrs_1 C:/VProject/Attempt_3_10-04-2024/LedCount/LedCount.srcs/constrs_1/new/PrConstraints.xdc
-set_property target_constrs_file C:/VProject/Attempt_3_10-04-2024/LedCount/LedCount.srcs/constrs_1/new/PrConstraints.xdc [current_fileset -constrset]
-save_constraints -force
-write_checkpoint ../LedCount/netlist/Static/static.dcp
-read_checkpoint -cell [get_cells design_1_i/Led_AXI_0/U0/Led_AXI_v1_0_S_AXI_inst/count_0] ./netlist/CountUp/LedCount.dcp
-update_compile_order -fileset sources_1
-set_property HD.RECONFIGURABLE 1 [get_cells design_1_i/Led_AXI_0/U0/Led_AXI_v1_0_S_AXI_inst/count_0]
-save_constraints
-write_checkpoint ./netlist/Config1/config1.dcp
-opt_design
-place_design
-route_design
-write_checkpoint ./netlist/Config1/config1routed.dcp
-update_design -cells [get_cells design_1_i/Led_AXI_0/U0/Led_AXI_v1_0_S_AXI_inst/count_0] -black_box
-lock_design -level routing
-write_checkpoint ./netlist/Static/staticrouted.dcp
-read_checkpoint -cell  [get_cells design_1_i/Led_AXI_0/U0/Led_AXI_v1_0_S_AXI_inst/count_0] ./netlist/CountDown/LedCount.dcp
-update_compile_order -fileset sources_1
-opt_design
-place_design
-route_design
-write_checkpoint ./netlist/Config2/config2routed.dcp
-write_bitstream ./bitstream/config2/config2.bit
-open_checkpoint ./netlist/Config1/config1routed.dcp
-current_project LedCount
-write_bitstream ./bitstream/config1/config1.bit
-current_project project_config1routed
-close_design
-write_hw_platform -fixed -force -file C:/VProject/Attempt_3_10-04-2024/LedCount/design_1_wrapper.xsa
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-current_hw_device [get_hw_devices xc7a100t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/VProject/Attempt_3_10-04-2024/LedCount/bitstream/config1/config1.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-open_bd_design {C:/VProject/Attempt_3_10-04-2024/LedCount/LedCount.srcs/sources_1/bd/design_1/design_1.bd}
-disconnect_hw_server localhost:3121
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {C:/VProject/Attempt_3_10-04-2024/LedCount/bitstream/config1/config1.bit} [get_hw_devices xc7a100t_0]
-current_hw_device [get_hw_devices xc7a100t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/VProject/Attempt_3_10-04-2024/LedCount/bitstream/config1/config1.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/VProject/Attempt_3_10-04-2024/LedCount/bitstream/config1/config1_pblock_count_0_partial.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/VProject/Attempt_3_10-04-2024/LedCount/bitstream/config2/config2_pblock_count_0_partial.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/VProject/Attempt_3_10-04-2024/LedCount/bitstream/config1/config1.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/VProject/Attempt_3_10-04-2024/LedCount/bitstream/config2/config2_pblock_count_0_partial.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/VProject/Attempt_3_10-04-2024/LedCount/bitstream/config1/config1_pblock_count_0_partial.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-update_design -cells [get_cells design_1_i/Led_AXI_0/U0/Led_AXI_v1_0_S_AXI_inst/count_0] -black_box
-read_checkpoint -cell [get_cells design_1_i/Led_AXI_0/U0/Led_AXI_v1_0_S_AXI_inst/count_0] ./netlist/CountUp/LedCount.dcp
-opt_design
-place_design
-route_design
-write_checkpoint -force ./netlist/Config1/config1routed.dcp
-write_bitstream -force ./bitstream/config1/config1.bit
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/VProject/Attempt_3_10-04-2024/LedCount/bitstream/config1/config1.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/VProject/Attempt_3_10-04-2024/LedCount/bitstream/config2/config2_pblock_count_0_partial.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

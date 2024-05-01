@@ -1,0 +1,11 @@
+===================================
+Configuration Memory information
+===================================
+File Format        BIN
+Interface          SMAPX8
+Size               1M
+Start Address      0x00000000
+End Address        0x000FFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x000F748B    Apr 21 00:03:21 2024    ./bitstreams/config1/config1_pblock_count_0_partial.bit
