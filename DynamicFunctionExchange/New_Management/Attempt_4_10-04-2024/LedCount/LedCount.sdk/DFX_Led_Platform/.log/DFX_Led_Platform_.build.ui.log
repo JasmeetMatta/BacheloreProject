@@ -1,2 +1,8 @@
-2024-05-01T15:34:26.1985245000-Nothing to build in platform 'DFX_Led_Platform'
+2024-05-08T12:54:06.675287200255-12:54:06 **** Incremental Build of project DFX_Led_Platform ****
+000-buildplatform.bat 53959 DFX_Led_Platform no_domain_build 
+000-ECHO is off.
+000-ECHO is off.
+000-XSDB Server Channel: tcfchan#1
+00255-
+12:54:10 Build Finished (took 3s.614ms)
 

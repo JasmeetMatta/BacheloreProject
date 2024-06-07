@@ -3,10 +3,10 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Wed May  1 12:17:38 2024
-# Process ID: 10272
+# Start of session at: Fri May 24 23:38:25 2024
+# Process ID: 1284
 # Current directory: C:/VProject/Attempt_4_10-04-2024/LedCount
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3424 C:\VProject\Attempt_4_10-04-2024\LedCount\LedCount.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4420 C:\VProject\Attempt_4_10-04-2024\LedCount\LedCount.xpr
 # Log file: C:/VProject/Attempt_4_10-04-2024/LedCount/vivado.log
 # Journal file: C:/VProject/Attempt_4_10-04-2024/LedCount\vivado.jou
 # Running On: Jasmeet, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 16990 MB
@@ -14,3 +14,40 @@
 start_gui
 open_project C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.xpr
 update_compile_order -fileset sources_1
+open_bd_design {C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.srcs/sources_1/bd/design_1/design_1.bd}
+regenerate_bd_layout
+validate_bd_design -force
+delete_bd_objs [get_bd_nets Net]
+startgroup
+set_property CONFIG.NUM_PORTS {2} [get_bd_cells microblaze_0_xlconcat]
+endgroup
+validate_bd_design
+connect_bd_net [get_bd_pins dfx_controller_0/icap_reset] [get_bd_pins rst_clk_wiz_1_100M/peripheral_aresetn]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_hbicap:1.0 axi_hbicap_0
+endgroup
+delete_bd_objs [get_bd_cells axi_hbicap_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_hwicap:3.0 axi_hwicap_0
+endgroup
+delete_bd_objs [get_bd_cells axi_hwicap_0]
+connect_bd_net [get_bd_pins dfx_controller_0/icap_o] [get_bd_pins dfx_controller_0/icap_i]
+validate_bd_design
+delete_bd_objs [get_bd_intf_nets dfx_controller_0_M_AXI_MEM]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {/clk_wiz_1/clk_out1 (100 MHz)} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/dfx_controller_0/M_AXI_MEM} Slave {/microblaze_0_axi_intc/s_axi} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins dfx_controller_0/M_AXI_MEM]
+validate_bd_design
+delete_bd_objs [get_bd_intf_nets dfx_controller_0_M_AXI_MEM]
+connect_bd_net [get_bd_pins dfx_controller_0/m_axi_mem_arburst] [get_bd_pins microblaze_0_axi_periph/S01_AXI_arburst]
+connect_bd_net [get_bd_pins dfx_controller_0/m_axi_mem_arcache] [get_bd_pins microblaze_0_axi_periph/S01_AXI_arcache]
+connect_bd_net [get_bd_pins dfx_controller_0/m_axi_mem_arprot] [get_bd_pins microblaze_0_axi_periph/S01_AXI_arprot]
+connect_bd_net [get_bd_pins dfx_controller_0/m_axi_mem_arready] [get_bd_pins microblaze_0_axi_periph/S01_AXI_arready]
+connect_bd_net [get_bd_pins dfx_controller_0/m_axi_mem_arsize] [get_bd_pins microblaze_0_axi_periph/S01_AXI_arsize]
+connect_bd_net [get_bd_pins dfx_controller_0/m_axi_mem_arlen] [get_bd_pins microblaze_0_axi_periph/S01_AXI_arlen]
+connect_bd_net [get_bd_pins dfx_controller_0/m_axi_mem_arvalid] [get_bd_pins microblaze_0_axi_periph/S01_AXI_arvalid]
+connect_bd_net [get_bd_pins dfx_controller_0/m_axi_mem_rdata] [get_bd_pins microblaze_0_axi_periph/S01_AXI_rdata]
+connect_bd_net [get_bd_pins dfx_controller_0/m_axi_mem_rresp] [get_bd_pins microblaze_0_axi_periph/S01_AXI_rresp]
+connect_bd_net [get_bd_pins dfx_controller_0/m_axi_mem_rlast] [get_bd_pins microblaze_0_axi_periph/S01_AXI_rlast]
+connect_bd_net [get_bd_pins dfx_controller_0/m_axi_mem_rvalid] [get_bd_pins microblaze_0_axi_periph/S01_AXI_rvalid]
+connect_bd_net [get_bd_pins dfx_controller_0/m_axi_mem_rready] [get_bd_pins microblaze_0_axi_periph/S01_AXI_rready]
+connect_bd_net [get_bd_pins dfx_controller_0/m_axi_mem_araddr] [get_bd_pins microblaze_0_axi_periph/S01_AXI_araddr]
+connect_bd_intf_net [get_bd_intf_pins dfx_controller_0/M_AXI_MEM] -boundary_type upper [get_bd_intf_pins microblaze_0_axi_periph/S01_AXI]

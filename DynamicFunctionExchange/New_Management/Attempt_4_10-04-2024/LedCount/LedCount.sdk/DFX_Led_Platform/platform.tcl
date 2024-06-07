@@ -68,3 +68,9 @@ platform generate -domains standalone_domain
 platform generate -domains standalone_domain 
 bsp reload
 bsp reload
+platform active {DFX_Led_Platform}
+bsp reload
+bsp reload
+bsp reload
+platform generate -domains 
+bsp reload

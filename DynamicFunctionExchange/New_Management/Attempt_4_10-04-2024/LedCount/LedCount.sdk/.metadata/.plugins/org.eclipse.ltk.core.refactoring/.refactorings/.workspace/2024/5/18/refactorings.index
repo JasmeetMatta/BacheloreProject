@@ -5,3 +5,4 @@
 1714562016717	Delete resource 'DFX_Led_Platform/microblaze_0/standalone_domain/bsp/microblaze_0/include/ff.h'
 1714562018604	Delete resource 'DFX_Led_Platform/microblaze_0/standalone_domain/bsp/microblaze_0/include/ffconf.h'
 1714574747382	Delete resource 'DFX_Led_Application/src/ffLocal.h'
+1714577244072	Delete resource 'DFX_Led_Application/src/ffconf.h'

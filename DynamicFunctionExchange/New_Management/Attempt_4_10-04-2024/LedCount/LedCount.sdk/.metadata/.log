@@ -16237,3 +16237,3072 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 
 !ENTRY com.xilinx.sdk.utils 0 0 2024-05-01 16:25:00.401
 !MESSAGE XSCT command with result: [bsp reload], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-01 17:27:29.182
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/sw/DFX_Led_Platform/standalone_domain/system.mss ], Thread: Worker-74: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-01 17:27:29.195
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/sw/DFX_Led_Platform/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-74: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-01 17:27:29.195
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/sw/DFX_Led_Platform/standalone_domain/system.mss], Thread: Worker-74: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-01 17:27:29.202
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/sw/DFX_Led_Platform/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.1",
+}]. Thread: Worker-74: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-05-01 17:27:29.202
+!MESSAGE Generating MD5 hash for file: C:\VProject\Attempt_4_10-04-2024\LedCount\LedCount.sdk\DFX_Led_Platform\export\DFX_Led_Platform\sw\DFX_Led_Platform\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-01 17:27:29.202
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/sw/DFX_Led_Platform/standalone_domain/system.mss], Thread: Worker-74: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-01 17:27:29.202
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/sw/DFX_Led_Platform/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-74: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-05-01 17:27:30.022
+!MESSAGE Build step failed, canceling full build chain.
+!SESSION 2024-05-08 12:49:06.210 -----------------------------------------------
+eclipse.buildId=2023.1
+java.version=11.0.16.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2024-05-08 12:49:39.879
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:02.070
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:02.071
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:02.084
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:02.086
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:02.087
+!MESSAGE XSCT Command: [setws C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk], Thread: Thread-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:02.092
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:13.270
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:13.271
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:13.284
+!MESSAGE XSCT command with result: [setws C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk], Result: [null, ]. Thread: Thread-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:13.285
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, D:/Xilinx/Vitis/2023.1/data]. Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:38.100
+!MESSAGE XSCT Command: [platform read {C:\VProject\Attempt_4_10-04-2024\LedCount\LedCount.sdk\DFX_Led_Platform\platform.spr}], Thread: Worker-0: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:38.180
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa], Thread: Worker-1: Initializing hardware specification UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:38.852
+!MESSAGE XSCT command with result: [platform read {C:\VProject\Attempt_4_10-04-2024\LedCount\LedCount.sdk\DFX_Led_Platform\platform.spr}], Result: [null, ]. Thread: Worker-0: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:38.852
+!MESSAGE XSCT Command: [platform active {DFX_Led_Platform}], Thread: Worker-0: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:38.868
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa], Result: [null, ]. Thread: Worker-1: Initializing hardware specification UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:38.868
+!MESSAGE XSCT command with result: [platform active {DFX_Led_Platform}], Result: [null, ]. Thread: Worker-0: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:39.743
+!MESSAGE XSCT Command: [::scw::get_hw_path], Thread: Worker-0: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:39.759
+!MESSAGE XSCT command with result: [::scw::get_hw_path], Result: [null, C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa]. Thread: Worker-0: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:39.759
+!MESSAGE XSCT Command: [::scw::regenerate_psinit C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa], Thread: Worker-0: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:39.759
+!MESSAGE XSCT command with result: [::scw::regenerate_psinit C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa], Result: [null, ]. Thread: Worker-0: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:39.774
+!MESSAGE XSCT Command: [::scw::get_mss_path], Thread: Worker-0: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:39.790
+!MESSAGE XSCT command with result: [::scw::get_mss_path], Result: [null, C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss]. Thread: Worker-0: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:39.790
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss ], Thread: Worker-0: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:39.805
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss ], Result: [null, ]. Thread: Worker-0: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:39.805
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss], Thread: Worker-0: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:39.930
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.1",
+}]. Thread: Worker-0: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-05-08 12:50:39.962
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-05-08 12:50:39.962
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-05-08 12:50:39.962
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:40.509
+!MESSAGE XSCT Command: [hsi::utils::get_supported_os -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:40.540
+!MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa], Result: [null, {"microblaze_0": {"freertos10_xilinx_v1_13": {"name": "freertos10_xilinx",
+"version": "1.13",
+"desc": "This Xilinx FreeRTOS port is based on FreeRTOS kernel version 10.5.1",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/ThirdParty/bsp/freertos10_xilinx_v1_13",
+},
+"standalone_v8_1": {"name": "standalone",
+"version": "8.1",
+"desc": "Standalone is a simple, low-level software layer. It provides access to basic processor features such as caches, interrupts and exceptions as well as the basic features of a hosted environment, such as standard input and output, profiling, abort and exit.",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/bsp/standalone_v8_1",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:40.571
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa microblaze_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:40.571
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa microblaze_0], Result: [null, Led_AXI_0 axi_gpio_0 axi_hwicap_0 axi_uartlite_0 microblaze_0_axi_intc microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:40.571
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:40.602
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss], Result: [null, {"Led_AXI_0": {"name": "Led_AXI",
+"ver": "1.0",
+},
+"axi_gpio_0": {"name": "gpio",
+"ver": "4.9",
+},
+"axi_uartlite_0": {"name": "uartlite",
+"ver": "3.8",
+},
+"microblaze_0_axi_intc": {"name": "intc",
+"ver": "3.16",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.8",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.8",
+},
+"axi_hwicap_0": {"name": "hwicap",
+"ver": "11.5",
+},
+"microblaze_0": {"name": "cpu",
+"ver": "2.17",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:40.602
+!MESSAGE XSCT Command: [hsi::utils::get_drivers_for_hw -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:40.665
+!MESSAGE XSCT command with result: [hsi::utils::get_drivers_for_hw -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa], Result: [null, {"Led_AXI_0": {"version": "1.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"Led_AXI_v1_0": {"name": "Led_AXI",
+"version": "1.0",
+"repo": "C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/drivers/Led_AXI_v1_0",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_gpio_0": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"gpio_v4_9": {"name": "gpio",
+"version": "4.9",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/gpio_v4_9",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_hwicap_0": {"version": "3.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"hwicap_v11_5": {"name": "hwicap",
+"version": "11.5",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/hwicap_v11_5",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_uartlite_0": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"uartlite_v3_8": {"name": "uartlite",
+"version": "3.8",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/uartlite_v3_8",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"clk_wiz_1": {"version": "6.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"clk_wiz_v1_5": {"name": "clk_wiz",
+"version": "1.5",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/clk_wiz_v1_5",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"mdm_1": {"version": "3.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"uartlite_v3_8": {"name": "uartlite",
+"version": "3.8",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/uartlite_v3_8",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0": {"version": "11.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"cpu_v2_17": {"name": "cpu",
+"version": "2.17",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/cpu_v2_17",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0_axi_intc": {"version": "4.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"intc_v3_16": {"name": "intc",
+"version": "3.16",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/intc_v3_16",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0_axi_periph": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"version": "4.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"bram_v4_8": {"name": "bram",
+"version": "4.8",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/bram_v4_8",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0_local_memory_dlmb_v10": {"version": "3.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"version": "4.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"bram_v4_8": {"name": "bram",
+"version": "4.8",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/bram_v4_8",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0_local_memory_ilmb_v10": {"version": "3.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"microblaze_0_local_memory_lmb_bram": {"version": "8.4",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"microblaze_0_xlconcat": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"rst_clk_wiz_1_100M": {"version": "5.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:40.884
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:40.899
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss], Result: [null, xilffs]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:40.899
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:40.899
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss], Result: [null, {"xilffs": "5.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:40.899
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "xilffs" && VERSION == "5.0"  && TYPE == "LIBRARY"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:40.899
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "xilffs" && VERSION == "5.0"  && TYPE == "LIBRARY"}]], Result: [null, D:/Xilinx/Vitis/2023.1/data/embeddedsw\lib\sw_services\xilffs_v5_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:40.930
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "xilffs" && VERSION == "5.0"  && TYPE == "LIBRARY"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:40.946
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "xilffs" && VERSION == "5.0"  && TYPE == "LIBRARY"}]], Result: [null, D:/Xilinx/Vitis/2023.1/data/embeddedsw\lib\sw_services\xilffs_v5_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:40.962
+!MESSAGE XSCT Command: [bsp reload], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:41.009
+!MESSAGE XSCT command with result: [bsp reload], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:41.712
+!MESSAGE XSCT Command: [::scw::get_hw_path], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:41.712
+!MESSAGE XSCT command with result: [::scw::get_hw_path], Result: [null, C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:41.712
+!MESSAGE XSCT Command: [::scw::regenerate_psinit C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:41.712
+!MESSAGE XSCT command with result: [::scw::regenerate_psinit C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:41.712
+!MESSAGE XSCT Command: [::scw::get_mss_path], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:41.743
+!MESSAGE XSCT command with result: [::scw::get_mss_path], Result: [null, C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:41.743
+!MESSAGE XSCT Command: [::scw::get_target], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:41.743
+!MESSAGE XSCT command with result: [::scw::get_target], Result: [null, microblaze_0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:41.743
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:41.743
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:41.743
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:41.759
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:41.759
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:41.774
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:41.821
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:41.852
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss], Result: [null, {"microblaze_0": {"archiver": {"category": "",
+"value": "mb-ar",
+"default": "mb-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"assembler": {"category": "",
+"value": "mb-as",
+"default": "mb-as",
+"type": "string",
+"desc": "Assembler used to assemble both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "mb-gcc",
+"default": "mb-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-O2 -c",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail because there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"dependency_flags": {"category": "",
+"value": "-MMD -MP",
+"default": "-MMD -MP",
+"type": "string",
+"desc": "Flags used by compiler to generate dependency files",
+"permit": "",
+"options": {},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns",
+"default": "-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"xmdstub_peripheral": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Debug peripheral to be used with xmdstub",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"standalone": {"clocking": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable clocking support",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"enable_minimal_xlat_tbl": {"category": "",
+"value": "true",
+"default": "true",
+"type": "bool",
+"desc": "Configures translation table only for initial 4 TB address space. Translation table size will be reduced by ~1 MB. It is applicable only for CortexA78 BSP. Enable it by deafult to fit executable in OCM memory. It needs to be disabled if you want access peripheral/Memory mapped beyond 4 TB.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"hypervisor_guest": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable hypervisor guest support for A53 64bit EL1 Non-Secure. If hypervisor_guest is not selected, BSP will be built for EL3.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"lockstep_mode_debug": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable debug logic in non-JTAG boot mode, when Cortex R5 is configured in lockstep mode",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"pmu_sleep_timer": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Use PMU counters for sleep functionality applicable only for CortexR5 processor",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "",
+},
+"sleep_timer": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "This parameter is used to select specific timer for sleep functionality",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"stdin": {"category": "",
+"value": "axi_uartlite_0",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "axi_uartlite_0",
+},
+"stdout": {"category": "",
+"value": "axi_uartlite_0",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "axi_uartlite_0",
+},
+"ttc_select_cntr": {"category": "",
+"value": "2",
+"default": "2",
+"type": "enum",
+"desc": "Selects the counter to be used in the respective module. Allowed range is 0-2",
+"permit": "user",
+"options": {"0": "0",
+"1": "1",
+"2": "2",
+},
+"range": "",
+},
+"xil_interrupt": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable xilinx interrupt wrapper API support",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"zynqmp_fsbl_bsp": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Disable or Enable Optimization for FSBL's BSP. ZynqMP FSBL will set this to true",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"xilffs": {"enable_exfat": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "0:Disable exFAT, 1:Enable exFAT(Also Enables LFN)",
+"permit": "",
+"options": {},
+"range": "",
+},
+"enable_multi_partition": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "0:Single partition, 1:Enable multiple partition",
+"permit": "",
+"options": {},
+"range": "",
+},
+"fs_interface": {"category": "",
+"value": "1",
+"default": "1",
+"type": "int",
+"desc": "Enables file system with selected interface. Enter 1 for SD. Enter 2 for RAM",
+"permit": "",
+"options": {},
+"range": "",
+},
+"num_logical_vol": {"category": "",
+"value": "2",
+"default": "2",
+"type": "int",
+"desc": "Number of volumes (logical drives, from 1 to 10) to be used.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"ramfs_size": {"category": "ramfs_options",
+"value": "3145728",
+"default": "3145728",
+"type": "int",
+"desc": "RAM FS size",
+"permit": "",
+"options": {},
+"range": "",
+},
+"ramfs_start_addr": {"category": "ramfs_options",
+"value": "",
+"default": "",
+"type": "int",
+"desc": "RAM FS start address",
+"permit": "",
+"options": {},
+"range": "",
+},
+"read_only": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enables the file system in Read_Only mode if true. ZynqMP fsbl will set this to true",
+"permit": "",
+"options": {},
+"range": "",
+},
+"set_fs_rpath": {"category": "",
+"value": "0",
+"default": "0",
+"type": "int",
+"desc": "Configures relative path feature (valid values 0 to 2).",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_chmod": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enables use of CHMOD functionality for changing attributes (valid only with read_only set to false)",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_lfn": {"category": "",
+"value": "0",
+"default": "0",
+"type": "int",
+"desc": "Enables the Long File Name(LFN) support if non-zero. Disabled by default: 0, LFN with static working buffer: 1, Dynamic working buffer: 2 (on stack) or 3 (on heap)",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_mkfs": {"category": "",
+"value": "true",
+"default": "true",
+"type": "bool",
+"desc": "Disable(0) or Enable(1) f_mkfs function. ZynqMP fsbl will set this to false",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_strfunc": {"category": "",
+"value": "0",
+"default": "0",
+"type": "int",
+"desc": "Enables the string functions (valid values 0 to 2).",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_trim": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Disable(0) or Enable(1) TRIM function. ZynqMP fsbl will set this to false",
+"permit": "",
+"options": {},
+"range": "",
+},
+"word_access": {"category": "",
+"value": "true",
+"default": "true",
+"type": "bool",
+"desc": "Enables word access for misaligned memory access platform",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:41.915
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:41.915
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa], Result: [null, {"Led_AXI_0": {"hier_name": "Led_AXI_0",
+"type": "Led_AXI",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_gpio_0": {"hier_name": "axi_gpio_0",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_hwicap_0": {"hier_name": "axi_hwicap_0",
+"type": "axi_hwicap",
+"version": "3.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_uartlite_0": {"hier_name": "axi_uartlite_0",
+"type": "axi_uartlite",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"clk_wiz_1": {"hier_name": "clk_wiz_1",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"mdm_1": {"hier_name": "mdm_1",
+"type": "mdm",
+"version": "3.2",
+"ip_type": "DEBUG",
+},
+"microblaze_0": {"hier_name": "microblaze_0",
+"type": "microblaze",
+"version": "11.0",
+"ip_type": "PROCESSOR",
+},
+"microblaze_0_axi_intc": {"hier_name": "microblaze_0_axi_intc",
+"type": "axi_intc",
+"version": "4.1",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"microblaze_0_axi_periph": {"hier_name": "microblaze_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_dlmb_v10": {"hier_name": "microblaze_0_local_memory_dlmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_ilmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_ilmb_v10": {"hier_name": "microblaze_0_local_memory_ilmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_lmb_bram": {"hier_name": "microblaze_0_local_memory_lmb_bram",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"microblaze_0_xlconcat": {"hier_name": "microblaze_0_xlconcat",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"rst_clk_wiz_1_100M": {"hier_name": "rst_clk_wiz_1_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:41.930
+!MESSAGE XSCT Command: [hsi::utils::get_all_libs -json], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:41.946
+!MESSAGE XSCT command with result: [hsi::utils::get_all_libs -json], Result: [null, {"libmetal_v2_5": {"name": "libmetal",
+"version": "2.5",
+"desc": "Libmetal Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lmetal,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/ThirdParty/sw_services/libmetal_v2_5",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psx_cortexr52 psu_pmu microblaze psu_cortexa72 psv_cortexa72 psx_cortexa78 psv_psm psv_pmc psx_psm psx_pmc",
+},
+"lwip213_v1_0": {"name": "lwip213",
+"version": "1.0",
+"desc": "lwip213 library: lwIP (light weight IP) is an open source TCP/IP stack configured for Xilinx hard and soft Ethernet MACs",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/ThirdParty/sw_services/lwip213_v1_0",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psx_cortexr52 psu_pmu microblaze psu_cortexa72 psv_cortexa72 psx_cortexa78 psv_psm psv_pmc psx_psm psx_pmc",
+},
+"openamp_v1_8": {"name": "openamp",
+"version": "1.8",
+"desc": "OpenAmp Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lmetal,-lopen_amp,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/ThirdParty/sw_services/openamp_v1_8",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexr5 psv_cortexr5 psx_cortexr52",
+},
+"xilcert_v1_0": {"name": "xilcert",
+"version": "1.0",
+"desc": "Xilinx X.509 certificate generation library. Supported only for Versal Net",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilcert,-lxilplmi,-lxilsecure,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_services/xilcert_v1_0",
+"os": "standalone",
+"proc": "psv_pmc psx_pmc",
+},
+"xilffs_v5_0": {"name": "xilffs",
+"version": "5.0",
+"desc": "Generic Fat File System Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_services/xilffs_v5_0",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psx_cortexr52 psu_pmu microblaze psu_cortexa72 psv_cortexa72 psx_cortexa78 psv_psm psv_pmc psx_psm psx_pmc",
+},
+"xilflash_v4_9": {"name": "xilflash",
+"version": "4.9",
+"desc": "Xilinx Flash library for Intel/AMD CFI compliant parallel flash",
+"compilerflags": "",
+"linkerflags": "-lxilflash",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_services/xilflash_v4_9",
+"os": "standalone xilkernel freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psx_cortexr52 psu_pmu microblaze psu_cortexa72 psv_cortexa72 psx_cortexa78 psv_psm psv_pmc psx_psm psx_pmc",
+},
+"xilfpga_v6_4": {"name": "xilfpga",
+"version": "6.4",
+"desc": "XilFPGA library provides an interface to the Linux or bare-metal users for configuring the PL over PCAP from PS",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilfpga,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_services/xilfpga_v6_4",
+"os": "standalone freertos10_xilinx",
+"proc": "psv_cortexa72 psx_cortexa78 psv_cortexr5 psu_cortexa53 psu_cortexr5 psx_cortexr52 psu_pmu",
+},
+"xilloader_v1_8": {"name": "xilloader",
+"version": "1.8",
+"desc": "Xilinx Versal Platform Loader Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilloader,-lxilpm,-lxilplmi,-lxilffs,-lxilpdi,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_services/xilloader_v1_8",
+"os": "standalone",
+"proc": "psv_pmc psv_psm psx_pmc psx_psm",
+},
+"xilmailbox_v1_7": {"name": "xilmailbox",
+"version": "1.7",
+"desc": "Xilinx IPI Mailbox Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilmailbox,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_services/xilmailbox_v1_7",
+"os": "standalone freertos10_xilinx",
+"proc": "psv_cortexa72 psx_cortexa78 psv_cortexr5 psu_cortexa72 psu_cortexa53 psu_cortexr5 psx_cortexr52 psu_pmu psv_pmc psx_pmc microblaze",
+},
+"xilnvm_v3_1": {"name": "xilnvm",
+"version": "3.1",
+"desc": "Xilinx NVM Library provides interface to accessing eFUSE and BBRAM of Versal",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilnvm,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_services/xilnvm_v3_1",
+"os": "standalone freertos10_xilinx",
+"proc": "psu_cortexa72 psv_pmc psv_cortexa72 psv_cortexr5 microblaze psx_pmc psx_cortexa78 psx_cortexr52",
+},
+"xilocp_v1_1": {"name": "xilocp",
+"version": "1.1",
+"desc": "Xilinx Open Compute Platform(OCP) support Library. Supported only for Versal Net",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilocp,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_services/xilocp_v1_1",
+"os": "standalone freertos10_xilinx",
+"proc": "psv_pmc psx_pmc psx_cortexa78 psx_cortexr52",
+},
+"xilpdi_v1_7": {"name": "xilpdi",
+"version": "1.7",
+"desc": "Xilinx Programmable Device Image (PDI) Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilpdi,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_services/xilpdi_v1_7",
+"os": "standalone",
+"proc": "psv_cortexa72 psv_cortexr5 psu_cortexa72 psu_cortexr5 psv_pmc psx_pmc psx_cortexa78 psx_cortexr52",
+},
+"xilpki_v1_0": {"name": "xilpki",
+"version": "1.0",
+"desc": "XilPKI library provides an interface to the PKI engine to perform the secure operations",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilpki,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_services/xilpki_v1_0",
+"os": "standalone",
+"proc": "psx_cortexa78",
+},
+"xilplmi_v1_8": {"name": "xilplmi",
+"version": "1.8",
+"desc": "Xilinx Versal Platform Loader and Manager Interface Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilplmi,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_services/xilplmi_v1_8",
+"os": "standalone",
+"proc": "psv_pmc psx_pmc",
+},
+"xilpm_v5_0": {"name": "xilpm",
+"version": "5.0",
+"desc": "Platform Management API Library for ZynqMP and Versal",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilpm,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_services/xilpm_v5_0",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psx_cortexr52 psu_pmu microblaze psu_cortexa72 psv_cortexa72 psx_cortexa78 psv_psm psv_pmc psx_psm psx_pmc",
+},
+"xilpuf_v2_1": {"name": "xilpuf",
+"version": "2.1",
+"desc": "Xilinx PUF Library provides interface for registration and regeneration",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilpuf,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_services/xilpuf_v2_1",
+"os": "standalone freertos10_xilinx",
+"proc": "psv_pmc psv_cortexa72 psv_cortexr5 microblaze psx_cortexa78 psx_cortexr52",
+},
+"xilrsa_v1_6": {"name": "xilrsa",
+"version": "1.6",
+"desc": "Xilinx RSA Library to access RSA and SHA software algorithms on Zynq",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_services/xilrsa_v1_6",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9",
+},
+"xilsecure_v5_1": {"name": "xilsecure",
+"version": "5.1",
+"desc": "Xilinx Secure Library provides interface to AES, RSA and SHA hardware engines on ZynqMP Soc and Versal",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilsecure,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_services/xilsecure_v5_1",
+"os": "standalone freertos10_xilinx",
+"proc": "psu_cortexa53 psu_cortexr5 psu_pmu psu_cortexa72 psv_pmc psv_cortexa72 psv_cortexr5 microblaze psx_pmc psx_cortexa78 psx_cortexr52",
+},
+"xilsem_v1_7": {"name": "xilsem",
+"version": "1.7",
+"desc": "Xilinx Versal Soft Error Mitigation Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilsem,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_services/xilsem_v1_7",
+"os": "standalone",
+"proc": "psv_pmc psx_pmc psv_cortexr5 psx_cortexr52 psu_cortexa72 psv_cortexa72 microblaze",
+},
+"xilskey_v7_4": {"name": "xilskey",
+"version": "7.4",
+"desc": "Xilinx Secure Key Library supports programming efuse and bbram",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilskey,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_services/xilskey_v7_4",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_pmu psu_cortexa53 psu_cortexr5 microblaze",
+},
+"xiltimer_v1_2": {"name": "xiltimer",
+"version": "1.2",
+"desc": "Xiltimer library provides generic timer interface for the timer IP's",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxiltimer,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_services/xiltimer_v1_2",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psx_cortexr52 psu_pmu microblaze psu_cortexa72 psv_cortexa72 psx_cortexa78 psv_psm psv_pmc psx_psm psx_pmc",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:41.946
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:41.946
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss], Result: [null, xilffs]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:41.946
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:41.962
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss], Result: [null, {"xilffs": "5.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:42.024
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:42.024
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss], Result: [null, {"Led_AXI_0": {"name": "Led_AXI",
+"ver": "1.0",
+},
+"axi_gpio_0": {"name": "gpio",
+"ver": "4.9",
+},
+"axi_uartlite_0": {"name": "uartlite",
+"ver": "3.8",
+},
+"microblaze_0_axi_intc": {"name": "intc",
+"ver": "3.16",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.8",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.8",
+},
+"axi_hwicap_0": {"name": "hwicap",
+"ver": "11.5",
+},
+"microblaze_0": {"name": "cpu",
+"ver": "2.17",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:42.040
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa microblaze_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:42.040
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa microblaze_0], Result: [null, Led_AXI_0 axi_gpio_0 axi_hwicap_0 axi_uartlite_0 microblaze_0_axi_intc microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:47.024
+!MESSAGE XSCT Command: [bsp reload], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:50:47.055
+!MESSAGE XSCT command with result: [bsp reload], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:52:41.533
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:52:41.533
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa], Result: [null, {"Led_AXI_0": {"hier_name": "Led_AXI_0",
+"type": "Led_AXI",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_gpio_0": {"hier_name": "axi_gpio_0",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_hwicap_0": {"hier_name": "axi_hwicap_0",
+"type": "axi_hwicap",
+"version": "3.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_uartlite_0": {"hier_name": "axi_uartlite_0",
+"type": "axi_uartlite",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"clk_wiz_1": {"hier_name": "clk_wiz_1",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"mdm_1": {"hier_name": "mdm_1",
+"type": "mdm",
+"version": "3.2",
+"ip_type": "DEBUG",
+},
+"microblaze_0": {"hier_name": "microblaze_0",
+"type": "microblaze",
+"version": "11.0",
+"ip_type": "PROCESSOR",
+},
+"microblaze_0_axi_intc": {"hier_name": "microblaze_0_axi_intc",
+"type": "axi_intc",
+"version": "4.1",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"microblaze_0_axi_periph": {"hier_name": "microblaze_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_dlmb_v10": {"hier_name": "microblaze_0_local_memory_dlmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_ilmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_ilmb_v10": {"hier_name": "microblaze_0_local_memory_ilmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_lmb_bram": {"hier_name": "microblaze_0_local_memory_lmb_bram",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"microblaze_0_xlconcat": {"hier_name": "microblaze_0_xlconcat",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"rst_clk_wiz_1_100M": {"hier_name": "rst_clk_wiz_1_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:52:41.533
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa microblaze_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:52:41.580
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa microblaze_0], Result: [null, {"Led_AXI_0": {},
+"axi_gpio_0": {"GPIO_DATA": {"description": "Channel-1 AXI GPIO Data register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "16",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "16",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073741824,
+},
+"GPIO_TRI": {"description": "Channel-1 AXI GPIO 3-State Control register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "16",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "16",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073741828,
+},
+"GPIO2_DATA": {"description": "Channel-2 AXI GPIO Data register",
+"address_offset": "0x8",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073741832,
+},
+"GPIO2_TRI": {"description": "Channel-2 AXI GPIO 3-State Control register",
+"address_offset": "0xC",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073741836,
+},
+"GIER": {"description": "Global_Interrupt_Enable register",
+"address_offset": "0x11C",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Global_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "31",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master enable for the device interrupt output
+  0 - Disabled
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073742108,
+},
+"IP_IER": {"description": "IP Interrupt Enable register",
+"address_offset": "0x128",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 1 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 2 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073742120,
+},
+"IP_ISR": {"description": "IP Interrupt Status register",
+"address_offset": "0x120",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Status": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 1 Interrupt Status
+  0 - No Channel 1 input interrupt
+  1 - Channel 1 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Status": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 2 Interrupt Status
+  0 - No Channel 2 input interrupt
+  1 - Channel 2 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073742112,
+},
+},
+"axi_hwicap_0": {},
+"axi_uartlite_0": {"RX_FIFO": {"description": "Receive data FIFO",
+"address_offset": "0x0",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"RX_DATA": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "UART Receive Data
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1080033280,
+},
+"TX_FIFO": {"description": "Transmit data FIFO",
+"address_offset": "0x4",
+"access": "write-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TX_DATA": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "UART Transmit Data
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1080033284,
+},
+"CTRL_REG": {"description": "UART Lite control register",
+"address_offset": "0xC",
+"access": "write-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"RST_TXFIFO": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Reset/clear the transmit FIFO
+Writing a 1 to this bit position clears the transmit FIFO
+  0 - Do nothing
+  1 - Clear the transmit FIFO
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RST_RXFIFO": {"access": "write-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Reset/clear the receive FIFO
+Writing a 1 to this bit position clears the receive FIFO
+  0 - Do nothing
+  1 - Clear the receive FIFO
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Enable_Intr": {"access": "write-only",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable interrupt for the AXI UART Lite
+  0 - Disable interrupt signal
+  1 - Enable interrupt signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1080033292,
+},
+"STAT_REG": {"description": "UART Lite status register",
+"address_offset": "0x8",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"RX_FIFO_Valid_Data": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the receive FIFO has data.
+  0 - Receive FIFO is empty
+  1 - Receive FIFO has data
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RX_FIFO_Full": {"access": "read-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the receive FIFO is full.
+  0 - Receive FIFO is not full
+  1 - Receive FIFO is full
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Empty": {"access": "read-only",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the transmit FIFO is empty.
+  0 - Transmit FIFO is not empty
+  1 - Transmit FIFO is empty
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Full": {"access": "read-only",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the transmit FIFO is full.
+  0 - Transmit FIFO is not full
+  1 - Transmit FIFO is full
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Intr_Enabled": {"access": "read-only",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that interrupts is enabled.
+  0 - Interrupt is disabled
+  1 - Interrupt is enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Overrun_Error": {"access": "read-only",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that a overrun error has occurred after the last time the status register was read. Overrun is when a new character has been received but the receive FIFO is full. The received character is ignored and not written into the receive FIFO. This bit is cleared when the status register is read.      0 - No overrun error has occurred      1 - Overrun error has occurred
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Frame_Error": {"access": "read-only",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that a frame error has occurred after the last time the status register was read. Frame error is defined as detection of a stop bit with the value 0. The receive character is ignored and not written to the receive FIFO. This bit is cleared when the status register is read.      0 - No frame error has occurred   1 - Frame error has occurred
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Parity_Error": {"access": "read-only",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that a parity error has occurred after the last time the status register was read. If the UART is configured without any parity handling, this bit is always 0. The received character is written into the receive FIFO. This bit is cleared when the status register is read.      0 - No parity error has occurred      1 - Parity error has occurred
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1080033288,
+},
+},
+"microblaze_0_axi_intc": {"ISR": {"description": "Interrupt Status Register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "2",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "2",
+"desc": "Interrupt Status Register.
+For each bit up to number of periperhal interrupts:
+  R - Reads active interrupt signal.
+  W - No effect after MER HIE bit has been set, otherwise writes active interrupt signal.
+For remaining bits defined by number of software interrupts:
+  R - Reads software interrupt value.
+  W - Writes software interrupt value.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616192,
+},
+"IPR": {"description": "Interrupt Pending Register",
+"address_offset": "0x4",
+"access": "read-only",
+"size": "2",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "2",
+"desc": "Interrupt Pending Register.
+For each bit:
+  R - Reads logical AND of bits in ISR and IER.
+  W - No effect.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616196,
+},
+"IER": {"description": "Interrupt Enable Register",
+"address_offset": "0x8",
+"access": "read-write",
+"size": "2",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "2",
+"desc": "Interrupt Enable Register.
+For each bit:
+  R - Reads interrupt enable value.
+  W - Writes interrupt enable value.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616200,
+},
+"IAR": {"description": "Interrupt Acknowledge Register",
+"address_offset": "0xC",
+"access": "write-only",
+"size": "2",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "2",
+"desc": "Interrupt Acknowledge Register.
+For each bit:
+  W - Acknowledge interrupt.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616204,
+},
+"SIE": {"description": "Set Interrupt Enables",
+"address_offset": "0x10",
+"access": "read-write",
+"size": "2",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "2",
+"desc": "Set Interrupt Enables
+For each bit:
+  R - Reads active interrupt.
+  W - Writing 1 enables the interrupt, writing 0 has no effect.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616208,
+},
+"CIE": {"description": "Clear Interrupt Enables",
+"address_offset": "0x14",
+"access": "read-write",
+"size": "2",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "2",
+"desc": "Clear Interrupt Enables
+For each bit:
+  R - Reads active interrupt.
+  W - Writing 1 disables the interrupt, writing 0 has no effect.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616212,
+},
+"IVR": {"description": "Interrupt Vector Register",
+"address_offset": "0x18",
+"access": "read-only",
+"size": "5",
+"interface": "S_AXI",
+"fields": {"IVN": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "5",
+"desc": "Interrupt Vector Number.
+  R - Reads ordinal of highest priority, enabled, active interrupt.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616216,
+},
+"MER": {"description": "Master Enable Register",
+"address_offset": "0x1C",
+"access": "read-write",
+"size": "2",
+"interface": "S_AXI",
+"fields": {"ME": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master IRQ Enable.
+  0 - All interrupts disabled.
+  1 - All interrupts can be enabled.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"HIE": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Hardware Interrupt Enable.
+  0 - HW interrupts disabled.
+  1 - HW interrupts enabled.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616220,
+},
+"IMR": {"description": "Interrupt Mode Register",
+"address_offset": "0x20",
+"access": "read-write",
+"size": "2",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "2",
+"desc": "Interrupt Mode Register.
+For each bit:
+  R - Reads interrupt mode.
+  W - Sets interrupt mode, where 0 is normal mode and 1 is fast mode.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616224,
+},
+"IVAR[0]": {"description": "Interrupt Vector Address Register 0",
+"address_offset": "0x100",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"IVA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Interrupt vector address of active interrupt 0 with highest priority.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616448,
+},
+"IVAR[1]": {"description": "Interrupt Vector Address Register 1",
+"address_offset": "0x104",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"IVA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Interrupt vector address of active interrupt 1 with highest priority.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616452,
+},
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:52:41.580
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:52:41.611
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa], Result: [null, {"device": "7a100t",
+"family": "artix7",
+"timestamp": "Sat Apr 20 23:32:12 2024",
+"vivado_version": "2023.1",
+"part": "xc7a100tcsg324-1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:52:41.627
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa microblaze_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:52:41.674
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa microblaze_0], Result: [null, {"axi_gpio_0_S_AXI": {"name": "axi_gpio_0",
+"base": "0x40000000",
+"high": "0x4000FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_hwicap_0_S_AXI_LITE": {"name": "axi_hwicap_0",
+"base": "0x40200000",
+"high": "0x4020FFFF",
+"size": "65536",
+"slaveintf": "S_AXI_LITE",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_uartlite_0_S_AXI": {"name": "axi_uartlite_0",
+"base": "0x40600000",
+"high": "0x4060FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"microblaze_0_axi_intc_s_axi": {"name": "microblaze_0_axi_intc",
+"base": "0x41200000",
+"high": "0x4120FFFF",
+"size": "65536",
+"slaveintf": "s_axi",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"Led_AXI_0_S_AXI": {"name": "Led_AXI_0",
+"base": "0x44A00000",
+"high": "0x44A0FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr_SLMB_Mem": {"name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"base": "0x00000000",
+"high": "0x0001FFFF",
+"size": "131072",
+"slaveintf": "SLMB",
+"type": "MEMORY",
+"flags": "7",
+"segment": "Mem",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:52:41.736
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa mdm_1], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:52:41.736
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa mdm_1], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:52:50.049
+!MESSAGE XSCT Command: [::scw::get_hw_path], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:52:50.049
+!MESSAGE XSCT command with result: [::scw::get_hw_path], Result: [null, C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:52:50.049
+!MESSAGE XSCT Command: [::scw::regenerate_psinit C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:52:50.049
+!MESSAGE XSCT command with result: [::scw::regenerate_psinit C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:52:50.049
+!MESSAGE XSCT Command: [::scw::get_mss_path], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:52:50.080
+!MESSAGE XSCT command with result: [::scw::get_mss_path], Result: [null, C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:52:50.080
+!MESSAGE XSCT Command: [::scw::get_target], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:52:50.080
+!MESSAGE XSCT command with result: [::scw::get_target], Result: [null, microblaze_0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:52:50.096
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:52:50.096
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:52:50.096
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:52:50.111
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:52:50.111
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:52:50.111
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:52:50.142
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:52:50.158
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss], Result: [null, {"microblaze_0": {"archiver": {"category": "",
+"value": "mb-ar",
+"default": "mb-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"assembler": {"category": "",
+"value": "mb-as",
+"default": "mb-as",
+"type": "string",
+"desc": "Assembler used to assemble both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "mb-gcc",
+"default": "mb-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-O2 -c",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail because there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"dependency_flags": {"category": "",
+"value": "-MMD -MP",
+"default": "-MMD -MP",
+"type": "string",
+"desc": "Flags used by compiler to generate dependency files",
+"permit": "",
+"options": {},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns",
+"default": "-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"xmdstub_peripheral": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Debug peripheral to be used with xmdstub",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"standalone": {"clocking": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable clocking support",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"enable_minimal_xlat_tbl": {"category": "",
+"value": "true",
+"default": "true",
+"type": "bool",
+"desc": "Configures translation table only for initial 4 TB address space. Translation table size will be reduced by ~1 MB. It is applicable only for CortexA78 BSP. Enable it by deafult to fit executable in OCM memory. It needs to be disabled if you want access peripheral/Memory mapped beyond 4 TB.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"hypervisor_guest": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable hypervisor guest support for A53 64bit EL1 Non-Secure. If hypervisor_guest is not selected, BSP will be built for EL3.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"lockstep_mode_debug": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable debug logic in non-JTAG boot mode, when Cortex R5 is configured in lockstep mode",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"pmu_sleep_timer": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Use PMU counters for sleep functionality applicable only for CortexR5 processor",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "",
+},
+"sleep_timer": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "This parameter is used to select specific timer for sleep functionality",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"stdin": {"category": "",
+"value": "axi_uartlite_0",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "axi_uartlite_0",
+},
+"stdout": {"category": "",
+"value": "axi_uartlite_0",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "axi_uartlite_0",
+},
+"ttc_select_cntr": {"category": "",
+"value": "2",
+"default": "2",
+"type": "enum",
+"desc": "Selects the counter to be used in the respective module. Allowed range is 0-2",
+"permit": "user",
+"options": {"0": "0",
+"1": "1",
+"2": "2",
+},
+"range": "",
+},
+"xil_interrupt": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable xilinx interrupt wrapper API support",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"zynqmp_fsbl_bsp": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Disable or Enable Optimization for FSBL's BSP. ZynqMP FSBL will set this to true",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"xilffs": {"enable_exfat": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "0:Disable exFAT, 1:Enable exFAT(Also Enables LFN)",
+"permit": "",
+"options": {},
+"range": "",
+},
+"enable_multi_partition": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "0:Single partition, 1:Enable multiple partition",
+"permit": "",
+"options": {},
+"range": "",
+},
+"fs_interface": {"category": "",
+"value": "1",
+"default": "1",
+"type": "int",
+"desc": "Enables file system with selected interface. Enter 1 for SD. Enter 2 for RAM",
+"permit": "",
+"options": {},
+"range": "",
+},
+"num_logical_vol": {"category": "",
+"value": "2",
+"default": "2",
+"type": "int",
+"desc": "Number of volumes (logical drives, from 1 to 10) to be used.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"ramfs_size": {"category": "ramfs_options",
+"value": "3145728",
+"default": "3145728",
+"type": "int",
+"desc": "RAM FS size",
+"permit": "",
+"options": {},
+"range": "",
+},
+"ramfs_start_addr": {"category": "ramfs_options",
+"value": "",
+"default": "",
+"type": "int",
+"desc": "RAM FS start address",
+"permit": "",
+"options": {},
+"range": "",
+},
+"read_only": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enables the file system in Read_Only mode if true. ZynqMP fsbl will set this to true",
+"permit": "",
+"options": {},
+"range": "",
+},
+"set_fs_rpath": {"category": "",
+"value": "0",
+"default": "0",
+"type": "int",
+"desc": "Configures relative path feature (valid values 0 to 2).",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_chmod": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enables use of CHMOD functionality for changing attributes (valid only with read_only set to false)",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_lfn": {"category": "",
+"value": "0",
+"default": "0",
+"type": "int",
+"desc": "Enables the Long File Name(LFN) support if non-zero. Disabled by default: 0, LFN with static working buffer: 1, Dynamic working buffer: 2 (on stack) or 3 (on heap)",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_mkfs": {"category": "",
+"value": "true",
+"default": "true",
+"type": "bool",
+"desc": "Disable(0) or Enable(1) f_mkfs function. ZynqMP fsbl will set this to false",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_strfunc": {"category": "",
+"value": "0",
+"default": "0",
+"type": "int",
+"desc": "Enables the string functions (valid values 0 to 2).",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_trim": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Disable(0) or Enable(1) TRIM function. ZynqMP fsbl will set this to false",
+"permit": "",
+"options": {},
+"range": "",
+},
+"word_access": {"category": "",
+"value": "true",
+"default": "true",
+"type": "bool",
+"desc": "Enables word access for misaligned memory access platform",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:52:50.221
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:52:50.221
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa], Result: [null, {"Led_AXI_0": {"hier_name": "Led_AXI_0",
+"type": "Led_AXI",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_gpio_0": {"hier_name": "axi_gpio_0",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_hwicap_0": {"hier_name": "axi_hwicap_0",
+"type": "axi_hwicap",
+"version": "3.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_uartlite_0": {"hier_name": "axi_uartlite_0",
+"type": "axi_uartlite",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"clk_wiz_1": {"hier_name": "clk_wiz_1",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"mdm_1": {"hier_name": "mdm_1",
+"type": "mdm",
+"version": "3.2",
+"ip_type": "DEBUG",
+},
+"microblaze_0": {"hier_name": "microblaze_0",
+"type": "microblaze",
+"version": "11.0",
+"ip_type": "PROCESSOR",
+},
+"microblaze_0_axi_intc": {"hier_name": "microblaze_0_axi_intc",
+"type": "axi_intc",
+"version": "4.1",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"microblaze_0_axi_periph": {"hier_name": "microblaze_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_dlmb_v10": {"hier_name": "microblaze_0_local_memory_dlmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_ilmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_ilmb_v10": {"hier_name": "microblaze_0_local_memory_ilmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_lmb_bram": {"hier_name": "microblaze_0_local_memory_lmb_bram",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"microblaze_0_xlconcat": {"hier_name": "microblaze_0_xlconcat",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"rst_clk_wiz_1_100M": {"hier_name": "rst_clk_wiz_1_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:52:50.221
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:52:50.221
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss], Result: [null, xilffs]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:52:50.236
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:52:50.236
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss], Result: [null, {"xilffs": "5.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:52:50.299
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:52:50.299
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss], Result: [null, {"Led_AXI_0": {"name": "Led_AXI",
+"ver": "1.0",
+},
+"axi_gpio_0": {"name": "gpio",
+"ver": "4.9",
+},
+"axi_uartlite_0": {"name": "uartlite",
+"ver": "3.8",
+},
+"microblaze_0_axi_intc": {"name": "intc",
+"ver": "3.16",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.8",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.8",
+},
+"axi_hwicap_0": {"name": "hwicap",
+"ver": "11.5",
+},
+"microblaze_0": {"name": "cpu",
+"ver": "2.17",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:52:50.314
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa microblaze_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:52:50.314
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa microblaze_0], Result: [null, Led_AXI_0 axi_gpio_0 axi_hwicap_0 axi_uartlite_0 microblaze_0_axi_intc microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:53:07.127
+!MESSAGE XSCT Command: [bsp reload], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:53:07.159
+!MESSAGE XSCT command with result: [bsp reload], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:54:10.569
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/hw/design_1_wrapper.xsa], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:54:10.741
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/hw/design_1_wrapper.xsa], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:54:10.741
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/sw/DFX_Led_Platform/standalone_domain/system.mss ], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:54:10.757
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/sw/DFX_Led_Platform/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:54:10.757
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/sw/DFX_Led_Platform/standalone_domain/system.mss], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:54:10.757
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/sw/DFX_Led_Platform/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.1",
+}]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-05-08 12:54:10.757
+!MESSAGE Generating MD5 hash for file: C:\VProject\Attempt_4_10-04-2024\LedCount\LedCount.sdk\DFX_Led_Platform\export\DFX_Led_Platform\sw\DFX_Led_Platform\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:54:10.772
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/sw/DFX_Led_Platform/standalone_domain/system.mss], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:54:10.772
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/export/DFX_Led_Platform/sw/DFX_Led_Platform/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-05-08 12:54:12.241
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:54:38.961
+!MESSAGE XSCT Command: [::scw::get_hw_path], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:54:38.961
+!MESSAGE XSCT command with result: [::scw::get_hw_path], Result: [null, C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:54:38.961
+!MESSAGE XSCT Command: [::scw::regenerate_psinit C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:54:38.961
+!MESSAGE XSCT command with result: [::scw::regenerate_psinit C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:54:38.961
+!MESSAGE XSCT Command: [::scw::get_mss_path], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:54:38.976
+!MESSAGE XSCT command with result: [::scw::get_mss_path], Result: [null, C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:54:38.976
+!MESSAGE XSCT Command: [::scw::get_target], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:54:38.976
+!MESSAGE XSCT command with result: [::scw::get_target], Result: [null, microblaze_0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:54:38.976
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:54:38.976
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:54:38.976
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:54:38.976
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:54:39.007
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:54:39.007
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:54:39.039
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:54:39.054
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss], Result: [null, {"microblaze_0": {"archiver": {"category": "",
+"value": "mb-ar",
+"default": "mb-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"assembler": {"category": "",
+"value": "mb-as",
+"default": "mb-as",
+"type": "string",
+"desc": "Assembler used to assemble both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "mb-gcc",
+"default": "mb-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-O2 -c",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail because there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"dependency_flags": {"category": "",
+"value": "-MMD -MP",
+"default": "-MMD -MP",
+"type": "string",
+"desc": "Flags used by compiler to generate dependency files",
+"permit": "",
+"options": {},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns",
+"default": "-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"xmdstub_peripheral": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Debug peripheral to be used with xmdstub",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"standalone": {"clocking": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable clocking support",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"enable_minimal_xlat_tbl": {"category": "",
+"value": "true",
+"default": "true",
+"type": "bool",
+"desc": "Configures translation table only for initial 4 TB address space. Translation table size will be reduced by ~1 MB. It is applicable only for CortexA78 BSP. Enable it by deafult to fit executable in OCM memory. It needs to be disabled if you want access peripheral/Memory mapped beyond 4 TB.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"hypervisor_guest": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable hypervisor guest support for A53 64bit EL1 Non-Secure. If hypervisor_guest is not selected, BSP will be built for EL3.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"lockstep_mode_debug": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable debug logic in non-JTAG boot mode, when Cortex R5 is configured in lockstep mode",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"pmu_sleep_timer": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Use PMU counters for sleep functionality applicable only for CortexR5 processor",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "",
+},
+"sleep_timer": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "This parameter is used to select specific timer for sleep functionality",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"stdin": {"category": "",
+"value": "axi_uartlite_0",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "axi_uartlite_0",
+},
+"stdout": {"category": "",
+"value": "axi_uartlite_0",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "axi_uartlite_0",
+},
+"ttc_select_cntr": {"category": "",
+"value": "2",
+"default": "2",
+"type": "enum",
+"desc": "Selects the counter to be used in the respective module. Allowed range is 0-2",
+"permit": "user",
+"options": {"0": "0",
+"1": "1",
+"2": "2",
+},
+"range": "",
+},
+"xil_interrupt": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable xilinx interrupt wrapper API support",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"zynqmp_fsbl_bsp": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Disable or Enable Optimization for FSBL's BSP. ZynqMP FSBL will set this to true",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"xilffs": {"enable_exfat": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "0:Disable exFAT, 1:Enable exFAT(Also Enables LFN)",
+"permit": "",
+"options": {},
+"range": "",
+},
+"enable_multi_partition": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "0:Single partition, 1:Enable multiple partition",
+"permit": "",
+"options": {},
+"range": "",
+},
+"fs_interface": {"category": "",
+"value": "1",
+"default": "1",
+"type": "int",
+"desc": "Enables file system with selected interface. Enter 1 for SD. Enter 2 for RAM",
+"permit": "",
+"options": {},
+"range": "",
+},
+"num_logical_vol": {"category": "",
+"value": "2",
+"default": "2",
+"type": "int",
+"desc": "Number of volumes (logical drives, from 1 to 10) to be used.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"ramfs_size": {"category": "ramfs_options",
+"value": "3145728",
+"default": "3145728",
+"type": "int",
+"desc": "RAM FS size",
+"permit": "",
+"options": {},
+"range": "",
+},
+"ramfs_start_addr": {"category": "ramfs_options",
+"value": "",
+"default": "",
+"type": "int",
+"desc": "RAM FS start address",
+"permit": "",
+"options": {},
+"range": "",
+},
+"read_only": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enables the file system in Read_Only mode if true. ZynqMP fsbl will set this to true",
+"permit": "",
+"options": {},
+"range": "",
+},
+"set_fs_rpath": {"category": "",
+"value": "0",
+"default": "0",
+"type": "int",
+"desc": "Configures relative path feature (valid values 0 to 2).",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_chmod": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enables use of CHMOD functionality for changing attributes (valid only with read_only set to false)",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_lfn": {"category": "",
+"value": "0",
+"default": "0",
+"type": "int",
+"desc": "Enables the Long File Name(LFN) support if non-zero. Disabled by default: 0, LFN with static working buffer: 1, Dynamic working buffer: 2 (on stack) or 3 (on heap)",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_mkfs": {"category": "",
+"value": "true",
+"default": "true",
+"type": "bool",
+"desc": "Disable(0) or Enable(1) f_mkfs function. ZynqMP fsbl will set this to false",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_strfunc": {"category": "",
+"value": "0",
+"default": "0",
+"type": "int",
+"desc": "Enables the string functions (valid values 0 to 2).",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_trim": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Disable(0) or Enable(1) TRIM function. ZynqMP fsbl will set this to false",
+"permit": "",
+"options": {},
+"range": "",
+},
+"word_access": {"category": "",
+"value": "true",
+"default": "true",
+"type": "bool",
+"desc": "Enables word access for misaligned memory access platform",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:54:39.117
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:54:39.117
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa], Result: [null, {"Led_AXI_0": {"hier_name": "Led_AXI_0",
+"type": "Led_AXI",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_gpio_0": {"hier_name": "axi_gpio_0",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_hwicap_0": {"hier_name": "axi_hwicap_0",
+"type": "axi_hwicap",
+"version": "3.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_uartlite_0": {"hier_name": "axi_uartlite_0",
+"type": "axi_uartlite",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"clk_wiz_1": {"hier_name": "clk_wiz_1",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"mdm_1": {"hier_name": "mdm_1",
+"type": "mdm",
+"version": "3.2",
+"ip_type": "DEBUG",
+},
+"microblaze_0": {"hier_name": "microblaze_0",
+"type": "microblaze",
+"version": "11.0",
+"ip_type": "PROCESSOR",
+},
+"microblaze_0_axi_intc": {"hier_name": "microblaze_0_axi_intc",
+"type": "axi_intc",
+"version": "4.1",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"microblaze_0_axi_periph": {"hier_name": "microblaze_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_dlmb_v10": {"hier_name": "microblaze_0_local_memory_dlmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_ilmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_ilmb_v10": {"hier_name": "microblaze_0_local_memory_ilmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_lmb_bram": {"hier_name": "microblaze_0_local_memory_lmb_bram",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"microblaze_0_xlconcat": {"hier_name": "microblaze_0_xlconcat",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"rst_clk_wiz_1_100M": {"hier_name": "rst_clk_wiz_1_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:54:39.117
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:54:39.117
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss], Result: [null, xilffs]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:54:39.117
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:54:39.148
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss], Result: [null, {"xilffs": "5.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:54:39.211
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:54:39.211
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/microblaze_0/standalone_domain/bsp/system.mss], Result: [null, {"Led_AXI_0": {"name": "Led_AXI",
+"ver": "1.0",
+},
+"axi_gpio_0": {"name": "gpio",
+"ver": "4.9",
+},
+"axi_uartlite_0": {"name": "uartlite",
+"ver": "3.8",
+},
+"microblaze_0_axi_intc": {"name": "intc",
+"ver": "3.16",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.8",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.8",
+},
+"axi_hwicap_0": {"name": "hwicap",
+"ver": "11.5",
+},
+"microblaze_0": {"name": "cpu",
+"ver": "2.17",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:54:39.226
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa microblaze_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 12:54:39.226
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk/DFX_Led_Platform/hw/design_1_wrapper.xsa microblaze_0], Result: [null, Led_AXI_0 axi_gpio_0 axi_hwicap_0 axi_uartlite_0 microblaze_0_axi_intc microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 13:01:44.383
+!MESSAGE XSCT Command: [bsp reload], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-08 13:01:44.414
+!MESSAGE XSCT command with result: [bsp reload], Result: [null, ]. Thread: main
+!SESSION 2024-05-10 07:15:29.804 -----------------------------------------------
+eclipse.buildId=2023.1
+java.version=11.0.16.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2024-05-10 07:16:06.888
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-10 07:16:24.227
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-10 07:16:24.228
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-10 07:16:24.241
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-10 07:16:30.469
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-10 07:16:30.470
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-10 07:16:30.474
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-10 07:16:30.475
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-10 07:16:30.476
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, D:/Xilinx/Vitis/2023.1/data]. Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-10 07:16:30.477
+!MESSAGE XSCT Command: [setws C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk], Thread: Thread-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-10 07:16:30.482
+!MESSAGE XSCT command with result: [setws C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.sdk], Result: [null, ]. Thread: Thread-25
