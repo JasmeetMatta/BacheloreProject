@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Sep  3 11:19:13 2024
+# Process ID: 16488
+# Current directory: C:/VProject/Attempt_4_10-04-2024/LedCount
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20392 C:\VProject\Attempt_4_10-04-2024\LedCount\LedCount.xpr
+# Log file: C:/VProject/Attempt_4_10-04-2024/LedCount/vivado.log
+# Journal file: C:/VProject/Attempt_4_10-04-2024/LedCount\vivado.jou
+# Running On: Jasmeet, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 16990 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/VProject/Attempt_4_10-04-2024/LedCount/LedCount.xpr
+update_compile_order -fileset sources_1
+read_checkpoint ../LedCount/netlist/Config1/config1routed.dcp
+update_compile_order -fileset sources_1
+open_checkpoint ../LedCount/netlist/Config1/config1routed.dcp
+pr_verify
+current_project LedCount
+pr_verify
+current_project project_config1routed
+pr_verify DCP1 DCP2
+current_project project_DCP1
+close_project
+close_design
+pr_verify ../LedCount/netlist/Config1/config1routed.dcp ../LedCount/netlist/Config2/config2routed.dcp

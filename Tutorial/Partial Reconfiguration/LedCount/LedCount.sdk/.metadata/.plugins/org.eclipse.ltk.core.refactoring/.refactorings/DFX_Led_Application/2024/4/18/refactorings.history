@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;DFX_Led_Application/src/ff.h&apos; to &apos;try.h&apos;" description="Rename resource &apos;ff.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/ff.h" name="try.h" stamp="1714410690825" updateReferences="true"/>
+</session>
