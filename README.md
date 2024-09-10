@@ -1,4 +1,4 @@
-Download the Tutorial Folder from the following repository.
+1. Download the Tutorial Folder from the following repository.
 https://github.com/JasmeetMatta/Partial-Reconfiguration/tree/main/Tutorial
 2. In the LedCount folder, open the vivado project “LedCount.xpr".
 3. Synthesize the block design. Refer to section 3.2.
